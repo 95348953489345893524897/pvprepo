@@ -1,0 +1,408 @@
+"CVars"
+{
+	// CW 2.0
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"cw_blur_reload"		"0"
+	"cw_blur_customize"		"0"
+	"cw_blur_aim_telescopic"	"0"
+	"cw_simple_telescopics"		"1" 			// 2d scopes
+	"cw_crosshair"			"1"
+	"cw_customhud"			"0"
+	"cw_customhud_ammo"		"0"
+	"cw_laser_quality"		"0"
+	"cw_laser_blur"			"0"
+	"cw_alternative_vm_pos"		"1"			// Makes viewmodels slightly lowered iirc
+	"cw_rt_scope_quality"		"2"
+	
+	// TFA
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"cl_tfa_3dscope"			"0"
+	"cl_tfa_ballistics_fx_tracers_style"	"0"
+	"cl_tfa_fx_ads_dof"			"0"
+	"cl_tfa_fx_ads_dof_hd"			"0"
+	"cl_tfa_fx_ejectionlife"		"1"
+	"cl_tfa_fx_ejectionsmoke"		"0"
+	"cl_tfa_fx_gasblur"			"0"
+	"cl_tfa_fx_impact_enabled"		"0"
+	"cl_tfa_fx_impact_ricochet_enabled"	"0"
+	"cl_tfa_fx_impact_ricochet_sparklife"	"1"
+	"cl_tfa_fx_muzzleflashsmoke"		"0"
+	"cl_tfa_fx_muzzlesmoke"			"0"	
+	"cl_tfa_fx_muzzlesmoke_limited"		"0"
+	"cl_tfa_gunbob_custom"			"0"
+	"cl_tfa_gunbob_intensity"		"0"
+	"cl_tfa_laser_trails"			"0"
+	"cl_tfa_legacy_shells"			"1"
+	"cl_tfa_scope_sensitivity_autoscale"	"1"
+	"cl_tfa_viewmodel_offset_fov		"-999999999999
+	"cl_tfa_viewmodel_offset_x		"-999999999999
+	"cl_tfa_viewmodel_offset_y		"-999999999999
+	"cl_tfa_viewmodel_offset_z		"-999999999999"
+	
+	// ACF
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"acfsound_volume"			"0.3"
+	"acf_debris_giblifetime" 		"1"
+	"acf_drawboxes"				"0"
+	
+	// CFC Sandbox Custom Things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	cfcpvp_startingmode			"1"
+	cfc_chiplister_enabled			"0"
+	"cfc_pvp_acf_screenshake_intensity	"0"
+	"cfc_pvp_acf_screenshake_max_distance"	"1"
+	"voicebalancer_enabled"			"0"
+	"webbrowser_enabled"			"0"
+	"custom_hitmarkers_enabled"		"0"
+	"custom_hitmarkers_npc_enabled"		"0"
+	"custom_hitmarkers_ent_enabled"		"0"
+	"custom_hitmarkers_sound_enabled"	"0"
+	"custom_hitmarkers_dps_enabled"		"0"
+	"custom_hitmarkers_round_enabled"	"0"
+	
+	// Rope Tool
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"rope_material"				"matsys_regressiontest/background"	// Kitty cat
+	"rope_addlength"			"0"
+	"rope_width"                            "999999"
+	
+	// Trails Tool
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	trails_endsize                          "99999"
+	trails_length                           "99999"
+	trails_startsize                        "99999"
+	trails_material                         "trails/lol"
+	
+	// Precision Tool
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	precision_nudgepercent			"0"
+	precision_user 				"3"
+	precision_nudgeundo 			"1"
+	
+	// Fspectate
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	fspectate_aimlines 			"0"   
+	fspectate_crosshair			"1"   
+	fspectate_e2s 				"0"   
+	fspectate_health 			"0"   
+	fspectate_names 			"1"           
+	fspectate_playerinfo 			"1"           
+	fspectate_rank 				"0"          
+	fspectate_sfs 				"0"           
+	fspectate_weapon 			"0"           
+	fspectate_xray 				"0"
+	
+	// Beanbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"bean_translator_source"		""	
+	"bean_translator_target" 		"en"
+	"bean_translator_toggle" 		"1"
+	"bean_shadows_toggle" 			"0"
+	"bean_render_distance" 			"0"
+	"bean_screenshake_maxamplitude" 	"-1" 
+	"bean_screenshake_maxradius" 		"-1" 
+	"bean_bhop" 				"1"					// autohops
+	"bean_nametag_worldscale" 		"0"
+	"bean_nametag_renderbehindwalls"	"1" 
+	"bean_nametag_distance" 		"10000" 
+	"bean_nametag_renderself" 		"0" 
+	"bean_nametag_enabled" 			"1" 
+	"bean_nametag_renderbehindwalls" 	"1"					// legal Esp lol
+	"bean_nametag_distance" 		"9999999"
+	
+	// Zoltins Sandbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"zbox_customscoreboard" 		"1"
+	"zbox_hitmarkers" 			"0"
+	"zbox_hitmarkers_killmarkers" 		"0"
+	"zbox_hitsounds_head" 			"profiteers/headmarker.ogg"
+	"zbox_hitsounds_hit" 			"profiteers/mwhitmarker.ogg"
+	"zbox_hitsounds_kill" 			"profiteers/newkillmarker.ogg"
+	"zbox_hitsounds_volume"			"1"
+	"zbox_nametags" 			"1"
+	"zbox_ragdollgore" 			"0"
+	
+	// Starfall
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"sf_file_tempmaxsize"		 	"0.01"
+	"starfall_toolscreen"			"0"
+	"starfall_toolscreen_fps"               "1"
+	"sf_file_tempmax"			"1"
+	"sf_file_tempmaxusersize"		"1"
+	"sf_file_tempmaxsize"			"1"
+	"sf_file_asyncmax"			"1"
+	"sf_light_maxsize"			"1"
+	"sf_projectedlights_max_cl"		"1"
+	"sf_render_maxdatamaterialsize"		"1"
+	"sf_render_usermaterials_max_cl"	"1"
+	"sf_particleemitters_max_cl"		"1"
+	"sf_particles_max"			"1"
+	"sf_particleeffects_max_cl"		"1"
+	"sf_render_maxfonts"			"1"
+	"sf_render_maxrenderviewsperframe"	"2" 					// ?
+	"sf_render_rendertargets_max_cl"	"20"					// ?
+	"sf_render_pixvishandlesperframe_max_cl" "50"					// ?
+
+	// NPCZ Sandbox/Zbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"wa_enable" 							"0"
+	"streamcore_disable" 						"1"
+	"cl_legs" 							"0"
+	sitting_allow_on_me                      			"0"
+	"npcz_gore"							"0" 
+	gmuwwyejtlctkzrkipcarkqqtbrkabtvdoyyephsryozokd  		""		// not sure what this does, set it to nothing
+	lvvroynjkbsojsdkqiijhkgspkjosyztaukgftjegnnwiiuxuduwxtwmivi 	""		// ^
+	wsorokiwvdqigdukvyniccrvstllcnrwhzitodfbtxjbijnrw 		""		// ^
+	mtsdziklqfzfasf                          			""		// ^ 
+	svvmwttfmmykccpran                       			""		// ^
+	npc_autoreconnect                        			"0"
+	
+	// PAC
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"pac_enable"				"0"
+	"pac_webcontent_limit"			"1"
+	"pac_webcontent_limit_force"		"0"
+	"pac_enable_urltex"			"0"
+	"pac_max_render_time"			"0.0001"	
+	"pac_draw_distance"			"0.0001"
+	"pac_hide_disturbing"			"1"
+	"pac_enable_base"			"0"
+	"pac_enable_base_movable"		"0"
+	"pac_enable_base_drawable"		"0"
+	"pac_enable_animation"			"0"
+	"pac_enable_beam"			"0"
+	"pac_enable_bone3"			"0"
+	"pac_enable_camera"			"0"
+	"pac_enable_woohoo"			"0"
+	"pac_enable_clip2"			"0"
+	"pac_enable_command"			"0"
+	"pac_enable_custom_animation"		"0"
+	"pac_enable_decal"			"0"
+	"pac_enable_effect"			"0"
+	"pac_enable_event"			"0"
+	"pac_enable_faceposer"			"0"
+	"pac_enable_flex"			"0"
+	"pac_enable_fog"			"0"
+	"pac_enable_gesture"			"0"
+	"pac_enable_group"			"0"
+	"pac_enable_halo"			"0"
+	"pac_enable_holdtype"			"0"
+	"pac_enable_jiggle"			"0"
+	"pac_enable_light2"			"0"
+	"pac_enable_link"			"0"
+	"pac_enable_material_eye_refract"	"0"
+	"pac_enable_material_refract"		"0"
+	"pac_enable_material_2d"		"0"
+	"pac_enable_material_3d"		"0"
+	"pac_model_max_scales"			"1"
+	"pac_enable_model2"			"0"
+	"pac_enable_entity2"			"0"
+	"pac_enable_weapon"			"0"
+	"pac_enable_motion_blur"		"0"
+	"pac_enable_player_movement"		"0"
+	"pac_enable_particles"			"0"
+	"pac_enable_physics"			"0"
+	"pac_enable_player_config"		"0"
+	"pac_enable_poseparameter"		"0"
+	"pac_enable_projected_texture"		"0"
+	"pac_enable_projectile"			"0"
+	"pac_enable_proxy"			"0"
+	"pac_enable_shake"			"0"
+	"pac_enable_sound2"			"0"
+	"pac_enable_sprite"			"0"
+	"pac_enable_submaterial"		"0"
+	"pac_enable_sunbeams"			"0"
+	"pac_enable_text"			"0"
+	"pac_enable_trail2"			"0"
+	"pac_enable_bodygroup"			"0"
+	"pac_enable_bone"			"0"
+	"pac_enable_bone2"			"0"
+	"pac_enable_clip"			"0"
+	"pac_enable_entity"			"0"
+	"pac_enable_light"			"0"
+	"pac_enable_material"			"0"
+	"pac_objdl_timeout"			"0.001"
+	"pac_obj_cache"				"0"	
+	"pac_objdl_streams"			"1"
+	"pac_enable_urlobj"			"0"
+	"pac_obj_runtime"			"0"
+	"pac_enable_model"			"0"
+	"pac_enable_ogg"			"0"
+	"pac_enable_sound"			"0"
+	"pac_enable_trail"			"0"
+	"pac_enable_webaudio"			"0"
+	"pac_onuse_only"			"1"
+	"pac_onuse_only_override"		"1"
+	"pac_use_whitelist"			"1"
+	"pac_panic"				"1"
+	"pac_enable_force"			"0"
+	"pac_enable_health_modifier"		"0"
+	"pac_enable_hitscan"			"0"
+	"pac_enable_interpolated_multibone"	"0"
+	"pac_enable_lock"			"0"
+	"pac_friendonly"			"1"
+	"pac_popups_enable"			"0"
+	"pac_volume"				"0"
+	"pac_ogg_volume"			"0" 
+	"pac_client_npc_exclusion_consent"	"1"
+	"pac_client_grab_consent"		"1"
+	"pac_client_lock_camera_consent"	"1"
+	"pac_client_damage_zone_consent"	"1"
+	"pac_client_force_consent"		"1"
+	"pac_client_hitscan_consent"		"1"
+	"pac_break_lock_verbosity"		"3"
+	
+	// P2M
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"prop2mesh_disable"			"1"
+	"prop2mesh_render_disable_obj"		"1"
+	"prop2mesh_render_disable"		"1"
+	// Sitting mod
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"sitting_use_walk"			"1.00"
+	"sitting_force_left_alt"		"0"
+	"sitting_allow_on_me"			"0"
+	"sitting_ground_sit"			"0"
+
+	// Simple Thirdperson
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	simple_thirdperson_cam_distance 	"140"
+	simple_thirdperson_cam_pitch  		"0"
+	simple_thirdperson_cam_right 		"0"
+	simple_thirdperson_cam_up 		"0"
+	simple_thirdperson_cam_yaw 		"0"
+	simple_thirdperson_collision 		"0"
+	simple_thirdperson_custom_crosshair_a  	"240"
+	simple_thirdperson_custom_crosshair_b  	"0"
+	simple_thirdperson_custom_crosshair_g  	"230"
+	simple_thirdperson_custom_crosshair_r  	"255"
+	simple_thirdperson_enable_custom_crosshair "1"
+	simple_thirdperson_fov_smooth 		"0"
+	simple_thirdperson_hide_crosshair	"0"
+	simple_thirdperson_smooth 		"0"
+	
+	// Sbox
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	sbox_maxballoons 			"99999999"
+	sbox_maxbuttons 			"99999999"
+	sbox_maxdynamite 			"99999999"
+	sbox_maxeffects 			"99999999"	
+	sbox_maxemitters 			"99999999"
+	sbox_maxhoverballs 			"99999999"
+	sbox_maxlamps 				"99999999"
+	sbox_maxlights 				"99999999"	
+	sbox_maxnpcs 				"99999999"
+	sbox_maxprops 				"99999999"
+	sbox_maxragdolls			"99999999"
+	sbox_maxsents 				"99999999"
+	sbox_maxthrusters 			"99999999"
+	sbox_maxvehicles 			"99999999"
+	sbox_maxwheels 				"99999999"
+	sbox_noclip 				"1"
+	
+	// Wire
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"wire_flir_gain"			"0"
+	"wire_holograms_display_owners"							// will this even work lol
+	"wire_expression2_concmd"		"0"
+	"wire_expression2_convar"		"0"
+	
+	// Gredwitch
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"gred_cl_resourceprecache"		"0"
+	"gred_cl_sound_shake"			"0"
+	"gred_cl_nowaterimpacts"		"1"
+	"gred_cl_insparticles"			"1"
+	"gred_cl_noparticles_7mm"		"1"
+	"gred_cl_noparticles_12mm"		"1"
+	"gred_cl_noparticles_20mm"		"1"
+	"gred_cl_noparticles_30mm"		"1"
+	"gred_cl_noparticles_40mm"		"1"
+	"gred_cl_decals"			"0"
+	"gred_cl_altmuzzleeffect"		"0"
+	"gred_cl_wac_explosions"		"0"
+	"gred_cl_enable_popups"			"0"
+	"gred_cl_shell_blur"			"0"
+	"gred_cl_explosionvolume"		"0.1"
+	
+
+
+	// Outfitter
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"outfitter_dbg"				"0"
+	"outfitter_enabled"			"0"
+	"outfitter_download_notifications"	"0"
+	"outfitter_fix_error_players"		"1"
+	"outfitter_sounds"			"0"
+	"outfitter_hands"			"0"
+	"outfitter_animfix_oldmethod"		"0"
+	"outfitter_distance_mode"		"-1"
+	"outfitter_distance"			"0.001"
+	"outfitter_extra_safe_downloading"	"1"
+	"nsfw"					"1"
+	"outfitter_download_strip_lua"		"1"
+	"outfitter_allow_http_test"		"0"
+	"outfitter_allow_unsafe_http"		"0"
+	"outfitter_friendsonly"			"1"
+	"outfitter_failsafe"			"0"
+	"outfitter_maxsize"			"0.001"
+	
+	// PSI (that addon that shows icons above you)
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"psi_cl_enabled"			"1"
+	"psi_privacy_mode"			"1"
+	"psi_height_offset"			"100"
+	"psi_show_afk"				"0"
+	"psi_show_vgui"				"0"
+	"psi_show_typing"			"0"
+	"psi_show_spawnmenu"			"0"
+	"psi_show_mainmenu"			"0"
+	"psi_show_alttab"			"0"
+	"psi_show_timeout"			"0"
+ 
+ 	// Media Player
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"mediaplayer_resolution"		"1"
+	"mediaplayer_3daudio"			"1"
+	"mediaplayer_volume"			"0"
+	"mediaplayer_draw_thumbnails"		"0"
+	
+	// Other
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"gm_demo_icon"				"1"
+	"streamradio_mute"			"1"
+	"streamradio_volume"			"0"
+	"sgm_ignore_warnings"			"1"
+	r_shadowlod 		 		"-2"
+	"actmod_key_iconmenu"			"23523532" 				// actmod key is annoying, dont need it, this might work lol
+	"gw_screenshake"			"0"
+	"primitive_update_delay"		"0.015"
+	"primitive_thread_runtime"		"0.25"
+	"proper_clipping_max_physics"		"2"
+	"cl_playercolor"			"0.635294 0.000000 0.866667"
+	"cl_weaponcolor"			"-inf -inf -inf"
+	"cl_playerskin"				"0"
+	"cl_playerbodygroups"			"0"
+	"cl_showhints"				"0"
+	"cl_drawworldtooltips"			"1"
+	"gmod_drawhelp"				"0"
+	
+	// Chat Addons
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	// EasyChat
+	"easychat_cmd_suggestions"		"1"
+	"easychat_enable"			"0"
+	"easychat_legacy_entry"			"1"
+	"easychat_legacy_text"			"1"
+	"easychat_translate_inc_msg"		"1"
+	"easychat_translate_inc_source_lang"	"auto"
+	"easychat_translate_inc_target_lang"	"en"
+	"easychat_translate_out_msg"		"0"
+	"easychat_translate_out_source_lang"	"auto"
+	"easychat_translate_out_target_lang"	"en"
+	"easychat_always_local"			"1"
+	"easychat_blur_images"			"1"
+	// StyledStrike's (?) Custom Chat
+	"custom_chat_enable"			"0"
+
+}
