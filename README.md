@@ -19,10 +19,15 @@ https://www.reddit.com/r/tf2scripthelp/wiki/ - Useful config scripting info
 https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy - TF2 Random Script Maker
 
 # M9K Scope Ratios
+
 Intervention, SVT = 5x hip sensitivity
+
 M9K AI AW50, Barrett, SVU, SVD, M24, PSG, Contender, Raging Bull Scoped = 4.5x hip sensitivity
+
 Remington 7615P = 3.5x hip sensitivity
+
 SL8, F2000, M16A4 ACOG, AUG, MP7 = 2x hip sensitivity
+
 Honeybadger = 1.75x hip sensitivity
 
 # M9K List (For me to make aliases without launching gmod)
