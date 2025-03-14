@@ -1,6 +1,8 @@
 # Notes
 CFC either doesn't like what my rate is set to, my VPN, or just my internet in general. Not sure. if you time out on loading into CFC then maybe change your rate or revert all the network settings in the autoexec.
+
 This config has a lot of settings/notes/formatting from the configs of Mastercoms and a l4d2 autoexec steam guide that I can't find anymore.
+
 The client.vdf might crash you, don't use it for now, I'll fix it EVENTUALLY
 
 # Other Resources
