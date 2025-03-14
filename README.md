@@ -5,11 +5,17 @@ The client.vdf might crash you, don't use it for now, I'll fix it EVENTUALLY
 
 # Other Resources
 https://pastebin.com/raw/9HwNDj5c - 1/14/2025 GMOD Cvarlist
+
 https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 - Sticky Propkill/Propsurf Guide, most of the videos are privated :(
+
 https://steamcommunity.com/sharedfiles/filedetails/?id=2974655171 - M9K Gun Stats
+
 https://rafradek.github.io/Mishcatt/ - VTF Spray Converter for Source
+
 https://gamebanana.com/mods/345189 - HL2 PRED'S HUDS (HPH.exe HUD maker)
+
 https://www.reddit.com/r/tf2scripthelp/wiki/ - Useful config scripting info
+
 https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy - TF2 Random Script Maker
 
 # M9K Scope Ratios
