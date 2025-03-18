@@ -367,6 +367,24 @@
 	"mediaplayer_volume"			"0"
 	"mediaplayer_draw_thumbnails"		"0"
 	
+	// Chat Addons
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	// EasyChat
+	"easychat_cmd_suggestions"		"1"
+	"easychat_enable"			"0"
+	"easychat_legacy_entry"			"1"
+	"easychat_legacy_text"			"1"
+	"easychat_translate_inc_msg"		"1"
+	"easychat_translate_inc_source_lang"	"auto"
+	"easychat_translate_inc_target_lang"	"en"
+	"easychat_translate_out_msg"		"0"
+	"easychat_translate_out_source_lang"	"auto"
+	"easychat_translate_out_target_lang"	"en"
+	"easychat_always_local"			"1"
+	"easychat_blur_images"			"1"
+	// StyledStrike's (?) Custom Chat
+	"custom_chat_enable"			"0"
+
 	// Other
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"gm_demo_icon"				"1"
@@ -387,22 +405,4 @@
 	"cl_drawworldtooltips"			"1"
 	"gmod_drawhelp"				"0"
 	
-	// Chat Addons
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	// EasyChat
-	"easychat_cmd_suggestions"		"1"
-	"easychat_enable"			"0"
-	"easychat_legacy_entry"			"1"
-	"easychat_legacy_text"			"1"
-	"easychat_translate_inc_msg"		"1"
-	"easychat_translate_inc_source_lang"	"auto"
-	"easychat_translate_inc_target_lang"	"en"
-	"easychat_translate_out_msg"		"0"
-	"easychat_translate_out_source_lang"	"auto"
-	"easychat_translate_out_target_lang"	"en"
-	"easychat_always_local"			"1"
-	"easychat_blur_images"			"1"
-	// StyledStrike's (?) Custom Chat
-	"custom_chat_enable"			"0"
-
 }
