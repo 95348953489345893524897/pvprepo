@@ -48,7 +48,7 @@ m_forward				"50"					// +strafe forward factor
 // Fovs
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 fov_desired 				"87"					// preference
-viewmodel_fov 				"0"					// default 54, preference
+viewmodel_fov 				"0"					// default 54, 0 for hidden viewmodel
 
 // Ingame Utility Binds 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
@@ -216,12 +216,12 @@ cl_crosshairusealpha 			"1"
 // Source forums placebo theory paradise (test for yourself if the settings feel good)
 // i KNOW some of the notes are incorrect for some of these settings, i cba to figure out everything again
 
-cl_showerror				"1" 					// Show prediction errors, 2 for above plus detailed field deltas. "2" IS REALLY ANNOYING AND SPAMMY, use 1 or 0
+cl_showerror				"1" 					// Show prediction errors, 2 for above plus detailed field deltas; https://developer.valvesoftware.com/wiki/List_of_Counter-Strike_2_console_commands_and_variables
 net_showsplits				"0"					// Print packet splits to console
 cl_updaterate 				"100"                            	// default 20;
 cl_cmdrate 				"66"                            	// default 30;
-rate 					"786432"                         	// default 10000; if your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/; https://skinsmonkey.com/blog/the-best-counter-strike-go-rates-how-to-improve-your-game
-cl_resend 				"1.5"                            	// default 6; How many seconds to wait before retrying to connect to a server
+rate 					"999999999"                         	// If your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/; https://skinsmonkey.com/blog/the-best-counter-strike-go-rates-how-to-improve-your-game
+cl_resend 				"1.5"                            	// Delay in seconds before the client will resend the 'connect' attempt; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_interp 				"0"	                   	        // Players should set cl_interp 0, as this will ensure that the lerp is the precise length needed to accommodate the current server update rate. Raising the update rate will reduce lerp further.; https://developer.valvesoftware.com/wiki/Interpolation
 cl_interp_ratio 			"1"					// Set to 2 if light ping or packet loss, 3-4 if higher; https://gaming.stackexchange.com/questions/254631/difference-between-cl-interp-ratio-1-and-2
 cl_lagcompensation 			"1"                              	// default 1; Improves hit registration
@@ -384,8 +384,8 @@ sv_cheats				"1"
 r_cheapwaterstart 			"300"					// Start of the CheapWater rendering (all before this range is expensive waterrendering); https://gist.github.com/joselgomezs/4396025
 r_cheapwaterend 			"1"					// End of the CheapWater rendering (all behind this range is black water); https://gist.github.com/joselgomezs/4396025 
 r_waterforceexpensive 			"0"
-r_WaterDrawReflection 			"1"					// If set to 0, disables all reflections on top of water. This will boost performance at the cost of realism however you may experience graphical anomalies on the water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-r_waterdrawrefraction 			"1"					// If set to 0, disables all refraction - that is images which appear distorted under the water. This will boost performance at the cost of realism, however you may experience some graphical anomalies on the water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+r_WaterDrawReflection 			"0"					// 0 = disables all reflections on top of water. This will boost performance at the cost of realism however you may experience graphical anomalies on the water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+r_waterdrawrefraction 			"0"					// 0 = disables all refraction - that is images which appear distorted under the water. This will boost performance at the cost of realism, however you may experience some graphical anomalies on the water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 r_waterforcereflectentities 		"0"					// Forces as to whether entities should be reflected into water even if r_waterdrawreflection is 0; https://www.reddit.com/r/tf2/comments/5fakn9/lowest_water_setting_in_tf2/
 cl_show_splashes 			"0"					// disable water splashes
 mat_wateroverlaysize			"0" 					// Sets the resolution of water distortion. Must be multiple of 8.; https://gist.github.com/joselgomezs/4396025
@@ -397,13 +397,13 @@ mat_hdr_level 				"0"					// HDR makes your brightness change and it's REALLY an
 // Lighting
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 mat_fastspecular 			"1"					// Faster Spec but lower Quality on(1)/off(0); https://gist.github.com/joselgomezs/4396025 
-mat_filterlightmaps 			"0"					// If set to 1, static lightmaps are rendered correctly. If set to 0, all areas of pre-rendered lighting will be blocky and unrealistic, but performance will be improved slightly at the cost of realism.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+mat_filterlightmaps 			"0"					// 1 = static lightmaps are rendered correctly. 0 = all areas of pre-rendered lighting will be blocky and unrealistic, but performance will be improved slightly at the cost of realism.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 mat_specular 				"0"					// https://developer.valvesoftware.com/wiki/$envmapmask
 r_dynamic 				"0"					// Dynamic lighting of Enviroment on(1)/off(0); https://gist.github.com/joselgomezs/4396025 
 r_lightaverage 				"0"					// Disable this lighting job that uses a lot of CPU even if it is not needed/noticeable; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-r_maxdlights 				"0"					// Reducing this value can improve performance in scenes with multiple dynamic lights, such as in heavy combat. 
+r_maxdlights 				"0"					// Reducing this value can improve performance in scenes with multiple dynamic lights, such as in heavy combat; https://pastebin.com/GWqDFVtE
 r_occlusion 				"1"					// Occluders that are added to a level are removing enough model rendering to be worth the cost of the occluders themselves!; https://developer.valvesoftware.com/wiki/Showbudget https://learnopengl.com/img/advanced-lighting/ssao_example.png
-muzzleflash_light 			"0"					// If set to 1, weapons firing will emit a light along with the muzzle flash. If set to 0, a muzzle flash is still visible but no lighting is cast from it. Performance will improve in combat scenes with no noticeable drop in realism.
+muzzleflash_light 			"0"					// 1 = weapons firing will emit a light along with the muzzle flash. If set to 0, a muzzle flash is still visible but no lighting is cast from it. Performance will improve in combat scenes with no noticeable drop in realism.
 mat_monitorgamma			"1.6"					// Set game to brightest value
 mat_monitorgamma_tv_enabled 		"1"					// Make game even brighter
 mat_monitorgamma_tv_range_max 		"255"					// Sets game's color range? default value
@@ -413,14 +413,14 @@ mat_monitorgamma_tv_range_min 		"16"					// Ditto
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 r_shadows 		 		"1"
 r_flashlightdepthtexture 		"1"
-r_shadowrendertotexture  		"1" 					// Non-blobby shadows. Sometimes turned on by competitive TF2 players to see opponents standing near the other side of a wall. You may see some performance loss from setting this to '1'. 
-r_shadowmaxrendered 	 		"16"					// Max shadows the game will render. - josel
+r_shadowrendertotexture  		"1" 					// 1 = Non-blobby shadows. Sometimes turned on to see opponents standing near the other side of a wall; https://pastebin.com/zfnj81KM
+r_shadowmaxrendered 	 		"16"					// Max shadows the game will render; https://gist.github.com/joselgomezs/4396025
 //r_shadowlod 		 		"-2"					// Use the lowest quality model to render shadows
 
 // Texture Details
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-mat_bumpmap 				"1"					// If set to 1, enables bump mapping which makes flat 2D textures appear three dimensional. Setting this to 0 will cause everyone to have a white shine on them. 
-mat_clipz 				"1"					// If set to 1, uses an optimization technique to reduce what is drawn on screen for a performance improvement. Note that some Nvidia FX card owners need to set mat_clipz 0 to fix rendering problems. 
+mat_bumpmap 				"1"					// 1 = enables bump mapping which makes flat 2D textures appear three dimensional. 0 = will cause everyone to have a white shine on them. 
+mat_clipz 				"1"					// 1 = uses an optimization technique to reduce what is drawn on screen for a performance improvement. Note that some Nvidia FX card owners need to set mat_clipz 0 to fix rendering problems. 
 mat_colorcorrection 			"1"
 mat_color_projection			"0"					// Color-blind test mode, 0 = off, 2 = deuteranopia, 3 = tritanopia, 4 = typical achromatopsia, 5 = protanomaly, 6 = deutanomaly, 7 = tritanomaly, 8 = atypical achromatopsia, 9 = unknown
 mat_compressedtextures 			"0"					// reduces usage of Memory in the GraphicCard but cost a little bit quality 
@@ -445,7 +445,7 @@ alias 	"fullscreen"			"mat_setvideomode 1920 1080 0"		// 1080p Fullscreen
 
 // Filter + Anti-aliasing
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-mat_filtertextures 			"1"					// If set to 1, textures are rendered smoothly. If set to 0, textures will be blocky and unrealistic (similar to the original Doom!) but performance will be improved.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+mat_filtertextures 			"1"					// 1 = textures are rendered smoothly. 0 = textures will be blocky and unrealistic (similar to the original Doom!) but performance will be improved; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 mat_antialias 				"8"
 mat_aaquality 				"2" 
 mat_forceaniso 				"16"					// adjust level of trilinear filtering (2, 4, 8, 16) higher numbers are more intensive; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
@@ -455,7 +455,7 @@ mat_trilinear 				"0"
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 cl_forcepreload 			"0"					// "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-// cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) If set to 1, prevents characters from merging into each other due to ragdoll effects, thereby improving realism with no real performance hit.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+// cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 fps_max 				"240"					// You should be setting your fps limit to what you can hit consistently, gmod servers kill my fps so much my refresh rate (240) 100% of the time won't be hit; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
 mat_reducefillrate 			"1"					// Shaderthruput 0 = High (better Quality), 1 = Low (more fps); josel
 r_fastzreject 				"-1"					// Nvidia = -1 amd = 0 must change this based on gpu, (Values >1 enable a fast Z rejection algorithm, to be performed on the GPU (as opposed to on the CPU. The value `-1' autodetects hardware support for this feature, which is safer than forcing it.); https://www.reddit.com/r/apexlegends/comments/ivbq9j/my_autoexec_config_maximum_fps_no_quality_loss_pc/, https://steamcommunity.com/sharedfiles/filedetails/?id=1282254845
