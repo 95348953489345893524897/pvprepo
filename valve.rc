@@ -218,8 +218,8 @@ cl_crosshairusealpha 			"1"
 
 cl_showerror				"1" 					// Show prediction errors, 2 for above plus detailed field deltas; https://developer.valvesoftware.com/wiki/List_of_Counter-Strike_2_console_commands_and_variables
 net_showsplits				"0"					// Print packet splits to console
-cl_updaterate 				"100"                            	// default 20;
-cl_cmdrate 				"66"                            	// default 30;
+cl_updaterate 				"100"                            	// set to tickrate of server; https://steamcommunity.com/app/730/discussions/0/537405286653397372/
+cl_cmdrate 				"66"                            	// set to tickrate of server; https://steamcommunity.com/app/730/discussions/0/537405286653397372/
 rate 					"999999999"                         	// If your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/
 cl_resend 				"1.5"                            	// Delay in seconds before the client will resend the 'connect' attempt; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_interp 				"0"	                   	        // Players should set cl_interp 0, as this will ensure that the lerp is the precise length needed to accommodate the current server update rate. Raising the update rate will reduce lerp further.; https://developer.valvesoftware.com/wiki/Interpolation
@@ -238,14 +238,14 @@ net_maxpacketdrop 			"100"					// Use all packets, helps people with spotty conn
 net_splitpacket_maxrate 		"131072"				// No idea; Max split packet rate (should be low because split packets are sensitive to order in UDP socket recv/buffers); https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 net_maxcleartime 			"0"					// Max # of seconds we can wait for next packets to be sent based on rate setting (0 == no limit).
 net_maxfilesize 			"64"					// Max out file upload size for extra content
-net_queued_packet_thread		"1"					// Needs to be set to 1 or ping will raise very high once more players are connected.; 2006 post lol https://obsidianconflict.net/forums/viewtopic.php?t=346
+net_queued_packet_thread		"1"					// Needs to be set to 1 or ping will raise very high once more players are connected; 2006 post lol https://obsidianconflict.net/forums/viewtopic.php?t=346
 
 // Other
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 cl_playermodel				"female01" 				// default "none"
-//cl_weaponcolor				"-inf -inf -inf"			// default "0.30 1.80 2.10" ?
-//cl_playercolor				""					// default ""0.24 0.34 0.41" ?
-//cl_playerskin 				""					// not sure
+cl_weaponcolor				"-inf -inf -inf"			// default "0.30 1.80 2.10" ?
+cl_playercolor				"-inf -inf -inf"					// default ""0.24 0.34 0.41" ?
+cl_playerskin 				""					// not sure
 cl_defaultweapon 			"weapon_physgun"			// On-respawn weapon
 mat_powersavingsmode			"0"					// no computer past 1999 should need this 
 gmod_language				"zh-cn"					// china woo-hoo
@@ -301,7 +301,7 @@ alias 	"walldestroyed"			"gm_spawn models/props_debris/walldestroyed01a.mdl"
 alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g  plate; pk"					// Probably the most commonly used prop set
 alias 	"pk2"				"bind x walldestroyed; bind c lockers2; bind v trainwheel; bind g plate; pk"			// Prop set I use
 
-alias 	"pk"     			"unbind mwheelup; unbind mwheeldown; physgun_wheelspeed 1000000"				// Sticky uses 120 wheelspeed but I like max
+alias 	"pk"     			"unbind mwheelup; unbind mwheeldown; physgun_wheelspeed 1000000"
 alias 	"npk"				"bind mwheelup invprev; bind mwheeldown invnext; bind v noclip; bind c +menu_context; bind x lastinv; physgun_wheelspeed 10"
 				
 // Extra Aliases
@@ -399,11 +399,11 @@ mat_hdr_level 				"0"					// HDR makes your brightness change and it's REALLY an
 mat_fastspecular 			"1"					// Faster Spec but lower Quality on(1)/off(0); https://gist.github.com/joselgomezs/4396025 
 mat_filterlightmaps 			"0"					// 1 = static lightmaps are rendered correctly. 0 = all areas of pre-rendered lighting will be blocky and unrealistic, but performance will be improved slightly at the cost of realism.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 mat_specular 				"0"					// https://developer.valvesoftware.com/wiki/$envmapmask
-r_dynamic 				"0"					// Dynamic lighting of Enviroment on(1)/off(0); https://gist.github.com/joselgomezs/4396025 
+r_dynamic 				"0"					// 1 = Enable dynamic lighting from things such as light tool 
 r_lightaverage 				"0"					// Disable this lighting job that uses a lot of CPU even if it is not needed/noticeable; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-r_maxdlights 				"0"					// Reducing this value can improve performance in scenes with multiple dynamic lights, such as in heavy combat; https://pastebin.com/GWqDFVtE
+r_maxdlights 				"0"					// Maximum dynamic lights from things such as light tool
 r_occlusion 				"1"					// Occluders that are added to a level are removing enough model rendering to be worth the cost of the occluders themselves!; https://developer.valvesoftware.com/wiki/Showbudget https://learnopengl.com/img/advanced-lighting/ssao_example.png
-muzzleflash_light 			"0"					// 1 = weapons firing will emit a light along with the muzzle flash. If set to 0, a muzzle flash is still visible but no lighting is cast from it. Performance will improve in combat scenes with no noticeable drop in realism.
+muzzleflash_light 			"0"					// 1 = weapons firing will emit a light along with the muzzle flash. 0 = a muzzle flash is still visible but no lighting is cast from it; https://techenclave.com/threads/half-life-2-tweaks-cheats-and-mods.6139/
 mat_monitorgamma			"1.6"					// Set game to brightest value
 mat_monitorgamma_tv_enabled 		"1"					// Make game even brighter
 mat_monitorgamma_tv_range_max 		"255"					// Sets game's color range? default value
@@ -419,16 +419,16 @@ r_shadowmaxrendered 	 		"1"					// Max shadows the game will render; https://gis
 
 // Texture Details
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-mat_bumpmap 				"1"					// 1 = enables bump mapping which makes flat 2D textures appear three dimensional. 0 = will cause everyone to have a white shine on them. 
-mat_clipz 				"1"					// 1 = uses an optimization technique to reduce what is drawn on screen for a performance improvement. Note that some Nvidia FX card owners need to set mat_clipz 0 to fix rendering problems. 
+mat_bumpmap 				"1"					// 1 = enables bump mapping which makes flat 2D textures appear three dimensional. 0 = will cause everyone to have a white shine on them; https://tweakguides.dmegaming.com/HL2_8.html
+mat_clipz 				"1"					// 1 = uses an optimization technique to reduce what is drawn on screen for a performance improvement. Note that some Nvidia FX card owners need to set mat_clipz 0 to fix rendering problems; https://techenclave.com/threads/half-life-2-tweaks-cheats-and-mods.6139/
 mat_colorcorrection 			"1"
-mat_color_projection			"0"					// Color-blind test mode, 0 = off, 2 = deuteranopia, 3 = tritanopia, 4 = typical achromatopsia, 5 = protanomaly, 6 = deutanomaly, 7 = tritanomaly, 8 = atypical achromatopsia, 9 = unknown
+mat_color_projection			"0"					// THIS WILL PUT A GIANT MISSING TEXTURE ON YOUR GAME WHILE IN MENU, the mat_color_projection overlay textures ARENT loaded until you join a game; Color-blind test mode, 0 = off, 2 = deuteranopia, 3 = tritanopia, 4 = typical achromatopsia, 5 = protanomaly, 6 = deutanomaly, 7 = tritanomaly, 8 = atypical achromatopsia, 9 = unknown
 mat_compressedtextures 			"0"					// reduces usage of Memory in the GraphicCard but cost a little bit quality 
 mat_picmip 				"-1"					// -1 high qual 2 low qual
 r_rootlod 				"-2"					// model detail (0 best quality)
 mat_bloomscale 				"0"
 r_lod 					"-8"					// model detail (-1 best quality)
-mat_mipmaptextures 			"1"					// if set to 1, texture quality decreases with distance
+mat_mipmaptextures 			"1"					// recommended to keep at 1 = texture quality decreases with distance, unmipmapped textures are really annoying and grainy to look at far away
 
 // Motion Blur 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
@@ -456,18 +456,18 @@ mat_trilinear 				"0"
 cl_forcepreload 			"0"					// "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 // cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-fps_max 				"240"					// You should be setting your fps limit to what you can hit consistently, gmod servers kill my fps so much my refresh rate (240) 100% of the time won't be hit; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
+fps_max 				"240.5"					// Set fps limit to refresh rate; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
 mat_reducefillrate 			"1"					// Shaderthruput 0 = High (better Quality), 1 = Low (more fps); josel
 r_fastzreject 				"-1"					// Nvidia = -1 amd = 0 must change this based on gpu, (Values >1 enable a fast Z rejection algorithm, to be performed on the GPU (as opposed to on the CPU. The value `-1' autodetects hardware support for this feature, which is safer than forcing it.); https://www.reddit.com/r/apexlegends/comments/ivbq9j/my_autoexec_config_maximum_fps_no_quality_loss_pc/, https://steamcommunity.com/sharedfiles/filedetails/?id=1282254845
-mat_vsync				"0"					// Force sync to vertical retrace
+mat_vsync				"0"					// KEEP OFF, Force sync to vertical retrace; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 engine_no_focus_sleep 			"0"					// don't limit performance when the engine is not focused. the focus detection can be buggy on some systems and may throttle your game, without you knowing; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f 
-cl_phys_props_enable 			"0"					// Disable clientside physics props (must be set before loading a level).
+cl_phys_props_enable 			"0"					// Disable clientside physics props (must be set before loading a level); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 r_drawflecks 				"0"					// If set to 1, small chunks of rubble and dirt will be thrown up around bullet impact points.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-cl_detaildist				"0"					// Don't draw detail props like grass
-cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist; https://www.teamfortress.tv/20219/detail-sprite-commands
+cl_detaildist				"0"					// render distance of detail props like grass
+cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist, fading is turned off; https://www.teamfortress.tv/20219/detail-sprite-commands
 cl_localnetworkbackdoor 		"0"					// the default value (1) causes slight FPS drops when playing on servers and it only provides benefits for people playing singleplayer; https://www.reddit.com/r/tf2/comments/4hiblq/a_quick_list_of_console_commands_that_should/
 r_norefresh 				"1"					// Genuinely no idea; If set to 1, "Do not store a useless and unused frame time variable"; http://www.play-half-life.de/H-L_2.html; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep.
+sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
 r_decals				"64"					// Limits all decals 
 cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
@@ -475,6 +475,7 @@ cl_drawthrusterseffects			"0"					// Thruster effects
 props_break_max_pieces 			"0"					// Broken prop max pieces 
 gmod_mcore_test 			"1"					// Free FPS for most people
 mat_queue_mode 				"2"					// Does something for FPS, forgot what, but I don't think it has any downsides
+
 // Fog/sky 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 r_3dsky 				"0"					// No 3d skybox
