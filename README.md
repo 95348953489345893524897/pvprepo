@@ -1,5 +1,4 @@
 # Notes
-CFC either doesn't like what my rate is set to, my VPN, or just my internet in general. Not sure. if you time out on loading into CFC then maybe change your rate or revert all the network settings in the autoexec.
 
 This config's formatting was based on prsto's autoexec; https://pastebin.com/GprTEivh
 
