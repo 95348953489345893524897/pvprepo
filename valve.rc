@@ -193,6 +193,7 @@ alias -unduckjump "-jump;"
 // Crosshair
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 crosshair 		 		"1"
+// blue cross 
 cl_crosshair_drawoutline 		"0"
 cl_crosshair_outlinethickness 		"1"
 cl_crosshair_t 				"0"
