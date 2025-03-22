@@ -220,17 +220,17 @@ cl_showerror				"1" 					// Show prediction errors, 2 for above plus detailed fi
 net_showsplits				"0"					// Print packet splits to console
 cl_updaterate 				"100"                            	// default 20;
 cl_cmdrate 				"66"                            	// default 30;
-rate 					"999999999"                         	// If your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/; https://skinsmonkey.com/blog/the-best-counter-strike-go-rates-how-to-improve-your-game
+rate 					"999999999"                         	// If your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/
 cl_resend 				"1.5"                            	// Delay in seconds before the client will resend the 'connect' attempt; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_interp 				"0"	                   	        // Players should set cl_interp 0, as this will ensure that the lerp is the precise length needed to accommodate the current server update rate. Raising the update rate will reduce lerp further.; https://developer.valvesoftware.com/wiki/Interpolation
 cl_interp_ratio 			"1"					// Set to 2 if light ping or packet loss, 3-4 if higher; https://gaming.stackexchange.com/questions/254631/difference-between-cl-interp-ratio-1-and-2
 cl_lagcompensation 			"1"                              	// default 1; Improves hit registration
 cl_pred_optimize 			"1"				 	// If set to 1, "Slightly improve hitreg in certain situations at high framerates at expense of an extremely slight performance reduction (default is 2)"; https://www.teamfortress.tv/33804/can-i-get-some-help-with-my-cl-settings
-cl_predict 				"1"				 	// "DO NOT EVER, EVER, ****EVER**** DISABLE THIS"; https://www.teamfortress.tv/33804/can-i-get-some-help-with-my-cl-settings
-cl_smooth 				"0"				 	// I don't like the idea of smoothing anything, so we set to 0, octochris says that if you're getting no prediction errors then smoothing does nothing anyway, and gmod doesn't really get many (from what I've seen); https://www.teamfortress.tv/14265/cl-smooth-cl-smoothtime-fps-max-best-settings; https://etf2l.org/forum/customise/topic-10435/page-57/#post-238353
-cl_smoothtime				"0.0"					// Smooth client's view after prediction error over this many seconds
-cl_timeout				"600"				 	// After this many seconds without receiving a packet from the server, the client will disconnect itself
-gmod_delete_temp_files			"1"				 	// Delete temporary files downloaded from servers such as sprays.
+cl_predict 				"1"				 	// Perform client side prediction; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+cl_smooth 				"0"				 	// I don't like smoothing movement prediction errors, so we set to 0; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
+cl_smoothtime				"0.0"					// Smooth client's view after prediction error over this many seconds; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+cl_timeout				"600"				 	// After this many seconds without receiving a packet from the server, the client will disconnect itself; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+gmod_delete_temp_files			"1"				 	// Delete temporary files downloaded from servers such as sprays; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 net_compresspackets 			"0"				 	// compress packets save bytes, at the cost of extra cpu usage. if you have a fast enough network, this is recommended.; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
 net_splitrate 				"3"			 		// how many packets we can split per frame;  If your computer can do it, you can increase net_splitrate to speed up handling large packets.; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=47
 net_maxcleartime 			"0.01"					// Not really sure, reduces choke?; https://www.reddit.com/r/GlobalOffensive/comments/53il9l/fixing_all_choke_and_most_hitreg_issues_with_2/
