@@ -3,7 +3,7 @@ CFC either doesn't like what my rate is set to, my VPN, or just my internet in g
 
 This config's formatting was based on prsto's autoexec; https://pastebin.com/GprTEivh
 
-The client.vdf might crash you, don't use it for now, I'll fix it EVENTUALLY
+client.vdf should be fine now
 
 # Other Resources
 https://pastebin.com/raw/9HwNDj5c - 1/14/2025 GMOD Cvarlist
