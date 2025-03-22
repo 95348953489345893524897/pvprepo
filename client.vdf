@@ -2,6 +2,18 @@
 {
 	// Permanent link: https://github.com/95348953489345893524897/configs/
 
+	// CJ Furry Sandbox Custom Things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"sharky_thirdperson"		"0"
+	"sharky_thirdperson_side"		"0"
+	"sharky_thirdperson_bind"		"0"
+	"sharky_thirdperson_bind_side"		"0"
+	"sharky_thirdperson_dotonly"		"0"
+	"sharky_thirdperson_distance"		"60"
+	"sharky_thirdperson_offset"		"30"
+	"sharky_thirdperson_height"		"0"
+	"swb_glint_size"		"1"
+
 	// CFC Sandbox Custom Things
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	cfcpvp_startingmode			"1"
