@@ -1,5 +1,64 @@
 "CVars"
 {
+	// CFC Sandbox Custom Things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	cfcpvp_startingmode			"1"
+	cfc_chiplister_enabled			"0"
+	"cfc_pvp_acf_screenshake_intensity	"0"
+	"cfc_pvp_acf_screenshake_max_distance"	"1"
+	"voicebalancer_enabled"			"0"
+	"webbrowser_enabled"			"0"
+	"custom_hitmarkers_enabled"		"0"
+	"custom_hitmarkers_npc_enabled"		"0"
+	"custom_hitmarkers_ent_enabled"		"0"
+	"custom_hitmarkers_sound_enabled"	"0"
+	"custom_hitmarkers_dps_enabled"		"0"
+	"custom_hitmarkers_round_enabled"	"0"
+	
+	// Beanbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"bean_translator_source"		""	
+	"bean_translator_target" 		"en"
+	"bean_translator_toggle" 		"1"
+	"bean_shadows_toggle" 			"0"
+	"bean_render_distance" 			"0"
+	"bean_screenshake_maxamplitude" 	"-1" 
+	"bean_screenshake_maxradius" 		"-1" 
+	"bean_bhop" 				"1"					// autohops
+	"bean_nametag_worldscale" 		"0"
+	"bean_nametag_renderbehindwalls"	"1" 
+	"bean_nametag_distance" 		"10000" 
+	"bean_nametag_renderself" 		"0" 
+	"bean_nametag_enabled" 			"1" 
+	"bean_nametag_renderbehindwalls" 	"1"					// legal Esp lol
+	"bean_nametag_distance" 		"9999999"
+	
+	// Zoltins Sandbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"zbox_customscoreboard" 		"1"
+	"zbox_hitmarkers" 			"0"
+	"zbox_hitmarkers_killmarkers" 		"0"
+	"zbox_hitsounds_head" 			"profiteers/headmarker.ogg"
+	"zbox_hitsounds_hit" 			"profiteers/mwhitmarker.ogg"
+	"zbox_hitsounds_kill" 			"profiteers/newkillmarker.ogg"
+	"zbox_hitsounds_volume"			"1"
+	"zbox_nametags" 			"1"
+	"zbox_ragdollgore" 			"0"
+
+	// NPCZ Sandbox/Zbox custom things
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"wa_enable" 							"0"
+	"streamcore_disable" 						"1"
+	"cl_legs" 							"0"
+	sitting_allow_on_me                      			"0"
+	"npcz_gore"							"0" 
+	gmuwwyejtlctkzrkipcarkqqtbrkabtvdoyyephsryozokd  		""		// not sure what this does, set it to nothing
+	lvvroynjkbsojsdkqiijhkgspkjosyztaukgftjegnnwiiuxuduwxtwmivi 	""		// ^
+	wsorokiwvdqigdukvyniccrvstllcnrwhzitodfbtxjbijnrw 		""		// ^
+	mtsdziklqfzfasf                          			""		// ^ 
+	svvmwttfmmykccpran                       			""		// ^
+	npc_autoreconnect                        			"0"
+	
 	// CW 2.0
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"cw_blur_reload"		"0"
@@ -45,20 +104,6 @@
 	"acf_debris_giblifetime" 		"1"
 	"acf_drawboxes"				"0"
 	
-	// CFC Sandbox Custom Things
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	cfcpvp_startingmode			"1"
-	cfc_chiplister_enabled			"0"
-	"cfc_pvp_acf_screenshake_intensity	"0"
-	"cfc_pvp_acf_screenshake_max_distance"	"1"
-	"voicebalancer_enabled"			"0"
-	"webbrowser_enabled"			"0"
-	"custom_hitmarkers_enabled"		"0"
-	"custom_hitmarkers_npc_enabled"		"0"
-	"custom_hitmarkers_ent_enabled"		"0"
-	"custom_hitmarkers_sound_enabled"	"0"
-	"custom_hitmarkers_dps_enabled"		"0"
-	"custom_hitmarkers_round_enabled"	"0"
 	
 	// Rope Tool
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
@@ -91,36 +136,7 @@
 	fspectate_sfs 				"0"           
 	fspectate_weapon 			"0"           
 	fspectate_xray 				"0"
-	
-	// Beanbox custom things
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	"bean_translator_source"		""	
-	"bean_translator_target" 		"en"
-	"bean_translator_toggle" 		"1"
-	"bean_shadows_toggle" 			"0"
-	"bean_render_distance" 			"0"
-	"bean_screenshake_maxamplitude" 	"-1" 
-	"bean_screenshake_maxradius" 		"-1" 
-	"bean_bhop" 				"1"					// autohops
-	"bean_nametag_worldscale" 		"0"
-	"bean_nametag_renderbehindwalls"	"1" 
-	"bean_nametag_distance" 		"10000" 
-	"bean_nametag_renderself" 		"0" 
-	"bean_nametag_enabled" 			"1" 
-	"bean_nametag_renderbehindwalls" 	"1"					// legal Esp lol
-	"bean_nametag_distance" 		"9999999"
-	
-	// Zoltins Sandbox custom things
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	"zbox_customscoreboard" 		"1"
-	"zbox_hitmarkers" 			"0"
-	"zbox_hitmarkers_killmarkers" 		"0"
-	"zbox_hitsounds_head" 			"profiteers/headmarker.ogg"
-	"zbox_hitsounds_hit" 			"profiteers/mwhitmarker.ogg"
-	"zbox_hitsounds_kill" 			"profiteers/newkillmarker.ogg"
-	"zbox_hitsounds_volume"			"1"
-	"zbox_nametags" 			"1"
-	"zbox_ragdollgore" 			"0"
+
 	
 	// Starfall
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
@@ -143,20 +159,7 @@
 	"sf_render_rendertargets_max_cl"	"20"					// ?
 	"sf_render_pixvishandlesperframe_max_cl" "50"					// ?
 
-	// NPCZ Sandbox/Zbox custom things
-	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	"wa_enable" 							"0"
-	"streamcore_disable" 						"1"
-	"cl_legs" 							"0"
-	sitting_allow_on_me                      			"0"
-	"npcz_gore"							"0" 
-	gmuwwyejtlctkzrkipcarkqqtbrkabtvdoyyephsryozokd  		""		// not sure what this does, set it to nothing
-	lvvroynjkbsojsdkqiijhkgspkjosyztaukgftjegnnwiiuxuduwxtwmivi 	""		// ^
-	wsorokiwvdqigdukvyniccrvstllcnrwhzitodfbtxjbijnrw 		""		// ^
-	mtsdziklqfzfasf                          			""		// ^ 
-	svvmwttfmmykccpran                       			""		// ^
-	npc_autoreconnect                        			"0"
-	
+
 	// PAC
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"pac_enable"				"0"
