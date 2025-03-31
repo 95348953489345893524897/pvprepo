@@ -73,6 +73,10 @@ alias	"menu_toggle"			"menu_toggle1"
 alias	"menu_toggle1"			"alias menu_toggle menu_toggle2; +menu"
 alias	"menu_toggle2"			"alias menu_toggle menu_toggle1; -menu"
 
+// MAGA vapes
+alias +maga "+reload; +attack2"
+alias -maga "-reload; -attack2"
+
 bind	"0"				"slot0"
 bind	"1" 				"slot1"
 bind	"2" 				"slot2"
