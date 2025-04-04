@@ -72,7 +72,8 @@
 	mtsdziklqfzfasf                          			""		// ^ 
 	svvmwttfmmykccpran                       			""		// ^
 	npc_autoreconnect                        			"0"
-	
+	wowozela_volume							"0.25"		// Wowozela is really loud by default
+
 	// CW 2.0
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"cw_blur_reload"		"0"
