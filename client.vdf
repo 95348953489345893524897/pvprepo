@@ -8,6 +8,7 @@
 											// This spams https requests which is really annoying so I have to find a higher value 
 	"express_download_max_attempts"		"0"
 	"express_download_retry_delay"		"10000000"
+	"express_timeout"			"1"
 	
 	// HL1
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
