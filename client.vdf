@@ -2,6 +2,30 @@
 {
 	// Permanent link: https://github.com/95348953489345893524897/configs/
 
+	// Viewmod
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"viewmod_enable"			"0"					// Viewmod disables my suitzoom so I don't really like it
+	"viewmod_thirdperson"			"0"
+	"viewmod_worldmodel"			"0"
+	"viewmod_flip"				"0"
+	"viewmod_useweppos"			"1"
+	"viewmod_zoom"				"0"
+	"viewmod_fov"				"0.000000"
+	"viewmod_bob"				"-10.000000"
+	"viewmod_sway"				"-25.000000"
+	"viewmod_x"				"-15.000000"
+	"viewmod_y"				"-15.000000"
+	"viewmod_z"				"-15.000000"
+	"viewmod_pitch"				"-180.000000"
+	"viewmod_yaw"				"-180.000000"
+	"viewmod_roll"				"-180.000000"
+	"viewmod_tpy"				"80.000000"
+	"viewmod_tpx"				"40.000000"
+	"viewmod_tpz"				"-10.000000"
+	"viewmod_oldtpaim"			"0"
+	"viewmod_aimzoom"			"1"
+	"viewmod_zoom2"				"87.000000"
+
 	// Express
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"express_download_chunk_size"		"1"					// I usually time out of CFC when setting this to the default, I will have to test these convars more to see the limit
