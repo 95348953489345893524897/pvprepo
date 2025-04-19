@@ -12,10 +12,10 @@
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"sharky_thirdperson"			"0"					// Enable disable
 	"sharky_thirdperson_side"		"0"					// Whether or not to use sideview with sharky third person
-	"sharky_thirdperson_bind"		""					// don't need a bind
-	"sharky_thirdperson_bind_side"		""					// don't need a bind
+	"sharky_thirdperson_bind"		""					// Don't need a bind
+	"sharky_thirdperson_bind_side"		""					// Don't need a bind
 	"sharky_thirdperson_dotonly"		"0"					// ? figure out what this is later
-	"sharky_thirdperson_distance"		"120"					// like simple thirdperson cam distsance
+	"sharky_thirdperson_distance"		"120"					// Like simple thirdperson cam distsance
 	"sharky_thirdperson_offset"		"0"					// Side offset					
 	"sharky_thirdperson_height"		"0"					// Height offset
 	"swb_glint_size"			"0"					// Completely obscures other players scoping if you don't download the addon, so set to 0
