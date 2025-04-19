@@ -4,8 +4,8 @@
 
 	// Fittr (Improved Outfitter)
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-	"fittr_enabled"				"0"					// sorry bud
-	"fittr_maxsize"				"0.00001"				// max size of models to download
+	"fittr_enabled"				"0"					// Sorry bud
+	"fittr_maxsize"				"0.00001"				// Max size of models to download
 	"fittr_debug" 				"0"					// Default
 
 	// CJ Furry Sandbox Custom Things
