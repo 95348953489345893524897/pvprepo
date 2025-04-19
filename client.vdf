@@ -2,6 +2,12 @@
 {
 	// Permanent link: https://github.com/95348953489345893524897/configs/
 
+	// Fittr (Improved Outfitter)
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"fittr_enabled"				"0"					// sorry bud
+	"fittr_maxsize"				"0.00001"				// max size of models to download
+	"fittr_debug" 				"0"					// Default
+
 	// CJ Furry Sandbox Custom Things
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"sharky_thirdperson"			"0"					// Enable disable
