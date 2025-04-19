@@ -2,6 +2,36 @@
 {
 	// Permanent link: https://github.com/95348953489345893524897/configs/
 
+	// Express
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"express_download_chunk_size"		"1"					// I usually time out of CFC when setting this to the default, I will have to test these convars more to see the limit
+											// This spams https requests which is really annoying so I have to find a higher value 
+	"express_download_max_attempts"		"0"
+	"express_download_retry_delay"		"10000000"
+	
+	// HL1
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	// Commenting out until i can even figure out what addon this is
+	//"hl1_cl_firelight"			"1"
+	//"hl1_cl_muzzleflash"			"1"
+	//"hl1_cl_muzzlesmoke"			"1"
+	//"hl1_cl_ejectshells"			"1"
+	//"hl1_cl_crosshair"			"1"
+	//"hl1_cl_crosshair_scale"		"1"
+	//"hl1_cl_hl2bob"			"0"
+	//"hl1_cl_viewmodelfov"			"90"
+	//"hl1_cl_bob"				"0"
+	//"hl1_cl_bobcycle"			"0.800000"
+	//"hl1_cl_bobup"			"0"
+	//"hl1_cl_rollangle"			"2"
+	//"hl1_cl_rollspeed"			"0"
+	//"hl1_cl_viewbob"			"0"
+	//"hl1_cl_bob_won"			"0"
+
+	// Ley's slop
+	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	"leyworkshopdls_disabledl"		"0"
+
 	// Fittr (Improved Outfitter)
 	¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 	"fittr_enabled"				"0"					// Sorry bud
