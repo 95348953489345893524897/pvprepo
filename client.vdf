@@ -445,7 +445,6 @@
 	"NEWLINE" "NEWLINE"
 	"// Other" "COMMENT"
 	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
-	"zoom_sensitivity_ratio" 		"1.04570982"				// sensitivity ratio 1 is actually around 0.25x, I think 1.04 is 1:1 sens
 	"gm_demo_icon"				"1"
 	"streamradio_mute"			"1"
 	"streamradio_volume"			"0"
