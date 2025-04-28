@@ -15,12 +15,9 @@ cl_show_connectionless_packet_warnings	"0"					// Show console messages about ig
 cl_showpos 				"1"					// Shows velocity
 cl_showfps				"1"					// 2 = smooth fps
 cl_showhelp 				"0"					// Annoying help popups 
-//cl_showhints 				"0"					// Same ^
-//cl_drawworldtooltips 			"1"					// This function creates a World Tip, similar to the one shown when aiming at a Thruster where it shows you its force.; https://wiki.facepunch.com/gmod/Global.AddWorldTip
 cl_steamoverlay_pos			"0"					// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 net_graphpos 				"1"					// 1 = right 2 = center 3 = left
 net_graph 				"1"					// Shows ping and more useful performance stats
-//gm_demo_icon 				"1"					// Has to be put in client.vdf, doesnt work in autoexec; Disables demo RECORDING png 
 spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
 cl_software_cursor 			"0"					// 1 = makes the cursor disappear, so don't use
 hud_fastswitch				"0"					// 0 = Click on weapon slot to switch instead of just using numbers
@@ -570,7 +567,6 @@ echo;echo;echo;
 echo;echo;echo;
 echo;echo;echo;
 echo;echo;echo;
-echo 	"optimal gmod pvp config LMAO - furry random"
 echo	""
 echo 	""
 echo 	" ┌──────────────────────────────────────────────────┐"
