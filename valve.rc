@@ -192,15 +192,15 @@ alias +unduckjump "+jump; -duck
 alias -unduckjump "-jump;"
 //bind space "+unduckjump"
 
-// hold f and double tap space to boost up
-alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 
-alias -f_pressed "alias +arthurjump ; alias -arthurjump ; -attack; -lookdown; -jump; bind space +jump " // make alias blank
+// Hold f and double tap space to boost 
+alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" // If F is pressed then set the alias 
+alias -f_pressed "alias +arthurjump ; alias -arthurjump ; -attack; -lookdown; -jump; bind space +jump " // If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 alias +arthurjump "+arthurjump1"
 alias -arthurjump "-arthurjump1"
-alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" // pull out grav gun and look straight down
-alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump;" // spawn propeller on release and punt it
-alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; ; cl_pitchspeed 225; gm_spawn models/props_c17/trappropeller_blade.mdl +attack;" // switch back to last weapon and default pitch speed
-alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; lastinv; -lookdown; undo;"
+alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 				// Pull out grav gun and look straight down
+alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump;" 
+alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; gm_spawn models/props_c17/trappropeller_blade.mdl; cl_pitchspeed 225" 		// Punt, spawn propeller and set pitchspeed to default
+alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; -lookdown; undo; lastinv;" // switch to last weapon and undo and reset everything
 // bind f +f_pressed
 
 // Crosshair
