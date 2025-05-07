@@ -202,6 +202,16 @@ alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; gm_spawn models/pro
 alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; undo; lastinv;" // switch to last weapon and undo and reset everything
 // bind f +f_pressed
 
+// Hold f and double tap space to potato jump
+alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; +duck; bind space +arthurjump ; use weapon_physgun;" 					// If F is pressed then set the alias 
+alias -f_pressed "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -duck; -jump; bind space +jump; -attack2; lastinv" 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+
+alias +arthurjump1 "alias +arthurjump +arthurjump2; +attack; +lookdown; use weapon_physgun; cl_pitchspeed 999999; +duck" 				// Pull out grav gun and look straight down
+alias -arthurjump1 "alias -arthurjump -arthurjump2; -lookdown; gm_spawn models/props_phx/misc/potato_launcher_chamber.mdl; " 
+alias +arthurjump2 "alias +arthurjump +arthurjump1;  cl_pitchspeed 400; +lookup; -duck" 		// Punt, spawn propeller and set pitchspeed to default
+alias -arthurjump2 "alias -arthurjump -arthurjump1; +attack2; undo; -lookup" // switch to last weapon and undo and reset everything
+bind f +f_pressed
+
 // Crosshair
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 crosshair 		 		"1"
