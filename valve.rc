@@ -194,7 +194,7 @@ alias -unduckjump "-jump;"
 
 // Hold f and double tap space to boost 
 alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 					// If F is pressed then set the alias 
-alias -f_pressed "alias +arthurjump ; alias -arthurjump ; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+alias -f_pressed "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
 alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 				// Pull out grav gun and look straight down
 alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump; -lookdown" 
