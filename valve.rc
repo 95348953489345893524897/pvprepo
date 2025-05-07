@@ -193,24 +193,24 @@ alias -unduckjump "-jump;"
 //bind space "+unduckjump"
 
 // Hold f and double tap space to boost 
-alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 					// If F is pressed then set the alias 
-alias -f_pressed "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+alias +f_pressedarthur "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 					// If F is pressed then set the alias 
+alias -f_pressedarthur "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
 alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 				// Pull out grav gun and look straight down
 alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump; -lookdown" 
 alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; gm_spawn models/props_c17/trappropeller_blade.mdl; cl_pitchspeed 225" 		// Punt, spawn propeller and set pitchspeed to default
 alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; undo; lastinv;" // switch to last weapon and undo and reset everything
-// bind f +f_pressed
+// bind f +f_pressedarthur
 
 // Hold f and double tap space to potato jump
-alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; +duck; bind space +arthurjump ; use weapon_physgun;" 					// If F is pressed then set the alias 
-alias -f_pressed "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -duck; -jump; bind space +jump; -attack2; lastinv" 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+alias +f_pressedpotato "alias +potatojump +potatojump1; alias -potatojump -potatojump1; +duck; bind space +potatojump ; use weapon_physgun;" 					// If F is pressed then set the alias 
+alias -f_pressedpotato "alias +potatojump; alias -potatojump; -attack; -lookdown; -duck; -jump; bind space +jump; -attack2; lastinv" 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
-alias +arthurjump1 "alias +arthurjump +arthurjump2; +attack; +lookdown; use weapon_physgun; cl_pitchspeed 999999; +duck" 				// Pull out grav gun and look straight down
-alias -arthurjump1 "alias -arthurjump -arthurjump2; -lookdown; gm_spawn models/props_phx/misc/potato_launcher_chamber.mdl; " 
-alias +arthurjump2 "alias +arthurjump +arthurjump1;  cl_pitchspeed 400; +lookup; -duck" 		// Punt, spawn propeller and set pitchspeed to default
-alias -arthurjump2 "alias -arthurjump -arthurjump1; +attack2; undo; -lookup" // switch to last weapon and undo and reset everything
-bind f +f_pressed
+alias +potatojump1 "alias +potatojump +potatojump2; +attack; +lookdown; use weapon_physgun; cl_pitchspeed 999999; +duck" 				// Pull out grav gun and look straight down
+alias -potatojump1 "alias -potatojump -potatojump2; -lookdown; gm_spawn models/props_phx/misc/potato_launcher_chamber.mdl; " 
+alias +potatojump2 "alias +potatojump +potatojump1;  cl_pitchspeed 400; +lookup; -duck" 		// Punt, spawn propeller and set pitchspeed to default
+alias -potatojump2 "alias -potatojump -potatojump1; +attack2; undo; -lookup" // switch to last weapon and undo and reset everything
+//bind f +f_pressedpotato
 
 // Crosshair
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
