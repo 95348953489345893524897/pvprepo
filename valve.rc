@@ -197,9 +197,9 @@ alias +f_pressed "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1
 alias -f_pressed "alias +arthurjump ; alias -arthurjump ; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
 alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 				// Pull out grav gun and look straight down
-alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump;" 
+alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump; -lookdown" 
 alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; gm_spawn models/props_c17/trappropeller_blade.mdl; cl_pitchspeed 225" 		// Punt, spawn propeller and set pitchspeed to default
-alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; -lookdown; undo; lastinv;" // switch to last weapon and undo and reset everything
+alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; undo; lastinv;" // switch to last weapon and undo and reset everything
 // bind f +f_pressed
 
 // Crosshair
