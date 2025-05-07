@@ -204,7 +204,7 @@ alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; undo; lastinv;" // 
 
 // Hold f and double tap space to potato jump
 alias +f_pressedpotato "alias +potatojump +potatojump1; alias -potatojump -potatojump1; +duck; bind space +potatojump ; use weapon_physgun;" 					// If F is pressed then set the alias 
-alias -f_pressedpotato "alias +potatojump; alias -potatojump; -attack; -lookdown; -duck; -jump; bind space +jump; -attack2; lastinv" 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+alias -f_pressedpotato "alias +potatojump; alias -potatojump; -attack; -lookdown; -duck; -jump; bind space +jump; -attack2; lastinv; -lookup" 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
 alias +potatojump1 "alias +potatojump +potatojump2; +attack; +lookdown; use weapon_physgun; cl_pitchspeed 999999; +duck" 				// Pull out grav gun and look straight down
 alias -potatojump1 "alias -potatojump -potatojump2; -lookdown; gm_spawn models/props_phx/misc/potato_launcher_chamber.mdl; " 
