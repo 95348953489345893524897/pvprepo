@@ -486,6 +486,7 @@ mat_vsync				"0"					// KEEP OFF, Force sync to vertical retrace; https://develo
 engine_no_focus_sleep 			"0"					// don't limit performance when the engine is not focused. the focus detection can be buggy on some systems and may throttle your game, without you knowing; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f 
 cl_phys_props_enable 			"0"					// Disable clientside physics props (must be set before loading a level); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 r_drawflecks 				"0"					// If set to 1, small chunks of rubble and dirt will be thrown up around bullet impact points.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+cl_new_impact_effects 			"1"					// Not sure how these new impact effects are meant to look, but setting this to 1 removes all my impact effects
 cl_detaildist				"0"					// render distance of detail props like grass
 cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist, fading is turned off; https://www.teamfortress.tv/20219/detail-sprite-commands
 cl_localnetworkbackdoor 		"0"					// the default value (1) causes slight FPS drops when playing on servers and it only provides benefits for people playing singleplayer; https://www.reddit.com/r/tf2/comments/4hiblq/a_quick_list_of_console_commands_that_should/
