@@ -66,7 +66,7 @@
 	"cfc_pvp_acf_screenshake_max_distance"	"1"
 	"voicebalancer_enabled"			"0"
 	"webbrowser_enabled"			"0"
-	"custom_hitmarkers_enabled"		"0"
+	"custom_hitmarkers_enabled"		"1"
 	"custom_hitmarkers_npc_enabled"		"0"
 	"custom_hitmarkers_ent_enabled"		"0"
 	"custom_hitmarkers_sound_enabled"	"0"
@@ -212,6 +212,7 @@
 	"sf_particles_max"			"1"
 	"sf_particleeffects_max_cl"		"1"
 	"sf_render_maxfonts"			"1"
+	"sf_timebuffer_cl"			"0.000000000000000000000001		// Should autokill basically any starfall 
 	"sf_render_maxrenderviewsperframe"	"2" 					// ?
 	"sf_render_rendertargets_max_cl"	"20"					// ?
 	"sf_render_pixvishandlesperframe_max_cl" "50"					// ?
