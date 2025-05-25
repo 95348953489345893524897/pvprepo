@@ -462,6 +462,6 @@
 	"cl_playerbodygroups"			"0"
 	"cl_showhints"				"0"
 	"cl_drawworldtooltips"			"1"
-	"gmod_drawhelp"				"0"
+	"gmod_drawhelp"				"1"					// 1 = draw top left HUD while toolgun is out
 	"NEWLINE" "NEWLINE"
 }
