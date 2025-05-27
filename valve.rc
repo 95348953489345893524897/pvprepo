@@ -369,7 +369,7 @@ alias 	"hl2spawnnoundo2" 		"alias hl2spawnnoundo hl2spawnnoundo1; hl22"
 alias 	"hl2give"			"hl2give1;hl2give2;hl2give3"		
 alias 	"hl2give1"			"gm_giveswep weapon_357 ; gm_giveswep weapon_pistol; gm_giveswep weapon_crossbow; gm_giveswep weapon_crowbar; gm_giveswep weapon_frag"
 alias 	"hl2give2"			"gm_giveswep weapon_physcannon; gm_giveswep weapon_ar2; gm_giveswep weapon_rpg; gm_giveswep weapon_slam; gm_giveswep weapon_shotgun"
-alias 	"hl2give3"			"gm_giveswep weapon_smg1; gm_giveswep weapon_medkit; gm_giveswep weapon_physgun; gm_giveswep gmod_tool"
+alias 	"hl2give3"			"gm_giveswep weapon_smg1; gm_giveswep gmod_tool; gm_giveswep weapon_physgun; gm_giveswep weapon_medkit"
 
 // M9K give commands
 // gm_spawnswep isn't needed, since this gives so many weapons that your ammo is already high enough.
