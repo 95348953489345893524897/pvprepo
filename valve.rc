@@ -103,7 +103,7 @@ bind	"q"		 		"+menu"
 bind	"r"		 		"+reload"
 bind	"s" 		 		"+back"
 unbind	"t"	 	
-unbind	"u" 				
+bind	"u" 				"messagemode2"
 bind	"v"			 	"noclip
 
 "alias" "+walwaysrecorddemo"		"+forward; exec alwaysrecorddemo"		// used to record a timestamped demo every x seconds, using https://gist.github.com/95348953489345893524897/1ef074079992546f6e0dc89e2ce9c12e
@@ -120,7 +120,7 @@ alias switchbindsalias2 "bind w +walias; bind a +aalias; bind s +salias; bind d 
 
 bind	"w"			 	"+forward"
 bind	"x" 			 	"lastinv"
-unbind	"y" 			 	
+bind	"y"				"messagemode" 			 	
 bind	"z"			 	"gmod_undo"
 bind	"[" 			 	"record fill; stop"				// Used to reset graphics and sometimes "unload" weapon models
 bind	"]" 			 	"stop"
