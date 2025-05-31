@@ -18,7 +18,6 @@ cl_showhelp 				"0"					// Annoying help popups
 cl_steamoverlay_pos			"0"					// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 net_graphpos 				"1"					// 1 = right 2 = center 3 = left
 net_graph 				"1"					// Shows ping and more useful performance stats
-spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
 cl_software_cursor 			"0"					// 1 = makes the cursor disappear, so don't use
 hud_fastswitch				"0"					// 0 = Click on weapon slot to switch instead of just using numbers
 cc_subtitles 				"0"					// 1 = don't show sound effect captions, just voice overs (i.e., won't help hearing impaired players); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
@@ -499,6 +498,7 @@ cl_drawthrusterseffects			"0"					// Thruster effects
 props_break_max_pieces 			"0"					// Broken prop max pieces 
 gmod_mcore_test 			"1"					// Free FPS for most people
 mat_queue_mode 				"2"					// Does something for FPS, forgot what, but I don't think it has any downsides
+spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
 
 // Fog/sky 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
