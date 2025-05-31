@@ -399,9 +399,41 @@ alias M9KGiveAll			"M9KGiveArs;M9kGiveMgs;M9KGivePistols;M9KGiveSgs;M9KGiveSrs;M
 //sbox_noclip 				"1"
 sv_cheats				"1"
 
+// Performance (Other)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+cl_forcepreload 			"0"					// "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+// cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+fps_max 				"240.5"					// Set fps limit to refresh rate; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
+mat_reducefillrate 			"1"					// Shaderthruput 0 = High (better Quality), 1 = Low (more fps); josel
+r_fastzreject 				"-1"					// Nvidia = -1 amd = 0 must change this based on gpu, (Values >1 enable a fast Z rejection algorithm, to be performed on the GPU (as opposed to on the CPU. The value `-1' autodetects hardware support for this feature, which is safer than forcing it.); https://www.reddit.com/r/apexlegends/comments/ivbq9j/my_autoexec_config_maximum_fps_no_quality_loss_pc/, https://steamcommunity.com/sharedfiles/filedetails/?id=1282254845
+mat_vsync				"0"					// KEEP OFF, Force sync to vertical retrace; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+engine_no_focus_sleep 			"0"					// don't limit performance when the engine is not focused. the focus detection can be buggy on some systems and may throttle your game, without you knowing; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f 
+cl_phys_props_enable 			"0"					// Disable clientside physics props (must be set before loading a level); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+r_drawflecks 				"0"					// If set to 1, small chunks of rubble and dirt will be thrown up around bullet impact points.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+cl_new_impact_effects 			"0"					// Not sure how these new impact effects are meant to look, but setting this to 1 removes all my impact effects
+cl_detaildist				"0"					// render distance of detail props like grass
+cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist, fading is turned off; https://www.teamfortress.tv/20219/detail-sprite-commands
+cl_localnetworkbackdoor 		"0"					// the default value (1) causes slight FPS drops when playing on servers and it only provides benefits for people playing singleplayer; https://www.reddit.com/r/tf2/comments/4hiblq/a_quick_list_of_console_commands_that_should/
+r_norefresh 				"1"					// Genuinely no idea; If set to 1, "Do not store a useless and unused frame time variable"; http://www.play-half-life.de/H-L_2.html; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
+sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
+r_decals				"64"					// Limits all decals 
+cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
+cl_drawthrusterseffects			"0"					// Thruster effects
+props_break_max_pieces 			"0"					// Broken prop max pieces 
+gmod_mcore_test 			"1"					// Free FPS for most people
+mat_queue_mode 				"2"					// Does something for FPS, forgot what, but I don't think it has any downsides
+spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
+mat_powersavingsmode			"0"					// no computer past 1999 should need this 
+
 // Graphics Settings
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+
 // Water
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 r_cheapwaterstart 			"300"					// Start of the CheapWater rendering (all before this range is expensive waterrendering); https://gist.github.com/joselgomezs/4396025
 r_cheapwaterend 			"1"					// End of the CheapWater rendering (all behind this range is black water); https://gist.github.com/joselgomezs/4396025 
 r_waterforceexpensive 			"0"
@@ -459,34 +491,6 @@ mat_aaquality 				"2"
 mat_forceaniso 				"16"					// adjust level of trilinear filtering (2, 4, 8, 16) higher numbers are more intensive; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
 mat_trilinear 				"0" 
 
-// Performance (Other)
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-cl_forcepreload 			"0"					// "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-// cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-fps_max 				"240.5"					// Set fps limit to refresh rate; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
-mat_reducefillrate 			"1"					// Shaderthruput 0 = High (better Quality), 1 = Low (more fps); josel
-r_fastzreject 				"-1"					// Nvidia = -1 amd = 0 must change this based on gpu, (Values >1 enable a fast Z rejection algorithm, to be performed on the GPU (as opposed to on the CPU. The value `-1' autodetects hardware support for this feature, which is safer than forcing it.); https://www.reddit.com/r/apexlegends/comments/ivbq9j/my_autoexec_config_maximum_fps_no_quality_loss_pc/, https://steamcommunity.com/sharedfiles/filedetails/?id=1282254845
-mat_vsync				"0"					// KEEP OFF, Force sync to vertical retrace; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
-engine_no_focus_sleep 			"0"					// don't limit performance when the engine is not focused. the focus detection can be buggy on some systems and may throttle your game, without you knowing; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f 
-cl_phys_props_enable 			"0"					// Disable clientside physics props (must be set before loading a level); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
-r_drawflecks 				"0"					// If set to 1, small chunks of rubble and dirt will be thrown up around bullet impact points.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-cl_new_impact_effects 			"0"					// Not sure how these new impact effects are meant to look, but setting this to 1 removes all my impact effects
-cl_detaildist				"0"					// render distance of detail props like grass
-cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist, fading is turned off; https://www.teamfortress.tv/20219/detail-sprite-commands
-cl_localnetworkbackdoor 		"0"					// the default value (1) causes slight FPS drops when playing on servers and it only provides benefits for people playing singleplayer; https://www.reddit.com/r/tf2/comments/4hiblq/a_quick_list_of_console_commands_that_should/
-r_norefresh 				"1"					// Genuinely no idea; If set to 1, "Do not store a useless and unused frame time variable"; http://www.play-half-life.de/H-L_2.html; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
-mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
-r_decals				"64"					// Limits all decals 
-cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
-cl_drawthrusterseffects			"0"					// Thruster effects
-props_break_max_pieces 			"0"					// Broken prop max pieces 
-gmod_mcore_test 			"1"					// Free FPS for most people
-mat_queue_mode 				"2"					// Does something for FPS, forgot what, but I don't think it has any downsides
-spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
-mat_powersavingsmode			"0"					// no computer past 1999 should need this 
-
 // Fog/sky 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 r_3dsky 				"0"					// No 3d skybox
@@ -520,6 +524,10 @@ mat_motion_blur_falling_intensity 	"0"
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 alias 	"window"			"mat_setvideomode 1920 1080 1"		// 1080p Window Mode
 alias 	"fullscreen"			"mat_setvideomode 1920 1080 0"		// 1080p Fullscreen
+
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
 
 // Sprays
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
