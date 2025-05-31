@@ -452,19 +452,6 @@ mat_bloomscale 				"0"
 r_lod 					"-8"					// model detail (-1 best quality)
 mat_mipmaptextures 			"1"					// recommended to keep at 1 = texture quality decreases with distance, unmipmapped textures are really annoying and grainy to look at far away
 
-// Motion Blur 
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-mat_motion_blur_enabled 		"0"
-mat_motion_blur_strength 		"0"
-mat_motion_blur_rotation_intensity 	"0"
-mat_motion_blur_percent_of_screen_max 	"0"
-mat_motion_blur_falling_intensity 	"0"
-
-// Resolution 
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-alias 	"window"			"mat_setvideomode 1920 1080 1"		// 1080p Window Mode
-alias 	"fullscreen"			"mat_setvideomode 1920 1080 0"		// 1080p Fullscreen
-
 // Filter + Anti-aliasing
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 mat_filtertextures 			"1"					// 1 = textures are rendered smoothly. 0 = textures will be blocky and unrealistic (similar to the original Doom!) but performance will be improved; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
@@ -520,6 +507,19 @@ rope_shake 				"0"
 rope_smooth 				"0"
 rope_subdiv 				"0"
 rope_wind_dist 				"0"
+
+// Motion Blur 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+mat_motion_blur_enabled 		"0"
+mat_motion_blur_strength 		"0"
+mat_motion_blur_rotation_intensity 	"0"
+mat_motion_blur_percent_of_screen_max 	"0"
+mat_motion_blur_falling_intensity 	"0"
+
+// Resolution 
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
+alias 	"window"			"mat_setvideomode 1920 1080 1"		// 1080p Window Mode
+alias 	"fullscreen"			"mat_setvideomode 1920 1080 0"		// 1080p Fullscreen
 
 // Sprays
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
