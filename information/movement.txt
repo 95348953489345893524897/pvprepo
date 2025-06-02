@@ -1,7 +1,13 @@
 Propfly
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 
+- Propkill servers:
+  - Iced Coffee's Propkill 103.217.254.28:27015
+  - propkill la 45.32.78.141:27015
+  - EU PROPKILL 51.254.7.253:27015
+  - chicago propkill server thing 69.39.225.6:27015
+  - propkill.net (on sandbox gamemode) 143.198.159.117:27015
 
-Sidehopping 
+Sidehopping  
 - add later
 
 Super Garry's Mod Server Movement
