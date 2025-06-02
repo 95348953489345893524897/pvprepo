@@ -13,6 +13,8 @@ Super Garry's Mod Movement
       3. Plate Jumping (1:56 - 2:45)
       4. Demonstration (2:47 - 3:00)
       5. Horizontal Plate Boost (3:01 - 3:30)
+  - how to move around with prop and such (By Bikes) - https://youtu.be/YU5ZIUSSpt8
+    - The other tutorial he made is a lot better so I'm not going to timestamp the video. 
 
 Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 - ABH, AFH, and ASH are not possible on vanilla servers. 
