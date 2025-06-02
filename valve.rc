@@ -89,7 +89,7 @@ bind	"d" 				"+moveright"
 bind	"e" 				"+use"
 bind	"f" 				"impulse 100"
 bind	"g" 				"impulse 201"
-bind	"h" 				"TOGGLE_ZOOM"
+bind	"h" 				"TOGGLE_ZOOM"					// Bind +zoom if you want to hold down the zoom key instead
 unbind	"i" 			
 bind	"j"				"snd_restart"
 bind	"k"				"kill; explode"					// Don't think explode works but whatever
