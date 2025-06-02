@@ -269,6 +269,7 @@ cl_weaponcolor				"-inf -inf -inf"			// default "0.30 1.80 2.10" ?
 cl_playercolor				"-inf -inf -inf"					// default ""0.24 0.34 0.41" ?
 cl_playerskin 				""					// not sure
 cl_defaultweapon 			"weapon_physgun"			// On-respawn weapon
+cl_autowepswitch 			"0"					// 0 = Don't switch to more powerful weapons when picked up, setting to 1 makes it so that if you have your physgun out and someone gives you a weapon it will automatically make you pick it up, which creates an obvious issue if you are building
 gmod_language				"zh-cn"					// china woo-hoo
 
 // Alias Bypasses
