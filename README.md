@@ -7,7 +7,8 @@ client.vdf should be fine now
 # Other Resources
 https://pastebin.com/raw/9HwNDj5c - 1/14/2025 GMOD Cvarlist
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 - Sticky Propkill/Propsurf Guide, most of the videos are privated :(
+https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 - Sticky Propkill/Propsurf Guide
+- most of the videos are privated :(
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2974655171 - M9K Gun Stats
 
