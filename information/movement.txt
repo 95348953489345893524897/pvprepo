@@ -4,7 +4,7 @@ Propfly
 Sidehopping 
 - add later
 
-Super Garry's Mod Movement
+Super Garry's Mod Server Movement
   - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox
   - SGMS fast guide (By Bikes) - https://www.youtube.com/watch?v=x52LSlBOCJY
     - Explains movement tech in the Super garry's Mod Server: 
