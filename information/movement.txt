@@ -1,24 +1,23 @@
-(Sticky's Propkill guide)[https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764]
-- ADD LATER
+Propfly
+- How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 
 
 Sidehopping 
 - add later
 
-(Bikes' Super Garry's Mod Fast Guide)[https://www.youtube.com/watch?v=x52LSlBOCJY]
-- Explains movement tech in the Super garry's Mod Server: 
-  1. Potato jumping (0:54 - 1:20)
-  2. Washing Machine boosting (1:25 - 1:52)
-  3. Plate Jumping (1:56 - 2:45)
-  4. Demonstration (2:47 - 3:00)
-  5. Horizontal Plate Boost (3:01 - 3:30)
-- Most of these tricks like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox
-
-
+Super Garry's Mod Movement
+  - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox
+  - SGMS fast guide (By Bikes) - https://www.youtube.com/watch?v=x52LSlBOCJY
+    - Explains movement tech in the Super garry's Mod Server: 
+      1. Potato jumping (0:54 - 1:20)
+      2. Washing Machine boosting (1:25 - 1:52)
+      3. Plate Jumping (1:56 - 2:45)
+      4. Demonstration (2:47 - 3:00)
+      5. Horizontal Plate Boost (3:01 - 3:30)
 
 Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 - ABH, AFH, and ASH are not possible on vanilla servers. 
 - Some servers like Friendly Garry's Mod Community (5.161.119.176:27015) and Neotek Gaming (74.91.116.249:27015) have ABH/AFH addons that make it possible.  
-  - https://www.youtube.com/watch?v=EfRIMwWbyrQ
+  - How to Backhop in Half-Life 2 (By Burny) - https://www.youtube.com/watch?v=EfRIMwWbyrQ 
     1. Accelerated Backhopping (0:33 - 1:02)
     2. Accelerated Sidehopping (1:03 - 1:27)
     3. Standing ABH (1:27 - 1:52)
