@@ -36,3 +36,6 @@ Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 
 Undoboosting/Cameraboosting
 -  add later
+
+Wallstrafing
+- add later
