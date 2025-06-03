@@ -1,2 +1,0 @@
-Base glitching with no-collide/precision 
-- add later
