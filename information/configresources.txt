@@ -1,6 +1,6 @@
 1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c 
 Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
-
+//--------------------------------
 // Example of incrementing alias
 // This one can be used as a toggle because it goes through only two commands
 alias 	"run" 		"run1"			                  // Create original alias that will be modified eventually
@@ -10,6 +10,7 @@ alias 	"run2" 		"alias run run1; command2"
 // Now that "run" is set to be "run2" now, command2 is run when the key bound to "run" is pressed 
 bind space run // Pressing space once will do command1, and then the second time space is pressed it will do command2
 
+//--------------------------------
 // Example of longer incrementing alias
 alias 	"run" 		"run1"			                 
 alias 	"run1"		"alias run run2; command1"    
@@ -18,6 +19,7 @@ alias 	"run3" 		"alias run run4; command2"
 alias 	"run4" 		"alias run run1; command2"    // Making sure that the last "runN" command returns to run1 using 'alias run run1' is necessary to make sure that the increment restarts itself.
 bind space run // Pressing space for the Nth time will run commandN, where N = the amount of times space was pressed.
 
+//--------------------------------
 // Example of an incrementing alias using + and - commands
 alias +run "+run1"                        // Create original alias that will be modified eventually
 alias -run "-run1"                        // Ditto ^
@@ -43,4 +45,5 @@ alias -run2 "alias -run -run1; CommandOnRelease2"
 // alias +run1 "alias +run +run2; +command"     : DOES WORK AS LONG AS THE LINE BELOW ALSO EXISTS
 // alias +run1 "alias +run +run2;"  
 
+//--------------------------------
 TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy 
