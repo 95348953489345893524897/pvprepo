@@ -9,6 +9,7 @@ ULX Psay spam to locate players (https://github.com/95348953489345893524897/conf
     - If the psay hits a target, it'll say that you need to input a message to pm someone.
     - Use this to triangulate players on the map
     - You can also put in a message to know exactly which player is in a specific direction, but it becomes spammy and people will get annoyed you are filling their chat with PMs.   
+- Add degrees that ulx psay works later
 
 Picked up weapon trails
   - Trails placed on weapons using the trail tool will still persist even when the weapon is picked up.
