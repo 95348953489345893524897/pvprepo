@@ -7,10 +7,3 @@ Picked up weapon trails
   - This lets you have trails on yourself without using wire/e2/starfall
   - add example video later
 
-Trolling builders with weapon pickups
-  - Cl_autowepswitch (Def. 1) - Automatically switch to picked up weapons (if more powerful) 
-  - Auto weapon switch was made for quake, where automatically swapping to a better weapon when picked up would be prefered.  
-  - The physgun is one of the "lowest power" weapons in GMOD, which means that people who have cl_autowepswitch set to 1 will automatically pick up basically any weapon that you spawn on them.
-  - This can be used to troll people busy building if you spawn a gun at their feet using gm_spawnswep or the middle mouse click in the Q menu.
-  - If they are using their physgun to hold a prop, they will automatically swap to the weapon given and start shooting.
-  - add example video later
