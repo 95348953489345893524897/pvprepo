@@ -12,7 +12,7 @@ Propfly/Propsurf
 //--------------------------------
 Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.
-    - How to do sidehop:
+    - How to do crouching sidehop:
       1. Crouch-jump and turn 90 degrees (left or right)
       2. Jump and don't let go of crouch. 
       3. Jump every time you hit the ground
@@ -27,7 +27,10 @@ Sidehopping
           - An exception is when you are curving the strafe away from walls with keys like W and S.
         - You can do sidehops while standing, but it's much harder.
     - How do to Standing Sidehop:
-      1. Add later
+      1. Start a crouching sidehop
+      2. Once you reach around 2000 velocity (8-10 hops), crouch jump
+        - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time 
+      3. Continue to sidehop like normal, except now you are standing. Understanding the direction is considerably more difficult and there is less speed benefit, so this method is pretty much just for flashiness or fun.
 
 //--------------------------------
 Super Garry's Mod Server Movement
