@@ -18,7 +18,7 @@ alias 	"zoomtoggle" 		"zoomtoggle1"
 alias 	"zoomtoggle1"		"alias zoomtoggle zoomtoggle2; +zoom"    // Use +zoom when I press the key
 alias 	"zoomtoggle2" 		"alias zoomtoggle zoomtoggle1; -zoom"  // Stop zooming in when I press the key again
 // Using this, you have now made a way of making held down buttons toggleable. 
-// This isn't particularly useful in the case of +zoom, since you can just use toggle_zoom, but there are other commands that it can be applied to.
+// This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands that it can be applied to.
 
 //--------------------------------
 // Longer incrementing alias
