@@ -9,6 +9,7 @@ Propfly/Propsurf
   - chicago propkill server thing 69.39.225.6:27015
   - propkill.net (on sandbox gamemode) 143.198.159.117:27015
 
+//--------------------------------
 Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.
     - How to do sidehop:
@@ -26,6 +27,7 @@ Sidehopping
           - An exception is when you are curving the strafe away from walls with keys like W and S.
         - You can do sidehops while standing, but it's much harder.
 
+//--------------------------------
 Super Garry's Mod Server Movement
   - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox
   - SGMS fast guide (By Bikes) - https://www.youtube.com/watch?v=x52LSlBOCJY
@@ -38,6 +40,7 @@ Super Garry's Mod Server Movement
   - how to move around with prop and such (By Bikes) - https://youtu.be/YU5ZIUSSpt8
     - The other tutorial he made is a lot better so I'm not going to timestamp the video. 
 
+//--------------------------------
 Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 - ABH, AFH, and ASH are not possible on vanilla servers. 
 - Some servers like Friendly Garry's Mod Community (5.161.119.176:27015) and Neotek Gaming (74.91.116.249:27015) have ABH/AFH addons that make it possible.  
@@ -50,9 +53,11 @@ Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
     6. Standing ASH without walking (2:22 - 2:34) 
     7. Accelerated Forward Hopping (2:54 - 3:18) -- The circle strafe he does isn't needed to AFH but gives a bit more starting speed
 
+//--------------------------------
 Undoboosting/Cameraboosting
 -  add later
 
+//--------------------------------
 Wallstrafing
 - add later
 
