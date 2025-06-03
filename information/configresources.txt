@@ -32,6 +32,15 @@ alias 	"run4" 		"alias run run1; command2"
 bind space run // Pressing space for the Nth time will run commandN, where N = the amount of times space was pressed.
 
 Real Example:
+alias 	"ortsmeiser" 		"ortsmeiser1"			                 
+alias 	"ortsmeiser1"		"alias ortsmeiser ortsmeiser2; say johnyplayer12: I THINK ORTSMEISER IS CHEATING"    
+alias 	"ortsmeiser2" 		"alias ortsmeiser ortsmeiser3; say palfriend2: ADMIN KICK HIM"
+alias 	"ortsmeiser3" 		"alias ortsmeiser ortsmeiser4; say coolandkind: PLZ KICK ORTSMEISER"
+alias 	"ortsmeiser4" 		"alias ortsmeiser ortsmeiser1; say calmandcool: ortsmeiser he is cheater"    
+// Ortsmeiser is the one who originally introduced me to this 
+// One of the common uses for longer incrementing aliases is to copy paste and cycle through hackussations from other players
+// It can be increment much much longer than through 4 commands, I've gotten it to 500 with no issues.
+
 //--------------------------------
 // Example of an incrementing alias using + and - commands
 alias +run "+run1"                        // Create original alias that will be modified eventually
