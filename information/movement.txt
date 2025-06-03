@@ -26,6 +26,8 @@ Sidehopping
         - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.
           - An exception is when you are curving the strafe away from walls with keys like W and S.
         - You can do sidehops while standing, but it's much harder.
+    - How do to Standing Sidehop:
+      1. Add later
 
 //--------------------------------
 Super Garry's Mod Server Movement
