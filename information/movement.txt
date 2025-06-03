@@ -10,7 +10,21 @@ Propfly/Propsurf
   - propkill.net (on sandbox gamemode) 143.198.159.117:27015
 
 Sidehopping  
-- add later
+  - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.
+    - How to do sidehop:
+      1. Crouch-jump and turn 90 degrees (left or right)
+      2. Jump and don't let go of crouch. 
+      3. Jump every time you hit the ground
+      4. While you are in the air, turn your aim in the direction corresponding to the side you turned on 
+        - Aiming in the wrong direction will either make you go in a direction other than where you want, or it will instantly kill your velocity.
+        - If you turned left 90 degrees:
+          - Turn your aim left if you are going forwards, and turn your aim right if you are going backwards
+        - If you turned right 90 degrees:
+          - Turn your aim right if you are going forwards, and turn your aim left if you are going backwards
+      - Notes: 
+        - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.
+          - An exception is when you are curving the strafe away from walls with keys like W and S.
+        - You can do sidehops while standing, but it's much harder.
 
 Super Garry's Mod Server Movement
   - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox
