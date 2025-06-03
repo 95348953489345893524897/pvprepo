@@ -39,3 +39,6 @@ Undoboosting/Cameraboosting
 
 Wallstrafing
 - add later
+
+Balloons
+- add later
