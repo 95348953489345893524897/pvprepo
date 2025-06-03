@@ -1,5 +1,5 @@
-Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
 1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c 
+Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
 
 // Example of incrementing alias
 // This one can be used as a toggle because it goes through only two commands
