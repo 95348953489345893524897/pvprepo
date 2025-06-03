@@ -1,0 +1,15 @@
+TF2 HUD Tutorials (By Raysfire) - https://www.youtube.com/playlist?list=PL5eNrB8RrXXvohogCcKNKyk9SJxa26ltz
+Valve Dev wiki page on hudlayout.res - https://developer.valvesoftware.com/wiki/HudLayout.res
+
+HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189 
+  - Makes the process a lot simpler
+- Issues I've come across:
+  - 'TargetIDSmall' isn't a valid font
+    - Solution: using https://gist.github.com/95348953489345893524897/42ea70d17f64e3f89bc7da5ab649e4df (Thanks Redox)
+      - Forgot how exactly to fix it, but I know that I did it at some point using that text. 
+  - Weapon Icons being boxes
+    - Solution: Can't remember
+  - Console font being wrong
+    - Solution: Can't remember 
+  - Chat font being wrong
+    - Solution: Can't remember
