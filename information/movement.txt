@@ -1,3 +1,7 @@
+HL2:DM Bug Guide (By Hman & Paradiser) https://steamcommunity.com/sharedfiles/filedetails/?id=910513517
+Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
+
+//--------------------------------
 Propfly/Propsurf
 - Propkill Spawnlist (From S0lum) - https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2
   - Put in GarrysMod\garrysmod\settings\spawnlist
