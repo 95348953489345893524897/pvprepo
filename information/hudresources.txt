@@ -1,8 +1,15 @@
 TF2 HUD Tutorials (By Raysfire) - https://www.youtube.com/playlist?list=PL5eNrB8RrXXvohogCcKNKyk9SJxa26ltz
 Valve Dev wiki page on hudlayout.res - https://developer.valvesoftware.com/wiki/HudLayout.res
 
+//--------------------------------
 HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189 
-  - Makes the process a lot simpler
+  - This makes the process a lot simpler, but it isn't meant for Garry's Mod, it was made for HL2. 
+  - Back up these folders if you're going to use a hud from HPH
+    - GarrysMod\garrysmod\HPH\scripts
+    - GarrysMod\garrysmod\HPH\cfg         // This folder isn't necessary at all, and you should probably delete it. It overwrites valve.rc, which is the file that my config uses.
+    - GarrysMod\garrysmod\HPH\materials
+    - GarrysMod\garrysmod\HPH\media
+    - GarrysMod\garrysmod\HPH\resource
 - Issues I've come across:
   - 'TargetIDSmall' isn't a valid font
     - Solution: using https://gist.github.com/95348953489345893524897/42ea70d17f64e3f89bc7da5ab649e4df (Thanks Redox)
