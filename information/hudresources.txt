@@ -11,17 +11,34 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
     - GarrysMod\garrysmod\HPH\media
     - GarrysMod\garrysmod\HPH\resource
   Issues I've come across:
-   'TargetIDSmall' isn't a valid font / performing arithmetic on w cl_targetid.lua error  
+  Killfeed icons being wrong
+    - Solution:
+      1. Replace 
+  Captions font being too small 
+    - Solution:
+      1. Replace "HL2MPTypeDeath" section in GarrysMod\garrysmod\resource\ClientScheme.res with "HL2MPTypeDeath" section in yourhudbackupfolder\resource\ClientScheme.res
+  'TargetIDSmall' isn't a valid font / performing arithmetic on w cl_targetid.lua error  
     - Solution: 
       1. Copy this: https://gist.github.com/95348953489345893524897/42ea70d17f64e3f89bc7da5ab649e4df (Thanks Redox)
       2. Paste into GarrysMod\garrysmod\resource\ClientScheme.res under the "TargetID" section
-  - Weapon Icons being boxes
-    - Solution: Can't remember
+   Font showing player name is too big / weird looking
+    - Solution: 
+      1. Replace "TargetID" section in GarrysMod\garrysmod\resource\ClientScheme.res with "TargetID" section in yourbackupfolder\resource\ClientScheme.res
+  GMOD startup screen being lambda symbol
+    - Solution:
+      1. Find later
+  Weapon Icons being boxes / weird looking
+    - Solution: 
+      1. Replace "WeaponIconsSelected" section in GarrysMod\garrysmod\resource\ClientScheme.res 
+      2. Replace "WeaponIcons" section in ClientScheme.res
+  Weapon Selection numbers being too big
+    - Solution: 
+      1. Replace "HudSelectionNumbers" section in ClientScheme.res
   - Console font being wrong
     - Solution: Can't remember 
    Chat font being wrong / weirdly bold / crunched
     - Solution: 
-      1. Go to yourhudbackupfolder/resource/
+      1. Go to yourhudbackupfolder\resource\
       2. Open ChatScheme.Res
       3. Copy the bitmap font and fonts sections
         - Usually these lines: 
