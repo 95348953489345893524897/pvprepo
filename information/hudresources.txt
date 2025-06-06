@@ -4,7 +4,7 @@ Valve Dev wiki page on hudlayout.res - https://developer.valvesoftware.com/wiki/
 //--------------------------------
 HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189 
   - This makes the process a lot simpler, but it isn't meant for Garry's Mod, it was made for HL2. 
-  - Back up these folders if you're going to use a hud from HPH
+  - ***BACK UP THESE FOLDERS*** if you're going to use a hud from HPH, it makes fixing the issues MUCH easier
     - GarrysMod\garrysmod\HPH\scripts
     - GarrysMod\garrysmod\HPH\cfg         // This folder isn't necessary at all, and you should probably delete it. It overwrites valve.rc, which is the file that my config uses.
     - GarrysMod\garrysmod\HPH\materials
@@ -18,5 +18,14 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
     - Solution: Can't remember
   - Console font being wrong
     - Solution: Can't remember 
-  - Chat font being wrong
-    - Solution: Can't remember
+  - Chat font being wrong / weirdly bold / crunched
+    - Solution: 
+      1. Go to yourhudbackupfolder/resource/
+      2. Open ChatScheme.Res
+      3. Copy the bitmap font and fonts sections
+        - Usually these lines: 
+          - from //////////////////////// BITMAP FONT FILES /////////////////////////////
+          - to //
+          - or to //////////////////// BORDERS //////////////////////////////
+      4. Replace the bitmap font and fonts sections in GarrysMod\garrysmod\resource\ChatScheme.res
+          
