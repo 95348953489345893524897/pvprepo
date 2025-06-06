@@ -10,7 +10,7 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
     - GarrysMod\garrysmod\HPH\materials
     - GarrysMod\garrysmod\HPH\media
     - GarrysMod\garrysmod\HPH\resource
-- Issues I've come across:
+  Issues I've come across:
   - 'TargetIDSmall' isn't a valid font
     - Solution: using https://gist.github.com/95348953489345893524897/42ea70d17f64e3f89bc7da5ab649e4df (Thanks Redox)
       - Forgot how exactly to fix it, but I know that I did it at some point using that text. 
