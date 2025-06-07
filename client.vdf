@@ -2,6 +2,10 @@
 {
 	"// Permanent link: https://github.com/95348953489345893524897/configs/" "COMMENT"
 	"NEWLINE" "NEWLINE"
+	"// Supers" "COMMENT"
+	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"super_hints"				"0"					// Hints at top of screen
+	"super_hud"				"0"					// Set to 0 if youre using a custom hud
 	"// Viewmod" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"viewmod_enable"			"0"					// Viewmod disables my suitzoom so I don't really like it
