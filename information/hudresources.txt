@@ -11,12 +11,15 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
     - GarrysMod\garrysmod\HPH\media
     - GarrysMod\garrysmod\HPH\resource
   Issues I've come across:
+  Chat filters being wrong / extra option
+    1. Replace GarrysMod\garrysmod\resource\ui\chatfilters.res with yourhudbackupfolder\resource\ui\chatfilters.res
   Killfeed icons being wrong
     - Solution:
-      1. Replace 
+      1. Replace "HL2MPTypeDeath" section in GarrysMod\garrysmod\resource\ClientScheme.res with "HL2MPTypeDeath" section in yourhudbackupfolder\resource\ClientScheme.res
+      2. Copy GarrysMod\garrysmod\resource\HL2MP.ttf and paste into GarrysMod\garrysmod\resource\fonts"
   Captions font being too small 
     - Solution:
-      1. Replace "HL2MPTypeDeath" section in GarrysMod\garrysmod\resource\ClientScheme.res with "HL2MPTypeDeath" section in yourhudbackupfolder\resource\ClientScheme.res
+      1. 
   'TargetIDSmall' isn't a valid font / performing arithmetic on w cl_targetid.lua error  
     - Solution: 
       1. Copy this: https://gist.github.com/95348953489345893524897/42ea70d17f64e3f89bc7da5ab649e4df (Thanks Redox)
@@ -29,8 +32,8 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
       1. Find later
   Weapon Icons being boxes / weird looking
     - Solution: 
-      1. Replace "WeaponIconsSelected" section in GarrysMod\garrysmod\resource\ClientScheme.res 
-      2. Replace "WeaponIcons" section in ClientScheme.res
+      1. Replace "WeaponIconsSelected" section in GarrysMod\garrysmod\resource\ClientScheme.res with "WeaponIconsSelected" section in yourhudbackupfolder\resource\ClientScheme.res
+      2. Replace "WeaponIcons" section in GarrysMod\garrysmod\resource\ClientScheme with "WeaponIcons" section in yourhudbackupfolder\resource\ClientScheme.res
   Weapon Selection numbers being too big
     - Solution: 
       1. Replace "HudSelectionNumbers" section in ClientScheme.res
@@ -38,12 +41,5 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
     - Solution: Can't remember 
    Chat font being wrong / weirdly bold / crunched
     - Solution: 
-      1. Go to yourhudbackupfolder\resource\
-      2. Open ChatScheme.Res
-      3. Copy the bitmap font and fonts sections
-        - Usually these lines: 
-          - from //////////////////////// BITMAP FONT FILES /////////////////////////////
-          - to //
-          - or to //////////////////// BORDERS //////////////////////////////
-      4. Replace the bitmap font and fonts sections in GarrysMod\garrysmod\resource\ChatScheme.res
+      1. Replace the  fonts sections in GarrysMod\garrysmod\resource\ChatScheme.res with the fonts sections in yourhudbackupfolder\resource\ChatScheme.res
           
