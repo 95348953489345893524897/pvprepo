@@ -30,7 +30,11 @@ HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189
       1. Replace "TargetID" section in GarrysMod\garrysmod\resource\ClientScheme.res with "TargetID" section in yourbackupfolder\resource\ClientScheme.res
   GMOD startup screen being lambda symbol
     - Solution:
-      1. Find later
+      1. Delete these files:
+        - GarrysMod\garrysmod\materials\console\background01.vtf
+        - GarrysMod\garrysmod\materials\console\background01_widescreen.vtf
+        - GarrysMod\garrysmod\materials\console\background01.vmt
+        - GarrysMod\garrysmod\materials\console\background01_widescreen.vmt
   Weapon Icons being boxes / weird looking
     - Solution: 
       1. Replace "WeaponIconsSelected" section in GarrysMod\garrysmod\resource\ClientScheme.res with "WeaponIconsSelected" section in yourhudbackupfolder\resource\ClientScheme.res
