@@ -1,5 +1,6 @@
 TF2 HUD Tutorials (By Raysfire) - https://www.youtube.com/playlist?list=PL5eNrB8RrXXvohogCcKNKyk9SJxa26ltz
 Valve Dev wiki page on hudlayout.res - https://developer.valvesoftware.com/wiki/HudLayout.res
+TF2 Hud Reference (By JarateKing) https://github.com/JarateKing/TF2-Hud-Reference/
 
 //--------------------------------
 HL2 PRED'S HUDS (HPH.exe HUD maker) https://gamebanana.com/mods/345189 
