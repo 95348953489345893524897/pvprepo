@@ -3,7 +3,7 @@ Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/<br/>
 
 
 # Incrementing alias
-This alias can create a toggle because it goes through two commands in two runs\
+This alias can create a toggle because it goes through two commands in two runs<br/>
 ```
 alias 	"run" 		"run1"			                  // Create original alias that will be changed on keypress
 alias 	"run1"		"alias run run2; command1"    
@@ -12,7 +12,7 @@ alias 	"run2" 		"alias run run1; command2"
 // Now that "run" is set to be "run2", command2 is run when the key bound to "run" is pressed 
 bind "space" "run" // Pressing space once will do command1, and then the second time space is pressed it will do command2
 ```
-Real example:\
+Real example:<br/>
 ```
 bind key "zoomtoggle"  // Make bind for the command
 
@@ -20,11 +20,11 @@ alias 	"zoomtoggle" 		"zoomtoggle1"
 alias 	"zoomtoggle1"		"alias zoomtoggle zoomtoggle2; +zoom"    // Use +zoom when I press the key
 alias 	"zoomtoggle2" 		"alias zoomtoggle zoomtoggle1; -zoom"  // Stop zooming in when I press the key again
 ```
-Using this, you have now made a way of making held down buttons toggleable.\
-This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands incrementing aliases can make into toggle commands.\
+Using this, you have now made a way of making held down buttons toggleable.<br/>
+This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands incrementing aliases can make into toggle commands.<br/>
 
 # Longer incrementing aliases
-Ortsmeiser is the one who originally introduced me to this\
+Ortsmeiser is the one who originally introduced me to this<br/>
 ```
 alias 	"run" 		"run1"			                 
 alias 	"run1"		"alias run run2; command1"    
@@ -44,11 +44,11 @@ alias 	"ortsmeiser2" 		"alias ortsmeiser ortsmeiser3; say palfriend2: ADMIN KICK
 alias 	"ortsmeiser3" 		"alias ortsmeiser ortsmeiser4; say coolandkind: PLZ KICK ORTSMEISER"
 alias 	"ortsmeiser4" 		"alias ortsmeiser ortsmeiser1; say calmandcool: ortsmeiser he is cheater"    
 ```
-One of the common uses for longer incrementing aliases is to copy paste and cycle through haccusations from other players\
-It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.\
+One of the common uses for longer incrementing aliases is to copy paste and cycle through haccusations from other players<br/>
+It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.<br/>
 
 # Incrementing alias using + and - commands
-This works almost the same as a normal incrementing alias, except that it can do a different command on the press and release of the key.\
+This works almost the same as a normal incrementing alias, except that it can do a different command on the press and release of the key.<br/>
 ```
 alias +run "+run1"                        // Create original alias that will be modified eventually
 alias -run "-run1"                        // Ditto ^
@@ -63,9 +63,9 @@ alias +run2 "alias +run +run1; CommandOnPress2"
 alias -run2 "alias -run -run1; CommandOnRelease2"
 // Now that "+run" is set to be "+run2" now, CommandOnRelease2 is ran when the key bound to "+run" is released
 ```
-This type of incrementing alias is useful for when you want to use press/release commands like +attack but also have the increment change when you release the key.\
+This type of incrementing alias is useful for when you want to use press/release commands like +attack but also have the increment change when you release the key.<br/>
 
-Real example:\
+Real example:<br/>
 ```
 // fast switch m9k weapons by clicking, which cancels the pullout animations more reliably  
 alias +m9kswitch "+m9kswitch1"
@@ -78,29 +78,29 @@ alias -m9kswitch2 "alias -m9kswitch -m9kswitch1; "
 ```
 
 
-Setting a +command to be ran using a normal alias does not work, so it has to be made into a +alias.\
+Setting a +command to be ran using a normal alias does not work, so it has to be made into a +alias.<br/>
 
-For example:\
+For example:<br/>
 ```
 alias examplename "+command"
 ```
-Does not work.\
-So, the usual method of incrementing aliases would also not work:\
+Does not work.<br/>
+So, the usual method of incrementing aliases would also not work:<br/>
 ```
 alias 	"run1"		"alias run run2; +command"   
 ```
-Does not work properly\
+Does not work properly<br/>
 ```
 alias +run1 "alias +run +run2; +command" 
 ```
 ```
 alias +run1 "alias +run +run2; -command
 ```  
-Does work as long as the second line also exists\
+Does work as long as the second line also exists<br/>
 
 # Pseudorandomization of increments (2 increment aliases working together)
-TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy\
-Randomization of the incrementing is not possible, but pseudorandomization can be done by binding a ticker to a different key than the main increment.\
+TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy<br/>
+Randomization of the incrementing is not possible, but pseudorandomization can be done by binding a ticker to a different key than the main increment.<br/>
 ```
 // Main increment alias
 alias run_1 "say taco; run_tick"
@@ -120,9 +120,9 @@ bind space +jump; run_tick
 bind b "run" 
 ```
 
-Basically, what this does is make the incrementing seem random by running through it (by pressing space) without executing the command (the command is executed by B, bound to "run")\
+Basically, what this does is make the incrementing seem random by running through it (by pressing space) without executing the command (the command is executed by B, bound to "run")<br/>
 
-Real example:\
+Real example:<br/>
 ```
 alias pseudorandom_playermodel_1 "cl_playermodel alyx; pseudorandom_playermodel_tick"
 alias pseudorandom_playermodel_2 "cl_playermodel barney; pseudorandom_playermodel_tick"
