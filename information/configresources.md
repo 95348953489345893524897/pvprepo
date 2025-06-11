@@ -31,8 +31,8 @@ alias 	"run2" 		"alias run run3; command2"
 alias 	"run3" 		"alias run run4; command3"
 alias 	"run4" 		"alias run run1; command4"    
                               // HERE ^
-                          // Making sure that the last "runN" command returns to run1, shown by the 'HERE ^', is necessary to make sure that the increment restarts itself.
-bind space run // Pressing space for the Nth time will run commandN, where N = the amount of times space was pressed.
+                              // Making sure that the last "runN" command returns to run1, shown by the 'HERE ^', is necessary to make sure that the increment restarts itself.
+bind "space" "run"            // Pressing space for the Nth time will run commandN, where N = the amount of times space was pressed.
 ```
 
 Real Example:
