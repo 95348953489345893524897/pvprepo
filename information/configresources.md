@@ -1,5 +1,8 @@
 1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c 
+
 Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
+
+TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy 
 
 
 # Incrementing alias
@@ -67,13 +70,16 @@ alias -run2 "alias -run -run1; CommandOnRelease2"
 // Now that "+run" is set to be "+run2" now, CommandOnRelease2 is ran when the key bound to "+run" is released
 ```
 This type of incrementing alias is useful for when you want to use press/release commands like +attack but also have the increment change when you release the key.
+
 Setting a +command to be ran using a normal alias does not work, so it has to be made into a +alias.
+
 For example: 
 ```
 alias examplename "+command"
 ```
 Does not work.
-So, the typical method of incrementing aliases would also not work.
+
+So, the usual method of incrementing aliases would also not work.
 ```
 alias 	"run1"		"alias run run2; +command"   
 ```
@@ -85,6 +91,7 @@ alias +run1 "alias +run +run2; +command"
 alias +run1 "alias +run +run2; -command
 ```  
 Does work as long as the second line also exists
+
 
 Real example:
 ```
@@ -98,4 +105,3 @@ alias -m9kswitch2 "alias -m9kswitch -m9kswitch1; "
 // bind mouse1 +m9kswitch
 ```
 //--------------------------------
-TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy 
