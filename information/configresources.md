@@ -1,5 +1,5 @@
-1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c\
-Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
+1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c<br/>
+Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/<br/>
 
 
 # Incrementing alias
