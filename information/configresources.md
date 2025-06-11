@@ -21,6 +21,7 @@ alias 	"zoomtoggle1"		"alias zoomtoggle zoomtoggle2; +zoom"    // Use +zoom when
 alias 	"zoomtoggle2" 		"alias zoomtoggle zoomtoggle1; -zoom"  // Stop zooming in when I press the key again
 ```
 Using this, you have now made a way of making held down buttons toggleable. 
+
 This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands incrementing aliases can make into toggle commands.
 
 # Longer incrementing alias
@@ -46,6 +47,7 @@ alias 	"ortsmeiser4" 		"alias ortsmeiser ortsmeiser1; say calmandcool: ortsmeise
 Ortsmeiser is the one who originally introduced me to this 
 
 One of the common uses for longer incrementing aliases is to copy paste and cycle through hackussations from other players
+
 It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.
 
 # Incrementing alias using + and - commands
