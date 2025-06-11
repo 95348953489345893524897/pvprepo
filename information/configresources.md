@@ -19,9 +19,10 @@ bind key "zoomtoggle"  // Make bind for the command
 alias 	"zoomtoggle" 		"zoomtoggle1"					
 alias 	"zoomtoggle1"		"alias zoomtoggle zoomtoggle2; +zoom"    // Use +zoom when I press the key
 alias 	"zoomtoggle2" 		"alias zoomtoggle zoomtoggle1; -zoom"  // Stop zooming in when I press the key again
-// Using this, you have now made a way of making held down buttons toggleable. 
-// This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands that it can be applied to.
 ```
+Using this, you have now made a way of making held down buttons toggleable. 
+This isn't particularly useful in the case of +zoom since you can just use toggle_zoom, but there are other commands that it can be applied to.
+
 # Longer incrementing alias
 ```
 alias 	"run" 		"run1"			                 
@@ -41,13 +42,13 @@ alias 	"ortsmeiser1"		"alias ortsmeiser ortsmeiser2; say johnyplayer12: I THINK 
 alias 	"ortsmeiser2" 		"alias ortsmeiser ortsmeiser3; say palfriend2: ADMIN KICK HIM"
 alias 	"ortsmeiser3" 		"alias ortsmeiser ortsmeiser4; say coolandkind: PLZ KICK ORTSMEISER"
 alias 	"ortsmeiser4" 		"alias ortsmeiser ortsmeiser1; say calmandcool: ortsmeiser he is cheater"    
-// Ortsmeiser is the one who originally introduced me to this 
-// One of the common uses for longer incrementing aliases is to copy paste and cycle through hackussations from other players
-// It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.
 ```
+Ortsmeiser is the one who originally introduced me to this 
+One of the common uses for longer incrementing aliases is to copy paste and cycle through hackussations from other players
+It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.
 
 # Incrementing alias using + and - commands
-// This works almost the same as a normal incrementing alias, except that it can do a different command on press and release of the key.
+This works almost the same as a normal incrementing alias, except that it can do a different command on the press and release of the key.
 ```
 alias +run "+run1"                        // Create original alias that will be modified eventually
 alias -run "-run1"                        // Ditto ^
@@ -78,11 +79,9 @@ Does not work properly
 alias +run1 "alias +run +run2; +command" 
 ```
 ```
-Does work as long as the line below also exists
-```
-```
 alias +run1 "alias +run +run2; -command
 ```  
+Does work as long as the second line also exists
 
 Real example:
 ```
