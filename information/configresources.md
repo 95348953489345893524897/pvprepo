@@ -36,7 +36,7 @@ alias 	"run4" 		"alias run run1; command4"
 bind "space" "run"            // Pressing space for the Nth time will run commandN, where N = the amount of times space was pressed.
 ```
 
-Real Example:\
+Real Example:<br/>
 ```
 alias 	"ortsmeiser" 		"ortsmeiser1"			                 
 alias 	"ortsmeiser1"		"alias ortsmeiser ortsmeiser2; say johnyplayer12: I THINK ORTSMEISER IS CHEATING"    
