@@ -3,8 +3,8 @@ Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
 
 
 # Incrementing alias
+This alias can create a toggle because it goes through two commands in two runs
 ```
-// This alias can create a toggle because it goes through two commands in two runs
 alias 	"run" 		"run1"			                  // Create original alias that will be modified eventually
 alias 	"run1"		"alias run run2; command1"    
 // pressing the key bound to "run" runs "run1", which runs command 1, and then changes the original "run" command to become "run2"
