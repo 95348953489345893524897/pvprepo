@@ -44,6 +44,7 @@ alias 	"ortsmeiser3" 		"alias ortsmeiser ortsmeiser4; say coolandkind: PLZ KICK 
 alias 	"ortsmeiser4" 		"alias ortsmeiser ortsmeiser1; say calmandcool: ortsmeiser he is cheater"    
 ```
 Ortsmeiser is the one who originally introduced me to this 
+
 One of the common uses for longer incrementing aliases is to copy paste and cycle through hackussations from other players
 It can be incremented much longer than for 4 commands, I've gotten it to 500 with no issues.
 
