@@ -69,6 +69,20 @@ alias -run2 "alias -run -run1; CommandOnRelease2"
 ```
 This type of incrementing alias is useful for when you want to use press/release commands like +attack but also have the increment change when you release the key.
 
+
+Real example:
+```
+// fast switch m9k weapons by clicking, which cancels the pullout animations more reliably  
+alias +m9kswitch "+m9kswitch1"
+alias -m9kswitch "-m9kswitch1"
+alias +m9kswitch1 "alias +m9kswitch +m9kswitch2; +attack"
+alias -m9kswitch1 "alias -m9kswitch -m9kswitch2; -attack"
+alias +m9kswitch2 "alias +m9kswitch +m9kswitch1; lastinv"
+alias -m9kswitch2 "alias -m9kswitch -m9kswitch1; "
+// bind mouse1 +m9kswitch
+```
+
+
 Setting a +command to be ran using a normal alias does not work, so it has to be made into a +alias.
 
 For example: 
@@ -90,18 +104,6 @@ alias +run1 "alias +run +run2; -command
 ```  
 Does work as long as the second line also exists
 
-
-Real example:
-```
-// fast switch m9k weapons by clicking, which cancels the pullout animations more reliably  
-alias +m9kswitch "+m9kswitch1"
-alias -m9kswitch "-m9kswitch1"
-alias +m9kswitch1 "alias +m9kswitch +m9kswitch2; +attack"
-alias -m9kswitch1 "alias -m9kswitch -m9kswitch2; -attack"
-alias +m9kswitch2 "alias +m9kswitch +m9kswitch1; lastinv"
-alias -m9kswitch2 "alias -m9kswitch -m9kswitch1; "
-// bind mouse1 +m9kswitch
-```
 # Pseudorandomization of increments (2 increment aliases working together)
 TF2 Random Script Maker - https://codepen.io/ytythythtyhytjtyjytjytj/pen/bxMrjy 
 
