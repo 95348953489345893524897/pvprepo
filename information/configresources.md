@@ -77,7 +77,7 @@ alias examplename "+command"
 ```
 Does not work.
 
-So, the usual method of incrementing aliases would also not work.
+So, the usual method of incrementing aliases would also not work:
 ```
 alias 	"run1"		"alias run run2; +command"   
 ```
