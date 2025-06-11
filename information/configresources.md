@@ -1,8 +1,8 @@
 1/14/2025 GMOD Cvarlist - https://pastebin.com/raw/9HwNDj5c 
 Useful config scripting info - https://www.reddit.com/r/tf2scripthelp/wiki/
 
-//--------------------------------
-// Incrementing alias
+
+# Incrementing alias
 // This alias can create a toggle because it goes through two commands in two runs
 alias 	"run" 		"run1"			                  // Create original alias that will be modified eventually
 alias 	"run1"		"alias run run2; command1"    
