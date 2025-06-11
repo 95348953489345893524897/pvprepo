@@ -10,7 +10,7 @@ alias 	"run1"		"alias run run2; command1"
 // pressing the key bound to "run" runs "run1", which runs command 1, and then changes the original "run" command to become "run2"
 alias 	"run2" 		"alias run run1; command2"
 // Now that "run" is set to be "run2", command2 is run when the key bound to "run" is pressed 
-bind space run // Pressing space once will do command1, and then the second time space is pressed it will do command2
+bind "space" "run" // Pressing space once will do command1, and then the second time space is pressed it will do command2
 ```
 Real example: 
 ```
