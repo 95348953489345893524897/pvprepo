@@ -22,24 +22,24 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
     - Video is ridiculously slowed down which I will fix later probably<br/>
     
    ## Crouching Sidehop:
-      1. Crouch-jump and turn 90 degrees (left or right)<br/>
-      2. Jump and don't let go of crouch. <br/>
-      3. Jump every time you hit the ground<br/>
-      4. While you are in the air, turn your aim in the direction corresponding to the side you turned on <br/>
-        - Aiming in the wrong direction will either make you go in a direction other than where you want, or it will instantly kill your velocity.<br/>
-        - If you turned left 90 degrees:<br/>
-          - Turn your aim left if you are going forwards, and turn your aim right if you are going backwards<br/>
-        - If you turned right 90 degrees:<br/>
-          - Turn your aim right if you are going forwards, and turn your aim left if you are going backwards<br/>
-      - Notes: <br/>
-        - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.<br/>
-          - An exception is when you are curving the strafe away from walls with keys like W and S.<br/>
+      1. Crouch-jump and turn 90 degrees (left or right)
+      2. Jump and don't let go of crouch. 
+      3. Jump every time you hit the ground
+      4. While you are in the air, turn your aim in the direction corresponding to the side you turned on
+        - Aiming in the wrong direction will either make you go in a direction other than where you want, or it will instantly kill your velocity.
+        - If you turned left 90 degrees:
+          - Turn your aim left if you are going forwards, and turn your aim right if you are going backwards
+        - If you turned right 90 degrees:
+          - Turn your aim right if you are going forwards, and turn your aim left if you are going backwards
+      - Notes: 
+        - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.
+          - An exception is when you are curving the strafe away from walls with keys like W and S.
         - You can do sidehops while standing, but it's much harder.
   ## Standing Sidehop:
-      1. Start a crouching sidehop<br/>
-      2. Once you reach around 2000 velocity (8-10 hops), crouch jump<br/>
-        - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time <br/>
-      3. Continue to sidehop like normal, except now you are standing. Understanding the direction is considerably more difficult and there is less speed benefit, so this method is pretty much just for flashiness or fun.<br/>
+      1. Start a crouching sidehop
+      2. Once you reach around 2000 velocity (8-10 hops), crouch jump
+        - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time 
+      3. Continue to sidehop like normal, except now you are standing. Understanding the direction is considerably more difficult and there is less speed benefit, so this method is pretty much just for flashiness or fun.
 
 # Super Garry's Mod Server exclusive movement
   - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox<br/>
