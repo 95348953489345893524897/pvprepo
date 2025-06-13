@@ -10,7 +10,7 @@ HPH.exe makes the process of making a HUD a lot simpler, but it isn't meant for 
     - GarrysMod\garrysmod\HPH\materials
     - GarrysMod\garrysmod\HPH\media
     - GarrysMod\garrysmod\HPH\resource
-  # Issues with Pred's and their fixes
+# Some issues with HPH.exe and their fixes
 ## Chat filters being wrong / extra option
     1. Replace GarrysMod\garrysmod\resource\ui\chatfilters.res with yourhudbackupfolder\resource\ui\chatfilters.res
 ## Killfeed icons being wrong
