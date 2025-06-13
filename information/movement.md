@@ -41,7 +41,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
         - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time <br/>
       3. Continue to sidehop like normal, except now you are standing. Understanding the direction is considerably more difficult and there is less speed benefit, so this method is pretty much just for flashiness or fun.<br/>
 
-# Super Garry's Mod Server Movement
+# Super Garry's Mod Server exclusive movement
   - Most of the Super Garry's Mod movement techniques like potato jumping and washing machine boosts should work similarly on Zoltins Sandbox<br/>
   - SGMS fast guide (By Bikes) - https://www.youtube.com/watch?v=x52LSlBOCJY<br/>
     - Explains movement tech in the Super garry's Mod Server: <br/>
