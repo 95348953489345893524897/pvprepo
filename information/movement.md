@@ -6,7 +6,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 - Propkill Spawnlist (From S0lum) - https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2<br/>
   - Put in GarrysMod\garrysmod\settings\spawnlist<br/>
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
-- Propkill servers:<br/>
+## Propkill Servers:
   - Iced Coffee's Propkill 103.217.254.28:27015<br/>
   - propkill la 45.32.78.141:27015<br/>
   - EU PROPKILL 51.254.7.253:27015<br/>
