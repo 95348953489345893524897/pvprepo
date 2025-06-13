@@ -21,7 +21,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
       - Demonstration (3:13 - 6:50)<br/>
     - Video is ridiculously slowed down which I will fix later probably<br/>
     
-  - How to do crouching sidehop:<br/>
+   ## Crouching Sidehop:
       1. Crouch-jump and turn 90 degrees (left or right)<br/>
       2. Jump and don't let go of crouch. <br/>
       3. Jump every time you hit the ground<br/>
@@ -34,8 +34,8 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
       - Notes: <br/>
         - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.<br/>
           - An exception is when you are curving the strafe away from walls with keys like W and S.<br/>
-        - You can do sidehops while standing, but it's much harder.<br/>
-    - How do to Standing Sidehop:<br/>
+        - You can do sidehops while standing, but it's much harder.
+  ## Standing Sidehop:
       1. Start a crouching sidehop<br/>
       2. Once you reach around 2000 velocity (8-10 hops), crouch jump<br/>
         - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time <br/>
