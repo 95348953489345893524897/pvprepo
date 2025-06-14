@@ -3,7 +3,7 @@
   - add example video later<br/>
 
 # ULX Psay spam to locate players 
-https://github.com/95348953489345893524897/configs/blob/49f82966c7f41247c35ea3fef978d3f15b5a4e96/valve.rc#L342
+https://github.com/95348953489345893524897/configs/blob/c0ee0b1b6f92773cb424c19fde8821495925d464/valve.rc#L342
   - !pm '@ message' (also 'ulx psay @' in console) is used to pm the player in the direction that you are facing <br/>
   - Since '@' with ulx shows if your command hit a target (a player), you can use it to locate people in large maps<br/>
   - Binding a key like b to "ulx psay @" lets you spam blank messages in any direction.<br/>
