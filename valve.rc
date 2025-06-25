@@ -271,6 +271,7 @@ cl_playerskin 				""					// not sure
 cl_defaultweapon 			"weapon_physgun"			// On-respawn weapon
 cl_autowepswitch 			"0"					// 0 = Don't switch to more powerful weapons when picked up, setting to 1 makes it so that if you have your physgun out and someone gives you a weapon it will automatically make you pick it up, which creates an obvious issue if you are building
 gmod_language				"zh-cn"					// china woo-hoo
+bot_zombie				"0"					// makes bots spawned by "bot" command not move
 
 // Alias Bypasses
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
