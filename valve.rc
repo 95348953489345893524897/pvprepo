@@ -46,8 +46,8 @@ m_forward				"50"					// +strafe forward factor
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 fov_desired 				"87"					// preference
 viewmodel_fov 				"0"					// default 54, 0 for hidden viewmodel
-cl_wpn_sway_interp 			"10000000000000"			// Make m9k weapons, weapons with error models, etc. basically disappear
-cl_wpn_sway_scale 			"100000000000"				// Ditto
+cl_wpn_sway_interp 			"10000000000000"			// Make m9k weapons, weapons with error viewmodels, etc. basically disappear (set to 0.1 to make viewmodels come back
+cl_wpn_sway_scale 			"100000000000"				// Ditto (set to 1.5 to make viewmodels come back)
 
 // Ingame Utility Binds 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
