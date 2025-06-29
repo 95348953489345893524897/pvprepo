@@ -2,6 +2,36 @@
 {
 	"// Permanent link: https://github.com/95348953489345893524897/configs/" "COMMENT"
 	"NEWLINE" "NEWLINE"
+	"// cl_gm_body ( shows  legs in first person when looking down" "COMMENT"
+	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"cl_gm_body"  "0"								// Enable first-person body?
+	"cl_gm_body_enable_shadow"  "1"							// Enable body shadow? (doesn't work with cl_drawownshadow)
+	"cl_gm_body_fixed_angle"  "1"							// Lock body angle to camera angle?
+	"cl_gm_body_forward_distance"  "17.00"						// Body distance from center
+	"cl_gm_body_in_vehicle"			"1"					// Enable body in vehicles?
+	"cl_gm_body_x_offset"  			"0.00"					// X Offset
+	"NEWLINE" "NEWLINE"
+	"// Half-Box" "COMMENT"
+	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"hb_benefactor_halo_b"  		"255"
+	"hb_benefactor_halo_enabled"  		"1"
+	"hb_benefactor_halo_g"  		"0"
+	"hb_benefactor_halo_r"  		"255"
+	"hb_benefactor_rgbphysgun"  		"1"
+	"hb_combathud_enabled"  		"0" 
+	"hb_combathud_x"  			"512.00"
+	"hb_combathud_y"  			"768.00"
+	"hb_default_faction"  			"3"					// Determines what faction you spawn as when joining the server. 0 - Show menu; 1 - Resistance; 2 - Combine; 3 - Neutral; 4 - Builders
+	"hb_factionid_enabled"  		"0"					// Enable/disable faction HUD indicator
+	"hb_factionid_x" 			"21.00"
+	"hb_factionid_y"			"430.00"
+	"hb_factions_showscore"			"0"
+	"hb_followers_chat_support"		"0" 
+	"hb_followers_halos"			"0"
+	"hb_money_display_enable"		"0"
+	"hb_nocombat"				"0"					// Players that have this ConVar set to '1' won't inflict combat status on each other
+	"hb_player_halos"			"0"					// Should draw player halos?	
+	"NEWLINE" "NEWLINE"
 	"// Supers" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"super_hints"				"0"					// 0 = disable hints at top of screen
