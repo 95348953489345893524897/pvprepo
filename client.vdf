@@ -4,7 +4,7 @@
 	"NEWLINE" "NEWLINE"
 	"// Supers" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
-	"super_hints"				"0"					// Hints at top of screen
+	"super_hints"				"0"					// 0 = disable hints at top of screen
 	"super_hud"				"0"					// Set to 0 if youre using a custom hud
 	"NEWLINE" "NEWLINE"
 	"// Viewmod" "COMMENT"
