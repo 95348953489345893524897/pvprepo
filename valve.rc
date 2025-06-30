@@ -509,8 +509,6 @@ mat_disable_bloom 			"1"
 rope_averagelight 			"1"					// Setting this to 0 loops through cubemaps to set ropes to use maximum intensity rather than the already available average intensity, so it reduces performance.; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
 rope_collide 				"0"
 rope_rendersolid 			"0"
-rope_rendersolid 			"0"
-rope_rendersolid 			"0"
 rope_shake 				"0"
 rope_smooth 				"0"
 rope_subdiv 				"0"
