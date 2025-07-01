@@ -23,13 +23,13 @@ To launch:
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
 
 Videos -<br/>
-Thirdperson not looking up: 
+Thirdperson not looking up: <br/>
 https://github.com/user-attachments/assets/89c7c1b5-e555-42f7-b5bf-139b754c9315
 
-Firstperson not looking up:
+Firstperson not looking up: <br/>
 https://github.com/user-attachments/assets/85af6630-94d7-44c3-923d-fd6664d93db1
 
-Looking up:
+Looking up: <br/>
 https://github.com/user-attachments/assets/10f2e486-364d-4746-b0df-c62b0b587133
 
 ## Propkill Servers:
