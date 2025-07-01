@@ -37,11 +37,7 @@ https://github.com/user-attachments/assets/10f2e486-364d-4746-b0df-c62b0b587133
   - propkill la 45.32.78.141:27015<br/>
   - EU PROPKILL 51.254.7.253:27015<br/>
   - chicago propkill server thing 69.39.225.6:27015<br/>
-  - propkill.net (on sandbox ga
-
-https://github.com/user-attachments/assets/ddcbbf17-a950-4d02-bc68-c89ac7d9a076
-
-memode) 143.198.159.117:27015<br/>
+  - propkill.net (on sandbox gamemode) 143.198.159.117:27015<br/>
 
 # Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.<br/>
