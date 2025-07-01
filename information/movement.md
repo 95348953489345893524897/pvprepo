@@ -8,7 +8,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
 
 ## Basics of propfly: 
-Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly  <br/>
+Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techinques <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [spawnlist](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027): 
@@ -34,7 +34,10 @@ https://github.com/user-attachments/assets/206b3bf2-18f4-47fd-b4a6-54b2aa081d7e
 https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
 
 ### Coastering
-ADD LATER
+
+
+https://github.com/user-attachments/assets/a0c46c8e-213c-4beb-b833-6b011fc6bddf
+
 
 ### Spidering
 
@@ -49,6 +52,10 @@ https://github.com/user-attachments/assets/14e43d06-4254-4532-ae12-d74ac32c6e81
 
 
 ### Forward Reversing
+
+
+https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
+
 
 ### Rebirding 
 
