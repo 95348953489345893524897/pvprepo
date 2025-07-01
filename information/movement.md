@@ -22,7 +22,6 @@ To launch:
 6. Look upwards 
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
 
-Videos -<br/>
 Thirdperson not looking up: <br/>
 
 
