@@ -55,6 +55,10 @@ https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
 
 ### Rebirding 
 
+
+https://github.com/user-attachments/assets/ff217ca5-2d91-4508-a941-daa4b2207c24
+
+
 ### Side Rebirding
 I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you.
 
