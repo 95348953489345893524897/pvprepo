@@ -35,12 +35,6 @@ Firstperson not looking up: <br/>
 
 https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
 
-
-Looking up: <br/>
-
-
-https://github.com/user-attachments/assets/0171d95a-47fd-4a31-9fd2-5de5d70e57df
-
 ### Coastering
 ADD LATER
 
