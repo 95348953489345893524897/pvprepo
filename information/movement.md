@@ -9,9 +9,9 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 
 ## Basics of propfly:
 ### Launching (aka boosting)
-Launching is the most basic propfly technique, essential to getting in the air (most of the time).
+Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [spawnlist](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027): 
-![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)
+![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)<br/>
 
 To launch: 
 1. Hold mouse1
@@ -22,7 +22,7 @@ To launch:
 6. Look upwards 
   - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
 
-Videos -
+Videos -<br/>
 Thirdperson not looking up: 
 https://github.com/user-attachments/assets/89c7c1b5-e555-42f7-b5bf-139b754c9315
 
