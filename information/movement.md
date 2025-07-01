@@ -7,7 +7,8 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
   - Put in GarrysMod\garrysmod\settings\spawnlist<br/>
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
 
-## Basics of propfly:
+## Basics of propfly: 
+Since all of the videos from Libre's guides are privated, I'll attempt to explain and give videos for all the propfly  <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [spawnlist](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027): 
@@ -40,8 +41,25 @@ Looking up: <br/>
 
 https://github.com/user-attachments/assets/0171d95a-47fd-4a31-9fd2-5de5d70e57df
 
+### Coastering
+ADD LATER
 
-## Propkill Servers:
+### Spidering
+ADD LATER
+### Reversing
+
+
+https://github.com/user-attachments/assets/14e43d06-4254-4532-ae12-d74ac32c6e81
+
+
+### Forward Reversing
+
+### Rebirding 
+
+### Side Rebirding
+I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you.
+
+### Propkill Servers:
   - Iced Coffee's Propkill 103.217.254.28:27015<br/>
   - propkill la 45.32.78.141:27015<br/>
   - EU PROPKILL 51.254.7.253:27015<br/>
