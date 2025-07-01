@@ -24,13 +24,22 @@ To launch:
 
 Videos -<br/>
 Thirdperson not looking up: <br/>
-https://github.com/user-attachments/assets/89c7c1b5-e555-42f7-b5bf-139b754c9315
+
+
+https://github.com/user-attachments/assets/206b3bf2-18f4-47fd-b4a6-54b2aa081d7e
+
 
 Firstperson not looking up: <br/>
-https://github.com/user-attachments/assets/85af6630-94d7-44c3-923d-fd6664d93db1
+
+
+https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
+
 
 Looking up: <br/>
-https://github.com/user-attachments/assets/10f2e486-364d-4746-b0df-c62b0b587133
+
+
+https://github.com/user-attachments/assets/0171d95a-47fd-4a31-9fd2-5de5d70e57df
+
 
 ## Propkill Servers:
   - Iced Coffee's Propkill 103.217.254.28:27015<br/>
