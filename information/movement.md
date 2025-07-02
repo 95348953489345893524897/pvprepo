@@ -123,6 +123,7 @@ To coaster:
 Spidering seems to just be a lazier way of boosting (in my opinion) <br/>
 Maybe I just don't really know what spidering is though. <br/>
 I wouldn't really recommend doing it, I'd rather just launch normally because it makes you go almost straight up, making you an easy target <br/>
+<br/>
 The best props to spider with seem to be in the launching props section of the spawnlist <br/>
 
 https://github.com/user-attachments/assets/a2edee72-a08e-4df6-9405-482948855c56
@@ -134,7 +135,9 @@ To spider:
 
 ### Reversing
 Reversing lets you 180 your velocity very quickly and accurately <br/>
-It's also useful for moving quickly while staying a certain area (when you reverse multiple times in quick succession, you're basically staying in the same area, just at a very high velocity so that you aren't an easy target) <br/>
+It's also useful for moving quickly while staying a certain area <br/>
+(when doing multiple reverses in quick succession, you're basically staying in the same area, but at a high velocity so you aren't an easy target) <br/>
+<br/>
 The best reversing props are in the [locker profile](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L236-L319) section of the spawnlist: <br/> 
 (you can also reverse with tide gates and the plate prop, but this is way less reliable than lockers.) <br/>
 ![image](https://github.com/user-attachments/assets/f4434539-a3d0-42b7-9774-e1151891420e)
@@ -150,7 +153,8 @@ To reverse:
 
 ### Forward Reversing
 Like normal reversing, except this doesn't require 180s, and minimally changes your direction. <br/>
-
+<br/>
+The best forward reversing props are the same as the best reversing props.
 
 https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
 
@@ -162,7 +166,8 @@ To forward reverse:
 4. Look in direction of wherever you want to go
 
 ### Rebirding 
-Rebirding is a way to stay in the air if you start getting too close to the ground (kind of like coastering) or you just want to go higher up quickly (like spidering but better) <br/>
+Rebirding is a way to stay in the air if you start getting too close to the ground (like coastering) or if you just want to go higher up quickly (like spidering) <br/>
+<br/>
 You can rebird with just about any prop, but the best ones are obviously in the [rebirding props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1031-L1099) of the spawnlist: <br/>
 (Other notable props that can be used for rebirding are lockers if you time them right, and large flat props like the plate) <br/>
 ![image](https://github.com/user-attachments/assets/2f411d84-8d20-4b3d-bfba-409ccc49ab45)
@@ -172,8 +177,9 @@ https://github.com/user-attachments/assets/ff217ca5-2d91-4508-a941-daa4b2207c24
 
 
 To rebird:
-1. Spawn prop a little bit down and ahead of where you are going (how far ahead you need to spawn it depends on mainly velocity, how close you are a surface to spawn props on, and a bit of tickrate) 
-2. Scroll inwards and look up
+1. Spawn prop a little bit down and ahead of where you are going
+   - How far ahead you should spawn it depends mainly on your velocity, if you are close to a surface to spawn props on, and tickrate a little bit
+3. Scroll inwards and look up
 
 ### Side Rebirding
 I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you. <br/>
