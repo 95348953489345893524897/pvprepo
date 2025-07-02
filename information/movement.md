@@ -37,7 +37,8 @@ This makes your props move much faster when you scroll. It's necessary to propfl
 You can just set it to the default using ```physgun_wheelspeed 10``` if you want to build or are not propflying anymore. <br/>
 * Unbind mousewheel <br/>
 ```unbind mwheelup; unbind mwheeldown``` <br/>
-This makes it so that you aren't accidentally swapping weapons while propflying, having scrollwheel bound makes propfly extremely annoying
+This makes it so that you aren't accidentally swapping weapons while propflying.
+Having scrollwheel bound makes propfly extremely annoying.
 * ESP/Scripts <br/>
 I will not be explaining how to use ESP/Scripts for propkill since this is a guide for propfly. I do not use scripts unless I'm on propkill servers anyway. <br/>
 If you want ESP for propkill follow the "script retrieval and SETUP" section of Libre's [guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764) <br/>
