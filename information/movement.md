@@ -13,6 +13,7 @@ As you can see in the videos, most of the time I'm holding MOUSE1. This makes pr
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: 
+(Can be done with a lot of props like locker props, but it's a lot easier with the launching props) 
 ![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)<br/>
 
 To launch: 
