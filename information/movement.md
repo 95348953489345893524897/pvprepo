@@ -46,6 +46,12 @@ If you want ESP for propkill follow the "script retrieval and SETUP" section of 
 ### Prop Types and Their Uses
 Just like every propkiller has different binds, everyone also varies with which props they use. <br/>
 These are the most common props I've seen and their typical uses: <br/>
+**NOTE:** <br/>
+***USE THE PROP "META" UNTIL YOU MASTER IT !!!*** <br/> 
+***WHEN YOU ARE COMFORTABLE WITH USING THE META/COMMONLY USED PROPS, MOVE ON TO DIFFERENT PROPS TO BETTER SUIT YOUR PERSONALITY/PLAYSTYLE.*** <br/>
+***STARTING OUT WITH PROPS THAT ARE NOT IDEAL FOR PROPFLY WILL BE VERY DEMOTIVATING FOR YOU.*** <br/>
+***THIS MAKES SURE THAT DOESN'T HAPPEN.*** <br/>
+Prop Meta: <br/>
 ```
 Launching: Moped / Trainwheel (Boosting/Spidering)
 Lockers: Lockers / Storage Closet (Reversing/Rebirding)
@@ -56,22 +62,23 @@ Coasters: Any coaster in the coasters section (Coastering obviously)
 I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. <br/>
 
 ### Intro to Basic Technique
-Holding Mouse1: <br/>
+* Holding Mouse1: <br/>
 As you can see in the videos, most of the time I'm holding MOUSE1. This makes propfly way easier since I don't have to think about timing when I left click. <br/>
 
-Not using W or S like a moron: <br/>
+* Not using W or S like a moron: <br/>
 Don't press W. Don't press S. <br/>
-Unless you really know what you're doing, pressing W and S while propflying will most of the time just mess you up. <br/>
-Just use the strafe keys for changing directions, you should learn the basics of airstrafing before trying propfly (it's very simple and explained below don't worry). <br/>
+Unless you really know what you're doing, pressing W and S while propflying will only mess you up most of the time. <br/>
+Just use the A and D keys for changing directions. <br/>
+You should learn the basics of airstrafing before trying propfly (it's very simple and explained below don't worry). <br/>
 
-Basics of airstrafe: <br/>
+* Basics of airstrafe: <br/>
 This is very simple but some people might not know, so I explain it anyway. <br/>
 If you are turning your mouse left, hold A. <br/>
 If you are turning your mouse right, hold D. <br/>
 I will explain combinations of W + D, W + A, S + A, and S + D keys eventually with a video. <br/>
 For now, DON'T USE W AND S UNLESS YOU REALLY KNOW HOW IT AFFECTS AIRSTRAFING. <br/>
 
-Prop spawns: <br/>
+* Prop spawns: <br/>
 Props spawn at a certain distance away from you if there is nothing in the way of your crosshair. <br/>
 Understanding where they spawn while in the open air is a concept essential to the techniques ```rebirding, reversing, and forward reversing```. <br/>
 Basically, you need to know the relationship between your velocity and the ideal prop spawn location (it isn't as complicated as it sounds) <br/>
@@ -127,7 +134,7 @@ To spider:
 
 ### Reversing
 Reversing lets you 180 your velocity very quickly and accurately <br/>
-It's also useful for moving quickly while staying a certain area (if you chain reverses, you're staying in the same area, but at very high velocity so that you aren't a sitting duck) <br/>
+It's also useful for moving quickly while staying a certain area (when you reverse multiple times in quick succession, you're basically staying in the same area, just at a very high velocity so that you aren't an easy target) <br/>
 The best reversing props are in the [locker profile](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L236-L319) section of the spawnlist: <br/> 
 (you can also reverse with tide gates and the plate prop, but this is way less reliable than lockers.) <br/>
 ![image](https://github.com/user-attachments/assets/f4434539-a3d0-42b7-9774-e1151891420e)
