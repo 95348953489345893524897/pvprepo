@@ -26,8 +26,7 @@ Then, you can do: ```bind %KEY% "%NAMEOFALIASYOUJUSTMADE%"``` <br/>
 These are my binds: <br/>
 Launching: **"V"**, ```"gm_spawn models/props_phx/wheels/metal_wheel1.mdl"``` <br/>
 Lockers: **"C"**, ```"gm_spawn models/props_wasteland/controlroom_storagecloset001b.mdl"``` <br/>
-Rebirding: **"G"**, ```"gm_spawn models/props_phx/construct/metal_plate4x4.mdl"```, <br/> 
-or I sometimes  use ```"gm_spawn models/props_phx/construct/glass/glass_dome360.mdl"``` <br/>
+Rebirding: **"G"**, ```"gm_spawn models/props_phx/construct/metal_plate4x4.mdl"```, or I sometimes  use ```"models/props_phx/construct/glass/glass_dome360.mdl"``` <br/>
 Tide Gates: **"X"**, ```"gm_spawn models/props_debris/walldestroyed01a.mdl"``` <br/>
 Coasters: I don't use them, but when I do, I bind them to **"G"** <br/>
 
