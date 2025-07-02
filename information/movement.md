@@ -92,6 +92,11 @@ The best props to launch with are the launching props in the [launching props se
 (Can be done with a lot of props like locker props, but it's a lot easier with the launching props) <br/>
 ![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)<br/>
 
+
+
+
+https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
+
 To launch: 
 1. Hold mouse1
 2. Spawn the prop at your feet
@@ -102,10 +107,6 @@ To launch:
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
 7. Undo prop
 <br/>
-
-
-
-https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
 
 ### Coastering
 Coastering is a technique for maintaining airtime easily <br/>
