@@ -9,7 +9,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 
 Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques <br/>
 ## Basics of propfly: 
-As you can see in the videos, most of the time I'm holding MOUSE1. This makes it way easier since I don't have to think about timing when I left click. <br/>
+As you can see in the videos, most of the time I'm holding MOUSE1. This makes propfly way easier since I don't have to think about timing when I left click. <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: 
