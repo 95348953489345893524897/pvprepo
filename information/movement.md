@@ -16,7 +16,7 @@ Binds are obviously important to getting good at propfly. I recommend that you h
 Bind prop spawn:<br/>
 ```bind %KEY% "gm_spawn %PROPMODELNAME%"``` <br/> 
 <br/> 
-This can be made even more useful through aliases though. <br/> 
+This can be made even better through aliases though. <br/> 
 If you create aliases for those prop spawns like [I do in my config](https://github.com/95348953489345893524897/configs/blob/main/valve.rc#L297-L323), you won't waste your time copy pasting prop model names whenever you want to change keybinds. <br/>
 <br/> 
 Alias prop spawn: ```alias %WHATEVERNAMEYOUWANT% "gm_spawn %PROPMODELNAME%"``` <br/>
