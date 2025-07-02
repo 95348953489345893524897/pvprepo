@@ -9,9 +9,9 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 
 Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques in the section below: <br/>
 ## Basics of Propfly: 
-Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/edit/main/information/movement.md#propkillprop-fly-friendly-servers) to practice. <br/> 
+Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/edit/main/information/movement.md#propkillpropfly-friendly-servers) to practice. <br/> 
 ### Binds
-Binds are obviously important to getting good at prop-fly. I recommend that you have binds for AT LEAST a launching prop and a locker prop in your config to still allow for some versatility of movement.<br/>
+Binds are obviously important to getting good at propfly. I recommend that you have binds for AT LEAST a launching prop and a locker prop in your config to still allow for some versatility of movement.<br/>
 <br/>
 Bind prop spawn:<br/>
 ```bind %KEY% "gm_spawn %PROPMODELNAME%"``` <br/> 
@@ -184,7 +184,7 @@ To rebird:
 ### Side Rebirding
 I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you. <br/>
 
-### Propkill/Prop-fly friendly Servers:
+### Propkill/Propfly friendly Servers:
   - Iced Coffee's Propkill 103.217.254.28:27015<br/>
   - propkill la 45.32.78.141:27015<br/>
   - EU PROPKILL 51.254.7.253:27015<br/>
