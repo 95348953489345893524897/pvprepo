@@ -204,7 +204,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
       - Demonstration (3:13 - 6:50)<br/>
     - Video is ridiculously slowed down which I will fix later probably<br/>
     
-   ## Crouching Sidehop:
+   ## How to Crouching Sidehop:
       1. Crouch-jump and turn 90 degrees (left or right)
       2. Jump and don't let go of crouch. 
       3. Jump every time you hit the ground
@@ -218,7 +218,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
         - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.
           - An exception is when you are curving the strafe away from walls with keys like W and S.
         - You can do sidehops while standing, but it's much harder.
-  ## Standing Sidehop:
+  ## How to Standing Sidehop:
       1. Start a crouching sidehop
       2. Once you reach around 2000 velocity (8-10 hops), crouch jump
         - Crouch jump by releasing crouch mid-air, then pressing crouch + space at the same time 
