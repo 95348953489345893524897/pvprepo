@@ -7,8 +7,9 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
   - Put in GarrysMod\garrysmod\settings\spawnlist<br/>
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
 
+Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques <br/>
 ## Basics of propfly: 
-Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techinques <br/>
+As you can see in the videos, most of the time I'm holding MOUSE1. This makes it way easier since I don't have to think about timing when I left click. <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
 The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: 
@@ -58,26 +59,46 @@ To spider:
 
 ### Reversing
 Reversing lets you 180 your velocity very quickly and accurately <br/>
-The best reversing props are in the 
+It's also useful for moving quickly while staying a certain area (if you chain reverses, you're staying in the same area, but at very high velocity so that you aren't a sitting duck) <br/>
+The best reversing props are in the [locker profile](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L236-L319) section of the spawnlist: <br/> 
+(you can also reverse with tide gates and the plate prop, but this is way less reliable than lockers.) <br/>
 ![image](https://github.com/user-attachments/assets/f4434539-a3d0-42b7-9774-e1151891420e)
 
 https://github.com/user-attachments/assets/14e43d06-4254-4532-ae12-d74ac32c6e81
 
 To reverse:
 1. Launch/spider/whatever to get air time
-2. Spawn the 
+2. Spawn prop in the direction you're going
+3. Grab prop and scroll inwards
+4. Quickly 180 using strafe keys and go in the opposite direction
+5. Undo prop
 
 ### Forward Reversing
+Like normal reversing, except this doesn't require 180s, and minimally changes your direction.
 
 
 https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
 
 
+To forward reverse:
+1. Spawn prop to the SIDE of where you are going (very important)
+2. Grab prop and scroll inwards
+3. Use strafe keys to move AWAY from the spot you spawned the prop (doesn't require that much strafing, just makes it easier)
+4. Look in direction of wherever you want to go
+
 ### Rebirding 
+Rebirding is a way to stay in the air if you start getting too close to the ground (kind of like coastering) or you just want to go higher up quickly (like spidering but better)<br/>
+You can rebird with just about any prop, but the best ones are obviously in the [rebirding props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1031-L1099) of the spawnlist:
+(Other notable props that can be used for rebirding are lockers if you time them right, and large flat props like the plate)
+![image](https://github.com/user-attachments/assets/2f411d84-8d20-4b3d-bfba-409ccc49ab45)
 
 
 https://github.com/user-attachments/assets/ff217ca5-2d91-4508-a941-daa4b2207c24
 
+
+To rebird:
+1. Spawn prop a little bit down and ahead of where you are going (how far ahead you need to spawn it depends on mainly velocity, how close you are a surface to spawn props on, and a bit of tickrate) 
+2. Scroll inwards and look up
 
 ### Side Rebirding
 I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you.
