@@ -21,7 +21,7 @@ If you create aliases for those prop spawns like [I do in my config](https://git
 <br/> 
 Alias prop spawn: ```alias %WHATEVERNAMEYOUWANT% "gm_spawn %PROPMODELNAME%"``` <br/>
 <br/>
-So now, you can do: ```bind %KEY% "%NAMEOFALIASYOUJUSTMADE%"``` <br/>
+Then, you can do: ```bind %KEY% "%NAMEOFALIASYOUJUSTMADE%"``` <br/>
 <br/> 
 These are my binds: <br/>
 Launching: **"V"**, ```"gm_spawn models/props_phx/wheels/metal_wheel1.mdl"``` <br/>
