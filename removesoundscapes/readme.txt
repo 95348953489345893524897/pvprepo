@@ -1,1 +1,1 @@
-This should remove all base game soundscapes. just put it in GarrysMod/garrysmod.
+This should remove all base game soundscapes. just put the scripts folder in GarrysMod/garrysmod.
