@@ -11,7 +11,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techinques <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
-The best props to launch with are the launching props in the [spawnlist](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027): 
+The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: 
 ![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)<br/>
 
 To launch: 
@@ -30,22 +30,42 @@ To launch:
 https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
 
 ### Coastering
+Coastering is a technique for maintaining airtime easily
+The best props to coaster with are in the [coasters section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1079-L1097) of the spawnlist:<br/>
+![image](https://github.com/user-attachments/assets/1c9c4fc2-59e2-4549-9ea1-de73043a6e87)<br/>
 
 
 https://github.com/user-attachments/assets/a0c46c8e-213c-4beb-b833-6b011fc6bddf
 
+To coaster:
+1. Launch/spider/whatever to get air time
+2. Spawn the coaster where you are about to land and freeze it (holding mouse1 makes this easier)
+3. Go back into air
 
 ### Spidering
 
+Spidering seems to just be a lazier way of boosting (in my opinion)<br/>
+Maybe I just don't really know what spidering is though. <br/>
+I wouldn't really recommend doing it, I'd rather just launch normally since it makes you such an easy target going almost straight up<br/>
+The best props to spider with seem to be in the launching props section of the spawnlist<br/>
 
 https://github.com/user-attachments/assets/a2edee72-a08e-4df6-9405-482948855c56
 
+To spider: 
+1. Jump
+2. Spawn prop below you
+3. Scroll inwards and look up
 
 ### Reversing
-
+Reversing lets you 180 your velocity very quickly and accurately <br/>
+The best reversing props are in the 
+![image](https://github.com/user-attachments/assets/f4434539-a3d0-42b7-9774-e1151891420e)
 
 https://github.com/user-attachments/assets/14e43d06-4254-4532-ae12-d74ac32c6e81
 
+To reverse:
+1. Launch/spider/whatever to get air time
+2. Spawn the 
 
 ### Forward Reversing
 
