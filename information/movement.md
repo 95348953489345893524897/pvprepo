@@ -11,7 +11,7 @@ Since all of the videos from Libre's guide are privated, I'll attempt to explain
 ## Basics of propfly: 
 Every propkiller has different sets of props they use, but the most common and their typical uses are:<br/>
 Launching (launching/spidering): Moped / Trainwheel<br/>
-Lockers (reversing/forward reversing/rebirding): Lockers / Storage Closet <br/>
+Lockers (reversing/rebirding): Lockers / Storage Closet <br/>
 Rebirding: Glass Dome / Tube4x4x1to2x2<br/>
 Tide Gates: Tides Gate (ofc) / Walldestroyed01a (if server blacklisted tides gate or no css) <br/>
 Coasters: Any coaster in the coasters section
