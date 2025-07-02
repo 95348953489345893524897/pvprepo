@@ -7,20 +7,80 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
   - Put in GarrysMod\garrysmod\settings\spawnlist<br/>
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
 
-Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques <br/>
-## Basics of propfly: 
-Every propkiller has different sets of props they use, but the most common and their typical uses are:<br/>
-Launching (launching/spidering): Moped / Trainwheel<br/>
-Lockers (reversing/rebirding): Lockers / Storage Closet <br/>
-Rebirding: Glass Dome / Tube4x4x1to2x2<br/>
-Tide Gates: Tides Gate (ofc) / Walldestroyed01a (if server blacklisted tides gate or no css) <br/>
-Coasters: Any coaster in the coasters section
-I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. 
+Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques in the section below: <br/>
+## Basics of Propfly: 
+Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/edit/main/information/movement.md#propkillprop-fly-friendly-servers) to practice. <br/> 
+### Binds
+Binds are obviously important to getting good at prop-fly. I recommend that you have binds for AT LEAST a launching prop and a locker prop in your config to still allow some versatility of movement.<br/>
+<br/>
+Bind prop spawn:<br/>
+```bind %KEY% "gm_spawn %PROPMODELNAME%"``` <br/> 
+<br/> 
+This can be made even more useful through aliases though. <br/> 
+If you create aliases for those prop spawns like [I do in my config](https://github.com/95348953489345893524897/configs/blob/main/valve.rc#L297-L323), you won't waste your time copy pasting prop model names whenever you want to change binds. <br/>
+<br/> 
+Alias prop spawn: ```alias %WHATEVERNAMEYOUWANT% "gm_spawn %PROPMODELNAME%"``` <br/>
+<br/>
+So now, you can do: ```bind %KEY% "%NAMEOFALIASYOUJUSTMADE%"``` <br/>
+<br/> 
+These are my binds: <br/>
+Launching: **"V"**, ```"gm_spawn models/props_phx/wheels/metal_wheel1.mdl"``` <br/>
+Lockers: **"C"**, ```"gm_spawn models/props_wasteland/controlroom_storagecloset001b.mdl"``` <br/>
+Rebirding: **"G"**, ```"gm_spawn models/props_phx/construct/metal_plate4x4.mdl"```, <br/> 
+or I sometimes  use ```"gm_spawn models/props_phx/construct/glass/glass_dome360.mdl"``` <br/>
+Tide Gates: **"X"**, ```"gm_spawn models/props_debris/walldestroyed01a.mdl"``` <br/>
+Coasters: I don't use them, but when I do, I bind them to **"G"** <br/>
+
+### Settings
+* Set your ```physgun_wheelspeed``` to a high number like 120/999999 <br/>
+```physgun_wheelspeed 999999999``` is what I use <br/>
+This makes your props move much faster when you scroll. It's necessary to propfly well. <br/>
+You can just set it to the default using ```physgun_wheelspeed 10``` if you want to build or are not propflying anymore. <br/>
+* Unbind mousewheel <br/>
+```unbind mwheelup; unbind mwheeldown``` <br/>
+This makes it so that you aren't accidentally swapping weapons while propflying, having scrollwheel bound makes propfly extremely annoying
+* ESP/Scripts <br/>
+I will not be explaining how to use ESP/Scripts for propkill since this is a guide for propfly. I do not use scripts unless I'm on propkill servers anyway. <br/>
+If you want ESP for propkill follow the "script retrieval and SETUP" section of Libre's [guide](https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764) <br/>
+
+### Prop Types and Their Uses
+Just like every propkiller has different binds, everyone also varies with which props they use. <br/>
+These are the most common props I've seen and their typical uses: <br/>
+```
+Launching: Moped / Trainwheel (Boosting/Spidering)
+Lockers: Lockers / Storage Closet (Reversing/Rebirding)
+Rebirding : Glass Dome / Tube4x4x1to2x2 (Just rebirding)
+Tide Gates : Tides Gate (ofc) / Walldestroyed01a (Propkill)
+Coasters: Any coaster in the coasters section (Coastering obviously)
+```
+I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. <br/>
+
+### Intro to Basic Technique
+Holding Mouse1: <br/>
 As you can see in the videos, most of the time I'm holding MOUSE1. This makes propfly way easier since I don't have to think about timing when I left click. <br/>
+
+Not using W or S like a moron: <br/>
+Don't press W. Don't press S. <br/>
+Unless you really know what you're doing, pressing W and S while propflying will most of the time just mess you up. <br/>
+Just use the strafe keys for changing directions, you should learn the basics of airstrafing before trying propfly (it's very simple and explained below don't worry). <br/>
+
+Basics of airstrafe: <br/>
+This is very simple but some people might not know, so I explain it anyway. <br/>
+If you are turning your mouse left, hold A. <br/>
+If you are turning your mouse right, hold D. <br/>
+I will explain combinations of W + D, W + A, S + A, and S + D keys eventually with a video. <br/>
+For now, DON'T USE W AND S UNLESS YOU REALLY KNOW HOW IT AFFECTS AIRSTRAFING. <br/>
+
+Prop spawns: <br/>
+Props spawn at a certain distance away from you if there is nothing in the way of your crosshair. <br/>
+Understanding where they spawn while in the open air is a concept essential to the techniques ```rebirding, reversing, and forward reversing```. <br/>
+Basically, you need to know the relationship between your velocity and the ideal prop spawn location (it isn't as complicated as it sounds) <br/>
+I will eventually put a **video here** since it is probably insanely hard to visualize this concept. <br/>
+
 ### Launching (aka boosting)
-Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
-The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: 
-(Can be done with a lot of props like locker props, but it's a lot easier with the launching props) 
+Launching is the most basic propfly technique, essential to getting in the air (most of the time). <br/>
+The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: <br/>
+(Can be done with a lot of props like locker props, but it's a lot easier with the launching props) <br/>
 ![image](https://github.com/user-attachments/assets/98aa711d-c8e5-4a32-abd4-93711f3be27e)<br/>
 
 To launch: 
@@ -39,7 +99,7 @@ To launch:
 https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
 
 ### Coastering
-Coastering is a technique for maintaining airtime easily
+Coastering is a technique for maintaining airtime easily <br/>
 The best props to coaster with are in the [coasters section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1079-L1097) of the spawnlist:<br/>
 ![image](https://github.com/user-attachments/assets/1c9c4fc2-59e2-4549-9ea1-de73043a6e87)<br/>
 
@@ -53,10 +113,10 @@ To coaster:
 
 ### Spidering
 
-Spidering seems to just be a lazier way of boosting (in my opinion)<br/>
+Spidering seems to just be a lazier way of boosting (in my opinion) <br/>
 Maybe I just don't really know what spidering is though. <br/>
-I wouldn't really recommend doing it, I'd rather just launch normally because it makes you go almost straight up, making you an easy target<br/>
-The best props to spider with seem to be in the launching props section of the spawnlist<br/>
+I wouldn't really recommend doing it, I'd rather just launch normally because it makes you go almost straight up, making you an easy target <br/>
+The best props to spider with seem to be in the launching props section of the spawnlist <br/>
 
 https://github.com/user-attachments/assets/a2edee72-a08e-4df6-9405-482948855c56
 
@@ -82,7 +142,7 @@ To reverse:
 5. Undo prop
 
 ### Forward Reversing
-Like normal reversing, except this doesn't require 180s, and minimally changes your direction.
+Like normal reversing, except this doesn't require 180s, and minimally changes your direction. <br/>
 
 
 https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
@@ -95,9 +155,9 @@ To forward reverse:
 4. Look in direction of wherever you want to go
 
 ### Rebirding 
-Rebirding is a way to stay in the air if you start getting too close to the ground (kind of like coastering) or you just want to go higher up quickly (like spidering but better)<br/>
-You can rebird with just about any prop, but the best ones are obviously in the [rebirding props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1031-L1099) of the spawnlist:
-(Other notable props that can be used for rebirding are lockers if you time them right, and large flat props like the plate)
+Rebirding is a way to stay in the air if you start getting too close to the ground (kind of like coastering) or you just want to go higher up quickly (like spidering but better) <br/>
+You can rebird with just about any prop, but the best ones are obviously in the [rebirding props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L1031-L1099) of the spawnlist: <br/>
+(Other notable props that can be used for rebirding are lockers if you time them right, and large flat props like the plate) <br/>
 ![image](https://github.com/user-attachments/assets/2f411d84-8d20-4b3d-bfba-409ccc49ab45)
 
 
@@ -109,15 +169,17 @@ To rebird:
 2. Scroll inwards and look up
 
 ### Side Rebirding
-I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you.
+I'm not exactly sure how to do this, and I can't reproduce it consistently, so I won't even attempt to explain. Propkillers better than me can probably explain this one to you. <br/>
 
-### Propkill Servers:
+### Propkill/Prop-fly friendly Servers:
   - Iced Coffee's Propkill 103.217.254.28:27015<br/>
   - propkill la 45.32.78.141:27015<br/>
   - EU PROPKILL 51.254.7.253:27015<br/>
   - chicago propkill server thing 69.39.225.6:27015<br/>
-  - propkill.net (on sandbox gamemode) 143.198.159.117:27015<br/>
-
+  - propkill.net (on the sandbox gamemode) 143.198.159.117:27015<br/>
+  - Zbox (don't propkill here, most people will get annoyed, but propfly is OK with most people and easy to do here) 193.243.190.18:27064 <br/>
+  - T9C (Anarchy sandbox server, propkill/propfly all you want here) <br/>
+  
 # Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.<br/>
     - Sidehopping tutorial - https://www.youtube.com/watch?v=ArMJ5qALBXY<br/>
