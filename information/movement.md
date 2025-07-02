@@ -9,6 +9,13 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 
 Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques <br/>
 ## Basics of propfly: 
+Every propkiller has different sets of props they use, but the most common and their typical uses are:<br/>
+Launching (launching/spidering): Moped / Trainwheel<br/>
+Lockers (reversing/forward reversing/rebirding): Lockers / Storage Closet <br/>
+Rebirding: Glass Dome / Tube4x4x1to2x2<br/>
+Tide Gates: Tides Gate (ofc) / Walldestroyed01a (if server blacklisted tides gate or no css) <br/>
+Coasters: Any coaster in the coasters section
+I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. 
 As you can see in the videos, most of the time I'm holding MOUSE1. This makes propfly way easier since I don't have to think about timing when I left click. <br/>
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time).<br/>
