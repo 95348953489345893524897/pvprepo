@@ -2791,7 +2791,7 @@ sv_startup_time                          : 0        :                  : Sets th
 sv_stats                                 : 1        :                  : Collect CPU usage stats
 sv_steamblockingcheck                    : 0        :                  : Check each new player for Steam blocking compatibility, 1 = message only, 2 >= drop if any member of owning clan blocks,3 >= drop if any player has blocked, 4 >= drop if player has blocked anyone on server
 sv_steamgroup                            : 0        : , "nf"           : The ID of the steam group that this server belongs to. You can find your group's ID on the admin profile page in the steam community.
-sv_sticktoground                         : 1        : , "sv", "rep"    : 
+sv_sticktoground                         : 1        : , "sv", "rep"    : // "stops players flying in the air when running up slopes" // https://gmod.facepunch.com/news/garrys-mod-beta-update-26 
 sv_stickysprint                          : 0        : , "a", "sv"      : 
 sv_stickysprint_default                  : 0        : , "cl"           : 
 sv_stopspeed                             : 10       : , "sv", "nf", "rep" : Minimum stopping speed when on ground.
