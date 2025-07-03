@@ -258,7 +258,7 @@ gmod_delete_temp_files			"1"				 	// Delete temporary files downloaded from serv
 net_compresspackets 			"0"				 	// compress packets save bytes, at the cost of extra cpu usage. if you have a fast enough network, this is recommended.; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
 net_splitrate 				"3"			 		// how many packets we can split per frame;  If your computer can do it, you can increase net_splitrate to speed up handling large packets.; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=47
 net_maxcleartime 			"0.01"					// Not really sure, reduces choke?; https://www.reddit.com/r/GlobalOffensive/comments/53il9l/fixing_all_choke_and_most_hitreg_issues_with_2/
-net_maxpacketdrop 			"100"					// Use all packets, helps people with spotty connections keep playing; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
+net_maxpacketdrop 			"5000"					// Use all packets, helps people with spotty connections keep playing; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 net_splitpacket_maxrate 		"131072"				// No idea; Max split packet rate (should be low because split packets are sensitive to order in UDP socket recv/buffers); https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 net_maxcleartime 			"0"					// Max # of seconds we can wait for next packets to be sent based on rate setting (0 == no limit).
 net_maxfilesize 			"64"					// Max out file upload size for extra content
