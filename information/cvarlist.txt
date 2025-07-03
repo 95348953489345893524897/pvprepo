@@ -348,7 +348,7 @@ cl_drawmonitors                          : 1        : , "cl"           :
 cl_drawownshadow                         : 0        : , "cl"           : Draw own shadow in first person mode
 cl_drawshadowtexture                     : 0        : , "cheat", "cl"  : 
 cl_dump_particle_stats                   : cmd      :                  : dump particle profiling info to particle_profile.csv
-cl_ejectbrass                            : 1        :                  : 
+cl_ejectbrass                            : 1        :                  : // "Whether or not to eject [casings] from weapons" ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/game/client/c_te_legacytempents.cpp#L68
 cl_enable_loadingurl                     : 1        : , "a"            : Enable/disable viewing custom loading screens provided by joined servers.
 cl_energy_ball_start_fade_time           : 8        : , "cheat", "cl"  : 
 cl_ent_absbox                            : cmd      :                  : Displays the client's absbox for the entity under the crosshair.
