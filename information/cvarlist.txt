@@ -1,4 +1,5 @@
 cvar list
+// = my notes
 --------------
 _autosave                                : cmd      :                  : Autosave
 _autosavedangerous                       : cmd      :                  : AutoSaveDangerous
@@ -6,14 +7,14 @@ _fov                                     : 0        : , "cl"           : Automat
 _resetgamestats                          : cmd      :                  : Erases current game stats and writes out a blank stats file
 _restart                                 : cmd      :                  : Shutdown and restart the engine.
 achievement_debug                        : 0        : , "sv", "cheat", "rep" : Turn on achievement debug msgs.
-act                                      : cmd      :                  : // Command to do "acts". Base game acts: agree, becon, bow, cheer, dance, disagree, forward, group, halt, laugh, muscle, pers, robot, salute, wave, zombie
+act                                      : cmd      :                  : // Command to do "acts", AKA emotes. Base-game acts: agree, becon, bow, cheer, dance, disagree, forward, group, halt, laugh, muscle, pers, robot, salute, wave, zombie
 addip                                    : cmd      :                  : Add an IP address to the ban list.
-adsp_alley_min                           : 122      :                  : 
-adsp_courtyard_min                       : 126      :                  : 
-adsp_debug                               : 0        : , "a"            : 
-adsp_door_height                         : 112      :                  : 
-adsp_duct_min                            : 106      :                  : 
-adsp_hall_min                            : 110      :                  : 
+adsp_alley_min                           : 122      :                  : // Soundscape setting for alleyways? ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dsp.cpp#L7293
+adsp_courtyard_min                       : 126      :                  : // Soundscape setting for courtyards? ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dsp.cpp#L7294
+adsp_debug                               : 0        : , "a"            : // ">0: draw blue dsp detection node location, >1: draw green room trace height detection bars, 3: draw yellow horizontal trace bars for room width/depth detection,  4: draw yellow upward traces for height detection, 5: draw teal box around all props around player, 6: draw teal box around room as detected" ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dma.cpp#L2662
+adsp_door_height                         : 112      :                  : // https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dma.cpp#L3386
+adsp_duct_min                            : 106      :                  : // https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dsp.cpp#L7227
+adsp_hall_min                            : 110      :                  : // https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/audio/private/snd_dsp.cpp#L7228
 adsp_low_ceiling                         : 108      :                  : 
 adsp_opencourtyard_min                   : 126      :                  : 
 adsp_openspace_min                       : 130      :                  : 
@@ -198,7 +199,7 @@ bot_forcefireweapon                      : 0        : , "sv"           : Force b
 bot_mimic                                : 0        : , "sv"           : Bot uses usercmd of player by index.
 bot_mimic_yaw_offset                     : 0        : , "sv"           : Offsets the bot yaw.
 bot_sendcmd                              : 0        : , "sv"           : Forces bots to send the specified command.
-bot_zombie                               : 0        : , "sv"           : Brraaaaaiiiins.
+bot_zombie                               : 0        : , "sv"           : Brraaaaaiiiins. // Bots spawned with "bot" command don't wander on their own
 box                                      : cmd      :                  : Draw a debug box.
 +break                                   : cmd      :                  : 
 -break                                   : cmd      :                  : 
