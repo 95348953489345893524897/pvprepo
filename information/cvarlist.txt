@@ -2985,8 +2985,8 @@ voice_showchannels                       : 0        :                  :
 voice_showincoming                       : 0        :                  : 
 voice_steal                              : 2        :                  : 
 voice_writevoices                        : 0        :                  : Saves each speaker's voice data into separate .wav files 
-+voicerecord                             : cmd      :                  : // Start recording your voice ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2145
--voicerecord                             : cmd      :                  : // Stop recording your voice ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2146
++voicerecord                             : cmd      :                  : // Start recording your voice for VOIP ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2145
+-voicerecord                             : cmd      :                  : // Stop recording your voice VOIP ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2146
 volume                                   : 1        : , "a"            : Sound volume
 volume_sfx                               : 0        : , "a"            : Adjusts the volume of sound effects & NPC voices, but does not affect player voice chat or music, both of which have their own console variables.
 vox_reload                               : cmd      :                  : Reload sentences.txt file
