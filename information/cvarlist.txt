@@ -2979,11 +2979,11 @@ voice_overdrive                          : 2        :                  :
 voice_overdrivefadetime                  : 0        :                  : 
 voice_profile                            : 0        :                  : 
 voice_recordtofile                       : 0        :                  : Record mic data and decompressed voice data into 'voice_micdata.wav' and 'voice_decompressed.wav'
-voice_scale                              : 1        : , "a"            : 
+voice_scale                              : 1        : , "a"            : // How loud other players' voices are ; https://git.botox.bz/BotoX/hl2_src-leak-2017/search?q=voice_scale&search_mode=exact
 voice_serverdebug                        : 0        : , "sv"           : 
 voice_showchannels                       : 0        :                  : 
 voice_showincoming                       : 0        :                  : 
-voice_steal                              : 2        :                  : 
+voice_steal                              : 2        :                  : // https://git.botox.bz/BotoX/hl2_src-leak-2017/search?q=voice_steal&search_mode=exact
 voice_writevoices                        : 0        :                  : Saves each speaker's voice data into separate .wav files 
 +voicerecord                             : cmd      :                  : // Start recording your voice for VOIP ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2145
 -voicerecord                             : cmd      :                  : // Stop recording your voice VOIP ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/engine/host_cmd.cpp#L2146
