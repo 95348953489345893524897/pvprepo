@@ -140,6 +140,7 @@
 	"NEWLINE" "NEWLINE"
 	"// NPCZ Sandbox/Zbox custom things" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"npcz_pvppve_outlines_dot"					"0.5"		// dot product convar for npcz pvp/pve player outlines
 	"wa_enable" 							"0"
 	"streamcore_disable" 						"1"
 	"cl_legs" 							"0"
