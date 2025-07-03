@@ -6,7 +6,7 @@ _fov                                     : 0        : , "cl"           : Automat
 _resetgamestats                          : cmd      :                  : Erases current game stats and writes out a blank stats file
 _restart                                 : cmd      :                  : Shutdown and restart the engine.
 achievement_debug                        : 0        : , "sv", "cheat", "rep" : Turn on achievement debug msgs.
-act                                      : cmd      :                  : 
+act                                      : cmd      :                  : // Command to do "acts". Base game acts: agree, becon, bow, cheer, dance, disagree, forward, group, halt, laugh, muscle, pers, robot, salute, wave, zombie
 addip                                    : cmd      :                  : Add an IP address to the ban list.
 adsp_alley_min                           : 122      :                  : 
 adsp_courtyard_min                       : 126      :                  : 
