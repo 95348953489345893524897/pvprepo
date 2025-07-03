@@ -2,7 +2,7 @@
 {
 	"// Permanent link: https://github.com/95348953489345893524897/configs/" "COMMENT"
 	"NEWLINE" "NEWLINE"
-	"// cl_gm_body ( shows  legs in first person when looking down" "COMMENT"
+	"// cl_gm_body (shows  legs in first person when looking down)" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"cl_gm_body"  "0"								// Enable first-person body?
 	"cl_gm_body_enable_shadow"  "1"							// Enable body shadow? (doesn't work with cl_drawownshadow)
