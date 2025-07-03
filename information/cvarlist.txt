@@ -1792,7 +1792,7 @@ r_drawdecals                             : 1        : , "cheat"        : Render 
 r_drawdetailprops                        : 1        :                  : 0=Off, 1=Normal, 2=Wireframe
 r_DrawDisp                               : 1        : , "cheat"        : Toggles rendering of displacment maps
 r_drawentities                           : 1        : , "cheat"        : 
-r_drawflecks                             : 0        :                  : 
+r_drawflecks                             : 0        :                  : // Flecks of dust from weapon impact on surfaces ; https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/game/client/fx_impact.cpp#L24
 r_drawfuncdetail                         : 1        : , "cheat"        : Render func_detail
 r_drawleaf                               : -1       : , "cheat"        : Draw the specified leaf.
 r_drawlightcache                         : 0        : , "cheat"        : 0: off 1: draw light cache entries 2: draw rays 
