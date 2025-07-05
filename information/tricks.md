@@ -6,7 +6,7 @@
 https://github.com/TeamUlysses/ulib/blob/94312ede535fc0a863d0d29cbfaf5cc959395e67/lua/ulib/shared/player.lua#L25 - "@" argument for ulx code, accuracy is explained at line 15
 https://github.com/95348953489345893524897/configs/blob/c0ee0b1b6f92773cb424c19fde8821495925d464/valve.rc#L342
   - !pm '@ message' (also 'ulx psay @' in console) is used to pm the player in the direction that you are facing <br/>
-  - Since '@' with ulx shows if your command hit a target (a player), you can use it to locate people in large maps<br/>
+  - Since the '@' argument for ulx commands shows if your command hit a target (a player), you can use it to locate people in large maps <br/>
   - Binding a key like b to "ulx psay @" lets you spam blank messages in any direction.<br/>
     - If the psay hits a target, it'll say this:
      ```Usage: ulx psay <player> {message} - Send a private message to target. (say: !p)```
