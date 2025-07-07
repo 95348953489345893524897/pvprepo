@@ -52,6 +52,7 @@ Just like every propkiller has different binds, everyone also varies with which 
 ║ ***STARTING OUT WITH PROPS THAT ARE NOT IDEAL FOR PROPFLY WILL BE VERY DEMOTIVATING FOR YOU.*** <br/>
 ║ ***DOING THIS WILL MAKE SURE THAT DOESN'T HAPPEN.*** <br/>
 ╚ <br/>
+<br/>
 These are the most common props I've seen and their typical uses: <br/>
 
 Prop Meta: <br/>
