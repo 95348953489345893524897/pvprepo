@@ -59,7 +59,7 @@ Prop Meta: <br/>
 ```
 Launching: Moped / Trainwheel (Boosting/Spidering)
 Lockers: Lockers / Storage Closet (Reversing/Rebirding)
-Rebirding : Glass Dome / Tube4x4x1to2x2 (Just rebirding)
+Rebirding : Glass Dome / Tube4x4x1to2x2 (Just for rebirding)
 Tide Gates : Tides Gate (ofc) / Walldestroyed01a (Propkill)
 Coasters: Any coaster in the coasters section (Coastering obviously)
 ```
