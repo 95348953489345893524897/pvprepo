@@ -57,11 +57,11 @@ These are the most common props I've seen and their typical uses: <br/>
 
 Prop Meta: <br/>
 ```
-Launching: Moped / Trainwheel (Boosting/Spidering)
-Lockers: Lockers / Storage Closet (Reversing/Rebirding)
+Launching: Moped / Trainwheel (For Boosting/Spidering)
+Lockers: Lockers / Storage Closet (For Reversing/Rebirding)
 Rebirding : Glass Dome / Tube4x4x1to2x2 (Just for rebirding)
-Tide Gates : Tides Gate (ofc) / Walldestroyed01a (Propkill)
-Coasters: Any coaster in the coasters section (Coastering obviously)
+Tide Gates : Tides Gate (ofc) / Walldestroyed01a (For Propkill)
+Coasters: Any coaster in the coasters section (For Coastering obviously)
 ```
 I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. <br/>
 
