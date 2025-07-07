@@ -45,7 +45,6 @@ If you want ESP for propkill follow the "script retrieval and SETUP" section of 
 
 ### Prop Types and Their Uses
 Just like every propkiller has different binds, everyone also varies with which props they use. <br/>
-These are the most common props I've seen and their typical uses: <br/>
 ╔ **NOTE:** <br/>
 ║ ***USE THE PROP "META" UNTIL YOU MASTER IT !!!*** <br/>
 ║ ***WHEN YOU ARE COMFORTABLE WITH USING THE META/COMMONLY USED PROPS, MOVE ON TO DIFFERENT PROPS TO BETTER SUIT <br/>
@@ -53,6 +52,8 @@ These are the most common props I've seen and their typical uses: <br/>
 ║ ***STARTING OUT WITH PROPS THAT ARE NOT IDEAL FOR PROPFLY WILL BE VERY DEMOTIVATING FOR YOU.*** <br/>
 ║ ***DOING THIS WILL MAKE SURE THAT DOESN'T HAPPEN.*** <br/>
 ╚ <br/>
+These are the most common props I've seen and their typical uses: <br/>
+
 Prop Meta: <br/>
 ```
 Launching: Moped / Trainwheel (Boosting/Spidering)
