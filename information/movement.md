@@ -97,7 +97,10 @@ The best props to launch with are the launching props in the [launching props se
 
 
 
-https://github.com/user-attachments/assets/6632ac79-9b2d-454c-a23c-469de449aec5
+
+
+Uploading launchingbetterversion.mp4…
+
 
 To launch: 
 1. Hold mouse1
