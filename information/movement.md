@@ -99,7 +99,8 @@ The best props to launch with are the launching props in the [launching props se
 
 
 
-Uploading launchingbetterversion.mp4…
+https://github.com/user-attachments/assets/05da9628-4ce5-417b-b6df-c98878c6103b
+
 
 
 To launch: 
