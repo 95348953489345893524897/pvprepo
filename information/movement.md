@@ -165,14 +165,19 @@ Like normal reversing, except this doesn't require 180s, and minimally changes y
 <br/>
 The best forward reversing props are the same as the best reversing props.
 
-https://github.com/user-attachments/assets/00dbf765-b9e3-482f-b1e3-ad9baddf9b6e
+
+
+https://github.com/user-attachments/assets/057af5bb-d1e9-426f-b74e-592dd915acda
+
 
 
 To forward reverse:
-1. Spawn prop to the SIDE of where you are going (very important)
+1. Spawn prop in FRONT of where you are going (very important)
 2. Grab prop and scroll inwards
-3. Use strafe keys to move AWAY from the spot you spawned the prop (doesn't require that much strafing, just makes it easier)
-4. Look in direction of wherever you want to go
+3. Use strafe keys to turn AWAY from the spot you spawned the prop
+4. Use strafe keys to turn back to direction you were originally going
+5. Drag prop while turning to go wherever you want
+6. Undo prop 
 
 ### Rebirding 
 Rebirding is a way to stay in the air if you start getting too close to the ground (like coastering) or if you just want to go higher up quickly (like spidering) <br/>
