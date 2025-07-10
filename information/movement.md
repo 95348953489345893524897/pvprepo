@@ -57,7 +57,7 @@ These are the most common props I've seen and their typical uses: <br/>
 
 Prop Meta: <br/>
 ```
-Launching: Moped / Trainwheel (For Boosting/Spidering)
+Launching: Moped (For Boosting/Spidering)
 Lockers: Lockers / Storage Closet (For Reversing/Rebirding)
 Rebirding : Glass Dome / Tube4x4x1to2x2 (Just for rebirding)
 Tide Gates : Tides Gate (ofc) / Walldestroyed01a (For Propkill)
