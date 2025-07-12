@@ -321,6 +321,7 @@ alias 	"trainwheel"			"gm_spawn models/props_phx/wheels/metal_wheel1.mdl
 alias 	"sawblade"			"gm_spawn models/props_junk/sawblade001a.mdl"
 alias 	"lockers2"			"gm_spawn models/props_wasteland/controlroom_storagecloset001b.mdl"
 alias 	"walldestroyed"			"gm_spawn models/props_debris/walldestroyed01a.mdl"
+alias	"coaster"			"gm_spawn models/xqm/coastertrack/slope_225_4.mdl"
 
 // Prop sets
 alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g  plate; pk"					// Probably the most commonly used prop set
