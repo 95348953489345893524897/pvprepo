@@ -479,6 +479,7 @@
 	"easychat_blur_images"			"1"
 	"// StyledStrike's (?) Custom Chat" "COMMENT"
 	"custom_chat_enable"			"0"
+	"custom_chat_show_steamid_on_join_leave" "1"					// Should the SteamID be visible when showing join/leave messages?
 	"NEWLINE" "NEWLINE"
 	"// Other" "COMMENT"
 	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
