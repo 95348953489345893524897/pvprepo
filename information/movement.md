@@ -88,7 +88,7 @@ Understanding where they spawn while in the open air is a concept essential to t
 Basically, you need to know the relationship between your velocity and the ideal prop spawn location (it isn't as complicated as it sounds) <br/>
 I will eventually put a **video here** since it is probably insanely hard to visualize this concept. <br/>
 
-### Pre Strafing (very important to understand)
+### Pre Strafing / Circle Strafing (very important to understand)
 I don't think that pre strafing/circle strafing is the correct term, but for the purpose of this section it's going to be called that. <br/>
 <br/>
 Circle strafes are done by airstrafing to the side in order to make a 180. If you were to see your movement from third person, it would look like a circle: <br/>
