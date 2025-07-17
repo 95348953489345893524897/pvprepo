@@ -121,8 +121,10 @@ https://github.com/user-attachments/assets/9a4f04fd-f1ec-4228-9c48-f555be1c3280
 
 - [ ] Launching with a circle strafe beforehand <br/>
       - I mess up a little with the air-strafe since I'm doing it from third person, but the idea is still conveyed<br/>
+<br/>
 Like I said, circle strafing is optional, but it really helps because it makes sure you don't go off to the side when launching. <br/>
 You should just worry about actually being able to launch, and after you can launch consistently, then you should learn how to circle strafe before launching. <br/>
+
 ### Launching (aka boosting)
 Launching is the most basic propfly technique, essential to getting in the air (most of the time). <br/>
 The best props to launch with are the launching props in the [launching props section](https://gist.github.com/95348953489345893524897/77ca18cdcbf3fe50f68b9938916453b2#file-045-props-txt-L751-L1027) of the spawnlist: <br/>
