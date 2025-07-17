@@ -34,7 +34,7 @@ Coasters: I don't use them, but when I do, I bind them to **"G"** <br/>
 * Set your ```physgun_wheelspeed``` to a high number like 120/999999 <br/>
 ```physgun_wheelspeed 999999999``` is what I use <br/>
 This makes your props move much faster when you scroll. It's necessary to propfly well. <br/>
-You can just set it to the default using ```physgun_wheelspeed 10``` if you want to build or are not propflying anymore. <br/>
+You can just set it back to the default using ```physgun_wheelspeed 10``` if you want to build or are not propflying anymore. <br/>
 * Unbind mousewheel <br/>
 ```unbind mwheelup; unbind mwheeldown``` <br/>
 This makes it so that you aren't accidentally swapping weapons while propflying.
