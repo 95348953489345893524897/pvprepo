@@ -168,6 +168,7 @@ To coaster:
 
 Spidering seems to just be a lazier way of boosting (in my opinion) <br/>
 Maybe I just don't really know what spidering is though. <br/>
+I think it's only used on maps with small skyboxes, like the propkill maps <br/>
 I wouldn't really recommend doing it, I'd rather just launch normally because it makes you go almost straight up, making you an easy target <br/>
 <br/>
 The best props to spider with seem to be in the launching props section of the spawnlist <br/>
