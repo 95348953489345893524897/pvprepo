@@ -120,7 +120,7 @@ It's optional for launching (but really useful), and recommended for forward-rev
 https://github.com/user-attachments/assets/9a4f04fd-f1ec-4228-9c48-f555be1c3280
 
 - [ ] Launching with a circle strafe beforehand <br/>
-      - I mess up a little with the air-strafe since I'm doing it from third person, but the idea is still conveyed
+      - I mess up a little with the air-strafe since I'm doing it from third person, but the idea is still conveyed<br/>
 Like I said, circle strafing is optional, but it really helps because it makes sure you don't go off to the side when launching. <br/>
 You should just worry about actually being able to launch, and after you can launch consistently, then you should learn how to circle strafe before launching. <br/>
 ### Launching (aka boosting)
