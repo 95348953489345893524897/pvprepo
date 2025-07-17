@@ -7,7 +7,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
   - Put in GarrysMod\garrysmod\settings\spawnlist<br/>
 - How to Propkill (By Libre) - https://steamcommunity.com/sharedfiles/filedetails/?id=1880069764 <br/>
 
-Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques in the section below: <br/>
+Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques in the sections below: <br/>
 ## Basics of Propfly: 
 Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/edit/main/information/movement.md#propkillpropfly-friendly-servers) to practice. <br/> 
 ### Binds
