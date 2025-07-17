@@ -112,7 +112,7 @@ To Circle Strafe:
 2. Hold A and turn left
    - Hold D and turn right if you're doing it the other direction
 <br/>
-Circle strafing is really simple but it's a very important step to make your movement smoother
+Circle strafing is really simple but it's a very important step to make your movement smoother<br/>
 It's optional for launching (but really useful), and recommended for forward-reversing
 <br/>
 
