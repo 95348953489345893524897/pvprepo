@@ -207,7 +207,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
   - chicago propkill server thing 69.39.225.6:27015<br/>
   - propkill.net (on the sandbox gamemode) 143.198.159.117:27015<br/>
   - Zbox (don't propkill here, most people will get annoyed, but propfly is OK with most people and easy to do here) 193.243.190.18:27064 <br/>
-  - T9C (Anarchy sandbox server, propkill/propfly all you want here) <br/>
+  - T9C Sandbox (Anarchy sandbox server, propkill/propfly all you want here) 78.108.218.110:26000 <br/>
   
 # Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.<br/>
