@@ -45,16 +45,8 @@ If you want ESP for propkill follow the "script retrieval and SETUP" section of 
 
 ### Prop Types and Their Uses
 Just like every propkiller has different binds, everyone also varies with which props they use. <br/>
-╔ **NOTE:** <br/>
-║ ***USE THE PROP "META" UNTIL YOU MASTER IT !!!*** <br/>
-║ ***WHEN YOU ARE COMFORTABLE WITH USING THE META/COMMONLY USED PROPS, MOVE ON TO DIFFERENT PROPS TO BETTER SUIT <br/>
-║ YOUR PERSONALITY/PLAYSTYLE.*** <br/>
-║ ***STARTING OUT WITH PROPS THAT ARE NOT IDEAL FOR PROPFLY WILL BE VERY DEMOTIVATING FOR YOU.*** <br/>
-║ ***DOING THIS WILL MAKE SURE THAT DOESN'T HAPPEN.*** <br/>
-╚ <br/>
 <br/>
 These are the most common props I've seen and their typical uses: <br/>
-
 Prop Meta: <br/>
 ```
 Launching: Moped (For Boosting/Spidering)
@@ -63,6 +55,14 @@ Rebirding : Glass Dome / Tube4x4x1to2x2 (Just for rebirding)
 Tide Gates : Tides Gate (ofc) / Walldestroyed01a (For Propkill)
 Coasters: Any coaster in the coasters section (For Coastering obviously)
 ```
+╔ **NOTE:** <br/>
+║ ***USE THE PROP "META" UNTIL YOU MASTER IT !!!*** <br/>
+║ ***WHEN YOU ARE COMFORTABLE WITH USING THE META/COMMONLY USED PROPS, MOVE ON TO DIFFERENT PROPS TO BETTER SUIT <br/>
+║ YOUR PERSONALITY/PLAYSTYLE.*** <br/>
+║ ***STARTING OUT WITH PROPS THAT ARE NOT IDEAL FOR PROPFLY WILL BE VERY DEMOTIVATING FOR YOU.*** <br/>
+║ ***DOING THIS WILL MAKE SURE THAT DOESN'T HAPPEN.*** <br/>
+╚ <br/>
+
 I HIGHLY recommend downloading the propkill spawnlist. It makes finding the ESSENTIAL props for propfly much easier, and also has fun props to use. <br/>
 
 ### Intro to Basic Technique
