@@ -559,7 +559,7 @@ dsp_room				"1"					// if set to 1, automatically adjusts DSP based on the room 
 dsp_slow_cpu 				"0"					// Use enhanced positional effects; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 dsp_spatial 				"40"					// Spatial delay effect for positional audio; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 snd_mute_losefocus			"0"					// Don't mute audio when alt tabbed
-voice_writevoices                       "1"					// Saves each speaker's voice data into separate .wav files; https://www.the303.org/tutorials/voicerecord.html
+voice_writevoices                       "0"					// Saves each speaker's voice data into separate .wav files; https://www.the303.org/tutorials/voicerecord.html
 
 // Sayliases
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
