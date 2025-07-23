@@ -494,7 +494,7 @@
 	"primitive_update_delay"		"0.015"
 	"primitive_thread_runtime"		"0.25"
 	"proper_clipping_max_physics"		"2"
-	"cl_playercolor"			"0.635294 0.000000 0.866667"
+	"cl_playercolor"			"-inf -inf -inf"
 	"cl_weaponcolor"			"-inf -inf -inf"
 	"cl_playerskin"				"0"
 	"cl_playerbodygroups"			"0"
