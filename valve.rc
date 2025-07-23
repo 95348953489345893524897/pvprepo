@@ -424,7 +424,7 @@ r_norefresh 				"1"					// Genuinely no idea; If set to 1, "Do not store a usele
 sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
 r_decals				"64"					// Limits all decals 
-cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
+//cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
 //cl_drawthrusterseffects			"0"					// Thruster effects
 props_break_max_pieces 			"0"					// Broken prop max pieces 
 gmod_mcore_test 			"1"					// Free FPS for most people
