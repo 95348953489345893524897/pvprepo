@@ -406,7 +406,7 @@ sv_cheats				"1"
 
 // Performance (Other)
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-//cl_forcepreload 			"0"					// cl_forcepreload is going to be removed in the next update but just in case set it to 0, "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://commits.facepunch.com/534666; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+//cl_forcepreload 			"0"					// REMOVED IN RECENT UPDATE, "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://commits.facepunch.com/534666; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 // cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 fps_max 				"240.5"					// Set fps limit to refresh rate; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
