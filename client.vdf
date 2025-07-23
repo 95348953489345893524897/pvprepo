@@ -483,6 +483,7 @@
 	"NEWLINE" "NEWLINE"
 	"// Other" "COMMENT"
 	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"cl_detaildist"				"0"					// 0 = Disable detail props like grass at the minimum distance; THIS COMMAND WONT SAVE NO MATTER WHAT I DO!!!! Hopefully this works!
 	"cl_drawspawneffect"			"0"					// 0 = Disable fade-in effect when props are spawned; lets you react faster to propkill
 	"effects_unfreeze"			"0"					// 0 = Disable unfreeze halo because it freezes the game every time someone unfreezes a large amount of props
 	"cl_drawthrusterseffects"		"0"					// Thruster effects
