@@ -267,9 +267,9 @@ net_queued_packet_thread		"1"					// Needs to be set to 1 or ping will raise ver
 // Other
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 cl_playermodel				"female01" 				// default "none"
-cl_weaponcolor				"-inf -inf -inf"			// default "0.30 1.80 2.10" ?
-cl_playercolor				"-inf -inf -inf"					// default ""0.24 0.34 0.41" ?
-cl_playerskin 				""					// not sure
+//cl_weaponcolor				"-inf -inf -inf"			// default "0.30 1.80 2.10" ?
+//cl_playercolor				"-inf -inf -inf"					// default ""0.24 0.34 0.41" ?
+//cl_playerskin 				""					// not sure
 cl_defaultweapon 			"weapon_physgun"			// On-respawn weapon
 cl_autowepswitch 			"0"					// 0 = Don't switch to more powerful weapons when picked up, Setting to 1 makes it so that if you have your physgun out and someone gives you a weapon it will automatically make you pick it up, This creates an obvious issue if you are building, Weapon power is determined by scripts/weapons/weapon.txt "Weight", and can be retrieved by Weapon:GetWeight(); https://github.com/Facepunch/garrysmod/tree/master/garrysmod/scripts/weapons
 gmod_language				"zh-cn"					// china woo-hoo
@@ -406,7 +406,7 @@ sv_cheats				"1"
 
 // Performance (Other)
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-cl_forcepreload 			"0"					// cl_forcepreload is going to be removed in the next update but just in case set it to 0, "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://commits.facepunch.com/534666; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+//cl_forcepreload 			"0"					// cl_forcepreload is going to be removed in the next update but just in case set it to 0, "cl_massive_hitches_at_surprising_times 1"; If set to 1 forces all information to preload, reducing loading pauses and stuttering by not loading information on the fly.; https://commits.facepunch.com/534666; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 sv_forcepreload 			"1"					// If set to 1, forces server-side preloading, once again reducing loading pauses.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 // cl_ragdoll_collide 			"0"					// DOESN'T WORK? (why?) 1 = prevents characters from merging into each other due to ragdoll effects; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 fps_max 				"240.5"					// Set fps limit to refresh rate; https://www.hltv.org/forums/threads/2742047/fps-max-what-to-set
@@ -425,14 +425,14 @@ sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; ht
 mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
 r_decals				"64"					// Limits all decals 
 cl_drawspawneffect 			"0"					// Effect when spawning props and stuff
-cl_drawthrusterseffects			"0"					// Thruster effects
+//cl_drawthrusterseffects			"0"					// Thruster effects
 props_break_max_pieces 			"0"					// Broken prop max pieces 
 gmod_mcore_test 			"1"					// Free FPS for most people
 mat_queue_mode 				"2"					// Does something for FPS, forgot what, but I don't think it has any downsides
 spawnicon_queue				"1"					// Enables experimental spawnicon loading queue, which prevents the game from freezing when opening large spawnlists; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables 
 mat_powersavingsmode			"0"					// no computer past 1999 should need this 
-physgun_halo				"1"					// 0 = Disable phygun grabbing halo
-effects_unfreeze			"0"					// 0 = Disable unfreeze halo because it freezes the game every time someone unfreezes a large amount of props
+//physgun_halo				"1"					// 0 = Disable phygun grabbing halo
+//effects_unfreeze			"0"					// 0 = Disable unfreeze halo because it freezes the game every time someone unfreezes a large amount of props
 
 // Graphics Settings
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
