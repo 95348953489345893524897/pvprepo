@@ -119,7 +119,7 @@ bind	"v"			 	"noclip
 alias switchbindsalias1 "bind w +walwaysrecorddemo; bind a +aalwaysrecorddemo; bind s +salwaysrecorddemo; bind d +dalwaysrecorddemo"
 alias switchbindsalias2 "bind w +walias; bind a +aalias; bind s +salias; bind d +dalias"
 
-bind	"w"			 	"+forward"
+bind	"w"			 	"exec onload; +forward"
 bind	"x" 			 	"lastinv"
 bind	"y"				"messagemode" 			 	
 bind	"z"			 	"gmod_undo"
