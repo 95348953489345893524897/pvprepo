@@ -483,7 +483,10 @@
 	"NEWLINE" "NEWLINE"
 	"// Other" "COMMENT"
 	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
-	"cl_chatfilters"			"63"					// Filters button in top right of chat box, 63 = Joins/Leaves, Name Changes, Public Chat, Server Messages, Team Changes, Achievemnt Announce, no Profanity Filters
+	"effects_unfreeze"			"0"					// 0 = Disable unfreeze halo because it freezes the game every time someone unfreezes a large amount of props
+	"cl_drawthrusterseffects"		"0"					// Thruster effects
+	"physgun_halo"				"1"					// 0 = Disable phygun grabbing halo
+	"cl_chatfilters"			"127"					// Filters button in top right of chat box, 63 = Joins/Leaves, Name Changes, Public Chat, Server Messages, Team Changes, Achievemnt Announce, no Profanity Filters
 	"gm_demo_icon"				"1"
 	"streamradio_mute"			"1"
 	"streamradio_volume"			"0"
