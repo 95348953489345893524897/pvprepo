@@ -322,10 +322,12 @@ alias 	"sawblade"			"gm_spawn models/props_junk/sawblade001a.mdl"
 alias 	"lockers2"			"gm_spawn models/props_wasteland/controlroom_storagecloset001b.mdl"
 alias 	"walldestroyed"			"gm_spawn models/props_debris/walldestroyed01a.mdl"
 alias	"coaster"			"gm_spawn models/xqm/coastertrack/slope_225_4.mdl"
+alias	"canalbars"			"gm_spawn models/props_canal/canal_bars004.mdl"
 
 // Prop sets
 alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g  plate; pk"					// Probably the most commonly used prop set
-alias 	"pk2"				"bind x walldestroyed; bind c lockers2; bind v trainwheel; bind g plate; pk"			// Prop set I use
+alias 	"pk2"				"bind x walldestroyed; bind c lockers2; bind v trainwheel; bind g plate; pk"			
+alias 	"pk3"				"bind x tide; bind c lockers2; bind v trainwheel; bind g plate; bind t canalbars; pk"			// Prop set I use
 
 alias 	"pk"     			"unbind mwheelup; unbind mwheeldown; physgun_wheelspeed 1000000"
 alias 	"npk"				"bind mwheelup invprev; bind mwheeldown invnext; bind v noclip; bind c +menu_context; bind x lastinv; physgun_wheelspeed 10"
