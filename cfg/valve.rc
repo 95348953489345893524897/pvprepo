@@ -243,7 +243,7 @@ cl_crosshairusealpha 			"1"
 cl_showerror				"1" 					// Show prediction errors, 2 for above plus detailed field deltas; https://developer.valvesoftware.com/wiki/List_of_Counter-Strike_2_console_commands_and_variables
 net_showsplits				"0"					// Print packet splits to console
 cl_updaterate 				"100"                            	// set to tickrate of server; https://steamcommunity.com/app/730/discussions/0/537405286653397372/
-cl_cmdrate 				"+100"                            	// set to tickrate of server; https://steamcommunity.com/app/730/discussions/0/537405286653397372/
+cl_cmdrate 				";100"                            	// set to tickrate of server; https://steamcommunity.com/app/730/discussions/0/537405286653397372/
 rate 					"999999999"                         	// If your internet is more than 6 Mbps use the max rate; https://www.reddit.com/r/GlobalOffensive/comments/68dzcd/best_rate/
 cl_resend 				"1.5"                            	// Delay in seconds before the client will resend the 'connect' attempt; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_interp 				"0"	                   	        // Players should set cl_interp 0, as this will ensure that the lerp is the precise length needed to accommodate the current server update rate. Raising the update rate will reduce lerp further.; https://developer.valvesoftware.com/wiki/Interpolation
