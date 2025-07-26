@@ -594,6 +594,8 @@ alias 	"idiotbox"			"say idiotbox §₵₳ⱤɎ ɆĐł₮łØ₦ ---> github.com
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 
 play 	"vo/npc/female01/hi01.wav"	// Hi.
+toggleconsole				// Open console
+
 echo;echo;echo;
 echo;echo;echo;
 echo;echo;echo;
