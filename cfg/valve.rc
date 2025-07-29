@@ -477,6 +477,7 @@ r_shadows 		 		"0"
 r_flashlightdepthtexture 		"1"
 r_shadowrendertotexture  		"0" 					// 1 = Non-blobby shadows. Sometimes turned on to see opponents standing near the other side of a wall; https://pastebin.com/zfnj81KM
 r_shadowmaxrendered 	 		"1"					// Max shadows the game will render; https://gist.github.com/joselgomezs/4396025
+r_flashlightdrawfrustum 		"1"					// 1 = Lets you see if your flashlight is on and also see lamp lights even if r_shadows is set to 0
 //r_shadowlod 		 		"-2"					// Use the lowest quality model to render shadows
 
 // Texture Details
