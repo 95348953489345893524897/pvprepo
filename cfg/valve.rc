@@ -446,8 +446,8 @@ mat_powersavingsmode			"0"					// no computer past 1999 should need this
 r_cheapwaterstart 			"300"					// Start of the CheapWater rendering (all before this range is expensive waterrendering); https://gist.github.com/joselgomezs/4396025
 r_cheapwaterend 			"1"					// End of the CheapWater rendering (all behind this range is black water); https://gist.github.com/joselgomezs/4396025 
 r_waterforceexpensive 			"0"
-r_WaterDrawReflection 			"1"					// 0 = disables all reflections on top of water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
-r_waterdrawrefraction 			"0"					// 0 = disables all refraction - that is images which appear distorted under the water. This will boost performance at the cost of realism, however you may experience some graphical anomalies on the water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+r_WaterDrawReflection 			"0"					// 0 = disables all reflections on top of water.; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
+r_waterdrawrefraction 			"1"					// 0 = disables all refraction - that is images which appear distorted under the water. Setting to 1 lowers fps a bit; https://forum.benchmark.rs/threads/hl2-comanda-zahtevnost-na-foru.59572/
 r_waterforcereflectentities 		"0"					// Forces as to whether entities should be reflected into water even if r_waterdrawreflection is 0; https://www.reddit.com/r/tf2/comments/5fakn9/lowest_water_setting_in_tf2/
 cl_show_splashes 			"0"					// disable water splashes
 mat_wateroverlaysize			"0" 					// Sets the resolution of water distortion. Must be multiple of 8.; https://gist.github.com/joselgomezs/4396025
