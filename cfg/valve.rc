@@ -316,6 +316,7 @@ alias	"thinangle"			"gm_spawn models/squad/sf_tubes/sf_tube1x360.mdl
 alias	"weirdlocker"			"gm_spawn models/props_c17/substation_stripebox01a.mdl
 alias 	"guill"				"gm_spawn models/props_citizen_tech/guillotine001a_base01.mdl
 alias 	"stealthan"			"gm_spawn models/props_c17/tv_monitor01_screen.mdl
+alias	"stealthan2"			"gm_spawn models/blackout.mdl
 alias 	"wheelspeed"			"gm_spawn models/mechanics/wheels/wheel_speed_72.mdl
 alias 	"trainwheel"			"gm_spawn models/props_phx/wheels/metal_wheel1.mdl
 alias 	"sawblade"			"gm_spawn models/props_junk/sawblade001a.mdl"
