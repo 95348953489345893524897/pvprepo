@@ -3078,379 +3078,369 @@
 		"615"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter_u001b.mdl"
+			"model"		"models/props_rooftop/sign_letter_h001.mdl"
 		}
 		"616"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter_h001.mdl"
+			"model"		"models/props_rooftop/sign_letter_m001.mdl"
 		}
 		"617"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter_m001.mdl"
+			"model"		"models/props_rooftop/sign_letter_t001.mdl"
 		}
 		"618"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter_t001.mdl"
+			"model"		"models/props_rooftop/sign_letter_u001b.mdl"
 		}
 		"619"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter_u001b.mdl"
+			"model"		"models/props_rooftop/sign_letter02_e002.mdl"
 		}
 		"620"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter02_e002.mdl"
+			"model"		"models/props_rooftop/sign_letter02_k002.mdl"
 		}
 		"621"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter02_k002.mdl"
+			"model"		"models/props_rooftop/sign_letter02_rus1002.mdl"
 		}
 		"622"
 		{
 			"type"		"model"
-			"model"		"models/props_rooftop/sign_letter02_rus1002.mdl"
-		}
-		"623"
-		{
-			"type"		"model"
 			"model"		"models/props_rooftop/sign_letter02_rus2002.mdl"
 		}
-		"624"
+		"623"
 		{
 			"type"		"header"
 			"text"		"Noise Makers"
 		}
-		"625"
+		"624"
 		{
 			"type"		"model"
 			"model"		"models/quarterlife/fsd-overrun-toy.mdl"
 		}
-		"626"
+		"625"
 		{
 			"type"		"model"
 			"model"		"models/props_vehicles/wagon001a.mdl"
 		}
-		"627"
+		"626"
 		{
 			"type"		"model"
 			"model"		"models/combine_apc_destroyed_gib06.mdl"
 		}
-		"628"
+		"627"
 		{
 			"type"		"model"
 			"model"		"models/props_debris/concrete_chunk05g.mdl"
 		}
-		"629"
+		"628"
 		{
 			"type"		"model"
 			"model"		"models/props_doors/door03_slotted_left.mdl"
 		}
-		"630"
+		"629"
 		{
 			"type"		"model"
 			"model"		"models/props_interiors/vendingmachinesoda01a_door.mdl"
 		}
-		"631"
+		"630"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_office/fire_extinguisher.mdl"
 		}
-		"632"
+		"631"
 		{
 			"type"		"model"
 			"model"		"models/weapons/w_crowbar.mdl"
 		}
-		"633"
+		"632"
 		{
 			"type"		"model"
 			"model"		"models/gibs/gunship_gibs_sensorarray.mdl"
 		}
-		"634"
+		"633"
 		{
 			"type"		"model"
 			"model"		"models/gibs/hgibs.mdl"
 		}
-		"635"
+		"634"
 		{
 			"type"		"model"
 			"model"		"models/gibs/hgibs_rib.mdl"
 		}
-		"636"
+		"635"
 		{
 			"type"		"model"
 			"model"		"models/gibs/hgibs_scapula.mdl"
 		}
-		"637"
+		"636"
 		{
 			"type"		"model"
 			"model"		"models/gibs/hgibs_spine.mdl"
 		}
-		"638"
+		"637"
 		{
 			"type"		"header"
 			"text"		"Annoying Gibs"
 		}
-		"639"
+		"638"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/bathroomwallhole01_wood_broken.mdl"
 		}
-		"640"
+		"639"
 		{
 			"type"		"model"
 			"model"		"models/props/de_inferno/crates_fruit1.mdl"
 		}
-		"641"
+		"640"
 		{
 			"type"		"model"
 			"model"		"models/props/de_train/biohazardtank.mdl"
 		}
-		"642"
+		"641"
 		{
 			"type"		"model"
 			"model"		"models/props/de_inferno/bombsiteroof.mdl"
 		}
-		"643"
+		"642"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/skylight_glass.mdl"
 		}
-		"644"
+		"643"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/bottle01.mdl"
 		}
-		"645"
+		"644"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/bottle02.mdl"
 		}
-		"646"
+		"645"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/bottle03.mdl"
 		}
-		"647"
+		"646"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_militia/wndw01.mdl"
 		}
-		"648"
+		"647"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_office/computer_monitor.mdl"
 		}
-		"649"
+		"648"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_office/computer_keyboard.mdl"
 		}
-		"650"
+		"649"
 		{
 			"type"		"header"
 			"text"		"Fun / Annoying Effects"
 		}
-		"651"
+		"650"
 		{
 			"type"		"model"
 			"model"		"models/player.mdl"
 		}
-		"652"
+		"651"
 		{
 			"type"		"model"
 			"model"		"models/perftest/gman.mdl"
 		}
-		"653"
+		"652"
 		{
 			"type"		"model"
 			"model"		"models/props_skybox/coast01.mdl"
 		}
-		"654"
+		"653"
 		{
 			"type"		"model"
 			"model"		"models/props_lab/hl1teleport.mdl"
 		}
-		"655"
+		"654"
 		{
 			"type"		"model"
 			"model"		"models/props/de_dust/du_door_temple_entrance.mdl"
 		}
-		"656"
+		"655"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/stasisshield.mdl"
 		}
-		"657"
+		"656"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/portalskydome.mdl"
 		}
-		"658"
+		"657"
 		{
 			"type"		"model"
 			"model"		"models/effects/splode.mdl"
 		}
-		"659"
+		"658"
 		{
 			"type"		"model"
 			"model"		"models/effects/portalrift.mdl"
 		}
-		"660"
+		"659"
 		{
 			"type"		"model"
 			"model"		"models/effects/portalfunnel.mdl"
 		}
-		"661"
+		"660"
 		{
 			"type"		"model"
 			"model"		"models/props/cs_office/clouds.mdl"
 		}
-		"662"
+		"661"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadelcloud001a.mdl"
 		}
-		"663"
+		"662"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/coreball.mdl"
 		}
-		"664"
+		"663"
 		{
 			"type"		"model"
 			"model"		"models/props_foliage/tree_springers_card_01.mdl"
 		}
-		"665"
+		"664"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadelcloudcenter.mdl"
 		}
-		"666"
+		"665"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadeldestroyed001.mdl"
 		}
-		"667"
+		"666"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadelburst.mdl"
 		}
-		"668"
+		"667"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadelsplode001a.mdl"
 		}
-		"669"
+		"668"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/combine_citadelcard001b.mdl"
 		}
-		"670"
-		{
-			"type"		"model"
-			"model"		"models/props_combine/stasisshield.mdl"
-		}
-		"671"
+		"669"
 		{
 			"type"		"model"
 			"model"		"models/props_combine/stasisvortex.mdl"
 		}
-		"672"
+		"670"
 		{
 			"type"		"model"
 			"model"		"models/props_lab/scanner4_scrapyard.mdl"
 		}
-		"673"
+		"671"
 		{
 			"type"		"header"
 			"text"		"Laggans"
 		}
-		"674"
+		"672"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/construct/windows/window_curve360x2.mdl"
 		}
-		"675"
+		"673"
 		{
 			"type"		"model"
 			"model"		"models/props_junk/popcan01a.mdl"
 		}
-		"676"
+		"674"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/misc/potato_launcher_cap.mdl"
 		}
-		"677"
+		"675"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/misc/potato_launcher.mdl"
 		}
-		"678"
+		"676"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/misc/potato_launcher_chamber.mdl"
 		}
-		"679"
+		"677"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/gears/bevel36.mdl"
 		}
-		"680"
+		"678"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/gears/bevel90_24.mdl"
 		}
-		"681"
+		"679"
 		{
 			"type"		"model"
 			"model"		"models/xqm/rails/loop_right.mdl"
 		}
-		"682"
+		"680"
 		{
 			"type"		"model"
 			"model"		"models/xqm/rails/loop_left.mdl"
 		}
-		"683"
+		"681"
 		{
 			"type"		"model"
 			"model"		"models/cranes/crane_frame_interior.mdl"
 		}
-		"684"
+		"682"
 		{
 			"type"		"model"
 			"model"		"models/Combine_Strider.mdl"
 		}
-		"685"
+		"683"
 		{
 			"type"		"model"
 			"model"		"models/props_c17/metalladder001.mdl"
 		}
-		"686"
+		"684"
 		{
 			"type"		"model"
 			"model"		"models/props_c17/light_magnifyinglamp02.mdl"
 		}
-		"687"
+		"685"
 		{
 			"type"		"model"
 			"model"		"models/props_c17/metalladder002b.mdl"
 		}
-		"688"
+		"686"
 		{
 			"type"		"model"
 			"model"		"models/props_lab/cornerunit.mdl"
 		}
-		"689"
+		"687"
 		{
 			"type"		"model"
 			"model"		"models/props_lab/generatorconsole.mdl"
 		}
-		"690"
+		"688"
 		{
 			"type"		"model"
 			"model"		"models/props_phx/wheels/metal_wheel2.mdl"
