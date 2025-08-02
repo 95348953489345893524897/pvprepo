@@ -8,7 +8,7 @@
 		"1"
 		{
 			"type"		"header"
-			"text"		"Getting Out Props:"
+			"text"		"Getting Out:"
 		}
 		"2"
 		{
