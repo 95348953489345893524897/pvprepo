@@ -5,7 +5,7 @@ alias zbox "connect 193.243.190.18:27064"					// Testing server
 
 // Console
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-developer				"1"					// prints more things and shows console prints on top left 
+developer					"1"					// prints more things and shows console prints on top left 
 con_filter_dupe				"1"					// Set to 1 to remove duplicate messages from client console
 
 // Hud
