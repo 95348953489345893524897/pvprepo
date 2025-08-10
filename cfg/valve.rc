@@ -5,38 +5,38 @@ alias zbox "connect 193.243.190.18:27064"					// Testing server
 
 // Console
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-developer					"1"					// prints more things and shows console prints on top left 
-con_filter_dupe				"1"					// Set to 1 to remove duplicate messages from client console
+developer					"1"								// prints more things and shows console prints on top left 
+con_filter_dupe				"1"								// Set to 1 to remove duplicate messages from client console
 
 // Hud
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-cl_showbattery				"1"					// Draw current battery level at top of screen when on battery power; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+cl_showbattery				"1"								// Draw current battery level at top of screen when on battery power; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_show_connectionless_packet_warnings	"0"					// Show console messages about ignored connectionless packets on the client; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
-cl_showpos 				"1"					// Shows velocity
+cl_showpos 				"1"									// Shows velocity
 cl_showfps				"1"					// 2 = smooth fps
-cl_showhelp 				"0"					// Annoying help popups 
-cl_steamoverlay_pos			"0"					// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
-net_graphpos 				"1"					// 1 = right 2 = center 3 = left
+cl_showhelp 			"0"					// Annoying help popups 
+cl_steamoverlay_pos		"0"					// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+net_graphpos 			"1"					// 1 = right 2 = center 3 = left
 net_graph 				"1"					// Shows ping and more useful performance stats
-cl_software_cursor 			"0"					// 1 = makes the cursor disappear, so don't use
-hud_fastswitch				"0"					// 0 = Click on weapon slot to switch instead of just using numbers
-cc_subtitles 				"0"					// 1 = don't show sound effect captions, just voice overs (i.e., won't help hearing impaired players); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+cl_software_cursor 		"0"					// 1 = makes the cursor disappear, so don't use
+hud_fastswitch			"0"					// 0 = Click on weapon slot to switch instead of just using numbers
+cc_subtitles 			"0"					// 1 = don't show sound effect captions, just voice overs (i.e., won't help hearing impaired players); https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cc_lang					"english"				// Closed captions language; supported language list: https://wiki.facepunch.com/gmod/Addon_Localization
-closecaption				"1"
+closecaption			"1"
 
 // Input Settings
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
 m_rawinput		 		"1"					// 1 = Turn on raw input for mouse movement
 sensitivity		 		"1"					// preference        
-zoom_sensitivity_ratio 			"1.04570982"				// sensitivity ratio 1 is actually around 0.25x, I think 1.04 is 1:1 sens
+zoom_sensitivity_ratio 	"1.04570982"				// sensitivity ratio 1 is actually around 0.25x, I think 1.04 is 1:1 sens
 in_usekeyboardsampletime 		"1"					// Keyboard filtering not used unless you use keylook, and you probably would not want this off if you did; https://docs.comfig.app/latest/tf2/misconceptions/#resolution-and-windows-launch-options
 m_filter 		 		"0"					// 1 = 2 frame mouse filtering, M_FILTER functions now, and does what it's supposed to. HOORAY!; https://commits.facepunch.com/534668 
-m_customaccel		 		"0"
-m_customaccel_exponent	 		"0"
-m_customaccel_scale			"0"
-m_mouseaccel1 		 		"0"
-m_mouseaccel2 		 		"0"
-m_mousespeed		 		"0"					// Windows mouse acceleration (0 to disable, 1 to enable [Windows 2000: enable initial threshold], 2 to enable secondary threshold; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+m_customaccel		 	"0"
+m_customaccel_exponent	 "0"
+m_customaccel_scale		"0"
+m_mouseaccel1 		 	"0"
+m_mouseaccel2 		 	"0"
+m_mousespeed		 	"0"					// Windows mouse acceleration (0 to disable, 1 to enable [Windows 2000: enable initial threshold], 2 to enable secondary threshold; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 m_pitch			 		"0.022"					// Mouse pitch factor; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 m_yaw			 		"0.022"					// Mouse yaw factor; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 m_side			 		"50"					// +strafe side factor
@@ -44,10 +44,10 @@ m_forward				"50"					// +strafe forward factor
 
 // Fovs
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
-fov_desired 				"87"					// preference
-viewmodel_fov 				"0"					// default 54, 0 for hidden viewmodel
-cl_wpn_sway_interp 			"10000000000000"			// Make m9k weapons, weapons with error viewmodels, etc. basically disappear (set to 0.1 to make viewmodels come back
-cl_wpn_sway_scale 			"100000000000"				// Ditto (set to 1.5 to make viewmodels come back)
+fov_desired 			"87"					// preference
+viewmodel_fov 			"0"					// default 54, 0 for hidden viewmodel
+cl_wpn_sway_interp 		"10000000000000"			// Make m9k weapons, weapons with error viewmodels, etc. basically disappear (set to 0.1 to make viewmodels come back
+cl_wpn_sway_scale 		"100000000000"				// Ditto (set to 1.5 to make viewmodels come back)
 
 // Ingame Utility Binds 
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
@@ -62,7 +62,7 @@ alias 	"menu_context_toggle1"		"alias menu_context_toggle menu_context_toggle2; 
 alias 	"menu_context_toggle2"		"alias menu_context_toggle menu_context_toggle1; -menu_context"
 
 // Make Scoreboard a toggle 
-alias 	"showscores_toggle"		"showscores_toggle1
+alias 	"showscores_toggle"			"showscores_toggle1
 alias	"showscores_toggle1"		"alias showscores_toggle showscores_toggle2; +showscores"
 alias	"showscores_toggle2"		"alias showscores_toggle showscores_toggle1; -showscores"
 
@@ -75,16 +75,16 @@ alias	"menu_toggle2"			"alias menu_toggle menu_toggle1; -menu"
 alias +maga "+reload; +attack2"
 alias -maga "-reload; -attack2"
 
-bind	"0"				"slot0"
+bind	"0"					"slot0"
 bind	"1" 				"slot1"
 bind	"2" 				"slot2"
-bind	"3"				"slot3"
-bind	"4"				"slot4"
+bind	"3"					"slot3"
+bind	"4"					"slot4"
 bind	"5" 				"slot5"
 bind	"6" 				"slot6"
 bind	"7" 				"slot7"
 bind	"8" 				"slot8"
-bind	"9"				"slot9"
+bind	"9"					"slot9"
 bind	"a" 				"+moveleft"
 bind	"b" 				"stopsound"
 bind	"d" 				"+moveright"
@@ -93,19 +93,19 @@ bind	"f" 				"impulse 100"
 bind	"g" 				"impulse 201"
 bind	"h" 				"TOGGLE_ZOOM"					// Bind +zoom if you want to hold down the zoom key instead
 unbind	"i" 			
-bind	"j"				"snd_restart"
-bind	"k"				"kill; explode"					// Don't think explode works but whatever
-bind	"l"				"health"
-bind 	"m"				"hl2spawn"
-bind	"n"				"hl2give"	 
-bind	"o"				"armor"	 
-bind	"p"		 		"demoui"
-bind	"q"		 		"+menu"
-bind	"r"		 		"+reload"
+bind	"j"					"snd_restart"
+bind	"k"					"kill; explode"					// Don't think explode works but whatever
+bind	"l"					"health"
+bind 	"m"					"hl2spawn"
+bind	"n"					"hl2give"	 
+bind	"o"					"armor"	 
+bind	"p"		 			"demoui"
+bind	"q"		 			"+menu"
+bind	"r"		 			"+reload"
 bind	"s" 		 		"+back"
 unbind	"t"	 	
 bind	"u" 				"messagemode2"
-bind	"v"			 	"noclip
+bind	"v"			 		"noclip
 
 "alias" "+walwaysrecorddemo"		"+forward; exec alwaysrecorddemo"		// used to record a timestamped demo every x seconds, using https://gist.github.com/95348953489345893524897/1ef074079992546f6e0dc89e2ce9c12e
 "alias" "-walwaysrecorddemo"		"-forward"
@@ -119,42 +119,42 @@ bind	"v"			 	"noclip
 alias switchbindsalias1 "bind w +walwaysrecorddemo; bind a +aalwaysrecorddemo; bind s +salwaysrecorddemo; bind d +dalwaysrecorddemo"
 alias switchbindsalias2 "bind w +walias; bind a +aalias; bind s +salias; bind d +dalias"
 
-bind	"w"			 	"exec onload; +forward"
-bind	"x" 			 	"lastinv"
-bind	"y"				"messagemode" 			 	
-bind	"z"			 	"gmod_undo"
-bind	"[" 			 	"record fill; stop"				// Used to reset graphics and sometimes "unload" weapon models
-bind	"]" 			 	"stop"
-bind	"`"			 	"toggleconsole"
-bind	"ENTER" 		 	"+attack"
-bind	"SPACE" 		 	"+jump"
+bind	"w"			 			"exec onload; +forward"
+bind	"x" 			 		"lastinv"
+bind	"y"						"messagemode" 			 	
+bind	"z"			 			"gmod_undo"
+bind	"[" 		 			"record fill; stop"				// Used to reset graphics and sometimes "unload" weapon models
+bind	"]" 				 	"stop"
+bind	"`"		 				"toggleconsole"
+bind	"ENTER" 		 		"+attack"
+bind	"SPACE" 		 		"+jump"
 
 alias 	"+gammachange"		"+showscores; mat_monitorgamma 1.7"							
 alias 	"-gammachange"		"-showscores; mat_monitorgamma 1.5"
 
-bind	"TAB"			 	"+gammachange"					// gmod keeps changing my brightness whenever i alt tab so this is a bind to reset it easily
-bind	"ESCAPE"		 	"cancelselect"
-bind	"PAUSE"			 	"pause"
-bind	"SHIFT"			 	"+speed"
-bind	"ALT"			 	"+walk"
-bind	"CTRL"   	 		"+duck"
-bind	"UPARROW"	 		"+lookup"
+bind	"TAB"			 		"+gammachange"					// gmod keeps changing my brightness whenever i alt tab so this is a bind to reset it easily
+bind	"ESCAPE"		 		"cancelselect"
+bind	"PAUSE"			 		"pause"
+bind	"SHIFT"			 		"+speed"
+bind	"ALT"			 		"+walk"
+bind	"CTRL"   	 			"+duck"
+bind	"UPARROW"	 			"+lookup"
 bind	"LEFTARROW" 	 		"+left"
-bind	"DOWNARROW"	 		"+lookdown"
+bind	"DOWNARROW"	 			"+lookdown"
 bind	"RIGHTARROW" 	 		"+right"
-bind	"F1" 		 		"gm_showhelp"
-bind	"F2"	 	 		"gm_showteam"
-bind	"F3" 		 		"gm_showspare1"
-bind	"F4" 		 		"gm_showspare2"
-bind	"F5" 		 		"jpeg"
+bind	"F1" 		 			"gm_showhelp"
+bind	"F2"	 	 			"gm_showteam"
+bind	"F3" 		 			"gm_showspare1"
+bind	"F4" 		 			"gm_showspare2"
+bind	"F5" 		 			"jpeg"
 unbind	"F7"	  	
 unbind	"F8"	 	 
 unbind	"F9"	 
 unbind	"F10"	 
 unbind	"F11"
 unbind 	"F12"
-bind	"MOUSE1"	 		"+attack"
-bind	"MOUSE2"	 		"+attack2"
+bind	"MOUSE1"	 			"+attack"
+bind	"MOUSE2"	 			"+attack2"
 unbind 	"MOUSE3"									// scroll click
 unbind	"MOUSE4"	 								// mouse side button
 unbind	"MOUSE5"									// mouse side button
@@ -175,29 +175,29 @@ alias 	"-mback" 			"-back;checkfwd;alias checkback none"
 alias 	"-mleft" 			"-moveleft;checkright;alias checkleft none"
 alias 	"-mright"			"-moveright;checkleft;alias checkright none"
 alias 	"checkfwd" 			"none"
-alias 	"checkback" 			"none"
-alias 	"checkleft" 			"none"
-alias 	"checkright"			"none"
+alias 	"checkback" 		"none"
+alias 	"checkleft" 		"none"
+alias 	"checkright"		"none"
 alias 	"none 				""
 	
 // Perfect crouch jump (Don't know why you'd need this, but it's fun)
 alias 	"+duckjump"			"+jump; +duck"
 alias 	"-duckjump"			"-JUMP; -DUCK"
 alias 	"duckjump"			"bind space +duckjump"
-alias 	"noduckjump"			"bind space +jump"
-// bind 	"space"				"+duckjump"
+alias 	"noduckjump"		"bind space +jump"
+// bind 	"space"			"+duckjump"
 
-// Lets you continously crouch jump on Zoltins, hard to time and pretty useless but fun
+// Lets you continously crouch jump on Zoltins, hard to time and I think it's only a visual glitch, but I'm still keeping it here anyway in case it isn't
 // CTRL then SPACE then continue when hitting the ground
 alias +unduckjump "+jump; -duck
 alias -unduckjump "-jump;"
-//bind space "+unduckjump"
+// bind space	"+unduckjump"
 
 // Hold f and double tap space to boost 
-alias +f_pressedarthur "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 					// If F is pressed then set the alias 
-alias -f_pressedarthur "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -jump; bind space +jump " 					// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
+alias +f_pressedarthur "alias +arthurjump +arthurjump1; alias -arthurjump -arthurjump1; bind space +arthurjump" 						// If F is pressed then set the alias 
+alias -f_pressedarthur "alias +arthurjump; alias -arthurjump; -attack; -lookdown; -jump; bind space +jump " 							// If F isn't pressed then unset the alias, reset +commands, and set space to +jump
 
-alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 				// Pull out grav gun and look straight down
+alias +arthurjump1 "alias +arthurjump +arthurjump2; +lookdown; use weapon_physcannon; +jump; cl_pitchspeed 9999999;" 					// Pull out grav gun and look straight down
 alias -arthurjump1 "alias -arthurjump -arthurjump2; -jump; -lookdown" 
 alias +arthurjump2 "alias +arthurjump +arthurjump1; +attack; gm_spawn models/props_c17/trappropeller_blade.mdl; cl_pitchspeed 225" 		// Punt, spawn propeller and set pitchspeed to default
 alias -arthurjump2 "alias -arthurjump -arthurjump1; -attack; undo; lastinv;" // switch to last weapon and undo and reset everything
