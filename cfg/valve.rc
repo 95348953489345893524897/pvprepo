@@ -13,9 +13,9 @@ con_filter_dupe				"1"								// Set to 1 to remove duplicate messages from clie
 cl_showbattery				"1"								// Draw current battery level at top of screen when on battery power; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_show_connectionless_packet_warnings	"0"					// Show console messages about ignored connectionless packets on the client; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_showpos 				"1"									// Shows velocity
-cl_showfps				"1"					// 2 = smooth fps
-cl_showhelp 			"0"					// Annoying help popups 
-cl_steamoverlay_pos		"0"					// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
+cl_showfps				"1"									// 2 = smooth fps
+cl_showhelp 			"0"									// Annoying help popups 
+cl_steamoverlay_pos		"0"									// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 net_graphpos 			"1"					// 1 = right 2 = center 3 = left
 net_graph 				"1"					// Shows ping and more useful performance stats
 cl_software_cursor 		"0"					// 1 = makes the cursor disappear, so don't use
@@ -326,8 +326,8 @@ alias	"coaster"			"gm_spawn models/xqm/coastertrack/slope_225_4.mdl"
 alias	"canalbars"			"gm_spawn models/props_canal/canal_bars004.mdl"
 
 // Prop sets
-alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g  plate; pk"					// Probably the most commonly used prop set
-alias 	"pk2"				"bind x tide; bind c lockers2; bind v trainwheel; bind g plate; bind t canalbars; pk"		// Prop set I use
+alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g coaster; pk"								// Probably the most commonly used prop set
+alias 	"pk2"				"bind x tide; bind c lockers2; bind v moped; bind g coaster; bind t canalbars; pk"		// Prop set I use
 alias 	"pk2.2"				"bind x walldestroyed; bind c lockers2; bind v trainwheel; bind g plate; pk"			
 
 alias 	"pk"     			"unbind mwheelup; unbind mwheeldown; physgun_wheelspeed 1000000"
