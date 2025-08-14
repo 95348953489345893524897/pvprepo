@@ -822,7 +822,7 @@
 		"161"
 		{
 			"type"		"model"
-			"model"		"models/props_forest/fence_barb_256.mdl"
+			"model"		"models/props/de_train/chainlinkgate.mdl"
 		}
 		"162"
 		{
