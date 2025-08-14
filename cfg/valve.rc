@@ -324,6 +324,7 @@ alias 	"lockers2"			"gm_spawn models/props_wasteland/controlroom_storagecloset00
 alias 	"walldestroyed"			"gm_spawn models/props_debris/walldestroyed01a.mdl"
 alias	"coaster"			"gm_spawn models/xqm/coastertrack/slope_225_4.mdl"
 alias	"canalbars"			"gm_spawn models/props_canal/canal_bars004.mdl"
+alias	"fakefence"			"gm_spawn models/props/de_train/chainlinkgate.mdl"
 
 // Prop sets
 alias 	"pk1"				"bind x tide; bind c lockers; bind v moped; bind g coaster; pk"								// Probably the most commonly used prop set
