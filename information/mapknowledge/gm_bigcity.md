@@ -9,4 +9,3 @@ Later
 Advdupe with ladders to secret room and spawn apts. with translucent cubes covering the ladders. <br/>
 
 [bigcity_ladders.txt](../../data/advdupe2/bigcity_ladders.txt) <br/>
-Add pictures later <br/>
