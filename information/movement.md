@@ -267,6 +267,9 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
 # Wallstrafing
 - add later
 
+# Big Bill's Thrill
+- add later
+
 # Balloons (For scaling walls)
 - Demonstration - https://youtu.be/-4LRnP6-fvM<br/>
   1. Add explanation later
