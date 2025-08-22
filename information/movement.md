@@ -302,7 +302,7 @@ An important step to BBT is that you **cannot** let the prop collide with the wh
 `There is a small amount of space between where the bounding box ends and where the prop will start colliding with the wheel.` <br/>
 
 The easiest way to do BBT is to practice in Singleplayer: <br/>
-  1. Set sv_cheats 1
+  `1. Set sv_cheats 1
   2. Spawn a jeep
   3. Put ent_bbox in console while looking at it
   4. Spawn a prop like the fuel barrel
@@ -312,3 +312,4 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   7. Press W and S to move forward and backwards until the prop starts floating oddly
   8. Run into it
   9. [ add more steps later ] 
+`
