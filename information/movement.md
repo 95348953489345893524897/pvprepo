@@ -319,4 +319,4 @@ Side Effects:
 
 Caveats: 
 - The Jeep must not be touching any player or NPC. If either touch the jeep, the collisions are reset and the glitched state stops.
-- The noclip state isn't very controllable and requires a lot of air strafing. Most of the time you will not be able to go in the direction that you want unless it was predetermined (the direction is determined by what your velocity is when you touched the prop)
+- The noclip state isn't very controllable and requires a lot of air strafing. The direction you go is heavily determined by your direction when you touched the prop.
