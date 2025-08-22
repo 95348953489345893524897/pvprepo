@@ -318,5 +318,6 @@ Side Effects:
 - List later
 
 Caveats: 
+- Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
 - The Jeep must not be touching any player or NPC. If either touch the jeep, the collisions are reset and the glitched state stops.
 - The noclip state isn't very controllable and requires a lot of air strafing. The direction you go in is heavily determined by your direction when you touched the prop.
