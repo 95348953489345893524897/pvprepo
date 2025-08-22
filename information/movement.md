@@ -306,7 +306,7 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   1. Set sv_cheats 1
   2. Spawn a jeep
   3. Put ent_bbox in console while looking at it
-  4. Spawn a prop like the fuel barrel
+  4. Spawn a prop like the oil drum
   5. Grab it
   6. Line up the prop to touch the bounding box (green sphere) but not the inner collision box (orange circle in diagrams)
      - This is done by sight, you will know that it is colliding when the prop is moving weirdly up or down 
