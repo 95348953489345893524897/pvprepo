@@ -274,8 +274,8 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
 - Demonstration - https://youtu.be/-4LRnP6-fvM<br/>
   1. Add explanation later
 
-# Big Bill's Thrill
-Big Bill's Thrill (BBT) is a speedrunning trick discovered in HL2. It allows you to enter a noclip-like state, teleport, and offset your hitbox, causing [some?] player tracking E2s to track the wrong hitbox. <br/>
+# Bill's Big Thrill
+Bill's Big Thrill (BBT) is a speedrunning trick discovered in HL2. It allows you to enter a noclip-like state, teleport, and offset your hitbox, causing [some?] player tracking E2s to track the wrong hitbox. <br/>
 <br/>
 How it works: 
   - Brushing a prop against the tangent of the bounding box of a wheel gives it glitched collisions (has to be a real wheel from the Jeep, Jalopy, APC, etc., not just the wheel prop).
