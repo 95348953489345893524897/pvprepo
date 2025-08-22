@@ -267,9 +267,34 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
 # Wallstrafing
 - add later
 
-# Big Bill's Thrill
-- add later
-
 # Balloons (For scaling walls)
 - Demonstration - https://youtu.be/-4LRnP6-fvM<br/>
   1. Add explanation later
+
+# Big Bill's Thrill
+Big Bill's Thrill (BBT) is a speedrunning trick discovered in HL2. It allows you to enter a noclip like state, teleport, and offset your hitbox so that [some?] player tracking E2s track the wrong hitbox. <br/>
+How it works: 
+  - By brushing a prop against the bounding box of a wheel (A real wheel from the Jeep, Jalopy, APC, ETC., not just a prop), the prop gets odd collisions.
+  - When the player collides with the prop by touching it, they also get these similar odd collisions. 
+    - After the player gets those collisions, they enter a glitched state where they start floating.
+
+<img width="1920" height="1080" alt="poster-25-08-22 08-36-11 2" src="https://github.com/user-attachments/assets/4b3c759b-5dfd-42aa-b500-9e054290d6c0" /> <br/>
+Bounding boxes of Jeep and barrel. <br/>
+<br/>
+To do BBT, you need to brush a prop against the bounding box of the wheel of the Jeep or Jalopy without having it collide with the vehicle itself. This is done by running the prop against the tangent of the bounding box's sphere. <br/>
+<br/>
+<img width="400" height="400" alt="tangent-radius" src="https://github.com/user-attachments/assets/e1d090c9-08d5-4cec-b62a-f2f12bb12244" /> <br/>
+Tangent of a circle. <br/>
+
+<img width="330" height="259" alt="image" src="https://github.com/user-attachments/assets/adfd2ef6-82ce-46e7-a7ff-19f8f144ea91" /> <br/>
+The blue line is the tangent of the bounding box. 
+
+<br/>
+An important step to BBT is that you **cannot** let the prop collide with the wheel itself. <br/>
+There is a small window betweeen
+<img width="305" height="179" alt="image" src="https://github.com/user-attachments/assets/828679eb-ebef-4cd1-92c8-67c0a983f134" /> <br/>
+Diagram of what the collision box probably looks like
+
+<img width="344" height="233" alt="image" src="https://github.com/user-attachments/assets/c1e921cf-1e5d-424a-b464-4901496b3e82" /> <br/>
+
+
