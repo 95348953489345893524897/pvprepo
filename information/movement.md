@@ -296,7 +296,7 @@ To do BBT, you need to brush a prop against the bounding box of the wheel of the
 <img width="305" height="179" alt="image" src="https://github.com/user-attachments/assets/828679eb-ebef-4cd1-92c8-67c0a983f134" /> <br/>
 `Drawing of what the collision box probably looks like` <br/>
 
-An important step to BBT is that you **cannot** let the prop collide with the wheel or Jeep itself. It is only brushing against the bounding box, not the collision box <br/>
+An important step to BBT is that you **cannot** let the prop collide with the wheel or Jeep itself. It is only brushing against the bounding box, not the collision box (orange circle in image above) <br/>
 
 <img width="344" height="233" alt="image" src="https://github.com/user-attachments/assets/c1e921cf-1e5d-424a-b464-4901496b3e82" /> <br/>
 `There is a small amount of space between where the bounding box ends and where the prop will start colliding with the wheel.` <br/>
