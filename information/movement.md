@@ -300,6 +300,7 @@ An important step to BBT is that you **cannot** let the prop collide with the wh
 
 <img width="344" height="233" alt="image" src="https://github.com/user-attachments/assets/c1e921cf-1e5d-424a-b464-4901496b3e82" /> <br/>
 `There is a small amount of space between where the bounding box ends and where the prop will start colliding with the wheel.` <br/>
+<br/>
 
 
 
@@ -321,9 +322,29 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
     - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity.
   10. "ent_bbox player" in console to see your Havok box
 ```
-Side Effects:
-- List later
+## Side Effects:
 
+Noclip:
+
+
+https://github.com/user-attachments/assets/446a75c8-5419-4b70-94a9-54423b2b2070
+
+
+- When in the glitched state, you are in a very limited noclip.
+- It is extremely hard to turn
+- You can go through walls though, one of the main uses of this
+
+
+Prop Welding:
+
+
+
+https://github.com/user-attachments/assets/56d89b9d-c0f7-4b98-9ae8-5a917864a4be
+
+
+- During certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
+- When you respawn, these welds go away (since there is no collision with the original glitched prop anymore, a new life)
+- 
 Caveats: 
 - Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
 - The Jeep must not be touching any player or NPC. If either touch the jeep, the collisions are reset and the glitched state stops.
