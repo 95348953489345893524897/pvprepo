@@ -381,5 +381,5 @@ https://github.com/user-attachments/assets/79d7753b-0d57-4096-a6ac-ab16b8540bb2
 - I'm not sure how to wind it down, the collision of the player with the map probably starts at your feet, not your head (speculation).
 
 ## Caveats: 
-- Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
+- Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics). There are other tools to freeze the prop however [superfreeze tool?].
 - The Jeep [and glitched prop?] must not be touching any player or NPC. If either touch the jeep, the collisions are reset and the glitched state stops.
