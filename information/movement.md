@@ -320,7 +320,8 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   8. Run into the prop
   9. Use the precision tool to push the prop (right click)
     - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity.
-  10. "ent_bbox player" in console to see your Havok box
+  10. Crouch to get out of noclip state
+  11. "ent_bbox player" in console to see your Havok box
 ```
 ## Side Effects:
 
@@ -342,9 +343,20 @@ Prop Welding:
 https://github.com/user-attachments/assets/56d89b9d-c0f7-4b98-9ae8-5a917864a4be
 
 
-- During certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
+- Under certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
 - When you respawn, these welds go away (since there is no collision with the original glitched prop anymore, a new life)
 - Do not weld too many props together, especially vehicles, because when you respawn and all the welds are undone your game will freeze
+
+
+Reboosting or velocity sharing:
+
+
+https://github.com/user-attachments/assets/f55db1b9-f950-457e-bd74-971d4590efb1
+
+
+- During the noclip state you are sharing the velocity of the glitched prop. 
+- If you get out of the noclip state, you can still enter it again by bumping or slamming a prop into your Havok box. 
+
 
 ## Caveats: 
 - Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
