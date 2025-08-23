@@ -354,7 +354,7 @@ Reboosting or velocity sharing:
 https://github.com/user-attachments/assets/f55db1b9-f950-457e-bd74-971d4590efb1
 
 
-- During the noclip state you are sharing the velocity of the glitched prop. 
+- During the noclip state you are share the [starting?] velocity of the glitched prop. 
 - If you get out of the noclip state, you can still enter it again by bumping or slamming a prop into your Havok box. 
 
 
