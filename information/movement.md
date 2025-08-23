@@ -319,7 +319,7 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   7. Press W and S to move forward and backwards until the prop starts floating oddly
   8. Run into the prop
   9. Use the precision tool to push the prop (right click)
-    - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity.
+    - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity (due to sv_crazyphysics_remove 1).
   10. Crouch to get out of noclip state
   11. "ent_bbox player" in console to see your Havok box
 ```
