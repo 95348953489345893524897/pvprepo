@@ -301,6 +301,11 @@ An important step to BBT is that you **cannot** let the prop collide with the wh
 <img width="344" height="233" alt="image" src="https://github.com/user-attachments/assets/c1e921cf-1e5d-424a-b464-4901496b3e82" /> <br/>
 `There is a small amount of space between where the bounding box ends and where the prop will start colliding with the wheel.` <br/>
 
+
+
+https://github.com/user-attachments/assets/e4d54a26-256d-4f49-b7a0-45025b1f8be0
+
+
 The easiest way to do BBT is to practice in Singleplayer: <br/>
   ```
   1. Set sv_cheats 1
@@ -311,8 +316,9 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   6. Line up the prop to touch the bounding box (green sphere) but not the inner collision box (orange circle in diagrams)
      - This is done by sight, you will know that it is colliding when the prop is moving weirdly up or down 
   7. Press W and S to move forward and backwards until the prop starts floating oddly
-  8. Run into it
-  9. [ add more steps later ]
+  8. Run into the prop
+  9. Use the precision tool to push the prop (right click)
+    - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity.
 ```
 Side Effects:
 - List later
