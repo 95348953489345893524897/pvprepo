@@ -324,7 +324,6 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   11. "ent_bbox player" in console to see your Havok box
 ```
 ## Side Effects:
-
 Noclip:
 
 
@@ -334,8 +333,7 @@ https://github.com/user-attachments/assets/446a75c8-5419-4b70-94a9-54423b2b2070
 - When in the glitched state, you are in a very limited noclip.
 - It is extremely hard to turn
 - You can go through walls though, one of the main uses of this
-
-
+<br/>
 Prop Welding:
 
 
@@ -346,9 +344,8 @@ https://github.com/user-attachments/assets/56d89b9d-c0f7-4b98-9ae8-5a917864a4be
 - Under certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
 - When you respawn, these welds go away (since there is no collision with the original glitched prop anymore, a new life)
 - Do not weld too many props together, especially vehicles, because when you respawn and all the welds are undone your game will freeze
-
-
-Reboosting or velocity sharing:
+<br/>
+Reboosting / velocity sharing:
 
 
 https://github.com/user-attachments/assets/f55db1b9-f950-457e-bd74-971d4590efb1
