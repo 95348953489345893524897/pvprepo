@@ -331,6 +331,7 @@ https://github.com/user-attachments/assets/2faeef9a-7830-4cc9-95ed-5d69d8bbe35f
 
 - "Saving" your Havok box by crouch jumping essentially lets you set down a teleport location.
 - When you collide with a prop (not the original glitched prop) you will be sent to that location.
+- Since the teleport preserves your velocity, you can teleport into the prop constantly like a Portal gun
 - This can be used like the old [Minecraft "Pearl Hanging" exploit](https://youtu.be/eCVVDstvd3c?t=19)
 
 Messing with E2 targetting:
