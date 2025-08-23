@@ -324,6 +324,20 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   11. "ent_bbox player" in console to see your Havok box
 ```
 ## Side Effects:
+Controlled Teleporting: 
+
+https://github.com/user-attachments/assets/2faeef9a-7830-4cc9-95ed-5d69d8bbe35f
+
+
+- "Saving" your Havok box by crouch jumping essentially lets you set down a teleport location.
+- When you collide with a prop (not the original glitched prop) you will be sent to that location.
+- This can be used like the old [Minecraft "Pearl Hanging" exploit](https://youtu.be/eCVVDstvd3c?t=19)
+
+Messing with E2 targetting:
+
+- I don't have a video or 100% confirmation of this, but it seems that some E2s or targeters try to track your Havok box instead of you [needs more research].
+- This makes contraptions like targetting wire turrets track the completely incorrect hitbox, helping you survive them. 
+
 Noclip:
 
 
@@ -354,6 +368,16 @@ https://github.com/user-attachments/assets/f55db1b9-f950-457e-bd74-971d4590efb1
 - During the noclip state you are share the [starting?] velocity of the glitched prop. 
 - If you get out of the noclip state, you can still enter it again by bumping or slamming a prop into your Havok box. 
 
+Winding: 
+
+
+
+https://github.com/user-attachments/assets/79d7753b-0d57-4096-a6ac-ab16b8540bb2
+
+
+- By saving your Havok box and then running up and down sloped map geometry, you can "wind up" the Havok box.
+- After it gains a favorable height, you can run into a prop to teleport to your Havok box
+- I'm not sure how to wind it down, the collision of the player with the map probably starts at your feet, not your head (speculation).
 
 ## Caveats: 
 - Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
