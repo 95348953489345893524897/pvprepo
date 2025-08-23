@@ -344,7 +344,8 @@ https://github.com/user-attachments/assets/56d89b9d-c0f7-4b98-9ae8-5a917864a4be
 
 - During certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
 - When you respawn, these welds go away (since there is no collision with the original glitched prop anymore, a new life)
-- 
+- Do not weld too many props together, especially vehicles, because when you respawn and all the welds are undone your game will freeze
+
 Caveats: 
 - Using the Precision tool is basically required in order to prevent the prop from getting removed by [crazy physics](https://github.com/Kefta/gs_crazyphysics).
 - The Jeep must not be touching any player or NPC. If either touch the jeep, the collisions are reset and the glitched state stops.
