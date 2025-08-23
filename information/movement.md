@@ -358,7 +358,7 @@ https://github.com/user-attachments/assets/56d89b9d-c0f7-4b98-9ae8-5a917864a4be
 
 - Under certain conditions, all props that collide with your Havok box will start welding to it. The props that collide with those welded props will also weld themselves together.
 - When you respawn, these welds go away (since there is no collision with the original glitched prop anymore, a new life)
-- Do not weld too many props together, especially vehicles, because when you respawn and all the welds are undone your game will freeze
+- Do not weld too many props together, especially vehicles, because when you respawn and all the welds are undone your game will freeze/crash
 <br/>
 Reboosting / velocity sharing:
 
