@@ -308,10 +308,10 @@ https://github.com/user-attachments/assets/e4d54a26-256d-4f49-b7a0-45025b1f8be0
 
 The easiest way to do BBT is to practice in Singleplayer: <br/>
   ```
-  1. Set sv_cheats 1
+  1. sv_cheats 1; developer 1 in console
   2. Spawn a jeep
   3. Put ent_bbox in console while looking at it
-  4. Spawn a prop like the oil drum
+  4. Spawn a prop like the oil drum, ent_bbox it too if you feel like
   5. Grab it
   6. Line up the prop to touch the bounding box (green sphere) but not the inner collision box (orange circle in diagrams)
      - This is done by sight, you will know that it is colliding when the prop is moving weirdly up or down 
@@ -319,6 +319,7 @@ The easiest way to do BBT is to practice in Singleplayer: <br/>
   8. Run into the prop
   9. Use the precision tool to push the prop (right click)
     - If you don't use the precision tool or some other tool to freeze it, the prop will get deleted because of its high velocity.
+  10. "ent_bbox player" in console to see your Havok box
 ```
 Side Effects:
 - List later
