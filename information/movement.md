@@ -9,7 +9,7 @@ Sourceruns Wiki - https://wiki.sourceruns.org/wiki/
 
 Since all of the videos from Libre's guide are privated, I'll attempt to explain and give videos for all the propfly techniques in the sections below: <br/>
 ## Basics of Propfly: 
-Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/edit/main/information/movement.md#propkillpropfly-friendly-servers) to practice. <br/> 
+Propfly is incredibly simple. When you practice enough, you will find it is simple too. Visit the [propkill servers](https://github.com/95348953489345893524897/configs/blob/main/information/movement.md#propkillpropfly-friendly-servers) to practice. <br/> 
 ### Binds
 Binds are obviously important to getting good at propfly. I recommend that you have binds for AT LEAST a launching prop and a locker prop in your config to still allow for some versatility of movement.<br/>
 <br/>
