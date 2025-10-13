@@ -59,7 +59,13 @@ concommand.Add("clippy_save", function()
     end
 
     CurrentClipName = nil
-    StartRecording()
+    timer.Create("TryRecordingAgain", 0.2, 0, function()
+        if engine.IsRecordingDemo then
+            StartRecording()
+        else
+            timer.Remove("TryRecordingAgain")
+        end
+    end)
 end)
 
 local clippy_running = true
