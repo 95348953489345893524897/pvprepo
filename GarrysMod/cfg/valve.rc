@@ -106,19 +106,6 @@ bind	"s" 		 		"+back"
 unbind	"t"	 	
 bind	"u" 				"messagemode2"
 bind	"v"			 		"noclip
-
-"alias" "+walwaysrecorddemo"		"+forward; exec alwaysrecorddemo"		// used to record a timestamped demo every x seconds, using https://gist.github.com/95348953489345893524897/1ef074079992546f6e0dc89e2ce9c12e
-"alias" "-walwaysrecorddemo"		"-forward"
-"alias" "+aalwaysrecorddemo"		"+moveleft; exec alwaysrecorddemo"
-"alias" "-aalwaysrecorddemo"		"-moveleft"
-"alias" "+salwaysrecorddemo"		"+back; exec alwaysrecorddemo"
-"alias" "-salwaysrecorddemo"		"-back"
-"alias" "+dalwaysrecorddemo"		"+moveright; exec alwaysrecorddemo"
-"alias" "-dalwaysrecorddemo"		"-moveright"
-
-alias switchbindsalias1 "bind w +walwaysrecorddemo; bind a +aalwaysrecorddemo; bind s +salwaysrecorddemo; bind d +dalwaysrecorddemo"
-alias switchbindsalias2 "bind w +walias; bind a +aalias; bind s +salias; bind d +dalias"
-
 bind	"w"			 			"+forward"
 bind	"x" 			 		"lastinv"
 bind	"y"						"messagemode" 			 	
@@ -551,19 +538,19 @@ cl_allowupload 				"1"					// Enable uploading your own spray
 
 volume					"0.5"
 volume_sfx				"0.1"
-windows_speaker_config 			"1"					// Allowed values: -1 / 1 / 3 / 4 / 6 -1: Default (2 Speakers) 1: Headphones 3: 4 Speakers 4: 2 Speakers 6: 5.1 Surround; https://www.reddit.com/r/GlobalOffensive/comments/2n9c7j/csgo_optimum_sound_settings/
-snd_surround_speakers			"1"					// Type of your sound system: -1: auto-detect 0: headphones 1: 2 speakers: 2: 2.1 stereo 3: 2.1 stereo + subwoofer 4: 4 speakers 5: 5.1 stereo 6: 5.1 stereo + subwoofer 7: 7.1 stereo; https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=1906053957
-dsp_enhance_stereo			"1"					// Enable spatial DSP for slight increase in sound quality, most noticeable on multispeaker systems; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=39
+windows_speaker_config 			"1"							// Allowed values: -1 / 1 / 3 / 4 / 6 -1: Default (2 Speakers) 1: Headphones 3: 4 Speakers 4: 2 Speakers 6: 5.1 Surround; https://www.reddit.com/r/GlobalOffensive/comments/2n9c7j/csgo_optimum_sound_settings/
+snd_surround_speakers			"1"							// Type of your sound system: -1: auto-detect 0: headphones 1: 2 speakers: 2: 2.1 stereo 3: 2.1 stereo + subwoofer 4: 4 speakers 5: 5.1 stereo 6: 5.1 stereo + subwoofer 7: 7.1 stereo; https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=1906053957
+dsp_enhance_stereo			"1"								// Enable spatial DSP for slight increase in sound quality, most noticeable on multispeaker systems; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=39
 snd_pitchquality			"0"
-snd_spatialize_roundrobin 		"0"					// Spatialize every frame; https://forwork.meta.com/blog/spatial-audio/, lol
+snd_spatialize_roundrobin 		"0"							// Spatialize every frame; https://forwork.meta.com/blog/spatial-audio/, lol
 snd_musicvolume 			"0"
-snd_mixahead 				"0.08"					// keep sounds for 80 millis and mix them; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
-dsp_facingaway 				"30"					// improve sounds that the player is facing away from if you need to maximize performance, set this to 0; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
-dsp_water 				"0" 					// Disable water muffling effect
-dsp_room				"1"					// if set to 1, automatically adjusts DSP based on the room you're in (its size, shape and type). DSP is a variety of sound effects, including echos, reverb, low pass filters, etc.; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=47
-dsp_slow_cpu 				"0"					// Use enhanced positional effects; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-dsp_spatial 				"40"					// Spatial delay effect for positional audio; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
-snd_mute_losefocus			"0"					// Don't mute audio when alt tabbed
+snd_mixahead 				"0.08"							// keep sounds for 80 millis and mix them; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
+dsp_facingaway 				"30"							// improve sounds that the player is facing away from if you need to maximize performance, set this to 0; https://gist.github.com/mastercoms/f0c35f21b7f529615c8b4eaca2556e0f
+dsp_water 				"0" 								// Disable water muffling effect
+dsp_room				"1"									// if set to 1, automatically adjusts DSP based on the room you're in (its size, shape and type). DSP is a variety of sound effects, including echos, reverb, low pass filters, etc.; https://www.teamfortress.tv/42867/mastercomfig-fps-customization-config/?page=47
+dsp_slow_cpu 				"0"								// Use enhanced positional effects; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
+dsp_spatial 				"40"							// Spatial delay effect for positional audio; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
+snd_mute_losefocus			"0"								// Don't mute audio when alt tabbed
 voice_writevoices                       "0"					// Saves each speaker's voice data into separate .wav files; https://www.the303.org/tutorials/voicerecord.html
 
 // Sayliases
@@ -588,10 +575,10 @@ alias 	"sorry"				"say Sorry (-_-) [ . . . ]" 	// apologize for your mistakes
 alias	"ilmbcl"			"say ¸„.-•~¹°”ˆ˜¨ . . . I Love my Beautiful Chungus Life. . .   ¨˜ˆ”°¹~•-.„¸"
 alias	"ihmbcl"			"say ꃋᴖꃋ (ㅠ﹏ㅠ) . . . I Hate my Bitter Chungus Life . . . (◡︵◡) ꃋᴖꃋ"
 alias	"sexbattle"			"say こTwitterでNeruがカをSEX BATTLEで位 決めてうツイートの言わてソお もろい"
-alias	"notlistening"			"say schlap schlap schlap oh did u say sometheng schlap schlap oh dam your sister in my ear going nasty style schlap do not disturb"
+alias	"notlistening"		"say schlap schlap schlap oh did u say sometheng schlap schlap oh dam your sister in my ear going nasty style schlap do not disturb"
 alias 	"soyfood"			"say your grandpa proabley taught u horse shit an lies keap eating procesed soy foods fattey im stuck in mexico eaten local fauna"
 alias 	"welfare"			"say sick mind n foces on your anemploiment bet your useng well fare 2 jerk 2 porn online tonite u is useless 2 sosiety"
-alias 	"idiotbox"			"say idiotbox §₵₳ⱤɎ ɆĐł₮łØ₦ ---> github.com/95348953489345893524897/configs" 
+alias 	"cfg"				"say cfg -> github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/valve.rc" 
 
 // Ending
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ 
