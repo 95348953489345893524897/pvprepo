@@ -13,7 +13,7 @@ con_filter_dupe				"1"								// Set to 1 to remove duplicate messages from clie
 cl_showbattery				"1"								// Draw current battery level at top of screen when on battery power; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_show_connectionless_packet_warnings	"0"					// Show console messages about ignored connectionless packets on the client; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 cl_showpos 				"1"									// Shows velocity
-cl_showfps				"1"									// 2 = smooth fps
+cl_showfps				"0"									// 2 = smooth fps
 cl_showhelp 			"0"									// Annoying help popups 
 cl_steamoverlay_pos		"0"									// The position of the Steam notifications: 0=top left, 1=top right, 2=bottom left, 3=bottom right; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 net_graphpos 			"1"					// 1 = right 2 = center 3 = left
