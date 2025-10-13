@@ -69,10 +69,12 @@ concommand.Add("clippy_toggle", function()
     if not clippy_running then
         RunConsoleCommand("stop")
         timer.Create("TryDiscardingClip", 0.2, 0, function()
-            if file.Exists(CurrentClipName .. ".dem", "MOD") then
-                file.Delete(CurrentClipName .. ".dem", "MOD")
-            else
-                timer.Remove("TryDiscardingClip") -- hopefully the clip is discarded by now
+            if CurrentClipName then
+                if file.Exists(CurrentClipName .. ".dem", "MOD") then
+                    file.Delete(CurrentClipName .. ".dem", "MOD")
+                else
+                    timer.Remove("TryDiscardingClip") -- hopefully the clip is discarded by now
+                end
             end
         end)
 
