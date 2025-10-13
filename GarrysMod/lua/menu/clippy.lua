@@ -72,7 +72,7 @@ local clippy_running = true
 concommand.Add("clippy_toggle", function()
     clippy_running = not clippy_running or false
     print("Clippy running: " .. tostring(clippy_running))
-    if not clippy_running then
+    if clippy_running == false then
         RunConsoleCommand("stop")
         timer.Create("TryDiscardingClip", 0.2, 0, function()
             if CurrentClipName then
