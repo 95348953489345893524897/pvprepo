@@ -1,0 +1,48 @@
+--@name arena
+--@author scripture
+--@shared
+-- PvP arena
+-- type !joinarena to join !leavearena to leave
+-- spawns a chair on you which acts as your respawn point
+-- respawn points are marked by nocollided skulls, "models/gibs/hgibs.mdl"
+--
+-- Bugs:
+-- fix !leavearena 
+-- To do:
+-- add weapon blacklist
+-- add hud
+-- put prop spawns later (like hl2dm)
+local ArenaPlayers = {}
+local function GiveChair(player)
+    ArenaPlayers[player] = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+end
+
+hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
+    if text == "!joinarena" and ArenaPlayers[ply] == nil then
+        GiveChair(ply)
+    elseif text == "!leavearena" and table.hasValue(ArenaPlayers, ply) then
+        ArenaPlayers[ply] = nil
+        printTable(ArenaPlayers)
+    end
+end)
+
+local Spawns = {} -- spawns are marked by nocollided skulls
+hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
+    printTable(ArenaPlayers)
+    if ArenaPlayers[ply] == vehicle and Spawns[1] then
+        vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
+        ArenaPlayers[ply] = ""
+        vehicle:remove()
+    end
+end)
+
+hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) if ArenaPlayers[ply] then GiveChair(ply) end end)
+-- if SERVER then
+local LookupBounds = Vector(-4000, -4000, -4000)
+local function RegisterSpawns()
+    for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
+        if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
+    end
+end
+
+RegisterSpawns()
