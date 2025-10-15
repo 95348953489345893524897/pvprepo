@@ -22,6 +22,8 @@ hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
         GiveChair(ply)
     elseif text == "!leavearena" and ArenaPlayers[ply] then
         ArenaPlayers[ply] = nil
+        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
+        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
     end
 end)
 
