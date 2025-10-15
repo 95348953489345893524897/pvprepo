@@ -7,7 +7,7 @@
 -- respawn points are marked by nocollided skulls, "models/gibs/hgibs.mdl"
 --
 -- Bugs:
---
+-- fix !leavearena 
 -- To do:
 -- add weapon blacklist
 -- add hud
@@ -22,13 +22,11 @@ hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
         GiveChair(ply)
     elseif text == "!leavearena" and ArenaPlayers[ply] then
         ArenaPlayers[ply] = nil
-        printTable(ArenaPlayers)
     end
 end)
 
 local Spawns = {} -- spawns are marked by nocollided skulls
 hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
-    printTable(ArenaPlayers)
     if ArenaPlayers[ply] == vehicle and Spawns[1] then
         vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
         ArenaPlayers[ply] = ""
@@ -39,7 +37,7 @@ end)
 hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) 
     if ArenaPlayers[ply] then 
         GiveChair(ply) 
-    end 
+    end
 end)
 -- if SERVER then
 local LookupBounds = Vector(-4000, -4000, -4000)
