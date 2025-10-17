@@ -41,7 +41,7 @@ if SERVER then
             if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
                 Chair:remove()
                 if player:isHUDActive() then
-                    printHud(player, Color(255, 0, 0), "You were Autoremoved from the arena.")
+                    printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
                     enableHud(player, false)
                 end
