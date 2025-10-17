@@ -35,7 +35,7 @@ if SERVER then
             Score = 0
         }
 
-        printTable(ArenaPlayers)
+        --printTable(ArenaPlayers)
         timer.simple(6, function()
             -- autoremove player from table if they dont enter chair within 6 seconds
             if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
@@ -56,6 +56,11 @@ if SERVER then
     end
 
     hook.add("HUDConnected", "MoveHUD", function(ent, ply) if isValid(ent) and ArenaPlayers[ply].HUD then ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0)) end end)
+    local function ExplodePlayer(ply)
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+    end
+
     hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
         if text == "!joinarena" and ArenaPlayers[ply] == nil then
             GiveChair(ply)
@@ -66,8 +71,7 @@ if SERVER then
                 ArenaPlayers[ply].HUD:remove()
             end
 
-            prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
-            prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+            ExplodePlayer(ply) -- make leaving the arena not require killbind and prevent people from sticking around
             ArenaPlayers[ply].HUD:remove()
             enableHud(ply, false)
             ArenaPlayers[ply] = false
@@ -78,8 +82,11 @@ if SERVER then
 
     local Spawns = {} -- spawns are marked by nocollided skulls
     hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
-        if ArenaPlayers[ply] and ArenaPlayers[ply].Chair == vehicle and Spawns[1] then
-            vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
+        if ArenaPlayers[ply] and ArenaPlayers[ply].Chair == vehicle then
+            if Spawns[1] then --
+                vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
+            end
+
             vehicle:remove()
         end
     end)
@@ -92,7 +99,7 @@ if SERVER then
         end
     end)
 
-    local LookupBounds = Vector(-4000, -4000, -4000)
+    local LookupBounds = Vector(-4000, -4000, -4000) -- make this not have bounds for CTF later
     local function RegisterSpawns()
         for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
             if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
@@ -100,11 +107,45 @@ if SERVER then
     end
 
     RegisterSpawns()
+    local MaxScore = 50
+    local GameMode = "FFA"
+    --local Teams = nil -- for CTF later
+    local function StartNewRound()
+        for ply, data in pairs(ArenaPlayers) do
+            if ply:isHUDActive() then
+                --
+                printHud(ply, Color(255, 0, 0), "Starting new round.")
+            end
+
+            data.Score = 0
+            GivePlayerTable()
+            ExplodePlayer(ply)
+        end
+    end
+
+    local function CheckIfMaxScoreReached()
+        for ply, data in pairs(ArenaPlayers) do
+            if data.Score >= MaxScore then
+                for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+                    if player:isHUDActive() then
+                        --
+                        printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. MaxScore .. ")" .. " reached by " .. (Team or player:getName()))
+                    end
+                end
+
+                timer.simple(3, function()
+                    --
+                    StartNewRound()
+                end)
+            end
+        end
+    end
+
     hook.add("PlayerDeath", "CountScore", function(ply, inflictor, attacker)
         if ArenaPlayers[attacker] and ply ~= attacker then
-            --
             ArenaPlayers[attacker].Score = ArenaPlayers[attacker].Score + 1
             GivePlayerTable()
+            CheckIfMaxScoreReached()
         end
     end)
 end
