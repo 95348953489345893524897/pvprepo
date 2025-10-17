@@ -47,6 +47,7 @@ if SERVER then
                 if player:isHUDActive() then
                     enableHud(player, false)
                 end
+                ArenaPlayers[ply].HUD:remove()
                 ArenaPlayers[player] = nil
             end
         end)
@@ -69,11 +70,12 @@ if SERVER then
                 ArenaPlayers[ply].Chair:remove()
                 ArenaPlayers[ply].HUD:remove()
             end
-            enableHud(ply, false)
             prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
             prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
-            RemovePlayerFromTable(ply)
+            
+            ArenaPlayers[ply].HUD:remove()
             enableHud(ply, false)
+            RemovePlayerFromTable(ply)
             ArenaPlayers[ply] = nil
         end
     end)
