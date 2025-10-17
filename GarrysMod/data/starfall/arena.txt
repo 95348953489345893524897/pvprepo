@@ -40,9 +40,15 @@ if SERVER then
             -- autoremove player from table if they dont enter chair within 6 seconds
             if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
                 Chair:remove()
-                if player:isHUDActive() then enableHud(player, false) end
+                if player:isHUDActive() then
+                    printHud(player, Color(255, 0, 0), "You were Autoremoved from the arena.")
+                    printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
+                    enableHud(player, false)
+                end
+
                 ArenaPlayers[player].HUD:remove()
                 ArenaPlayers[player] = false
+                printTable(ArenaPlayers)
                 GivePlayerTable()
                 ArenaPlayers[player] = nil
             end
@@ -126,7 +132,7 @@ if CLIENT then
                     render.setColor(Red)
                 end
 
-                if ply:isValid() then
+                if ply:isValid() and PlayerTable[ply] ~= false then
                     render.drawSimpleText(10, 80 + b * 60, ply:getName() .. ": " .. PlayerTable[ply].Score)
                     b = b + 1
                 end
