@@ -44,7 +44,9 @@ if SERVER then
             if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
                 Chair:remove()
                 RemovePlayerFromTable(player)
-                enableHud(player, false)
+                if player:isHUDActive() then
+                    enableHud(player, false)
+                end
                 ArenaPlayers[player] = nil
             end
         end)
