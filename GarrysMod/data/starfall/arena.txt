@@ -64,7 +64,8 @@ if SERVER then
             prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
             ArenaPlayers[ply].HUD:remove()
             enableHud(ply, false)
-            RemovePlayerFromTable(ply)
+            ArenaPlayers[ply] = false
+            GivePlayerTable()
             ArenaPlayers[ply] = nil
         end
     end)
