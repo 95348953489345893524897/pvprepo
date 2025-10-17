@@ -20,13 +20,16 @@ local function GivePlayerTable()
 end
 
 if SERVER then
+    local ComponentAmount = 0
+    local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
     local function GiveChair(player)
         local Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
         local HUD = nil
-        if not ArenaPlayers[player] then
+        if not ArenaPlayers[player] and ComponentAmount < ComponentLimit then
             HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
             HUD:setColor(Color(0, 0, 0, 0))
             HUD:linkComponent(chip())
+            ComponentAmount = ComponentAmount + 1
         end
 
         ArenaPlayers[player] = {
@@ -94,6 +97,7 @@ if SERVER then
     hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) if ArenaPlayers[ply] then GiveChair(ply) end end)
     hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply)
         if ArenaPlayers[ply] then
+            ArenaPlayers[ply].HUD:remove()
             ArenaPlayers[ply] = nil
             ArenaPlayers[ply].Chair:remove()
         end
@@ -156,7 +160,9 @@ if CLIENT then
     net.receive("GivePlayerTable", function()
         PlayerTable = net.readTable()
         for _, ply in pairs(PlayerTable) do
-            if PlayerTable[ply] == false then PlayerTable[ply] = nil end
+            if PlayerTable[ply] == false then -- way to get who left the arena without messing up the net.send()
+                PlayerTable[ply] = nil
+            end
         end
     end)
 
