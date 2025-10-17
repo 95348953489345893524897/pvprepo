@@ -7,46 +7,163 @@
 -- respawn points are marked by nocollided skulls, "models/gibs/hgibs.mdl"
 --
 -- Bugs:
--- fix !leavearena 
 -- To do:
 -- add weapon blacklist
 -- add hud
 -- put prop spawns later (like hl2dm)
+-- clean up code
 local ArenaPlayers = {}
-local function GiveChair(player)
-    ArenaPlayers[player] = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+local function GivePlayerTable()
+    net.start("GivePlayerTable")
+    net.writeTable(table.getKeys(ArenaPlayers))
+    net.send(table.getKeys(ArenaPlayers))
+end
+local function RemovePlayerFromTable(player) -- theres a better way to do this 
+    net.start("RemovePlayerFromTable")       -- yeah there is i was making the player that left the arena nil and then trying to send a net message to them so i made this shitty fix, FIX IT LATER
+    net.writeEntity(player)
+    net.send(table.getKeys(ArenaPlayers))
+end
+if SERVER then
+    local function GiveChair(player)
+        local Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+
+        local HUD = nil
+        if not ArenaPlayers[player] then
+            HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
+            HUD:setColor(Color(0, 0, 0, 0))
+            HUD:linkComponent(chip())
+        end
+
+        ArenaPlayers[player] = {
+            Chair = Chair,
+            HUD = HUD,
+            Score = 0 -- unused, remove later
+        }
+        printTable(ArenaPlayers)
+        timer.simple(6, function() -- autoremove player from table if they dont enter chair within 6 seconds
+            if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
+                Chair:remove()
+                RemovePlayerFromTable(player)
+                enableHud(player, false)
+                ArenaPlayers[player] = nil
+            end
+        end)
+    end
+
+    hook.add("HUDConnected", "MoveHUD", function(ent, ply)
+        if isValid(ent) and ArenaPlayers[ply].HUD then
+            --timer.simple(1, function()
+            ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0))
+            --end)
+        end
+    end)
+
+    hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
+        if text == "!joinarena" and ArenaPlayers[ply] == nil then
+            GiveChair(ply)
+            GivePlayerTable()
+        elseif text == "!leavearena" and ArenaPlayers[ply] then
+            if isValid(ArenaPlayers[ply].Chair) and isValid(ArenaPlayers[ply].HUD) then
+                ArenaPlayers[ply].Chair:remove()
+                ArenaPlayers[ply].HUD:remove()
+            end
+            enableHud(ply, false)
+            prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
+            prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+            RemovePlayerFromTable(ply)
+            enableHud(ply, false)
+            ArenaPlayers[ply] = nil
+        end
+    end)
+
+    local Spawns = {} -- spawns are marked by nocollided skulls
+    hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
+        if ArenaPlayers[ply] and ArenaPlayers[ply].Chair == vehicle and Spawns[1] then
+            vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
+            --ArenaPlayers[ply] = nil
+            vehicle:remove()
+        end
+    end)
+
+    hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) 
+        if ArenaPlayers[ply] then 
+            GiveChair(ply) 
+            end 
+        end)
+    hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply) 
+        if ArenaPlayers[ply] then 
+                ArenaPlayers[ply] = nil
+                ArenaPlayers[ply].Chair:remove()
+            end
+        end)
+    local LookupBounds = Vector(-4000, -4000, -4000)
+    local function RegisterSpawns()
+        for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
+            if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
+        end
+    end
+
+    RegisterSpawns()
+    hook.add("PlayerDeath", "CountScore", function(ply, inflictor, attacker)
+        if ArenaPlayers[attacker] and ply ~= attacker then
+            print("yep")
+            net.start("PlayerDeath")
+            net.writeEntity(attacker)
+            --net.writeEntity(ply)
+            net.send(table.getKeys(ArenaPlayers))
+        end
+    end)
 end
 
-hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
-    if text == "!joinarena" and ArenaPlayers[ply] == nil then
-        GiveChair(ply)
-    elseif text == "!leavearena" and ArenaPlayers[ply] then
-        ArenaPlayers[ply] = nil
-        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
-        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
-    end
-end)
+if CLIENT then
+    local BigVerdana = render.createFont("Verdana", 72)
+    local PlayerTable = nil
+    net.receive("GivePlayerTable", function() 
+        local Players = net.readTable()
+        printTable(Players)
+        PlayerTable = {} 
+            for _, ply in pairs(Players) do
+                if not PlayerTable[ply] then
+                    PlayerTable[ply] = 0
+                end
+            end
+        end)
+    local attacker = nil
+    local victim = nil
+    net.receive("PlayerDeath", function()
+        attacker = net.readEntity()
+        --victim = net.readEntity()
+        if PlayerTable[attacker] then
+            PlayerTable[attacker] = PlayerTable[attacker] + 1
+            printTable(PlayerTable)
+        end
+    end)
 
-local Spawns = {} -- spawns are marked by nocollided skulls
-hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
-    if ArenaPlayers[ply] == vehicle and Spawns[1] then
-        vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
-        ArenaPlayers[ply] = ""
-        vehicle:remove()
-    end
-end)
-
-hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) 
-    if ArenaPlayers[ply] then 
-        GiveChair(ply) 
-    end
-end)
--- if SERVER then
-local LookupBounds = Vector(-4000, -4000, -4000)
-local function RegisterSpawns()
-    for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
-        if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
-    end
+    net.receive("RemovePlayerFromTable", function()
+        print("YUP")
+        PlayerToRemove = net.readEntity()
+        PlayerTable[PlayerToRemove] = nil
+    end)
+    local Green = Color(0, 255, 0)
+    local Red = Color(255, 0, 0)
+    hook.add("DrawHUD", "ArenaHUD", function()
+        local b = 1 -- make the table better later so that you dont have to use b
+        for ply, score in pairs(PlayerTable) do
+            if ply then
+                render.setFont(BigVerdana)
+                if ply:isValid() and ply:isAlive() then
+                    render.setColor(Green)
+                else
+                    render.setColor(Red)
+                end
+                if ply:isValid() then
+                    render.drawSimpleText(10, 80 + b * 60, ply:getName() .. ": " .. score)
+                    b = b + 1
+                end
+                if b == #PlayerTable then
+                    b = 0
+                end
+            end
+        end
+    end)
 end
-
-RegisterSpawns()
