@@ -104,15 +104,43 @@ if SERVER then
         chip():getOwner(),
     }
 
+    local BlacklistGroups = {
+        Explosives = {"m9k_davy_crockett", "m9k_ex41", "m9k_m202", "m9k_m79gl", "m9k_matador", "m9k_milkormgl", "m9k_nerve_gas", "m9k_nitro", "m9k_orbital_strike", "m9k_proxy_mine", "m9k_rpg7", "m9k_suicide_bomb", "m9k_sticky_grenade", "m9k_suicide_bomb"}
+    }
+
+    local BlacklistedWeapons = {}
+    local function BlacklistWeapon(weapon)
+        if BlacklistGroups[weapon] then
+            table.add(BlacklistedWeapons, BlacklistGroups[weapon])
+        else
+            BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
+        end
+
+        printTable(BlacklistedWeapons)
+    end
+
+    hook.add("PlayerSwitchWeapon", "ExplodeBlacklistedWeaponUser", function(ply, oldwep, newweapon) -- hook is called twice for some reason or im doing something wrong
+        if ArenaPlayers[ply] and table.hasValue(BlacklistedWeapons, newweapon:getClass()) then
+            local AlreadyExploded = false
+            if AlreadyExploded == false then
+                ExplodePlayer(ply)
+                AlreadyExploded = true
+            end
+
+            if ply:isHUDActive() then
+                --
+                printHud(ply, Color(255, 0, 0), "Exploded for using a blacklisted weapon")
+                printHud(ply, Color(255, 0, 0), "Weapon: " .. newweapon:getClass())
+            end
+        end
+    end)
+
     local AdminCommands = {
-        ["!newround"] = function(mode, scorelimit)
-            --
-            StartNewRound(mode, scorelimit)
-        end,
+        ["!newround"] = StartNewRound,
         ["!scorelimit"] = function(scorelimit)
             ScoreLimit = tonumber(scorelimit) -- make this do something later
         end,
-        --["!blacklistweapon"] = test -- make this do something later
+        ["!blacklistweapon"] = BlacklistWeapon -- make this do something later
     }
 
     hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
