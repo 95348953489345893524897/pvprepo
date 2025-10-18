@@ -33,7 +33,7 @@ if SERVER then
     local GameMode = "FFA"
     local ScoreLimit = 50
     local function StartNewRound(mode, scorelimit)
-        ScoreLimit = scorelimit or 50
+        ScoreLimit = tonumber(scorelimit) or 50
         GameMode = mode or "FFA"
         for ply, data in pairs(ArenaPlayers) do
             if ply:isHUDActive() then
@@ -109,10 +109,17 @@ if SERVER then
             --
             StartNewRound(mode, scorelimit)
         end,
-        ["!scorelimit"] = function() end -- make this do something later
+        ["!scorelimit"] = function(scorelimit)
+            ScoreLimit = tonumber(scorelimit) -- make this do something later
+        end,
+        --["!blacklistweapon"] = test -- make this do something later
     }
 
     hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
+        --local Command = nil
+        --if string.find(text, " ") then --
+        local Command = string.explode(" ", text, true)
+        --end
         if text == "!joinarena" and ArenaPlayers[ply] == nil then
             GiveChair(ply)
             GivePlayerTable()
@@ -124,14 +131,16 @@ if SERVER then
 
             ExplodePlayer(ply) -- make leaving the arena not require killbind and prevent people from sticking around
             RemovePlayerFromGame(ply)
-        elseif AdminCommands[string.match(text, "^(%S+)")] and table.hasValue(ArenaAdmins, ply) then
-            if string.find(text, " ") then
-                local Command = string.explode(" ", text, true)
+        elseif AdminCommands[Command[1]] and table.hasValue(ArenaAdmins, ply) then
+            if Command[2] then
                 AdminCommands[unpack(Command, 1, 1)](unpack(Command, 2))
             else
                 AdminCommands[text]()
             end
         end
+
+        print(Command[1])
+        print(Command[2])
     end)
 
     local Spawns = {} -- spawns are marked by nocollided skulls
