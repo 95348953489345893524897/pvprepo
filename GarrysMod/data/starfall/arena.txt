@@ -115,18 +115,12 @@ if SERVER then
         else
             BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
         end
-
-        printTable(BlacklistedWeapons)
     end
 
-    hook.add("PlayerSwitchWeapon", "ExplodeBlacklistedWeaponUser", function(ply, oldwep, newweapon) -- hook is called twice for some reason or im doing something wrong
+    hook.add("PlayerSwitchWeapon", "ExplodeBlacklistedWeaponUser", function(ply, oldwep, newweapon)
+        -- hook is called twice for some reason or im doing something wrong
         if ArenaPlayers[ply] and table.hasValue(BlacklistedWeapons, newweapon:getClass()) then
-            local AlreadyExploded = false
-            if AlreadyExploded == false then
-                ExplodePlayer(ply)
-                AlreadyExploded = true
-            end
-
+            ExplodePlayer(ply)
             if ply:isHUDActive() then
                 --
                 printHud(ply, Color(255, 0, 0), "Exploded for using a blacklisted weapon")
