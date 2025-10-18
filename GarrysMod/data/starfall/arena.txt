@@ -12,16 +12,45 @@
 -- add hud
 -- put prop spawns later (like hl2dm)
 -- clean up code
-local ArenaPlayers = {}
-local function GivePlayerTable()
-    net.start("GivePlayerTable")
-    net.writeTable(ArenaPlayers)
-    net.send(table.getKeys(ArenaPlayers))
-end
-
+--[[
+ALSO MAKE IT SO THAT THE COMPONENT AMOUNT LOWERS BY 1 WHEN THAT FUNCTION IS CALLED
+]]
 if SERVER then
+    local ArenaAdmins = {
+        -- so multiple people can access the admin commands
+        --
+        chip():getOwner(),
+    }
+
+    local AdminCommands = {
+        ["!stopgame"] = function() end
+    }
+
+    local ArenaPlayers = {}
+    local function GivePlayerTable()
+        net.start("GivePlayerTable")
+        net.writeTable(ArenaPlayers)
+        net.send(table.getKeys(ArenaPlayers))
+    end
+
     local ComponentAmount = 0
     local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
+    local function RemovePlayerFromGame(player)
+        if ArenaPlayers[player] then
+            if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
+            if player:isHUDActive() then
+                --
+                enableHud(player, false)
+            end
+
+            if ArenaPlayers[player].HUD and ArenaPlayers[player].HUD:isValid() then ArenaPlayers[player].HUD:remove() end
+            ArenaPlayers[player] = false
+            GivePlayerTable()
+            ArenaPlayers[player] = nil
+            if ComponentAmount > 0 then ComponentAmount = ComponentAmount - 1 end
+        end
+    end
+
     local function GiveChair(player)
         local Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
         local HUD = nil
@@ -42,18 +71,12 @@ if SERVER then
         timer.simple(6, function()
             -- autoremove player from table if they dont enter chair within 6 seconds
             if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
-                Chair:remove()
                 if player:isHUDActive() then
                     printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
-                    enableHud(player, false)
                 end
 
-                ArenaPlayers[player].HUD:remove()
-                ArenaPlayers[player] = false
-                printTable(ArenaPlayers)
-                GivePlayerTable()
-                ArenaPlayers[player] = nil
+                RemovePlayerFromGame(player)
             end
         end)
     end
@@ -75,11 +98,7 @@ if SERVER then
             end
 
             ExplodePlayer(ply) -- make leaving the arena not require killbind and prevent people from sticking around
-            ArenaPlayers[ply].HUD:remove()
-            enableHud(ply, false)
-            ArenaPlayers[ply] = false
-            GivePlayerTable()
-            ArenaPlayers[ply] = nil
+            RemovePlayerFromGame(ply)
         end
     end)
 
