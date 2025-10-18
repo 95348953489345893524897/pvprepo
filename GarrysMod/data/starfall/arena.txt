@@ -16,21 +16,29 @@
 ALSO MAKE IT SO THAT THE COMPONENT AMOUNT LOWERS BY 1 WHEN THAT FUNCTION IS CALLED
 ]]
 if SERVER then
-    local ArenaAdmins = {
-        -- so multiple people can access the admin commands
-        --
-        chip():getOwner(),
-    }
-
-    local AdminCommands = {
-        ["!stopgame"] = function() end
-    }
-
     local ArenaPlayers = {}
     local function GivePlayerTable()
         net.start("GivePlayerTable")
         net.writeTable(ArenaPlayers)
         net.send(table.getKeys(ArenaPlayers))
+    end
+
+    local function ExplodePlayer(ply)
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+    end
+
+    local function StartNewRound()
+        for ply, data in pairs(ArenaPlayers) do
+            if ply:isHUDActive() then
+                --
+                printHud(ply, Color(255, 0, 0), "Starting new round.")
+            end
+
+            data.Score = 0
+            GivePlayerTable()
+            ExplodePlayer(ply)
+        end
     end
 
     local ComponentAmount = 0
@@ -82,10 +90,14 @@ if SERVER then
     end
 
     hook.add("HUDConnected", "MoveHUD", function(ent, ply) if isValid(ent) and ArenaPlayers[ply].HUD then ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0)) end end)
-    local function ExplodePlayer(ply)
-        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
-        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
-    end
+    local ArenaAdmins = {
+        -- so multiple people can access the admin commands
+        chip():getOwner(),
+    }
+
+    local AdminCommands = {
+        ["!newround"] = function() StartNewRound() end
+    }
 
     hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
         if text == "!joinarena" and ArenaPlayers[ply] == nil then
@@ -99,6 +111,8 @@ if SERVER then
 
             ExplodePlayer(ply) -- make leaving the arena not require killbind and prevent people from sticking around
             RemovePlayerFromGame(ply)
+        elseif AdminCommands[text] and table.hasValue(ArenaAdmins, ply) then
+            AdminCommands[text]()
         end
     end)
 
@@ -132,20 +146,6 @@ if SERVER then
     RegisterSpawns()
     local MaxScore = 50
     local GameMode = "FFA"
-    --local Teams = nil -- for CTF later
-    local function StartNewRound()
-        for ply, data in pairs(ArenaPlayers) do
-            if ply:isHUDActive() then
-                --
-                printHud(ply, Color(255, 0, 0), "Starting new round.")
-            end
-
-            data.Score = 0
-            GivePlayerTable()
-            ExplodePlayer(ply)
-        end
-    end
-
     local function CheckIfMaxScoreReached()
         for ply, data in pairs(ArenaPlayers) do
             if data.Score >= MaxScore then
