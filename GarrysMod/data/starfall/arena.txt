@@ -110,8 +110,8 @@ if SERVER then
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
                 end
 
-                RemovePlayerFromGame(player)
             end
+            RemovePlayerFromGame(player)
         end)
     end
 
