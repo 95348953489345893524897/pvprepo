@@ -51,7 +51,7 @@ if SERVER then
     end
 
     local ComponentAmount = 0
-    local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
+    local ComponentLimit = 9 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
     local function RemovePlayerFromGame(player)
         if ArenaPlayers[player] then
             if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
@@ -69,13 +69,19 @@ if SERVER then
     end
 
     local function GiveChair(player)
-        local Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+        if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
+            ArenaPlayers[player].Chair:remove()
+        end
+        local Chair = nil
+        if player:isAlive() then
+            Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+        end
         local HUD = nil
         local Score = 0
         if ArenaPlayers[player] and ArenaPlayers[player].Score then
             Score = ArenaPlayers[player].Score
         end
-        if not ArenaPlayers[player] and ComponentAmount < ComponentLimit then
+        if player:isAlive() and not ArenaPlayers[player] and ComponentAmount < ComponentLimit then
             HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
             HUD:setColor(Color(0, 0, 0, 0))
             HUD:linkComponent(chip())
@@ -192,9 +198,7 @@ if SERVER then
     hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) if ArenaPlayers[ply] then GiveChair(ply) end end)
     hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply)
         if ArenaPlayers[ply] then
-            ArenaPlayers[ply].HUD:remove()
-            ArenaPlayers[ply] = nil
-            ArenaPlayers[ply].Chair:remove()
+            RemovePlayerFromGame(ply)
         end
     end)
 
