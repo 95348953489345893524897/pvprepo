@@ -296,7 +296,7 @@ Since this process isn't humanly possible to do quickly without scripts, I've ma
 <br/>
 <br/>
 <br/>
-* Not all entities, see Confirmation tables below <br/>
+\* Not all entities, see Confirmation tables below <br/>
 ** Only when hollow and enclosed downward (facing the world)? <ins>Confirm later</ins> <br/>
 <br/>
 
