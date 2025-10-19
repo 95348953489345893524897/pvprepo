@@ -69,7 +69,7 @@ if SERVER then
     end
 
     local function GiveChair(player)
-        if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
+        if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
             ArenaPlayers[player].Chair:remove()
         end
         local Chair = nil
