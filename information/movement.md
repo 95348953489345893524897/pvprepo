@@ -262,7 +262,18 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
     7. Accelerated Forward Hopping (2:54 - 3:18) -- The circle strafe he does isn't needed to AFH but gives a bit more starting speed<br/>
 
 # Undoboosting/Cameraboosting
--  add later
+- On spawn, collision boxes of all props, even some hollow ones (Only when hollow and enclosed downward (facing the world)? <u>Confirm later<u>), seem to be initiliazed for one tick (stop speculating, <u>test later<u>). This collision initial collision box is absurdly exaggerated, with some areas of props the player can go through having collisions for a tick. <br/>
+For example: <br/>
+```models/props_c17/truss02a.mdl```
+<img width="2840" height="2160" alt="image" src="https://github.com/user-attachments/assets/6e6b143c-5504-4c16-a589-028452b57224" />
+This truss model prop should clearly not have collisions in the center of it, and it doesn't. However, on spawn, it will have a collision in the center of it. <br/>
+This can be tested by putting the command 
+```cl_showerror 1``` in the console. Cl_showerror 1 displays prediction errors on the right side of the screen, and almost all collisions with unfrozen props will be prediction errors.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4e9f043a-1eec-4302-ad7a-6a5fbaf615ae" />
+- Here you can see 8 prediction errors, all clearly from the truss prop.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
+- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have definitely changed.
 
 # Wallstrafing
 - add later
