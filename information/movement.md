@@ -274,8 +274,8 @@ This can be tested by putting the command ```cl_showerror 1``` in the console. C
  <br/>
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/4e9f043a-1eec-4302-ad7a-6a5fbaf615ae" />
 <br/>
-- Here you can see 8 prediction errors, all clearly from the truss prop. <br/>
-- If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
+- I jump, spawn the prop, and it shows 8 prediction errors, all clearly from the prop. <br/>
+  - If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
 <br/>
 
