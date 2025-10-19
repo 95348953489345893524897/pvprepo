@@ -127,6 +127,7 @@ if SERVER then
         else
             BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
         end
+        print("Blacklisted Weapons: " .. table.concat(BlacklistedWeapons))
     end
 
     hook.add("PlayerSwitchWeapon", "ExplodeBlacklistedWeaponUser", function(ply, oldwep, newweapon)
@@ -150,10 +151,10 @@ if SERVER then
     }
 
     hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
-        --local Command = nil
-        --if string.find(text, " ") then --
-        local Command = string.explode(" ", text, true)
-        --end
+        local Command = nil
+        if string.find(string.sub(text, 1, 1), "!") then --
+            Command = string.explode(" ", text, true)
+        end
         if text == "!joinarena" and ArenaPlayers[ply] == nil then
             GiveChair(ply)
             GivePlayerTable()
@@ -173,8 +174,8 @@ if SERVER then
             end
         end
 
-        print(Command[1])
-        print(Command[2])
+        --print(Command[1])
+        --print(Command[2])
     end)
 
     local Spawns = {} -- spawns are marked by nocollided skulls
