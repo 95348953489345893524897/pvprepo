@@ -98,7 +98,15 @@ if SERVER then
         end)
     end
 
-    hook.add("HUDConnected", "MoveHUD", function(ent, ply) if isValid(ent) and ArenaPlayers[ply].HUD then ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0)) end end)
+    hook.add("HUDConnected", "MoveHUD", function(ent, ply) 
+        if isValid(ent) and ArenaPlayers[ply].HUD then
+                ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0))
+                timer.simple(0.01, function()
+                    printHud(ply, "Enter the chair to join the arena")
+                    printHud(ply, "Type !leavearena to leave")
+                end)
+            end
+        end)
     local ArenaAdmins = {
         -- so multiple people can access the admin commands
         chip():getOwner(),
