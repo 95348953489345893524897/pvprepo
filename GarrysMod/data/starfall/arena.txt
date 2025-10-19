@@ -35,6 +35,7 @@ if SERVER then
     local function StartNewRound(mode, scorelimit)
         ScoreLimit = tonumber(scorelimit) or 50
         GameMode = mode or "FFA"
+        local b = 0 -- counter for timer.simple
         for ply, data in pairs(ArenaPlayers) do
             if ply:isHUDActive() then
                 --
@@ -43,10 +44,16 @@ if SERVER then
 
             data.Score = 0
             GivePlayerTable()
-            ExplodePlayer(ply)
-            if GameMode == "CTF" then --
-                StartCTFGame()
-            end
+            timer.simple(b * 0.5, function()
+                ExplodePlayer(ply)
+            end)
+            b = b + 1
+            if b == #ArenaPlayers then
+                b = 0
+            end 
+        end
+        if GameMode == "CTF" then --
+            StartCTFGame()
         end
     end
 
@@ -216,7 +223,7 @@ if SERVER then
                 for _, player in ipairs(table.getKeys(ArenaPlayers)) do
                     if player:isHUDActive() then
                         --
-                        printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. ScoreLimit .. ")" .. " reached by " .. (Team or player:getName()))
+                        printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. ScoreLimit .. ")" .. " reached by " .. (Team or ply:getName()))
                     end
                 end
 
