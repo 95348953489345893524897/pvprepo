@@ -281,22 +281,29 @@ This can be tested by putting the command ```cl_showerror 1``` in the console. C
 <br/>
 - Afterwards, I run around through the truss prop and get no prediction errors. The collisions have *definitely* changed. <br/>
 <br/>
+The unique collision boxes can be abused in order to boost yourself or sometimes fly: <br/>
+***Put video here later***
+To abuse the collisions you do something called undoboosting <br/>
+1. Bind key to spawn entity <br/>
+3. Look straight down or close to straight down <br/>
+4. Spawn entity and then immediately undo <br/>
+5. Spam this process constantly and boost yourself <br/>
+<br/>
+
+Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
+<br/>
 <br/>
 <br/>
 * Not all entities, see Confirmation tables below <br/>
 ** Only when hollow and enclosed downward (facing the world)? <ins>Confirm later</ins> <br/>
 <br/>
 
-Confirmed entity classes with prediction errors: <br/>
+Confirmed entities with irregular prediction errors: <br/>
 ```
-m9k_ammo_357
-m9k_ammo_ar2
-m9k_ammo_buckshot
-m9k_ammo_pistol
-m9k_ammo_smg
-m9k_ammo_sniper_rounds
-m9k_ammo_winchester
+m9k_ammo_*
 gmod_cameraprop (from the camera tool)
+models/props/de_inferno/bombsiteroof.mdl
+All effects (<ins>?</ins>) (prop_effect)
 ```
 
 Tested but no prediction errors:
