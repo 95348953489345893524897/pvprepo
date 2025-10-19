@@ -1,0 +1,15 @@
+bind mwheelup "+undoboost"
+bind mwheeldown "+undoboost"
+
+alias proptouse "gm_spawn models/props/de_inferno/bombsiteroof.mdl" // PUT EITHER gm_spawn %PROPNAME% if its a prop or gm_spawnsent %SENTNAME% if its an entity
+// Experiment with props to find the best one
+
+alias +undoboost "+undoboost1"
+alias -undoboost "-undoboost1"
+
+alias +undoboost1 "alias +undoboost +undoboost2; +jump; proptouse"
+alias -undoboost1 "alias -undoboost -undoboost2; " // dont send the release commands yet, delay until next scroll because of how mwheel works in source
+alias +undoboost2 "alias +undoboost +undoboost1; "
+alias -undoboost2 "alias -undoboost -undoboost1; ; -jump; undo" // send release commands
+
+simple_thirdperson_enabled 1 	// If you have simple thirdperson this makes it a lot easier to see what you're doing
