@@ -71,6 +71,10 @@ if SERVER then
     local function GiveChair(player)
         local Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
         local HUD = nil
+        local Score = 0
+        if ArenaPlayers[player] and ArenaPlayers[player].Score then
+            Score = ArenaPlayers[player].Score
+        end
         if not ArenaPlayers[player] and ComponentAmount < ComponentLimit then
             HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
             HUD:setColor(Color(0, 0, 0, 0))
@@ -81,7 +85,7 @@ if SERVER then
         ArenaPlayers[player] = {
             Chair = Chair,
             HUD = HUD,
-            Score = 0
+            Score = Score
         }
 
         --printTable(ArenaPlayers)
