@@ -276,18 +276,20 @@ This can be tested by putting the command ```cl_showerror 1``` in the console. C
 <br/>
 - Here you can see 8 prediction errors, all clearly from the truss prop. <br/>
 - If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
-<br/>
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
 <br/>
-- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have *definitely* changed. <br/>
+
+- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have *definitely* changed.
 <br/>
-The unique collision boxes can be abused in order to boost yourself or sometimes fly: <br/>
+<br/>
+The unique collision boxes shown can be abused in order to boost yourself or sometimes fly: <br/>
 ***Put video here later***
 To abuse the collisions you do something called undoboosting <br/>
-1. Bind key to spawn entity <br/>
-3. Look straight down or close to straight down <br/>
-4. Spawn entity and then immediately undo <br/>
-5. Spam this process constantly and boost yourself <br/>
+
+1. Bind key to spawn entity
+3. Look straight down or close to straight down
+4. Spawn entity and then immediately undo
+5. Spam this process constantly and boost yourself
 <br/>
 
 Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
