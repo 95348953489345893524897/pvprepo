@@ -262,19 +262,48 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
     7. Accelerated Forward Hopping (2:54 - 3:18) -- The circle strafe he does isn't needed to AFH but gives a bit more starting speed<br/>
 
 # Undoboosting/Cameraboosting
-- On spawn, collision boxes of all props, even some hollow ones (Only when hollow and enclosed downward (facing the world)? <u>Confirm later<u>), seem to be initiliazed for one tick (stop speculating, <u>test later<u>). This collision initial collision box is absurdly exaggerated, with some areas of props the player can go through having collisions for a tick. <br/>
+- On spawning an entity*, a unique collision box**  seems to be initiliazed for one tick (stop speculating, <ins>test later</ins>).
+- This collision initial collision box is usually completely wrong. (based on the bounding box perhaps? <ins>Confirm later</ins>)
+- For entity with no collisions <br/>
 For example: <br/>
 ```models/props_c17/truss02a.mdl```
-<img width="2840" height="2160" alt="image" src="https://github.com/user-attachments/assets/6e6b143c-5504-4c16-a589-028452b57224" />
-This truss model prop should clearly not have collisions in the center of it, and it doesn't. However, on spawn, it will have a collision in the center of it. <br/>
-This can be tested by putting the command 
-```cl_showerror 1``` in the console. Cl_showerror 1 displays prediction errors on the right side of the screen, and almost all collisions with unfrozen props will be prediction errors.
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/221e0924-c9e7-461b-b11a-6e292cbe00a5" />
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4e9f043a-1eec-4302-ad7a-6a5fbaf615ae" />
-- Here you can see 8 prediction errors, all clearly from the truss prop.
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
-- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have definitely changed.
+This truss model prop should clearly not have collisions in the center of it, and it doesn't. However, on spawn, it <ins>will</ins> have a collision in the center of it. <br/>
+This can be tested by putting the command ```cl_showerror 1``` in the console. Cl_showerror 1 displays prediction errors on the right side of the screen, and almost all collisions with unfrozen props will be prediction errors.
+ <br/>
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/4e9f043a-1eec-4302-ad7a-6a5fbaf615ae" />
+<br/>
+- Here you can see 8 prediction errors, all clearly from the truss prop. <br/>
+- If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
+<br/>
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
+<br/>
+- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have *definitely* changed. <br/>
+<br/>
+<br/>
+<br/>
+* Not all entities, see Confirmation tables below <br/>
+** Only when hollow and enclosed downward (facing the world)? <ins>Confirm later</ins> <br/>
+<br/>
 
+Confirmed entity classes with prediction errors: <br/>
+```
+m9k_ammo_357
+m9k_ammo_ar2
+m9k_ammo_buckshot
+m9k_ammo_pistol
+m9k_ammo_smg
+m9k_ammo_sniper_rounds
+m9k_ammo_winchester
+gmod_cameraprop (from the camera tool)
+```
+
+Tested but no prediction errors:
+```
+Rope (wasn't expected to give prediction errors, but worth a try)
+All spawnmenu entities in the Half-Life 2 category were tested, but none of the ones that don't regularly collide with players gave prediction errors 
+```
 # Wallstrafing
 - add later
 
