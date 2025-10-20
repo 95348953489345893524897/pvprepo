@@ -104,7 +104,7 @@ if SERVER then
         --printTable(ArenaPlayers)
         timer.simple(6, function()
             -- autoremove player from table if they dont enter chair within 6 seconds
-            if ArenaPlayers[player] and ArenaPlayers[player].Chair and Chair:isValid() then
+            if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
                 if player:isHUDActive() then
                     printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
