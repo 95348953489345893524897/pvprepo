@@ -57,8 +57,8 @@ if SERVER then
         end
     end
 
-    local ComponentAmount = 0
-    local ComponentLimit = 9 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
+    --local ComponentAmount = 0
+    local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
     local function RemovePlayerFromGame(player)
         if ArenaPlayers[player] then
             if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
@@ -88,11 +88,11 @@ if SERVER then
         if ArenaPlayers[player] and ArenaPlayers[player].Score then
             Score = ArenaPlayers[player].Score
         end
-        if player:isAlive() and not ArenaPlayers[player] and ComponentAmount < ComponentLimit then
+        if player:isAlive() and not ArenaPlayers[player] and #chip():getLinkedComponents() < ComponentLimit then
             HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
             HUD:setColor(Color(0, 0, 0, 0))
             HUD:linkComponent(chip())
-            ComponentAmount = ComponentAmount + 1
+            --ComponentAmount = ComponentAmount + 1
         end
 
         ArenaPlayers[player] = {
