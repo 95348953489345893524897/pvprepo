@@ -109,9 +109,8 @@ if SERVER then
                     printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
                 end
-
-            end
             RemovePlayerFromGame(player)
+            end
         end)
     end
 
