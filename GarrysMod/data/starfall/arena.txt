@@ -25,8 +25,52 @@ if SERVER then
         prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
     end
 
+    --[[
+    not used for now but will probably be important for CTF team splitting
+    local function GetFactorial(num)
+    end
+    ]]
+    local function AssignPlayerstoTeams()
+        local ArenaKeys = table.getKeys(ArenaPlayers)
+        table.shuffle(ArenaKeys) -- randomize
+        for index, player in pairs(ArenaKeys) do
+            if index % 2 == 1 then
+                ArenaPlayers[player].Team = 1
+            else
+                ArenaPlayers[player].Team = 2
+            end
+        end
+    end
+
+    local TeamColors = {
+        Color(255, 0, 0, 255), -- red
+        Color(0, 0, 255, 255), -- blue
+    }
+
+    local Flags = {}
+    hook.add("GravGunOnPickedUp", "HandleFlagPickup", function(ply, ent)
+        -- if ply in same team then 
+        -- drop ent
+        -- end
+        if table.hasValue(Flags, ent) then --
+            ent:enableGravity(true)
+        end
+
+        printTable(Flags)
+    end)
+
+    local FlagSpawns = {Vector(857.240295, -360.219971, -79.968750), Vector(894.949890, 102.024399, -79.968750)}
+    local function CreateFlags()
+        for i = 1, #FlagSpawns do
+            Flags[i] = prop.create(FlagSpawns[i], Angle(0, 0, 0), "models/roller_vehicledriver.mdl", false)
+            Flags[i]:enableGravity(false)
+            Flags[i]:setColor(TeamColors[i])
+        end
+    end
+
     local function StartCTFGame()
-        -- make this do something later
+        AssignPlayerstoTeams()
+        CreateFlags()
     end
 
     local GameModeList = {"FFA", "CTF"}
