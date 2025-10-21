@@ -30,16 +30,24 @@ if SERVER then
     local function GetFactorial(num)
     end
     ]]
+    local function AssignPlayertoTeam(player, teamnum)
+        if not teamnum then
+            ArenaPlayers[player].Team = math.random(1, 2) -- unfair teaming
+        else
+            ArenaPlayers[player].Team = teamnum -- fairer teaming
+        end
+    end
+
     local function AssignPlayerstoTeams()
-        local ArenaKeys = table.getKeys(ArenaPlayers)
-        table.shuffle(ArenaKeys) -- randomize
-        for index, player in pairs(ArenaKeys) do
+        for index, player in ipairs(table.getKeys(ArenaPlayers)) do
             if index % 2 == 1 then
-                ArenaPlayers[player].Team = 1
+                AssignPlayertoTeam(player, 1)
             else
-                ArenaPlayers[player].Team = 2
+                AssignPlayertoTeam(player, 2)
             end
         end
+
+        printTable(ArenaPlayers)
     end
 
     local TeamColors = {
@@ -48,23 +56,33 @@ if SERVER then
     }
 
     local Flags = {}
+    local FlagSpawns = {Vector(857.240295, -360.219971, -79.968750), Vector(894.949890, 102.024399, -79.968750)}
+    local function CreateFlag(num)
+        Flags[num] = prop.create(FlagSpawns[num], Angle(0, 0, 0), "models/roller_vehicledriver.mdl", false)
+        Flags[num]:enableGravity(false)
+        Flags[num]:setColor(TeamColors[num])
+        Flags[num]:getPhysicsObject():setDragCoefficient(200000000000000000000000000)
+        Flags[num]:setCollisionGroup(11)
+        Flags[num].Team = num
+    end
+
     hook.add("GravGunOnPickedUp", "HandleFlagPickup", function(ply, ent)
-        -- if ply in same team then 
-        -- drop ent
-        -- end
-        if table.hasValue(Flags, ent) then --
-            ent:enableGravity(true)
+        if ArenaPlayers[ply] and ent == Flags[ArenaPlayers[ply].Team] then --
+            ent:remove()
+            CreateFlag(ArenaPlayers[ply].Team)
         end
 
-        printTable(Flags)
+        if table.hasValue(Flags, ent) then --
+            ent:enableGravity(true)
+            ent:getPhysicsObject():setDragCoefficient(0)
+            ent:setCollisionGroup(0)
+        end
     end)
 
-    local FlagSpawns = {Vector(857.240295, -360.219971, -79.968750), Vector(894.949890, 102.024399, -79.968750)}
     local function CreateFlags()
         for i = 1, #FlagSpawns do
-            Flags[i] = prop.create(FlagSpawns[i], Angle(0, 0, 0), "models/roller_vehicledriver.mdl", false)
-            Flags[i]:enableGravity(false)
-            Flags[i]:setColor(TeamColors[i])
+            if isValid(Flags[i]) then Flags[i]:remove() end
+            CreateFlag(i)
         end
     end
 
@@ -97,6 +115,76 @@ if SERVER then
             StartCTFGame()
         end
     end
+
+    local TeamScores = {
+        [1] = 0,
+        [2] = 0
+    }
+
+    local function InformScoreLimitReached(player, winner)
+        if player:isHUDActive() then
+            --
+            printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. ScoreLimit .. ")" .. " reached by " .. ((isnumber(winner) == false and winner:getName()) or ("team " .. tostring(winner)) .. "."))
+        end
+
+        timer.simple(3, function()
+            --
+            StartNewRound(GameMode)
+        end)
+    end
+
+    local function CheckIfScoreLimitReached()
+        if GameMode == "FFA" then
+            for ply, data in pairs(ArenaPlayers) do
+                if data.Score >= ScoreLimit then
+                    for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+                        InformScoreLimitReached(player, ply)
+                    end
+                end
+            end
+        else
+            for team, score in ipairs(TeamScores) do
+                if score >= ScoreLimit then --
+                    for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+                        InformScoreLimitReached(player, team)
+                    end
+                end
+            end
+        end
+    end
+
+    local function GiveTeamScore(teamnum)
+        TeamScores[teamnum] = TeamScores[teamnum] + 1
+        printTable(TeamScores)
+        CheckIfScoreLimitReached()
+    end
+
+    local function InformOfGoal(teamnum)
+        for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+            if player:isHUDActive() then --
+                printHud(player, "Team " .. teamnum .. " scored a goal. ")
+                printHud(player, "T1 - " .. TeamScores[1] .. " T2 - " .. TeamScores[2])
+            end
+        end
+    end
+
+    local LastCheckTime = 0
+    hook.add("Think", "CheckFlagDist", function()
+        if timer.curtime() > LastCheckTime + 0.2 and GameMode == "CTF" then
+            LastCheckTime = timer.curtime()
+            for i = 1, #Flags do
+                local CurrentFlag = Flags[i]
+                local OtherTeamNum = i == 1 and 2 or 1
+                local OtherFlagSpawn = FlagSpawns[OtherTeamNum]
+                if CurrentFlag and CurrentFlag:isValid() and CurrentFlag:getPos():getDistance(OtherFlagSpawn) < 100 then
+                    Flags[i]:remove()
+                    CreateFlag(i)
+                    GiveTeamScore(i)
+                    InformOfGoal(i == 2 and 1 or 2)
+                end
+            end
+        end
+    end)
 
     --local ComponentAmount = 0
     local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
@@ -136,6 +224,7 @@ if SERVER then
             Score = Score
         }
 
+        if GameMode == "CTF" then AssignPlayertoTeam(player) end
         --printTable(ArenaPlayers)
         timer.simple(6, function()
             -- autoremove player from table if they dont enter chair within 6 seconds
@@ -172,8 +261,8 @@ if SERVER then
     local BlacklistedWeapons = {}
     local function BlacklistWeapon(weapon)
         if BlacklistGroups[weapon] then
-            table.add(BlacklistedWeapons, BlacklistGroups[weapon])
-        else
+            table.add(BlacklistedWeapons, BlacklistGroups[weapon]) -- make this into a loop that checks if the value is already blacklisted
+        else -- make this an elseif that checks if the value is already blacklisted
             BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
         end
 
@@ -249,24 +338,6 @@ if SERVER then
     end
 
     RegisterSpawns()
-    local function CheckIfScoreLimitReached()
-        for ply, data in pairs(ArenaPlayers) do
-            if data.Score >= ScoreLimit then
-                for _, player in ipairs(table.getKeys(ArenaPlayers)) do
-                    if player:isHUDActive() then
-                        --
-                        printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. ScoreLimit .. ")" .. " reached by " .. (Team or ply:getName()))
-                    end
-                end
-
-                timer.simple(3, function()
-                    --
-                    StartNewRound(GameMode)
-                end)
-            end
-        end
-    end
-
     hook.add("PlayerDeath", "CountScore", function(ply, inflictor, attacker)
         if ArenaPlayers[attacker] and ply ~= attacker then
             ArenaPlayers[attacker].Score = ArenaPlayers[attacker].Score + 1
