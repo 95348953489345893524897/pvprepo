@@ -47,7 +47,7 @@ if SERVER then
             end
         end
 
-        printTable(ArenaPlayers)
+        --printTable(ArenaPlayers)
     end
 
     local TeamColors = {
@@ -81,8 +81,10 @@ if SERVER then
 
     local function CreateFlags()
         for i = 1, #FlagSpawns do
-            if isValid(Flags[i]) then Flags[i]:remove() end
-            CreateFlag(i)
+            timer.simple(0.5 * i - 1, function()
+                if isValid(Flags[i]) then Flags[i]:remove() end
+                CreateFlag(i)
+            end)
         end
     end
 
@@ -155,7 +157,7 @@ if SERVER then
 
     local function GiveTeamScore(teamnum)
         TeamScores[teamnum] = TeamScores[teamnum] + 1
-        printTable(TeamScores)
+        --printTable(TeamScores)
         CheckIfScoreLimitReached()
     end
 
