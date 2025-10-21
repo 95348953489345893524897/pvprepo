@@ -34,7 +34,7 @@ if SERVER then
     local ScoreLimit = 50
     local function StartNewRound(mode, scorelimit)
         ScoreLimit = tonumber(scorelimit) or 50
-        GameMode = mode or "FFA"
+        GameMode = (table.hasValue(GameModeList, mode) and mode) or "FFA"
         local b = 0 -- counter for timer.simple
         for ply, data in pairs(ArenaPlayers) do
             if ply:isHUDActive() then
@@ -44,14 +44,11 @@ if SERVER then
 
             data.Score = 0
             GivePlayerTable()
-            timer.simple(b * 0.5, function()
-                ExplodePlayer(ply)
-            end)
+            timer.simple(b * 0.5, function() ExplodePlayer(ply) end)
             b = b + 1
-            if b == #ArenaPlayers then
-                b = 0
-            end 
+            if b == #ArenaPlayers then b = 0 end
         end
+
         if GameMode == "CTF" then --
             StartCTFGame()
         end
@@ -71,23 +68,17 @@ if SERVER then
             ArenaPlayers[player] = false
             GivePlayerTable()
             ArenaPlayers[player] = nil
-            if ComponentAmount > 0 then ComponentAmount = ComponentAmount - 1 end
+            --if ComponentAmount > 0 then ComponentAmount = ComponentAmount - 1 end
         end
     end
 
     local function GiveChair(player)
-        if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
-            ArenaPlayers[player].Chair:remove()
-        end
+        if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
         local Chair = nil
-        if player:isAlive() then
-            Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
-        end
+        if player:isAlive() then Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true) end
         local HUD = nil
         local Score = 0
-        if ArenaPlayers[player] and ArenaPlayers[player].Score then
-            Score = ArenaPlayers[player].Score
-        end
+        if ArenaPlayers[player] and ArenaPlayers[player].Score then Score = ArenaPlayers[player].Score end
         if player:isAlive() and not ArenaPlayers[player] and #chip():getLinkedComponents() < ComponentLimit then
             HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
             HUD:setColor(Color(0, 0, 0, 0))
@@ -109,20 +100,22 @@ if SERVER then
                     printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
                     printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
                 end
-            RemovePlayerFromGame(player)
+
+                RemovePlayerFromGame(player)
             end
         end)
     end
 
-    hook.add("HUDConnected", "MoveHUD", function(ent, ply) 
+    hook.add("HUDConnected", "MoveHUD", function(ent, ply)
         if isValid(ent) and ArenaPlayers[ply].HUD then
-                ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0))
-                timer.simple(0.01, function()
-                    printHud(ply, "Enter the chair to join the arena")
-                    printHud(ply, "Type !leavearena to leave")
-                end)
-            end
-        end)
+            ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0))
+            timer.simple(0.01, function()
+                printHud(ply, "Enter the chair to join the arena")
+                printHud(ply, "Type !leavearena to leave")
+            end)
+        end
+    end)
+
     local ArenaAdmins = {
         -- so multiple people can access the admin commands
         chip():getOwner(),
@@ -139,6 +132,7 @@ if SERVER then
         else
             BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
         end
+
         print("Blacklisted Weapons: " .. table.concat(BlacklistedWeapons))
     end
 
@@ -167,6 +161,7 @@ if SERVER then
         if string.find(string.sub(text, 1, 1), "!") then --
             Command = string.explode(" ", text, true)
         end
+
         if text == "!joinarena" and ArenaPlayers[ply] == nil then
             GiveChair(ply)
             GivePlayerTable()
@@ -185,7 +180,6 @@ if SERVER then
                 AdminCommands[text]()
             end
         end
-
         --print(Command[1])
         --print(Command[2])
     end)
@@ -202,12 +196,7 @@ if SERVER then
     end)
 
     hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) if ArenaPlayers[ply] then GiveChair(ply) end end)
-    hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply)
-        if ArenaPlayers[ply] then
-            RemovePlayerFromGame(ply)
-        end
-    end)
-
+    hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply) if ArenaPlayers[ply] then RemovePlayerFromGame(ply) end end)
     local LookupBounds = Vector(-4000, -4000, -4000) -- make this not have bounds for CTF later
     local function RegisterSpawns()
         for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
