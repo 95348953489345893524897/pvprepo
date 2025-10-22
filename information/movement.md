@@ -219,8 +219,10 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
     - Video is ridiculously slowed down which I will fix later probably<br/>
     
    ## How to Sidehop:
-   <img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
+   https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/lua/menu/sidehop.lua
+   - this script will help a lot with visualizing where to turn your camera when sidehopping
 
+<img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
       1. Jump and turn perpendicular to your sideways velocity (ideal facing angle, the red line).
         - The ideal facing angle is a guide, you do not have to perfectly line up your aim with it.
       2. Jump every time you hit the ground
