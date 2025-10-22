@@ -17,17 +17,16 @@ end
 local ConvarTable = {
     -- put convars you want to set when you load in here
     ["cl_detaildist"] = "0",
-    --["cl_yourconvar"] = "desiredvalue",
 }
 
+--["cl_yourconvar"] = "desiredvalue",
 local InitialRun = true
 gameevent.Listen("client_disconnect")
-hook.Add("client_disconnect", "client_disconnect_example", function(data)
+hook.Add("client_disconnect", "SetInitialRun", function()
     InitialRun = true -- set InitialRun back to true because we disconnected to join another server
 end)
 
-gameevent.Listen("player_activate") -- "Called when a player has entered the game (connected and loaded)."
-hook.Add("player_activate", "SetConvars", function(data)
+local function SetConvars()
     if InitialRun == true then -- make sure were only running this when loaded into a server for the first time 
         for convar, argument in pairs(ConvarTable) do
             RunConsoleCommand(convar, argument)
@@ -40,4 +39,7 @@ hook.Add("player_activate", "SetConvars", function(data)
 
         InitialRun = false
     end
-end)
+end
+
+gameevent.Listen("player_activate") -- "Called when a player has entered the game (connected and loaded)."
+hook.Add("player_activate", "SetConvars", SetConvars)
