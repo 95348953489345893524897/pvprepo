@@ -262,6 +262,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
     7. Accelerated Forward Hopping (2:54 - 3:18) -- The circle strafe he does isn't needed to AFH but gives a bit more starting speed<br/>
 
 # Undoboosting/Cameraboosting
+(TEST IF THIS HAPPENS ON EVERY SERVER OR JUST A FEW)
 - On spawning an entity*, a unique collision box**  seems to be initiliazed for one tick (stop speculating, <ins>test later</ins>).
 - This collision initial collision box is usually completely wrong. (based on the bounding box perhaps? <ins>Confirm later</ins>)
 - For entity with no collisions <br/>
@@ -269,17 +270,18 @@ For example: <br/>
 ```models/props_c17/truss02a.mdl```
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/221e0924-c9e7-461b-b11a-6e292cbe00a5" />
 
-This truss model prop should clearly not have collisions in the center of it, and it doesn't. However, on spawn, it <ins>will</ins> have a collision in the center of it. <br/>
+<!-- However, on spawn, it <ins>will</ins> have a collision in the center of it. <br/> -->
 This can be tested by putting the command ```cl_showerror 1``` in the console. Cl_showerror 1 displays prediction errors on the right side of the screen, and almost all collisions with unfrozen props will be prediction errors.
  <br/>
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/4e9f043a-1eec-4302-ad7a-6a5fbaf615ae" />
 <br/>
 - I jump, spawn the prop, and it shows 8 prediction errors, all clearly from the prop. <br/>
   - If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
-<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/3545748f-ca2d-4171-84e2-21a8bd4ca3a3" />
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/0e95a8b7-1443-4ef5-8ff8-6d13971797cd" />
+- This truss model prop should clearly not have collisions in the center of it, and it doesn't, shown by the blue collision boxes (vcollide_wireframe 1). 
 <br/>
-
-- Afterwards, I run around through the truss prop and get no prediction errors. The collisions have *definitely* changed.
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/f20a3ba8-afa9-42fe-aae2-d1d1f2baa9e8" />
+- If you look at the bounding box (ent_bbox) though, it seems to match with where the prediction errors / collisions happen.
 <br/>
 <br/>
 The unique collision boxes shown can be abused in order to boost yourself or sometimes fly: <br/>
