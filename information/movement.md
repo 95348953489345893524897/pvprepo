@@ -225,8 +225,8 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
         - The ideal facing angle is a guide, you do not have to perfectly line up your aim with it.
       2. Jump every time you hit the ground
       3. Whenever you hit the ground, your sideways velocity will change, and you need to face the new ideal facing angle.
+https://github.com/user-attachments/assets/14ffa62a-f4ff-4d4c-817f-c1aae7147626
 
-      https://github.com/user-attachments/assets/14ffa62a-f4ff-4d4c-817f-c1aae7147626
       4. Repeat this process of turning and jumping to keep sidehopping
         - You can do this while standing up using the exact same process, but it gives less of a speed boost.
           - Do NOT hold sprint while doing standing sidehops or you will gain almost no velocity
