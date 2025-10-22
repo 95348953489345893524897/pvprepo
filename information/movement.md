@@ -211,22 +211,31 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
   
 # Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.<br/>
+  - Sandbox sidehopping seems to come from an attempt to patch HL2 style accelerated sidehopping out of the game.
     - Sidehopping tutorial - https://www.youtube.com/watch?v=ArMJ5qALBXY<br/>
       - Crouching left sidehop (0:02 - 1:47)<br/>
       - Crouching right sidehop (1:51 - 3:06)<br/>
       - Demonstration (3:13 - 6:50)<br/>
     - Video is ridiculously slowed down which I will fix later probably<br/>
     
-   ## How to Crouching Sidehop:
-      1. Crouch-jump and turn 90 degrees (left or right)
-      2. Jump and don't let go of crouch. 
-      3. Jump every time you hit the ground
-      4. While you are in the air, turn your aim in the direction corresponding to the side you turned on
+   ## How to Sidehop:
+   <img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
+
+      1. Jump and turn perpendicular to your sideways velocity (ideal facing angle, the red line).
+        - The ideal facing angle is a guide, you do not have to perfectly line up your aim with it.
+      2. Jump every time you hit the ground
+      3. Whenever you hit the ground, your sideways velocity will change, and you need to face the new ideal facing angle.
+      
+
+https://github.com/user-attachments/assets/14ffa62a-f4ff-4d4c-817f-c1aae7147626
+
+<!-- 3. While you are in the air, turn your aim in the direction corresponding to the side you turned on
         - Aiming in the wrong direction will either make you go in a direction other than where you want, or it will instantly kill your velocity.
         - If you turned left 90 degrees:
           - Turn your aim left if you are going forwards, and turn your aim right if you are going backwards
         - If you turned right 90 degrees:
-          - Turn your aim right if you are going forwards, and turn your aim left if you are going backwards
+          - Turn your aim right if you are going forwards, and turn your aim left if you are going backwards 
+-->
       - Notes: 
         - You shouldn't be touching any movement keys while you do this, because more than likely they'll just mess up your timing/direction.
           - An exception is when you are curving the strafe away from walls with keys like W and S.
