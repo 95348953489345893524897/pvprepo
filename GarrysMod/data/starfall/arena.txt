@@ -56,7 +56,7 @@ if SERVER then
     }
 
     local Flags = {}
-    local FlagSpawns = {Vector(857.240295, -360.219971, -79.968750), Vector(894.949890, 102.024399, -79.968750)}
+    local FlagSpawns = {Vector(-10144.915039, -1220.131714, -10815.968750), Vector(-10479.685547, 3487.269775, -11071.968750)} 
     local function CreateFlag(num)
         Flags[num] = prop.create(FlagSpawns[num], Angle(0, 0, 0), "models/roller_vehicledriver.mdl", false)
         Flags[num]:enableGravity(false)
@@ -220,13 +220,15 @@ if SERVER then
             --ComponentAmount = ComponentAmount + 1
         end
 
-        ArenaPlayers[player] = {
-            Chair = Chair,
-            HUD = HUD,
-            Score = Score
-        }
 
-        if GameMode == "CTF" then AssignPlayertoTeam(player) end
+        ArenaPlayers[player] = ArenaPlayers[player] or {}
+        ArenaPlayers[player].Chair = Chair
+        ArenaPlayers[player].HUD = HUD
+        ArenaPlayers[player].Score = Score
+
+        if GameMode == "CTF" and not ArenaPlayers[player].Team then AssignPlayertoTeam(player) end
+
+
         --printTable(ArenaPlayers)
         timer.simple(6, function()
             -- autoremove player from table if they dont enter chair within 6 seconds
