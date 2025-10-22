@@ -17,7 +17,6 @@ end
 local ConvarTable = {
     -- put convars you want to set when you load in here
     ["cl_detaildist"] = "0",
-    ["cl_timeout"] = "100000",
     --["cl_yourconvar"] = "desiredvalue",
 }
 
