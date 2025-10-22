@@ -34,7 +34,7 @@ local TickRate = nil
 local function SetConvarNotify(convar, value)
     RunConsoleCommand(convar, value)
     timer.Simple(0.01, function()
-        -- the convar values print correctly if there is no delay
+        -- the convar values dont print correctly if there is no delay
         print("Setting  " .. convar .. " to " .. value)
         print("Game says " .. convar .. " == " .. GetConVar(convar):GetString()) -- prove we set the convar correctly
     end)
