@@ -321,12 +321,18 @@ Tested but no prediction errors:
 Rope (wasn't expected to give prediction errors, but worth a try)
 All spawnmenu entities in the Half-Life 2 category were tested, but none of the ones that don't regularly collide with players gave prediction errors 
 ```
+
+# Sandbox Source Code
+- explain some things in the source code later
+
 # Wallstrafing
 - add later
 
-# Circlestrafing
-- Does circle strafing even have an effect on sandbox? figure out later
-
+# Prestrafing
+- Prestrafing is turning before you jump so that the velocity made from turning gives you a headstart on your first jump.
+  - It probably isn't useful in sandbox and sandbox derived gamemodes because of how the jump boost is set
+https://youtu.be/Ja7Fr01gHoI
+ 
 # Balloons (For scaling walls)
 - Demonstration - https://youtu.be/-4LRnP6-fvM<br/>
   1. Add explanation later
