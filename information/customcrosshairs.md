@@ -37,5 +37,6 @@ For the purpose of the guide you can ignore the hl2_textures.vpk path. <br>
       - You don't want this. Lightmappedgeneric will give your crosshair very incorrect coloring. Set it to ```"UnlitGeneric"``` instead.
 
 <img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/5eb68120-ffd7-4526-acb8-49226bfc44d1" />
+
 11. Test your crosshair in game with ```hud_draw_fixed_reticle 1```
       - If it is too large then edit your png
