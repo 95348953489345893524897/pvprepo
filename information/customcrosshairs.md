@@ -20,5 +20,22 @@ For the purpose of the guide you can ignore the hl2_textures.vpk path. <br>
 
 
 5. ```Import``` that custom crosshair image into VTFEdit (<ins>Put separate gist file to explain how to do that here </ins>)
-6. ```"Save as"``` the image as xbox_reticle.vtf in the innermost CustomCrosshair subfolder.
+<img width="468" height="397" alt="import" src="https://github.com/user-attachments/assets/deceaf3d-b5de-428f-b8c2-1c94c16e40f3" />
+
+6. Press "ok"
+<img width="468" height="397" alt="pressok" src="https://github.com/user-attachments/assets/6befcbec-27df-42fb-8773-87a339621f77" />
+
+8. ```"Save as"``` the image as xbox_reticle.vtf in the innermost CustomCrosshair subfolder (\hud).
      - Your final path should look like: ```\CustomCrosshair\materials\vgui\hud\xbox_reticle.vtf```
+<img width="468" height="397" alt="saveas" src="https://github.com/user-attachments/assets/a238ee23-9565-4dd8-8b5c-8a8545dc4489" />
+
+9. Click ```Create VMT File```
+      - This will create xbox_reticle.vmt in ```\CustomCrosshair\materials\vgui\hud\```
+    <img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/ada4b26b-cee5-407d-ba55-11f63f236b4d" />
+10. Edit ```xbox_reticle.vmt```'s parameter to UnlitGeneric
+      - Normally line 1 is ```"LightmappedGeneric"```.
+      - You don't want this. Lightmappedgeneric will give your crosshair very incorrect coloring. Set it to ```"UnlitGeneric"``` instead.
+
+<img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/5eb68120-ffd7-4526-acb8-49226bfc44d1" />
+11. Test your crosshair in game with ```hud_draw_fixed_reticle 1```
+      - If it is too large then edit your png
