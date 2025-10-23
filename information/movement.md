@@ -224,7 +224,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
 
 <img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
 
-      1. Jump and turn perpendicular to your sideways velocity (ideal facing angle, the red line).
+      1. Jump and turn perpendicular to your sideways velocity (ideal facing angle, the red line in the image above).
         - The ideal facing angle is a guide, you do not have to perfectly line up your aim with it.
       2. Jump every time you hit the ground
       3. Whenever you hit the ground, your sideways velocity will change, and you need to face the new ideal facing angle.
