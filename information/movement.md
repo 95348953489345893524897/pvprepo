@@ -327,6 +327,8 @@ All spawnmenu entities in the Half-Life 2 category were tested, but none of the 
 
 # Wallstrafing
 - add later
+[wallstrafing_dem 2025-10-22 18-19-45.webm](https://github.com/user-attachments/assets/16d239a1-be1c-4203-9105-8cd76e71e9e6)
+
 
 # Prestrafing
 - Prestrafing is turning before you jump so that the velocity made from turning gives you a headstart on your first jump.
