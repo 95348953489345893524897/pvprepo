@@ -22,9 +22,9 @@ For the purpose of the guide you can ignore the hl2_textures.vpk path. <br>
 5. ```Import``` that custom crosshair image into VTFEdit (<ins>Put separate gist file to explain how to do that here </ins>)
 <img width="468" height="397" alt="import" src="https://github.com/user-attachments/assets/deceaf3d-b5de-428f-b8c2-1c94c16e40f3" />
 
-6. Press "ok"
-<img width="468" height="397" alt="pressok" src="https://github.com/user-attachments/assets/6befcbec-27df-42fb-8773-87a339621f77" />
-
+6. Copy these settings and press ```OK```
+<img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/6fc84b07-4ef3-46e4-abb4-88d5eeccaca5" />
+      - Mess with the clamp width and length if your crosshair exports weirdly
 8. ```"Save as"``` the image as xbox_reticle.vtf in the innermost CustomCrosshair subfolder (\hud).
      - Your final path should look like: ```\CustomCrosshair\materials\vgui\hud\xbox_reticle.vtf```
 <img width="468" height="397" alt="saveas" src="https://github.com/user-attachments/assets/a238ee23-9565-4dd8-8b5c-8a8545dc4489" />
@@ -32,11 +32,21 @@ For the purpose of the guide you can ignore the hl2_textures.vpk path. <br>
 9. Click ```Create VMT File```
       - This will create xbox_reticle.vmt in ```\CustomCrosshair\materials\vgui\hud\```
     <img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/ada4b26b-cee5-407d-ba55-11f63f236b4d" />
-10. Edit ```xbox_reticle.vmt```'s parameter to UnlitGeneric
-      - Normally line 1 is ```"LightmappedGeneric"```.
-      - You don't want this. Lightmappedgeneric will give your crosshair very incorrect coloring. Set it to ```"UnlitGeneric"``` instead.
+10. Edit ```xbox_reticle.vmt```
 
-<img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/5eb68120-ffd7-4526-acb8-49226bfc44d1" />
+Copy paste this code inside of ```xbox_reticle.vmt```
+```
+UnlitGeneric
+{
+   "$basetexture" "vgui/hud/xbox_reticle"
+	$alphatest		1
+	$alphatestreference		0.1		         // If 0.1 doesnt work set to 0.01
+	$allowalphatocoverage	1
+	$color 			         "[20 20 20]"      // You may want to mess with this depending on how bright you want the crosshair to be or to quickly change its colors
+}
+```
+<img width="468" height="397" alt="image" src="https://github.com/user-attachments/assets/e5649a29-2d79-404a-a9b8-ef39d4768e20" />
 
 11. Test your crosshair in game with ```hud_draw_fixed_reticle 1```
-      - If it is too large then edit your png
+      - If it is too large then edit your original crosshair image and reimport.
+      - If it is an odd color then change ```$color "[r g b]"``` in the vmt's code.
