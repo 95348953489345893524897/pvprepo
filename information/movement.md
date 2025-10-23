@@ -328,7 +328,9 @@ All spawnmenu entities in the Half-Life 2 category were tested, but none of the 
 - explain some things in the source code later
 
 # Wallstrafing
-- add later
+- When you run against a wall at a certain angle, you gain a small amount of speed
+  - The advantage of this is not significant in sandbox and sandbox derived gamemodes because the jump boost ignores the speed boost from wallstrafing.
+ 
 [wallstrafing_dem 2025-10-22 18-19-45.webm](https://github.com/user-attachments/assets/16d239a1-be1c-4203-9105-8cd76e71e9e6)
 
 
