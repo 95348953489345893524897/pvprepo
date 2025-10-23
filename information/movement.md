@@ -284,9 +284,11 @@ This can be tested by putting the command ```cl_showerror 1``` in the console. C
 - I jump, spawn the prop, and it shows 8 prediction errors, all clearly from the prop. <br/>
   - If you crouch jump and spawn this with  ```bind t "gm_spawn models/props_c17/truss02a.mdl"```, you will glide for a moment.
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/0e95a8b7-1443-4ef5-8ff8-6d13971797cd" />
+
 - This truss model prop should clearly not have collisions in the center of it, and it doesn't, shown by the blue collision boxes (vcollide_wireframe 1). 
 <br/>
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/f20a3ba8-afa9-42fe-aae2-d1d1f2baa9e8" />
+
 - If you look at the bounding box (ent_bbox) though, it seems to match with where the prediction errors / collisions happen.
 <br/>
 <br/>
