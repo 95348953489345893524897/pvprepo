@@ -1,7 +1,6 @@
 --[[
     Improvement of old script I made to show key movements for guides, now also shows mouse movements
-    Probably doesn't work in demos right now like the original version but I'll fix that eventually
-        -- engine.IsPlayingDemo() and LocalPlayer():keydown maybe? 
+        -- might also make it show mouse movements in demos eventually but not sure
 ]]
 local posxCvar = CreateClientConVar("positionx", "750", true, false)
 local posyCvar = CreateClientConVar("positiony", "650", true, false)
@@ -191,6 +190,7 @@ local KeyboardInputs = {
     },
     ["Tab"] = {
         input = KEY_TAB,
+        alternateinput = IN_SCORE,
         positionx = 0,
         positiony = 200,
         keysize = 150
@@ -203,18 +203,21 @@ local KeyboardInputs = {
     },
     ["W"] = {
         input = KEY_W,
+        alternateinput = IN_FORWARD,
         positionx = 250,
         positiony = 200,
         keysize = 100
     },
     ["E"] = {
         input = KEY_E,
+        alternateinput = IN_USE,
         positionx = 350,
         positiony = 200,
         keysize = 100
     },
     ["R"] = {
         input = KEY_R,
+        alternateinput = IN_RELOAD,
         positionx = 450,
         positiony = 200,
         keysize = 100
@@ -281,18 +284,21 @@ local KeyboardInputs = {
     },
     ["A"] = {
         input = KEY_A,
+        alternateinput = IN_MOVELEFT,
         positionx = 175,
         positiony = 300,
         keysize = 100
     },
     ["S"] = {
         input = KEY_S,
+        alternateinput = IN_BACK,
         positionx = 275,
         positiony = 300,
         keysize = 100
     },
     ["D"] = {
         input = KEY_D,
+        alternateinput = IN_MOVERIGHT,
         positionx = 375,
         positiony = 300,
         keysize = 100
@@ -353,6 +359,7 @@ local KeyboardInputs = {
     },
     ["LShift"] = {
         input = KEY_LSHIFT,
+        alternateinput = IN_SPEED,
         positionx = 0,
         positiony = 400,
         keysize = 225
@@ -383,6 +390,7 @@ local KeyboardInputs = {
     },
     ["B"] = {
         input = KEY_B,
+        alternateinput = IN_ZOOM,
         positionx = 625,
         positiony = 400,
         keysize = 100
@@ -425,6 +433,7 @@ local KeyboardInputs = {
     },
     ["LCtrl"] = {
         input = KEY_LCONTROL,
+        alternateinput = IN_DUCK,
         positionx = 0,
         positiony = 500,
         keysize = 125
@@ -437,12 +446,14 @@ local KeyboardInputs = {
     },
     ["LAlt"] = {
         input = KEY_LALT,
+        alternateinput = IN_WALK,
         positionx = 250,
         positiony = 500,
         keysize = 125
     },
     ["Space"] = {
         input = KEY_SPACE,
+        alternateinput = IN_JUMP,
         positionx = 375,
         positiony = 500,
         keysize = 625
@@ -479,6 +490,7 @@ local KeyboardInputs = {
     },
     ["Left"] = {
         input = KEY_LEFT,
+        alternateinput = IN_LEFT,
         positionx = 1550,
         positiony = 500,
         keysize = 100
@@ -491,6 +503,7 @@ local KeyboardInputs = {
     },
     ["Right"] = {
         input = KEY_RIGHT,
+        alternateinput = IN_RIGHT,
         positionx = 1750,
         positiony = 500,
         keysize = 100
@@ -500,12 +513,14 @@ local KeyboardInputs = {
 local MouseInputs = {
     ["ScU"] = {
         input = MOUSE_WHEEL_UP,
+        alternateinput = IN_WEAPON1,
         positionx = 1750,
         positiony = 200,
         keysize = 100
     },
     ["LMB"] = {
         input = MOUSE_LEFT,
+        alternateinput = IN_ATTACK,
         positionx = 1650,
         positiony = 300,
         keysize = 100
@@ -518,12 +533,14 @@ local MouseInputs = {
     },
     ["RMB"] = {
         input = MOUSE_RIGHT,
+        alternateinput = IN_ATTACK2,
         positionx = 1850,
         positiony = 300,
         keysize = 100
     },
     ["ScD"] = {
         input = MOUSE_WHEEL_DOWN,
+        alternateinput = IN_WEAPON2,
         positionx = 1750,
         positiony = 400,
         keysize = 100
@@ -578,7 +595,7 @@ local RemovedKeys = {
     ["'"] = true,
     ["Enter"] = true,
     ["LShift"] = true,
-    ["B"] = true,
+    --["B"] = true,
     ["N"] = true,
     ["M"] = true,
     [","] = true,
@@ -604,15 +621,14 @@ local function RemoveKey(key)
     PrintTable(RemovedKeys)
 end
 
-concommand.Add("RemoveKey", function(ply, cmd, args)
-    RemoveKey(args[1])
-end, nil, "Remove key")
-
+concommand.Add("RemoveKey", function(ply, cmd, args) RemoveKey(args[1]) end, nil, "Remove key")
 local MouseDeltaX = 0
 local MouseDeltaY = 0
 hook.Add("StartCommand", "GetMouseDeltas", function(ply, cmd)
-    MouseDeltaX = Lerp(0.1, MouseDeltaX + cmd:GetMouseX(), 0)
-    MouseDeltaY = Lerp(0.1, MouseDeltaY + cmd:GetMouseY(), 0)
+    if not engine.IsPlayingDemo() then
+        MouseDeltaX = Lerp(0.1, MouseDeltaX + cmd:GetMouseX(), 0)
+        MouseDeltaY = Lerp(0.1, MouseDeltaY + cmd:GetMouseY(), 0)
+    end
 end)
 
 local function DrawCircle(x, y, radius, seg) -- from https://wiki.facepunch.com/gmod/surface.DrawPoly#example
@@ -649,6 +665,7 @@ local Black = Color(0, 0, 0)
 local Blackish = Color(0, 0, 0, 200)
 local White = Color(255, 255, 255)
 local Whitish = Color(255, 255, 200)
+local TargettedPlayer = LocalPlayer() -- maybe can be compatible with spectate mods later
 hook.Add("HUDPaint", "MakeKeyboard", function()
     -- make into its own function later
     local OriginX = posxCvar:GetInt()
@@ -657,28 +674,32 @@ hook.Add("HUDPaint", "MakeKeyboard", function()
     local MouseOffsetY = MouseOffsetYCvar:GetInt()
     for key, data in pairs(KeyboardInputs) do
         if not RemovedKeys[key] then
-            surface.SetDrawColor((input.IsKeyDown(data.input) and Black) or White)
+            local IsKeyDown = (input.IsKeyDown(data.input) and not engine.IsPlayingDemo()) or (data.alternateinput and TargettedPlayer:KeyDown(data.alternateinput))
+            surface.SetDrawColor(IsKeyDown and White or Black)
             surface.DrawRect(OriginX + (data.positionx * PercentSize), OriginY + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize)
-            surface.SetDrawColor((input.IsKeyDown(data.input) and White) or Black)
+            surface.SetDrawColor((IsKeyDown and Black) or White)
             surface.DrawOutlinedRect(OriginX + (data.positionx * PercentSize), OriginY + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize, 1)
             surface.SetFont("CoolFont")
             local _, Height = surface.GetTextSize(key)
-            draw.DrawText(key, "CoolFont", OriginX + (data.positionx * PercentSize) + (data.keysize * PercentSize / 2), OriginY + (data.positiony * PercentSize) + (50 * PercentSize) - (Height / 2), (input.IsKeyDown(data.input) and White) or Black, TEXT_ALIGN_CENTER)
+            draw.DrawText(key, "CoolFont", OriginX + (data.positionx * PercentSize) + (data.keysize * PercentSize / 2), OriginY + (data.positiony * PercentSize) + (50 * PercentSize) - (Height / 2), (IsKeyDown and Black) or White, TEXT_ALIGN_CENTER)
         end
     end
 
     for button, data in pairs(MouseInputs) do
-        surface.SetDrawColor((input.IsMouseDown(data.input) and Black) or White)
-        surface.DrawRect(OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize)
-        surface.SetDrawColor((input.IsMouseDown(data.input) and White) or Black)
-        surface.DrawOutlinedRect(OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize, 1)
+        local IsKeyDown = (input.IsKeyDown(data.input) and not engine.IsPlayingDemo()) or (data.alternateinput and TargettedPlayer:KeyDown(data.alternateinput))
+        surface.SetDrawColor((IsKeyDown and White) or Black)
+        if (engine.IsPlayingDemo() and data.alternativeinput) or not engine.IsPlayingDemo() then surface.DrawRect(OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize) end
+        surface.SetDrawColor((IsKeyDown and Black) or White)
+        if (engine.IsPlayingDemo() and data.alternativeinput) or not engine.IsPlayingDemo() then surface.DrawOutlinedRect(OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize), data.keysize * PercentSize, 100 * PercentSize, 1) end
         surface.SetFont("CoolFont")
         local _, Height = surface.GetTextSize(button)
-        draw.DrawText(button, "CoolFont", OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize) + (data.keysize * PercentSize / 2), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize) + (50 * PercentSize) - (Height / 2), (input.IsMouseDown(data.input) and White) or Black, TEXT_ALIGN_CENTER)
+        if (engine.IsPlayingDemo() and data.alternativeinput) or not engine.IsPlayingDemo() then draw.DrawText(button, "CoolFont", OriginX + MouseOffsetX * PercentSize + (data.positionx * PercentSize) + (data.keysize * PercentSize / 2), OriginY + MouseOffsetY * PercentSize + (data.positiony * PercentSize) + (50 * PercentSize) - (Height / 2), (IsKeyDown and Black) or White, TEXT_ALIGN_CENTER) end
     end
 
-    surface.SetDrawColor(Blackish)
-    DrawCircle(OriginX + MouseOffsetX * PercentSize + (200 * PercentSize) + 2000 * PercentSize, OriginY + MouseOffsetY * PercentSize + 400 * PercentSize, 150 * PercentSize, 100)
-    surface.SetDrawColor(Whitish)
-    DrawCircle(OriginX + MouseOffsetX * PercentSize + (200 * PercentSize) + 2000 * PercentSize + math.Clamp(MouseDeltaX, -100 * PercentSize, 100 * PercentSize), OriginY + MouseOffsetY * PercentSize + (400 * PercentSize) + math.Clamp(MouseDeltaY, -100 * PercentSize, 100 * PercentSize), 25 * PercentSize, 100)
+    if not engine.IsPlayingDemo() then
+        surface.SetDrawColor(Blackish)
+        DrawCircle(OriginX + MouseOffsetX * PercentSize + (200 * PercentSize) + 2000 * PercentSize, OriginY + MouseOffsetY * PercentSize + 400 * PercentSize, 150 * PercentSize, 100)
+        surface.SetDrawColor(Whitish)
+        DrawCircle(OriginX + MouseOffsetX * PercentSize + (200 * PercentSize) + 2000 * PercentSize + math.Clamp(MouseDeltaX, -100 * PercentSize, 100 * PercentSize), OriginY + MouseOffsetY * PercentSize + (400 * PercentSize) + math.Clamp(MouseDeltaY, -100 * PercentSize, 100 * PercentSize), 25 * PercentSize, 100)
+    end
 end)
