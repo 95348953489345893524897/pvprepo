@@ -112,6 +112,7 @@ To launch:
 3. Jump
 4. Scroll inwards
     - This should make you float and slowly push you away
+    - **PUT STEP3.DEM here** -- where's step2.dem supposed to go again?
 6. Turn 180 degrees and look up
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
     <!--- You should already be turned 180 degrees before the prop hits you. It takes time to get used to the speed.-->
