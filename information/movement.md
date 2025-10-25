@@ -106,14 +106,17 @@ https://github.com/user-attachments/assets/05da9628-4ce5-417b-b6df-c98878c6103b
 
 To launch: 
 1. Hold mouse1
-    - if you can scroll in and the wheel pushes you a lot, spawn it a bit further away
-3. Spawn the prop at your feet
-4. Grab prop
-5. Scroll inwards
-6. Do a quick 180
-7. Look upwards 
+2. Spawn the prop at your feet
+    - if the prop gets you stuck or pushes you straight up when scrolling down, spawn it further away
+    - **PUT STEP1.DEM HERE**
+3. Jump
+4. Scroll inwards
+    - This should make you float and slowly push you away
+6. Turn 180 degrees and look up
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
-8. Undo prop
+    <!--- You should already be turned 180 degrees before the prop hits you. It takes time to get used to the speed.-->
+7. Undo prop
+    - Never let go of the prop, only undo it
 <br/>
 
 ### Coastering
