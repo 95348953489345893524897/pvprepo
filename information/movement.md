@@ -106,13 +106,14 @@ https://github.com/user-attachments/assets/05da9628-4ce5-417b-b6df-c98878c6103b
 
 To launch: 
 1. Hold mouse1
-2. Spawn the prop at your feet
-3. Grab prop
-4. Scroll inwards
-5. Do a quick 180
-6. Look upwards 
+    - if you can scroll in and the wheel pushes you a lot, spawn it a bit further away
+3. Spawn the prop at your feet
+4. Grab prop
+5. Scroll inwards
+6. Do a quick 180
+7. Look upwards 
     - If you don't want to be launched very high, don't look up (basically just keep the same angle you had when you spawned the prop)
-7. Undo prop
+8. Undo prop
 <br/>
 
 ### Coastering
