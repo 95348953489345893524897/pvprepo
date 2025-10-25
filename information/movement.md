@@ -107,7 +107,6 @@ https://github.com/user-attachments/assets/05da9628-4ce5-417b-b6df-c98878c6103b
 To launch: 
 1. Hold mouse1
 2. Spawn the prop at your feet
-  - if you can scroll in and the prop pushes you a lot, spawn it a bit further away
 3. Grab prop
 4. Scroll inwards
 5. Do a quick 180
