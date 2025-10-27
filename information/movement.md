@@ -279,10 +279,8 @@ https://github.com/user-attachments/assets/ce6509b3-da26-4c93-850d-d63dbb3c177c
     7. Accelerated Forward Hopping (2:54 - 3:18) -- The circle strafe he does isn't needed to AFH but gives a bit more starting speed<br/>
 
 # Undoboosting/Cameraboosting
-(TEST IF THIS HAPPENS ON EVERY SERVER OR JUST A FEW)
-- On spawning an entity*, a unique collision box**  seems to be initiliazed for one tick (stop speculating, <ins>test later</ins>).
-- This collision initial collision box is usually completely wrong. (based on the bounding box perhaps? <ins>Confirm later</ins>)
-- For entity with no collisions <br/>
+- On spawning some entities, a unique collision box  seems to be initiliazed for one tick (stop speculating, <ins>test later</ins>).
+- This initial collision box is usually completely wrong. (based on the bounding box perhaps? <ins>Confirm later</ins>) <br/>
 For example: <br/>
 ```models/props_c17/truss02a.mdl```
 <img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/221e0924-c9e7-461b-b11a-6e292cbe00a5" />
@@ -303,20 +301,6 @@ This can be tested by putting the command ```cl_showerror 1``` in the console. C
 - If you look at the bounding box (ent_bbox) though, it seems to match with where the prediction errors / collisions happen.
 <br/>
 <br/>
-The unique collision boxes shown can be abused in order to boost yourself or sometimes fly: <br/>
-***Put video here later***
-To abuse the collisions you do something called undoboosting <br/>
-
-1. Bind key to spawn entity
-3. Look straight down or close to straight down
-4. Spawn entity and then immediately undo
-5. Spam this process constantly and boost yourself
-    - Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
-<br/>
-* Not all entities, see Confirmation tables below <br/>
-** Only when hollow and enclosed downward (facing the world)? <ins>Confirm later</ins> <br/>
-<br/>
-
 Confirmed entities with irregular prediction errors: <br/>
 ```
 m9k_ammo_*
@@ -330,7 +314,26 @@ Tested but no prediction errors:
 Rope (wasn't expected to give prediction errors, but worth a try)
 All spawnmenu entities in the Half-Life 2 category were tested, but none of the ones that don't regularly collide with players gave prediction errors 
 ```
+## How to use cam/undoboosting
 
+The unique collision boxes shown can be abused in order to boost yourself or sometimes fly: <br/>
+***Put video here later***
+To abuse the collisions you do something called undoboosting <br/>
+
+
+### Undoboosting:
+1. Bind key to spawn entity (preferably one that doesn't normally have collisions where it is spawned like cameras, effects, hollow props,) 
+2. Look straight down or close to straight down
+     - You don't have to look straight down if youre using the camera method
+3. Spawn entity and then immediately undo
+4. Spam this process constantly and boost yourself
+    - Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
+<br/>
+<br/>
+
+https://github.com/user-attachments/assets/4f584f2b-4467-4b14-89d6-4ea4c57b151a
+
+  - This video was done by spamming the camera tool, but the process is the same with props too
 # Sandbox Source Code
 - explain some things in the source code later
 
