@@ -268,7 +268,7 @@ https://github.com/user-attachments/assets/ce6509b3-da26-4c93-850d-d63dbb3c177c
 
 # Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 - ABH, AFH, and ASH are not possible on vanilla servers. <br/>
-- Some servers like Friendly Garry's Mod Community (5.161.119.176:27015) and Neotek Gaming (74.91.116.249:27015) have ABH/AFH addons that make it possible.  <br/>
+- Some servers like [Friendly Garry's Mod Community[(https://www.steamserverbrowser.com/games/garrys-mod/servers/5.161.119.176:27015) and Neotek Gaming (now dead) have [ABH/AFH addons](https://steamcommunity.com/sharedfiles/filedetails/?id=778577682) that make it possible.  <br/>
   - How to Backhop in Half-Life 2 (By Burny) - https://www.youtube.com/watch?v=EfRIMwWbyrQ <br/>
     1. Accelerated Backhopping (0:33 - 1:02)<br/>
     2. Accelerated Sidehopping (1:03 - 1:27)<br/>
