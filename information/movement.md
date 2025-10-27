@@ -311,13 +311,9 @@ To abuse the collisions you do something called undoboosting <br/>
 3. Look straight down or close to straight down
 4. Spawn entity and then immediately undo
 5. Spam this process constantly and boost yourself
+    - Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
 <br/>
-
-Since this process isn't humanly possible to do quickly without scripts, I've made a [config file](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/cfg/undoboost) to make it easier to do <br/>
-<br/>
-<br/>
-<br/>
-\* Not all entities, see Confirmation tables below <br/>
+* Not all entities, see Confirmation tables below <br/>
 ** Only when hollow and enclosed downward (facing the world)? <ins>Confirm later</ins> <br/>
 <br/>
 
@@ -326,7 +322,7 @@ Confirmed entities with irregular prediction errors: <br/>
 m9k_ammo_*
 gmod_cameraprop (from the camera tool)
 models/props/de_inferno/bombsiteroof.mdl
-All effects (<ins>?</ins>) (prop_effect)
+All effects (?) (prop_effect)
 ```
 
 Tested but no prediction errors:
