@@ -254,6 +254,17 @@ https://github.com/user-attachments/assets/14ffa62a-f4ff-4d4c-817f-c1aae7147626
       5. Horizontal Plate Boost (3:01 - 3:30)<br/>
   - how to move around with prop and such (By Bikes) - https://youtu.be/YU5ZIUSSpt8<br/>
     - The other tutorial he made is a lot better so I'm not going to timestamp the video. <br/>
+## Potato Jumping
+  Potato jumping works because of how many collisions the ```models/props_phx/misc/potato_launcher_chamber.mdl``` prop has. While inside of it, it is constantly trying to push you out with every one of those triangles. This leads to a very significant boost if you can get it perfectly inside of you.
+  To potato jump:
+    1. Hold mouse1 with physgun out (makes it easier to grab it on spawn)
+    2. Spawn ```models/props_phx/misc/potato_launcher_chamber.mdl``` at your feet while crouching
+      - Spawn it directly below you if you want to go up, more to your side if you want to go more horizontally
+    3. Freeze it
+    4. Launch in the air
+
+https://github.com/user-attachments/assets/ce6509b3-da26-4c93-850d-d63dbb3c177c
+
 
 # Accelerated Backwards / Accelerated Forwards / Accelerated Side Hopping
 - ABH, AFH, and ASH are not possible on vanilla servers. <br/>
