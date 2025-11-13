@@ -7,46 +7,382 @@
 -- respawn points are marked by nocollided skulls, "models/gibs/hgibs.mdl"
 --
 -- Bugs:
--- fix !leavearena 
 -- To do:
 -- add weapon blacklist
 -- add hud
 -- put prop spawns later (like hl2dm)
-local ArenaPlayers = {}
-local function GiveChair(player)
-    ArenaPlayers[player] = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true)
+-- clean up code
+if SERVER then
+    local ArenaPlayers = {}
+    local function GivePlayerTable()
+        net.start("GivePlayerTable")
+        net.writeTable(ArenaPlayers)
+        net.send(table.getKeys(ArenaPlayers))
+    end
+
+    local function ExplodePlayer(ply)
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+        prop.create(ply:getShootPos(), Angle(0, 0, 0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
+    end
+
+    --[[
+    not used for now but will probably be important for CTF team splitting
+    local function GetFactorial(num)
+    end
+    ]]
+    local function AssignPlayertoTeam(player, teamnum)
+        if not teamnum then
+            ArenaPlayers[player].Team = math.random(1, 2) -- unfair teaming
+        else
+            ArenaPlayers[player].Team = teamnum -- fairer teaming
+        end
+    end
+
+    local function AssignPlayerstoTeams()
+        for index, player in ipairs(table.getKeys(ArenaPlayers)) do
+            if index % 2 == 1 then
+                AssignPlayertoTeam(player, 1)
+            else
+                AssignPlayertoTeam(player, 2)
+            end
+        end
+
+        --printTable(ArenaPlayers)
+    end
+
+    local TeamColors = {
+        Color(255, 0, 0, 255), -- red
+        Color(0, 0, 255, 255), -- blue
+    }
+
+    local Flags = {}
+    local FlagSpawns = {Vector(-10144.915039, -1220.131714, -10815.968750), Vector(-10479.685547, 3487.269775, -11071.968750)} 
+    local function CreateFlag(num)
+        Flags[num] = prop.create(FlagSpawns[num], Angle(0, 0, 0), "models/roller_vehicledriver.mdl", false)
+        Flags[num]:enableGravity(false)
+        Flags[num]:setColor(TeamColors[num])
+        Flags[num]:getPhysicsObject():setDragCoefficient(200000000000000000000000000)
+        Flags[num]:setCollisionGroup(11)
+        Flags[num].Team = num
+    end
+
+    hook.add("GravGunOnPickedUp", "HandleFlagPickup", function(ply, ent)
+        if ArenaPlayers[ply] and ent == Flags[ArenaPlayers[ply].Team] then --
+            ent:remove()
+            CreateFlag(ArenaPlayers[ply].Team)
+        end
+
+        if table.hasValue(Flags, ent) then --
+            ent:enableGravity(true)
+            ent:getPhysicsObject():setDragCoefficient(0)
+            ent:setCollisionGroup(0)
+        end
+    end)
+
+    local function CreateFlags()
+        for i = 1, #FlagSpawns do
+            timer.simple(0.5 * i - 1, function()
+                if isValid(Flags[i]) then Flags[i]:remove() end
+                CreateFlag(i)
+            end)
+        end
+    end
+
+    local function StartCTFGame()
+        AssignPlayerstoTeams()
+        CreateFlags()
+    end
+
+    local GameModeList = {"FFA", "CTF"}
+    local GameMode = "FFA"
+    local ScoreLimit = 50
+    local function StartNewRound(mode, scorelimit)
+        ScoreLimit = tonumber(scorelimit) or 50
+        GameMode = (table.hasValue(GameModeList, mode) and mode) or "FFA"
+        local b = 0 -- counter for timer.simple
+        for ply, data in pairs(ArenaPlayers) do
+            if ply:isHUDActive() then
+                --
+                printHud(ply, Color(255, 0, 0), "Starting new " .. GameMode .. " round.")
+            end
+
+            data.Score = 0
+            GivePlayerTable()
+            timer.simple(b * 0.5, function() ExplodePlayer(ply) end)
+            b = b + 1
+            if b == #ArenaPlayers then b = 0 end
+        end
+
+        if GameMode == "CTF" then --
+            StartCTFGame()
+        end
+    end
+
+    local TeamScores = {
+        [1] = 0,
+        [2] = 0
+    }
+
+    local function InformScoreLimitReached(player, winner)
+        if player:isHUDActive() then
+            --
+            printHud(player, Color(255, 0, 0), ((GameMode == "FFA") and "Frag" or "Score") .. " limit " .. "(" .. ScoreLimit .. ")" .. " reached by " .. ((isnumber(winner) == false and winner:getName()) or ("team " .. tostring(winner)) .. "."))
+        end
+
+        timer.simple(3, function()
+            --
+            StartNewRound(GameMode)
+        end)
+    end
+
+    local function CheckIfScoreLimitReached()
+        if GameMode == "FFA" then
+            for ply, data in pairs(ArenaPlayers) do
+                if data.Score >= ScoreLimit then
+                    for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+                        InformScoreLimitReached(player, ply)
+                    end
+                end
+            end
+        else
+            for team, score in ipairs(TeamScores) do
+                if score >= ScoreLimit then --
+                    for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+                        InformScoreLimitReached(player, team)
+                    end
+                end
+            end
+        end
+    end
+
+    local function GiveTeamScore(teamnum)
+        TeamScores[teamnum] = TeamScores[teamnum] + 1
+        --printTable(TeamScores)
+        CheckIfScoreLimitReached()
+    end
+
+    local function InformOfGoal(teamnum)
+        for _, player in ipairs(table.getKeys(ArenaPlayers)) do
+            if player:isHUDActive() then --
+                printHud(player, "Team " .. teamnum .. " scored a goal. ")
+                printHud(player, "T1 - " .. TeamScores[1] .. " T2 - " .. TeamScores[2])
+            end
+        end
+    end
+
+    local LastCheckTime = 0
+    hook.add("Think", "CheckFlagDist", function()
+        if timer.curtime() > LastCheckTime + 0.2 and GameMode == "CTF" then
+            LastCheckTime = timer.curtime()
+            for i = 1, #Flags do
+                local CurrentFlag = Flags[i]
+                local OtherTeamNum = i == 1 and 2 or 1
+                local OtherFlagSpawn = FlagSpawns[OtherTeamNum]
+                if CurrentFlag and CurrentFlag:isValid() and CurrentFlag:getPos():getDistance(OtherFlagSpawn) < 100 then
+                    Flags[i]:remove()
+                    CreateFlag(i)
+                    GiveTeamScore(i)
+                    InformOfGoal(i == 2 and 1 or 2)
+                end
+            end
+        end
+    end)
+
+    --local ComponentAmount = 0
+    local ComponentLimit = 10 -- Component limit should be 10, cant find a ply:getlimit() function so I just hard code it
+    local function RemovePlayerFromGame(player)
+        if ArenaPlayers[player] then
+            if ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
+            if player:isHUDActive() then
+                --
+                enableHud(player, false)
+            end
+
+            if ArenaPlayers[player].HUD and ArenaPlayers[player].HUD:isValid() then ArenaPlayers[player].HUD:remove() end
+            ArenaPlayers[player] = false
+            GivePlayerTable()
+            ArenaPlayers[player] = nil
+            --if ComponentAmount > 0 then ComponentAmount = ComponentAmount - 1 end
+        end
+    end
+
+    local function GiveChair(player)
+        if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then ArenaPlayers[player].Chair:remove() end
+        local Chair = nil
+        if player:isAlive() then Chair = prop.createSeat(player:getPos(), Angle(0, 0, 0), "models/nova/chair_office02.mdl", true) end
+        local HUD = nil
+        local Score = 0
+        if ArenaPlayers[player] and ArenaPlayers[player].Score then Score = ArenaPlayers[player].Score end
+        if player:isAlive() and not ArenaPlayers[player] and #chip():getLinkedComponents() < ComponentLimit then
+            HUD = prop.createComponent(player:getShootPos(), Angle(0, 0, 0), "starfall_hud", "models/blacknecro/tv_plasma_4_3.mdl", true)
+            HUD:setColor(Color(0, 0, 0, 0))
+            HUD:linkComponent(chip())
+            --ComponentAmount = ComponentAmount + 1
+        end
+
+
+        ArenaPlayers[player] = ArenaPlayers[player] or {}
+        ArenaPlayers[player].Chair = Chair
+        ArenaPlayers[player].HUD = HUD
+        ArenaPlayers[player].Score = Score
+
+        if GameMode == "CTF" and not ArenaPlayers[player].Team then AssignPlayertoTeam(player) end
+
+
+        --printTable(ArenaPlayers)
+        timer.simple(6, function()
+            -- autoremove player from table if they dont enter chair within 6 seconds
+            if ArenaPlayers[player] and ArenaPlayers[player].Chair and ArenaPlayers[player].Chair:isValid() then
+                if player:isHUDActive() then
+                    printHud(player, Color(255, 0, 0), "You were autoremoved from the arena.")
+                    printHud(player, Color(255, 0, 0), "Type !joinarena to rejoin.")
+                end
+
+                RemovePlayerFromGame(player)
+            end
+        end)
+    end
+
+    hook.add("HUDConnected", "MoveHUD", function(ent, ply)
+        if isValid(ent) and ArenaPlayers[ply].HUD then
+            ArenaPlayers[ply].HUD:setPos(Vector(0, 0, 0))
+            timer.simple(0.01, function()
+                printHud(ply, "Enter the chair to join the arena")
+                printHud(ply, "Type !leavearena to leave")
+            end)
+        end
+    end)
+
+    local ArenaAdmins = {
+        -- so multiple people can access the admin commands
+        chip():getOwner(),
+    }
+
+    local BlacklistGroups = {
+        Explosives = {"m9k_davy_crockett", "m9k_ex41", "m9k_m202", "m9k_m79gl", "m9k_matador", "m9k_milkormgl", "m9k_nerve_gas", "m9k_nitro", "m9k_orbital_strike", "m9k_proxy_mine", "m9k_rpg7", "m9k_suicide_bomb", "m9k_sticky_grenade", "m9k_suicide_bomb"}
+    }
+
+    local BlacklistedWeapons = {}
+    local function BlacklistWeapon(weapon)
+        if BlacklistGroups[weapon] then
+            table.add(BlacklistedWeapons, BlacklistGroups[weapon]) -- make this into a loop that checks if the value is already blacklisted
+        else -- make this an elseif that checks if the value is already blacklisted
+            BlacklistedWeapons[#BlacklistedWeapons + 1] = weapon
+        end
+
+        print("Blacklisted Weapons: " .. table.concat(BlacklistedWeapons))
+    end
+
+    hook.add("PlayerSwitchWeapon", "ExplodeBlacklistedWeaponUser", function(ply, oldwep, newweapon)
+        -- hook is called twice for some reason or im doing something wrong
+        if ArenaPlayers[ply] and table.hasValue(BlacklistedWeapons, newweapon:getClass()) then
+            ExplodePlayer(ply)
+            if ply:isHUDActive() then
+                --
+                printHud(ply, Color(255, 0, 0), "Exploded for using a blacklisted weapon")
+                printHud(ply, Color(255, 0, 0), "Weapon: " .. newweapon:getClass())
+            end
+        end
+    end)
+
+    local AdminCommands = {
+        ["!newround"] = StartNewRound,
+        ["!scorelimit"] = function(scorelimit)
+            ScoreLimit = tonumber(scorelimit) -- make this do something later
+        end,
+        ["!blacklistweapon"] = BlacklistWeapon -- make this do something later
+    }
+
+    hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
+        local Command = nil
+        if string.find(string.sub(text, 1, 1), "!") then --
+            Command = string.explode(" ", text, true)
+        end
+
+        if text == "!joinarena" and ArenaPlayers[ply] == nil then
+            GiveChair(ply)
+            GivePlayerTable()
+        elseif text == "!leavearena" and ArenaPlayers[ply] then
+            if isValid(ArenaPlayers[ply].Chair) and isValid(ArenaPlayers[ply].HUD) then
+                ArenaPlayers[ply].Chair:remove()
+                ArenaPlayers[ply].HUD:remove()
+            end
+
+            ExplodePlayer(ply) -- make leaving the arena not require killbind and prevent people from sticking around
+            RemovePlayerFromGame(ply)
+        elseif Command and AdminCommands[Command[1]] and table.hasValue(ArenaAdmins, ply) then
+            if Command[2] then
+                AdminCommands[unpack(Command, 1, 1)](unpack(Command, 2))
+            else
+                AdminCommands[text]()
+            end
+        end
+        --print(Command[1])
+        --print(Command[2])
+    end)
+
+    local Spawns = {} -- spawns are marked by nocollided skulls
+    hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
+        if ArenaPlayers[ply] and ArenaPlayers[ply].Chair == vehicle then
+            if Spawns[1] then --
+                vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
+            end
+
+            vehicle:remove()
+        end
+    end)
+
+    hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) if ArenaPlayers[ply] then GiveChair(ply) end end)
+    hook.add("PlayerDisconnected", "UpdatePlayerTableAgain", function(ply) if ArenaPlayers[ply] then RemovePlayerFromGame(ply) end end)
+    local LookupBounds = Vector(-4000, -4000, -4000) -- make this not have bounds for CTF later
+    local function RegisterSpawns()
+        for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
+            if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
+        end
+    end
+
+    RegisterSpawns()
+    hook.add("PlayerDeath", "CountScore", function(ply, inflictor, attacker)
+        if ArenaPlayers[attacker] and ply ~= attacker then
+            ArenaPlayers[attacker].Score = ArenaPlayers[attacker].Score + 1
+            GivePlayerTable()
+            CheckIfScoreLimitReached()
+        end
+    end)
 end
 
-hook.add("PlayerSay", "ReceiveText", function(ply, text, teamChat)
-    if text == "!joinarena" and ArenaPlayers[ply] == nil then
-        GiveChair(ply)
-    elseif text == "!leavearena" and ArenaPlayers[ply] then
-        ArenaPlayers[ply] = nil
-        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt() -- make leaving the arena not require killbind and prevent people from sticking around
-        prop.create(ply:getShootPos(), Angle(0,0,0), "models/props_c17/oildrum001_explosive.mdl", true):breakEnt()
-    end
-end)
+if CLIENT then
+    local BigVerdana = render.createFont("Verdana", 72)
+    local PlayerTable = nil
+    net.receive("GivePlayerTable", function()
+        PlayerTable = net.readTable()
+        for _, ply in pairs(PlayerTable) do
+            if PlayerTable[ply] == false then -- way to get who left the arena without messing up the net.send()
+                PlayerTable[ply] = nil
+            end
+        end
+    end)
 
-local Spawns = {} -- spawns are marked by nocollided skulls
-hook.add("PlayerEnteredVehicle", "ChairLogic", function(ply, vehicle, num)
-    if ArenaPlayers[ply] == vehicle and Spawns[1] then
-        vehicle:setPos(Spawns[math.random(1, #Spawns)]:getPos())
-        ArenaPlayers[ply] = ""
-        vehicle:remove()
-    end
-end)
+    local Green = Color(0, 255, 0)
+    local Red = Color(255, 0, 0)
+    hook.add("DrawHUD", "ArenaHUD", function()
+        local b = 1 -- make the table better later so that you dont have to use b
+        for ply, score in pairs(PlayerTable) do
+            if ply then
+                render.setFont(BigVerdana)
+                if ply:isValid() and ply:isAlive() then
+                    render.setColor(Green)
+                else
+                    render.setColor(Red)
+                end
 
-hook.add("PlayerSpawn", "GiveChairOnDeath", function(ply) 
-    if ArenaPlayers[ply] then 
-        GiveChair(ply) 
-    end
-end)
--- if SERVER then
-local LookupBounds = Vector(-4000, -4000, -4000)
-local function RegisterSpawns()
-    for index, ent in ipairs(find.inBox(chip():getPos() - LookupBounds, chip():getPos() + LookupBounds)) do -- get starfall chip pos and then search in box around it for skull
-        if ent:getModel() == "models/gibs/hgibs.mdl" and ent:getCollisionGroup() == 20 then Spawns[#Spawns + 1] = ent end
-    end
+                if ply:isValid() and PlayerTable[ply] ~= false then
+                    render.drawSimpleText(10, 80 + b * 60, ply:getName() .. ": " .. PlayerTable[ply].Score)
+                    b = b + 1
+                end
+
+                if b == #PlayerTable then b = 0 end
+            end
+        end
+    end)
 end
-
-RegisterSpawns()
