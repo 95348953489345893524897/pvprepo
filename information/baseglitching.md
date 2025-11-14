@@ -1,3 +1,4 @@
+These are all strategies to glitch into unfair PvP bases or to counter them easily
 # Vehicle glitching
 The simplest one.
 
@@ -13,3 +14,7 @@ https://github.com/user-attachments/assets/8c3fe52b-0137-4ac9-9241-0c85e797e989
 # Wall glitching (with props)
 
 # Precision seat glitching
+
+# Tank barrel glitching
+
+# Emplacement glitching
