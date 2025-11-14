@@ -15,6 +15,9 @@ https://github.com/user-attachments/assets/8c3fe52b-0137-4ac9-9241-0c85e797e989
 
 # Precision seat glitching
 
+# Advanced ballsocket glitching
+- Get the addon later
+
 # Tank barrel glitching
 
 # Emplacement glitching
