@@ -15,6 +15,11 @@ https://github.com/user-attachments/assets/8c3fe52b-0137-4ac9-9241-0c85e797e989
 
 # Precision seat glitching
 
+
+https://github.com/user-attachments/assets/7092f483-ce10-41df-a37a-817be141cd52
+
+
+- explain how this works later
 # Advanced ballsocket glitching
 - Get the addon later
 
