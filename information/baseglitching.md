@@ -11,6 +11,10 @@ https://github.com/user-attachments/assets/8c3fe52b-0137-4ac9-9241-0c85e797e989
 
 # Seat glitching
 
+
+https://github.com/user-attachments/assets/05bbf860-2a1d-4c98-a919-5b5b48847da8
+
+
 # Wall glitching (with props)
 
 # Precision seat glitching
