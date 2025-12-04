@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/9f89d18d-bbd3-486e-a985-5e3ec63e48db
 These are all strategies to glitch into unfair PvP bases or to counter them easily
 # Vehicle glitching
 The simplest one.
