@@ -25,9 +25,9 @@ https://github.com/user-attachments/assets/21e4a587-0ec2-4350-855b-870043e4e468
 
 
 
-1. Do steps in Precision tool settings section
-2. Spawn seat
-3. Put seat in the air
+1. Spawn seat
+2. Put seat in the air
+3. Set precision tool to settings [here](#Precision-tool-settings)
 4. Left click on it with precision tool (makes it not collide with the world)
 5. Left click it with the physgun out and press E immediately
 6. Undo the seat after you glitch past the ceiling (takes some practice to time)
@@ -41,10 +41,10 @@ Works only with simphys tanks (I think)
   3. Shoot into the other side of the wall
 
 # Emplacement glitching
-(https://steamcommunity.com/sharedfiles/filedetails/?id=213515639)[Talking about this addon mainly]
+[Talking about this addon mainly](https://steamcommunity.com/sharedfiles/filedetails/?id=213515639) <br/>
 Lets you shoot something like a rail cannon through the other side of a wall
 1. Spawn emplacement
-2. Set precision tool to settings in #PrecisionToolSettings
+2. Set precision tool to settings [here](#Precision-tool-settings)
 3. Left click on the turret (not the stand)
 4. Physgun the turret through a wall so that you can interact with it, but its barrel is sticking out
 5. Shoot into the other side of the wall
