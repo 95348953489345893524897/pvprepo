@@ -25,10 +25,7 @@ https://github.com/user-attachments/assets/21e4a587-0ec2-4350-855b-870043e4e468
 
 
 
-1. Set precision tool to these settings:
-   - User level: Experimental (set this setting FIRST!)
-   - Freeze target
-   - Only collide with player
+1. Do steps in Precision tool settings section
 2. Spawn seat
 3. Put seat in the air
 4. Left click on it with precision tool (makes it not collide with the world)
@@ -38,5 +35,22 @@ https://github.com/user-attachments/assets/21e4a587-0ec2-4350-855b-870043e4e468
 - Get the addon later
 
 # Tank barrel glitching
+Works only with simphys tanks (I think)
+  1. Spawn tank
+  2. Poke barrel through wall
+  3. Shoot into the other side of the wall
 
 # Emplacement glitching
+(https://steamcommunity.com/sharedfiles/filedetails/?id=213515639)[Talking about this addon mainly]
+Lets you shoot something like a rail cannon through the other side of a wall
+1. Spawn emplacement
+2. Set precision tool to settings in #PrecisionToolSettings
+3. Left click on the turret (not the stand)
+4. Physgun the turret through a wall so that you can interact with it, but its barrel is sticking out
+5. Shoot into the other side of the wall
+
+# Precision tool settings
+Set precision tool to these settings:
+   - User level: Experimental (set this setting FIRST!)
+   - Freeze target
+   - Only collide with player
