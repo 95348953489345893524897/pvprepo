@@ -74,10 +74,8 @@ end
 timer.Create("CheckIfInServer", clippy_servercheckdelay, 0, function()
     -- i don't trust the way i wrote this, hopefully it's fine 
     if not engine.IsPlayingDemo() and not engine.IsRecordingDemo() and IsInGame() then
-        print("RUNNIN1")
         StartRecording()
         timer.Create("StartClip", clippy_time, 0, function()
-            print("RUNNING")
             GetConvarChanges()
             ----
             if PreviousClipName then
