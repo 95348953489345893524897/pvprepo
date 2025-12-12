@@ -15,30 +15,79 @@
 ]]
 CreateClientConVar("clippy_time", "300", false, false, "Clip length in seconds", 5)
 CreateClientConVar("clippy_autodelete", "1", false, false, "Whether or not to auto-discard unsaved clips")
+CreateClientConVar("clippy_strict", "1", false, false, "1 = Attempt to delete last demo on startup by saving its name in lastdemo.txt (WARNING: Malicious server owners can put ANY demo name in the txt file, letting them make this script delete any demo they want. Set this to 1 only if you don't care.),\n - 0 = The demo being recorded before quitting the game may linger in your files")
+CreateClientConVar("clippy_servercheckdelay", "30", false, false, "Interval in seconds to check whether or not you're on a server (to start recordings on time)")
+local SavedClips = {}
 local CurrentClipName = nil
 local PreviousClipName = nil
 local clippy_time = GetConVar("clippy_time"):GetInt()
 local clippy_autodelete = GetConVar("clippy_autodelete"):GetBool()
+local clippy_strict = GetConVar("clippy_strict"):GetBool()
+local clippy_servercheckdelay = GetConVar("clippy_servercheckdelay"):GetInt()
+local function DiscardClip(DemoName)
+    if not DemoName then return end
+    if not clippy_autodelete then return end
+    if string.GetExtensionFromFilename("garrysmod/" .. DemoName .. ".dem") ~= "dem" then
+        print("DemoName wasn't a demo, not discarding")
+        return
+    end
+
+    timer.Create("TryDiscardingClip", 0.2, 0, function()
+        if DemoName and not SavedClips[DemoName] then
+            print("Attempting to delete " .. DemoName)
+            if file.Exists(DemoName .. ".dem", "MOD") then
+                file.Delete(DemoName .. ".dem", "MOD")
+            else
+                timer.Remove("TryDiscardingClip") -- hopefully the clip is discarded by now
+            end
+        end
+    end)
+end
+
+local LastDemo = file.Read("lastdemo.txt", "DATA")
+if clippy_strict == true and LastDemo then
+    DiscardClip(LastDemo)
+    file.Delete("lastdemo.txt", "DATA")
+end
+
 local function StartRecording()
-    if IsInGame() and not engine.IsRecordingDemo() then
+    if IsInGame() and not engine.IsRecordingDemo() and not engine.IsPlayingDemo() then
         CurrentClipName = os.date("%Y-%m-%d %H-%M-%S", os.time())
         --print("Starting " .. CurrentClipName)
         RunConsoleCommand("record", CurrentClipName)
+        if clippy_strict == true then --
+            file.Write("lastdemo.txt", CurrentClipName)
+            print("Wrote info to lastdemo.txt")
+        end
     end
 end
 
---StartRecording() -- move this into a hook later?
-timer.Create("StartClip", clippy_time, 0, function()
+local function GetConvarChanges()
     -- update convar values since we dont have callbacks in menustate (iirc)
+    -- should make this a for loop later, lazy right now
     clippy_time = GetConVar("clippy_time"):GetInt()
     clippy_autodelete = GetConVar("clippy_autodelete"):GetBool()
-    ----
-    if PreviousClipName and clippy_autodelete then
-        file.Delete(PreviousClipName .. ".dem", "MOD")
-        --print("Deleting " .. PreviousClipName .. ".dem")
-    end
+    clippy_strict = GetConVar("clippy_strict"):GetBool()
+    clippy_servercheckdelay = GetConvar("clippy_servercheckdelay"):GetInt()
+end
 
-    StartRecording()
+timer.Create("CheckIfInServer", clippy_servercheckdelay, 0, function()
+    -- i don't trust the way i wrote this, hopefully it's fine 
+    if not engine.IsPlayingDemo() and not engine.IsRecordingDemo() and IsInGame() then
+        print("RUNNIN1")
+        StartRecording()
+        timer.Create("StartClip", clippy_time, 0, function()
+            print("RUNNING")
+            GetConvarChanges()
+            ----
+            if PreviousClipName then
+                DiscardClip(PreviousClipName)
+                --print("Deleting " .. PreviousClipName .. ".dem")
+            end
+
+            StartRecording()
+        end)
+    end
 end)
 
 timer.Create("EndClip", clippy_time - 0.01, 0, function()
@@ -58,6 +107,7 @@ concommand.Add("clippy_save", function()
         print("Saving " .. CurrentClipName)
     end
 
+    SavedClips[CurrentClipName] = true
     CurrentClipName = nil
     timer.Create("TryRecordingAgain", 0.2, 0, function()
         if engine.IsRecordingDemo then
@@ -72,18 +122,9 @@ local clippy_running = true
 concommand.Add("clippy_toggle", function()
     clippy_running = not clippy_running or false
     print("Clippy running: " .. tostring(clippy_running))
-    if clippy_running == false then
+    if not clippy_running then
         RunConsoleCommand("stop")
-        timer.Create("TryDiscardingClip", 0.2, 0, function()
-            if CurrentClipName then
-                if file.Exists(CurrentClipName .. ".dem", "MOD") then
-                    file.Delete(CurrentClipName .. ".dem", "MOD")
-                else
-                    timer.Remove("TryDiscardingClip") -- hopefully the clip is discarded by now
-                end
-            end
-        end)
-
+        if CurrentClipName then DiscardClip(CurrentClipName) end
         timer.Stop("StartClip")
         timer.Stop("EndClip")
     else
@@ -91,4 +132,9 @@ concommand.Add("clippy_toggle", function()
         timer.Start("EndClip")
         StartRecording()
     end
+end)
+
+concommand.Add("clippy_listsavedclips", function()
+    --
+    PrintTable(table.GetKeys(SavedClips))
 end)
