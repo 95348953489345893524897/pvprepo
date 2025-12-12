@@ -15,7 +15,7 @@
 ]]
 CreateClientConVar("clippy_time", "300", false, false, "Clip length in seconds", 5)
 CreateClientConVar("clippy_autodelete", "1", false, false, "Whether or not to auto-discard unsaved clips")
-CreateClientConVar("clippy_strict", "1", false, false, "1 = Attempt to delete last demo on startup by saving its name in lastdemo.txt (WARNING: Malicious server owners can put ANY demo name in the txt file, letting them make this script delete any demo they want. Set this to 1 only if you don't care.),\n - 0 = The demo being recorded before quitting the game may linger in your files")
+CreateClientConVar("clippy_strict", "0", false, false, "1 = Attempt to delete last demo on startup by saving its name in lastdemo.txt (WARNING: Malicious server owners can put ANY demo name in the txt file, letting them make this script delete any demo they want. Set this to 1 only if you don't care.),\n - 0 = The demo being recorded before quitting the game may linger in your files")
 CreateClientConVar("clippy_servercheckdelay", "30", false, false, "Interval in seconds to check whether or not you're on a server (to start recordings on time)")
 local SavedClips = {}
 local CurrentClipName = nil
