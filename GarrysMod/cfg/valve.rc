@@ -411,7 +411,6 @@ cl_new_impact_effects 			"0"					// Not sure how these new impact effects are me
 cl_detaildist				"0"					// render distance of detail props like grass
 cl_detailfade				"9999"					// cl_detailfade is the distance inwards from that where they hit full opacity. if cl_detailfade is larger or equal than cl_detaildist, fading is turned off; https://www.teamfortress.tv/20219/detail-sprite-commands
 cl_localnetworkbackdoor 		"0"					// the default value (1) causes slight FPS drops when playing on servers and it only provides benefits for people playing singleplayer; https://www.reddit.com/r/tf2/comments/4hiblq/a_quick_list_of_console_commands_that_should/
-r_norefresh 				"1"					// Genuinely no idea; If set to 1, "Do not store a useless and unused frame time variable"; http://www.play-half-life.de/H-L_2.html; https://github.com/mastercomfig/mastercomfig/blob/develop/config/mastercomfig/cfg/comfig/comfig.cfg
 sys_minidumpspewlines 			"0"					// Lines of crash dump console spew to keep; https://developer.valvesoftware.com/wiki/List_of_Garry%27s_Mod_console_commands_and_variables
 mat_forcehardwaresync 			"1"					// Makes engine produce frames in sync; https://docs.mastercomfig.com/9.5.2/tf2/misconceptions/#bad-cvars
 r_decals				"64"					// Limits all decals 
