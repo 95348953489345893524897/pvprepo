@@ -25,17 +25,21 @@ local clippy_autodelete = GetConVar("clippy_autodelete"):GetBool()
 local clippy_strict = GetConVar("clippy_strict"):GetBool()
 local clippy_servercheckdelay = GetConVar("clippy_servercheckdelay"):GetInt()
 local JustEndedClip = false
+local MaxAttempts = 6
 local function DiscardClip(DemoName)
     if not DemoName then return end
     if not clippy_autodelete then return end
-    if string.GetExtensionFromFilename("garrysmod/" .. DemoName .. ".dem") ~= "dem" then
-        print("DemoName wasn't a demo, not discarding")
-        return
-    end
-
+    local Attempts = 1
     timer.Create("TryDiscardingClip", 0.2, 0, function()
         if DemoName and not SavedClips[DemoName] then
-            print("Attempting to delete " .. DemoName)
+            if Attempts > MaxAttempts then
+                print("Gave up deleting " .. DemoName .. "(Too many attempts)")
+                Attempts = 1
+                return
+            end
+
+            print("Attempting to delete " .. DemoName .. " Attempted: " .. Attempts .. "x")
+            Attempts = Attempts + 1
             if file.Exists(DemoName .. ".dem", "MOD") then
                 file.Delete(DemoName .. ".dem", "MOD")
             else
@@ -47,6 +51,11 @@ end
 
 local LastDemo = file.Read("lastdemo.txt", "DATA")
 if clippy_strict == true and LastDemo then
+    if string.GetExtensionFromFilename("garrysmod/" .. LastDemo .. ".dem") ~= "dem" then
+        print("DemoName wasn't a demo, not discarding")
+        return
+    end
+
     DiscardClip(LastDemo)
     file.Delete("lastdemo.txt", "DATA")
 end
