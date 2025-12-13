@@ -68,7 +68,7 @@ local function GetConvarChanges()
     clippy_time = GetConVar("clippy_time"):GetInt()
     clippy_autodelete = GetConVar("clippy_autodelete"):GetBool()
     clippy_strict = GetConVar("clippy_strict"):GetBool()
-    clippy_servercheckdelay = GetConvar("clippy_servercheckdelay"):GetInt()
+    clippy_servercheckdelay = GetConVar("clippy_servercheckdelay"):GetInt()
 end
 
 timer.Create("CheckIfInServer", clippy_servercheckdelay, 0, function()
