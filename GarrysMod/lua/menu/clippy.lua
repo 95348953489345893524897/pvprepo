@@ -24,6 +24,7 @@ local clippy_time = 300 --GetConVar("clippy_time"):GetInt()
 local clippy_autodelete = GetConVar("clippy_autodelete"):GetBool()
 local clippy_strict = GetConVar("clippy_strict"):GetBool()
 local clippy_servercheckdelay = GetConVar("clippy_servercheckdelay"):GetInt()
+local JustEndedClip = false
 local function DiscardClip(DemoName)
     if not DemoName then return end
     if not clippy_autodelete then return end
@@ -73,6 +74,7 @@ end
 
 local function StartClip(time)
     timer.Create("StartClip", time, 0, function()
+        JustEndedClip = false
         GetConvarChanges()
         if PreviousClipName then
             DiscardClip(PreviousClipName)
@@ -88,6 +90,7 @@ local function SetClipEnd(time)
         --
         if engine.IsRecordingDemo() then
             RunConsoleCommand("stop")
+            JustEndedClip = true
             if CurrentClipName then
                 PreviousClipName = CurrentClipName
                 --print("Stopped " .. CurrentClipName)
@@ -98,7 +101,7 @@ end
 
 timer.Create("CheckIfInServer", clippy_servercheckdelay, 0, function()
     -- i don't trust the way i wrote this, hopefully it's fine 
-    if not engine.IsPlayingDemo() and not engine.IsRecordingDemo() and IsInGame() then
+    if not engine.IsPlayingDemo() and not engine.IsRecordingDemo() and IsInGame() and JustEndedClip == false then
         StartRecording()
         StartClip(clippy_time)
         SetClipEnd(clippy_time)
