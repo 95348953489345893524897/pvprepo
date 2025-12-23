@@ -1,5 +1,5 @@
 Not many gmod players outside of people in aim communities really understand these settings, so I'll write them here for easy understanding. <br/>
-There are some essential mouse settings that should be enabled or disabled outright, and then there are some that are preference.
+There are some essential mouse settings that should be enabled or disabled outright, and then there are some that are simply preference.
 
 # How to get to the mouse settings
 Go to the menu, press Options, then press "Mouse" in the top tab of the window that pops up. <br/>
