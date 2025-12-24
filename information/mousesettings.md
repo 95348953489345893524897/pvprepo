@@ -30,6 +30,9 @@ Set this to 1. <br/>
 <br/>
 With raw input off, Windows handles your input before it is taken by the game. Windows's mouse settings like OS level sensitivity and mouse acceleration can drastically change how your aim feels in game and add input lag. Having raw input on in games has been a standard for a decade at **least**, with most games forcing it enabled, such as [Counter-Strike 2](https://developer.valvesoftware.com/wiki/List_of_Counter-Strike_2_console_commands_and_variables), [Overwatch 2](http://web.archive.org/web/20151101013626/http://us.battle.net/forums/en/overwatch/topic/19615281339#:~:text=We%20use%20only%20unadjusted%20raw%20input%20for%20our%20input%20handling%20(except%20when%20in%20the%20UI)%20as%20is%20common%20for%20FPS's), [Valorant](https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-06/#:~:text=The%20RawInputBuffer%20setting%20has%20been%20removed%20and%20is%20no%20longer%20configurable.%20The%20setting%20will%20be%20enabled%20at%20all%20times%20for%20players%20because%20it%20is%20more%20performant.), and Kovaak's (Get confirmation later) <br/> 
 
+<img width="265" height="102.5" alt="image" src="https://github.com/user-attachments/assets/2e2b195f-8030-47aa-84ed-beab3f511a42" /> <br/>
+Windows mouse options. <br/>
+<br/>
 Long explanation: <br/>
 The leak of the HL2 source code [uses WM_INPUT](https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/inputsystem/inputsystem.cpp#L1456), which is an element of the [WIN32 Raw Input API](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input). I'm not a game developer, so I will refrain from trying to explain how this works. The gist is that Raw Input lets the application capture mouse input before it is affected by anything else in the operating system (Windows mouse accel, pointer speed, etc.)
 
@@ -41,5 +44,3 @@ Are they using Windows mouse acceleration (EPS)? How do you convert this to anot
 ```
 All of these pointless variables are taken away by simply following the standard, which is having raw input on. <br/>
 <br/>
-<img width="265" height="102.5" alt="image" src="https://github.com/user-attachments/assets/2e2b195f-8030-47aa-84ed-beab3f511a42" /> <br/>
-Windows mouse options.
