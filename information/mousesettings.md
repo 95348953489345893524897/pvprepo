@@ -33,10 +33,13 @@ With raw input off, Windows handles your input before it is taken by the game. W
 Long explanation: <br/>
 The leak of the HL2 source code [uses WM_INPUT](https://git.botox.bz/BotoX/hl2_src-leak-2017/src/commit/21b3eba5306aa277cf169fcbf56fc14ef84a2974/src/inputsystem/inputsystem.cpp#L1456), which is an element of the [WIN32 Raw Input API](https://learn.microsoft.com/en-us/windows/win32/inputdev/raw-input). I'm not a game developer, so I will refrain from trying to explain how this works. The gist is that Raw Input lets the application capture mouse input before it is affected by anything else in the operating system (Windows mouse accel, pointer speed, etc.)
 
-Another, albeit small, issue with having raw input off is that it makes following the standards of CM/360 much harder. CM/360 is a measurement of how many Centimeters you need to move your mouse to turn 360 degrees in game. It's a widely accepted standard for translating different sensitivities and DPIs between games. Raw input is always assumed when talking about one's CM/360, so turning it off makes it more difficult to compare sensitivities between games or people. For example, if someone else's sensitivity is 1, DPI 1600 then it's no problem. That can be calculated easily as [25.9 CM](https://kovaaks.com/kovaaks/sens-converter). However, if they have raw input off, then more unnecessary variables are added to the equation: 
-Do they have a different Windows mouse sensitivity? <br/>
-How do you convert from non-default Windows mouse sensitivites like 11 back to the baseline default 6? <br/>
-Are they using mouse acceleration? <br/>
-All of these pointless variables are taken away by simply following the standard, which is having raw input on. 
-<img width="265" height="102.5" alt="image" src="https://github.com/user-attachments/assets/2e2b195f-8030-47aa-84ed-beab3f511a42" />
+Another, albeit small, issue with having raw input off is that it makes following the standards of CM/360 much harder. CM/360 is a measurement of how many Centimeters you need to move your mouse to turn 360 degrees in game. It's a widely accepted standard for translating different sensitivities and DPIs between games. Raw input is always assumed when talking about one's CM/360, so turning it off makes it more difficult to compare sensitivities between games or people. For example, if someone else's sensitivity is 1, DPI 1600 then it's no problem. That can be calculated easily as [25.9 CM](https://kovaaks.com/kovaaks/sens-converter). However, if they have raw input off, then more unnecessary variables are added to the equation: <br/>
+```
+Do they have a different Windows mouse sensitivity?
+How do you convert from non-default Windows mouse sensitivites like 11 back to the baseline default 6?
+Are they using Windows mouse acceleration (EPS)? How do you convert this to another acceleration curve like RawAccel?
+```
+All of these pointless variables are taken away by simply following the standard, which is having raw input on. <br/>
+<br/>
+<img width="265" height="102.5" alt="image" src="https://github.com/user-attachments/assets/2e2b195f-8030-47aa-84ed-beab3f511a42" /> <br/>
 Windows mouse options.
