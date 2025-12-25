@@ -60,6 +60,8 @@ If you really want mouse acceleration still, look into driver-level alternatives
 <br/>
 There is no reason to check this box. You likely have already been playing with unreversed mouse movement, and there is no reason to change now.
 <br/>
+<br/>
+
 All this option seems to do is invert the value that m_pitch (vertical sensitivity) is set to. Likely no downside OR upside to setting this on. Preference, but should probably just not touch the setting since you will have to get used to having reversed vertical sensitivity.
 
 # All other mouse acceleration convars
