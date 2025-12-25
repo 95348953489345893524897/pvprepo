@@ -8,11 +8,11 @@ Go to the menu, press Options, then press "Mouse" in the top tab of the window t
 <img width="253" height="199" alt="image" src="https://github.com/user-attachments/assets/b57241b4-e14e-4cd7-8781-ad416cbf48fc" /> <br/>
 Alternatively you can enter <br/>
 ```find m_```<br/>
-in console and it shows the mouse settings. The internal ConVar name will be listed in each section regardless. 
+in console and it shows the mouse settings. The internal Console Variable name will be listed in each section regardless. 
 # "Mouse Filter"
 ```ConVar name: m_filter``` <br/>
 <br/>
-Set this to 0. <br/>
+Set this to 0 (unchecked). <br/>
 <br/>
 Mouse filtering averages your mouse input over the last 2 frames, meaning that your input is both FPS-based and has unnecessary input lag. <br/>
 Due to how bad Gmod servers can get, FPS-based input in Gmod will give your aim **insane inconsistency**<br/>
@@ -26,7 +26,7 @@ Windows is now able to handle mouse polling rates of at least 8000 HZ, 200 times
 # "Raw Input"
 ```ConVar name: m_rawinput```
 <br/>
-Set this to 1. <br/>
+Set this to 1 (checked). <br/>
 <br/>
 With raw input off, Windows handles your input before it is taken by the game. Windows's mouse settings like OS level sensitivity and mouse acceleration can drastically change how your aim feels in game and add input lag. Having raw input on in games has been a standard for a decade at **least**, with most games forcing it enabled, such as [Counter-Strike 2](https://developer.valvesoftware.com/wiki/List_of_Counter-Strike_2_console_commands_and_variables), [Overwatch 2](http://web.archive.org/web/20151101013626/http://us.battle.net/forums/en/overwatch/topic/19615281339#:~:text=We%20use%20only%20unadjusted%20raw%20input%20for%20our%20input%20handling%20(except%20when%20in%20the%20UI)%20as%20is%20common%20for%20FPS's), [Valorant](https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-11-06/#:~:text=The%20RawInputBuffer%20setting%20has%20been%20removed%20and%20is%20no%20longer%20configurable.%20The%20setting%20will%20be%20enabled%20at%20all%20times%20for%20players%20because%20it%20is%20more%20performant.), and Kovaak's (Get confirmation later) <br/> 
 
@@ -44,3 +44,40 @@ Are they using Windows mouse acceleration (EPS)? How do you convert this to anot
 ```
 All of these pointless variables are taken away by simply following the standard, which is having raw input on. <br/>
 <br/>
+
+# "Mouse Acceleration"
+```ConVar name (the checkbox): m_customaccel``` (Checking the box sets to 3, unchecking sets to 0) <br/>
+```ConVar name (the slider): m_customaccel_exponent``` <br/>
+Mouse acceleration in the Source Engine is frame-rate dependent ([1](https://github.com/ValveSoftware/Source-1-Games/issues/1126), [2](https://www.esreality.com/index.php?a=post&id=1903728))<sup>[But not Quake engine? Odd.]</sup>.<br/>
+<br/>
+If you really want mouse acceleration still, look into driver-level alternatives like [RawAccel](https://github.com/RawAccelOfficial/rawaccel) <br/>
+
+# "Reverse Mouse"
+```ConVar name: m_pitch```
+<br/>
+There is no reason to check this box. You likely have already been playing with unreversed mouse movement, and there is no reason to change now.
+<br/>
+All this option seems to do is invert the value that m_pitch (vertical sensitivity) is set to. Likely no downside OR upside to setting this on. Preference, but should probably just not touch the setting since you will have to get used to having reversed vertical sensitivity.
+
+# All other mouse acceleration convars
+These are all the other mouse acceleration console variables that I couldn't find an option for in the Mouse Options window: <br/>
+```
+"m_customaccel_max"
+"m_customaccel_scale"
+"m_mouseaccel1"
+"m_mouseaccel2"
+"m_mousespeed"
+```
+You should probably set these all to 0 **just in case** they do something even with mouse acceleration disabled, and read the bottom part of the Mouse Acceleration section if you still want to use mouse acceleration. <br/>
+
+# Other m_ convars
+```m_side```
+Does nothing unless you are using +strafe to move (mouse movement) <br/>
+```m_forward```
+Also does nothing unless you are using +strafe <br/>
+<br/>
+<br/>
+```m_pitch```
+Vertical mouse sensitivity <br/>
+```m_yaw```
+Horizontal mouse sensitivity <br/>
