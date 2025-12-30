@@ -32,7 +32,7 @@ Above 50 CM/360: Bad
 ```
 [Add data chart about mice DPI here] <br/>
 [The explanation of the logic will in the next section in final draft] <br/>
-[Explain how you might not have enough space to use a non high CM, and that you are restricted, and sticking to a high sens is (tolerable? permissible? the only resort maybe..) ] <br/>
+[Explain how you might not have enough space to use a non high CM, and that you are restricted, and sticking to a high sens is (tolerable? permissible? the only resort maybe..)] <br/>
 \* About CM/360
 
 # Drawbacks of settling for a single sensitivity [Will change this header to be more clear] 
