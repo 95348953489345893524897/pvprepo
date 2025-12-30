@@ -23,7 +23,7 @@ To figure out your DPI look up the native DPI of your mouse, look through your m
 [This section needs expanding] <br/>
 
 # What sensitivity should I use?
-It is overly dogmatic to assert a rigid standard for mouse sensitivity. However, there comes a point where a Sensitivity* will objectively be a hindrance to your aim. <br/> 
+It is overly elitist to assert a rigid standard for mouse sensitivity. However, there comes a point where a Sensitivity* will objectively be a hindrance to your aim. <br/> 
 *Generally*, the range of usable Sensitivities* for G-Mod would be this: <br/>
 ```
 Below 15 CM/360: Bad
