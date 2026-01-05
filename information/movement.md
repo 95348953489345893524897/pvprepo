@@ -220,7 +220,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
     
    ## How to Sidehop:
    
-   - [this script](https://github.com/95348953489345893524897/pvprepo/blob/main/GarrysMod/lua/menu/sidehop.lua) will help a lot with visualizing where to turn your camera when sidehopping
+   - [this script](../GarrysMod/lua/sidehop.lua) will help a lot with visualizing where to turn your camera when sidehopping
 
 <img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
 
