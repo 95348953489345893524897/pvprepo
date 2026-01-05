@@ -481,6 +481,15 @@
 	"custom_chat_enable"			"0"
 	"custom_chat_show_steamid_on_join_leave" "1"					// Should the SteamID be visible when showing join/leave messages?
 	"NEWLINE" "NEWLINE"
+	"// Falco's Prop Protection" "COMMENT"
+	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
+	"FPP_PrivateSettings_BlockedProps"  		"0"			// "I don't want to touch blocked entities"
+	"FPP_PrivateSettings_HideOwner" 			"0"			// "I don't want to see the owners of props"
+	"FPP_PrivateSettings_OtherPlayerProps" 		"0"			// "I don't want to touch other people's entities
+	"FPP_PrivateSettings_OwnProps" 				"0"			// "I don't want to touch my own entities"
+	"FPP_PrivateSettings_WorldProps" 			"0"			// "I don't want to touch world entities"
+	"cl_pickupplayers"							"1"			// "I want to pick up players"
+	"NEWLINE" "NEWLINE"
 	"// Other" "COMMENT"
 	"¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"cl_detaildist"				"0"					// 0 = Disable detail props like grass at the minimum distance; THIS COMMAND WONT SAVE NO MATTER WHAT I DO!!!! Hopefully this works!
