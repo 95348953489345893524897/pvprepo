@@ -141,7 +141,7 @@
 	"// NPCZ Sandbox/Zbox custom things" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"npcz_pvppve_outlines_dot"			"0.5"		// dot product convar for npcz pvp/pve player outlines
-	"wa_enable" 						"0"		// e2 webaudio enable?
+	"wa_enable" 						"0"			// e2 webaudio enable?
 	"streamcore_disable" 				"1"
 	"cl_legs" 							"0"
 	"sitting_allow_on_me"				"0"
@@ -395,7 +395,6 @@
 	"// Wire" "COMMENT"
 	"// ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯" "COMMENT"
 	"wire_flir_gain"					"0"
-	"wire_holograms_display_owners"		""					// will this even work lol
 	"wire_expression2_concmd"			"0"
 	"wire_expression2_convar"			"0"
 	"NEWLINE" "NEWLINE"
