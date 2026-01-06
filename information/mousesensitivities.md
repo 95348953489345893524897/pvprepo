@@ -23,7 +23,7 @@ A simple example: 1.50 quake/source sens on 800 DPI = about 35 cm/360. 1.50 sour
 
 3. **There is no perfect CM.** There never will be, because sensitivity is a tool, and the range of optimal sensitivity varies for each game and even each aiming situation. Different sensitivities are good for different things. A good demonstration of this is in how pro players across different games use different ranges of sensitivity. In Overwatch, for example, a relatively fast range of sensitivity is used, `(often between ~15-35 cm)` but in Counter-Strike and similar games, a much lower range tends to be used. `(~40-60 cm)` There are obviously outliers to this trend, but the reason it exists at all is because the two games emphasize different elements of mouse control and therefore have different criteria for what makes a good sensitivity.
 
-[Here](https://www.kovaaks.com/kovaaks/cm360-converter)'s a resource for checking what cm/360 you're using. Try it out! It's not hard to use.
+[Here](https://www.kovaaks.com/kovaaks/cm360-converter) is a simple resource for checking what cm/360 you're using.
 
 ## "What sensitivity should I use for GMod?"
 
