@@ -4,7 +4,7 @@
 ###### "Sensitivity", "Sens": How much your camera moves when you move your mouse.
 
 # CM/360
-**"CM/360"** is the universal metric for converting between different games' sensitivity scales while account for mouse DPI. <br/>
+**"CM/360"** is the universal metric for converting between different games' sensitivity scales while accounting for mouse DPI. <br/>
 Every game has its own sensitivity scale. 1.00 sens in TF2 is equal to 3.34 in Overwatch.  <br/>
 Visualizing sensitivity and DPI together can be confusing with the different sensitivity scales between games, which is what cm/360 is used for. <br/>
 For example, saying "46 cm" is much simpler than "0.72285 CSGO sens & 1250 dpi." <br/>
