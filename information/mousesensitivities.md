@@ -12,7 +12,8 @@ For example, saying "46 cm" is much simpler than "0.72285 CSGO sens & 1250 dpi."
 
 There are a few important things to know in order to understand cm/360 values:
 
-1. **CM/360 values have the opposite meaning of in-game sensitivities.** This means that:
+## **CM/360 values have the opposite meaning of in-game sensitivities** 
+This means that:
 
    - Higher cm/360 is slower
 
@@ -29,21 +30,25 @@ For example: <br/>
 This is because as sensitivity or DPI increases, it takes less movement to move 360 degrees in game. <br/>
 Hearing people say "low" or "high" sens can be a bit confusing for this reason, but generally "high" sens mean fast, and "low" sens means slow. <br/>
 
-2. **In order to calculate your CM/360, you need to know your mouse's DPI.** There are a few ways to find out your DPI, each with varying degrees of reliability. The most straightforward way is to simply check your mouse's software, if available. If that isn't an option for you, or if you want a more precise measurement, you can attempt to measure your DPI manually, but doing this precisely can be inconvenient. There are online tools to do this, but we can't vouch for the efficacy of these. <br/>
+## **In order to calculate your CM/360, you need to know your mouse's DPI** 
+There are a few ways to find out your DPI, each with varying degrees of reliability. The most straightforward way is to simply check your mouse's software, if available. If that isn't an option for you, or if you want a more precise measurement, you can attempt to measure your DPI manually, but doing this precisely can be inconvenient. There are online tools to do this, but we can't vouch for the efficacy of these. <br/>
+<br/>
+
 DPI measurement Tools (we have not tested their accuracy, but they are here for you to try if you must): <br/>
 [From XBitLabs](https://www.xbitlabs.com/mouse-dpi-test/) <br/>
 [From mouse-sensitivity.com](https://www.mouse-sensitivity.com/dpianalyzer/) <br/>
 [From mousedpianalyzer.com](https://mousedpianalyzer.com/) <br/>
 
-4. **There is no perfect CM.** There never will be, because sensitivity is a tool, and the range of optimal sensitivity varies for each game and even each aiming situation. Different sensitivities are good for different things. A good demonstration of this is in how pro players across different games use different ranges of sensitivity. In Overwatch, for example, a relatively fast range of sensitivity is used, `(often between ~15-35 cm)` but in Counter-Strike and similar games, a much lower range tends to be used. `(~40-60 cm)` There are obviously outliers to this trend, but the reason it exists at all is because the two games emphasize different elements of mouse control and therefore have different criteria for what makes a good sensitivity.
+## **There is no perfect CM** 
+There never will be, because sensitivity is a tool, and the range of optimal sensitivity varies for each game and even each aiming situation. Different sensitivities are good for different things. A good demonstration of this is in how pro players across different games use different ranges of sensitivity. In Overwatch, for example, a relatively fast range of sensitivity is used, `(often between ~15-35 cm)` but in Counter-Strike and similar games, a much lower range tends to be used. `(~40-60 cm)` There are obviously outliers to this trend, but the reason it exists at all is because the two games emphasize different elements of mouse control and therefore have different criteria for what makes a good sensitivity.
 
 [Here](https://www.kovaaks.com/kovaaks/cm360-converter) is a simple resource for checking what cm/360 you're using.
 
-## "What sensitivity should I use for GMod?"
+# "What sensitivity should I use for GMod?"
 
-While there is no "perfect sens", each fps game does have a range of sensitivities that tend to work well. Garry's Mod is rather unique; it has a very diverse set of aiming situations that vary across different weapon packs, on different maps, and depending on the individual's playstyle. Despite this, GMod is not suited well for extremely slow sensitivities like 60 cm/360 (800 dpi, 1.00 source sens). 
+While there is no "perfect sens", each fps game does have a range of sensitivities that tend to work well. Garry's Mod is rather unique; it has a very diverse set of aiming situations that vary across different weapon packs, maps, and playstyles. Despite this, GMod is not suited well for extremely slow sensitivities like 60 cm/360 (800 dpi, 1.00 source sens). 
 
-Here is a guideline for sensitivity.
+Here is a guideline for sensitivity:
 ```
 >15cm <-- TOO FAST! DO NOT USE BELOW THIS!!
 
