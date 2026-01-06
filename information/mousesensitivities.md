@@ -40,9 +40,9 @@ DPI measurement Tools (we have not tested their accuracy, but they are here for 
 
 ## "What sensitivity should I use for GMod?"
 
-While there is no "perfect sens", each fps game does have a range of sensitivities that tend to work well. Garry's Mod is rather unique; it has a very diverse set of aiming situations that vary across different weapon packs, on different maps, and depending on the individual's playstyle. Despite this, I don't think GMod is suited for extremely slow sens, like 60 cm/360 (800 dpi, 1.00 source sens). Actually, this brings up a good point, what even is  a "fast" or "slow" sens to begin with?
+While there is no "perfect sens", each fps game does have a range of sensitivities that tend to work well. Garry's Mod is rather unique; it has a very diverse set of aiming situations that vary across different weapon packs, on different maps, and depending on the individual's playstyle. Despite this, GMod is not suited for extremely slow sensitivities like 60 cm/360 (800 dpi, 1.00 source sens). 
 
-Here is my attempt at defining an intuitive guideline for sensitivity. The values I'm using here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case I can think of for something like 10 cm is if you have extremely limited mousepad space and you physically can't use anything slower.
+Here is my attempt at defining an intuitive guideline for sensitivity. The values I'm using here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case for a sensitivity as fast as 10 cm is if you have extremely limited mousepad space and you physically can't use a slower sensitivity.
 
 ```
 >15cm <-- TOO FAST! DO NOT USE BELOW THIS!!
