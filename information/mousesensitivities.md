@@ -17,7 +17,16 @@ There are a few important things to know in order to understand cm/360 values:
 
    - Lower cm/360 is faster
 
-A simple example: 1.50 quake/source sens on 800 DPI = about 35 cm/360. 1.50 source sens is half as fast as 3.00, but for 35 and 70 cm, it's the opposite; 70 cm is half as fast as 35. Hearing people say "low" or "high" sens can be a bit confusing for this reason, but generally when they say "high/low sens", they mean the sensitivity itself, and not the cm value.
+As sensitivity or DPI increases, cm/360 decreases. <br/>
+
+For example: <br/>
+```
+- 1.00 source sens, 1000 DPI = 40 cm.
+- 2.00 source sens, 1000 DPI = 20 cm.
+- 1.00 source sens, 2000 DPI = 20 cm.
+```
+This is because as sensitivity or DPI increases, it takes less movement to move 360 degrees in game. <br/>
+Hearing people say "low" or "high" sens can be a bit confusing for this reason, but generally "high" sens mean fast, and "low" sens means slow. <br/>
 
 2. **In order to calculate your CM/360, you need to know your mouse's DPI.** There are a few ways to find out your DPI, each with varying degrees of reliability. The most straightforward way is to simply check your mouse's software, if available. If that isn't an option for you, or if you want a more precise measurement, you can attempt to measure your DPI manually, but doing this precisely can be inconvenient. There are online tools to do this, but I personally can't vouch for the efficacy of these.
 
