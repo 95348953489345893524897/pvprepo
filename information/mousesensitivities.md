@@ -38,7 +38,7 @@ Here is my attempt at defining an intuitive guideline for sensitivity. The value
 
 33-42 cm <- mid-range, this can work for pretty much any fps game, though it may not be ideal for everything.
 
-43-60 cm <- slow, good for games that focus on highly precise aiming situations where you aren't often presented with a target that moves erratically across your screen
+43-60 cm <- slow, good for games that focus on highly precise long range or slow strafing situations
 
 <75cm <-- TOO SLOW! DO NOT USE ABOVE THIS!!
 ```
