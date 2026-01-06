@@ -28,7 +28,7 @@ For example: <br/>
 This is because as sensitivity or DPI increases, it takes less movement to move 360 degrees in game. <br/>
 Hearing people say "low" or "high" sens can be a bit confusing for this reason, but generally "high" sens mean fast, and "low" sens means slow. <br/>
 
-2. **In order to calculate your CM/360, you need to know your mouse's DPI.** There are a few ways to find out your DPI, each with varying degrees of reliability. The most straightforward way is to simply check your mouse's software, if available. If that isn't an option for you, or if you want a more precise measurement, you can attempt to measure your DPI manually, but doing this precisely can be inconvenient. There are online tools to do this, but I personally can't vouch for the efficacy of these. <br/>
+2. **In order to calculate your CM/360, you need to know your mouse's DPI.** There are a few ways to find out your DPI, each with varying degrees of reliability. The most straightforward way is to simply check your mouse's software, if available. If that isn't an option for you, or if you want a more precise measurement, you can attempt to measure your DPI manually, but doing this precisely can be inconvenient. There are online tools to do this, but we can't vouch for the efficacy of these. <br/>
 DPI measurement Tools (we have not tested their accuracy, but they are here for you to try if you must): <br/>
 [From XBitLabs](https://www.xbitlabs.com/mouse-dpi-test/) <br/>
 [From mouse-sensitivity.com](https://www.mouse-sensitivity.com/dpianalyzer/) <br/>
@@ -42,7 +42,7 @@ DPI measurement Tools (we have not tested their accuracy, but they are here for 
 
 While there is no "perfect sens", each fps game does have a range of sensitivities that tend to work well. Garry's Mod is rather unique; it has a very diverse set of aiming situations that vary across different weapon packs, on different maps, and depending on the individual's playstyle. Despite this, GMod is not suited well for extremely slow sensitivities like 60 cm/360 (800 dpi, 1.00 source sens). 
 
-Here is my attempt at defining an intuitive guideline for sensitivity. The values I'm using here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case for a sensitivity as fast as 10 cm is if you have extremely limited mousepad space and you physically can't use a slower sensitivity.
+Here is a guideline for sensitivity. The values I'm using here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case for a sensitivity as fast as 10 cm is if you have extremely limited mousepad space and you physically can't use a slower sensitivity.
 
 ```
 >15cm <-- TOO FAST! DO NOT USE BELOW THIS!!
@@ -56,7 +56,7 @@ Here is my attempt at defining an intuitive guideline for sensitivity. The value
 <75cm <-- TOO SLOW! DO NOT USE ABOVE THIS!!
 ```
 
-For Garry's Mod in particular, if I had to say, `25-50 cm` makes the most sense for the aiming situations seen in game. If you use something within this range, it's not likely to hold you back in any major way.
+For Garry's Mod in particular, `25-50 cm` makes the most sense for the aiming situations seen in game. If you use something within this range, it's not likely to hold you back in any major way.
 
 ## "Changing my sensitivity will mess up my muscle memory! Isn't it best to pick one good sensitivity and stick to it for everything?"
 
