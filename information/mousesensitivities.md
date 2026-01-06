@@ -46,7 +46,8 @@ Here is a guideline for sensitivity.
 ```
 >15cm <-- TOO FAST! DO NOT USE BELOW THIS!!
 
-20-32 cm <- fast, mostly good for highly reactive tracking focused games. a place where many people use a very fast sens is in lg duels, which focus exclusively on tracking.
+20-32 cm <- fast, mostly good for highly reactive tracking focused games. a place where many people use a very fast sens is
+            in lg duels, which focus exclusively on tracking.
 
 33-42 cm <- mid-range, this can work for pretty much any fps game, though it may not be ideal for everything.
 
