@@ -54,7 +54,7 @@ Here is a guideline for sensitivity.
 
 <75cm <-- TOO SLOW! DO NOT USE ABOVE THIS!!
 ```
-The values I'm using here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case for a sensitivity as fast as 10 cm is if you have extremely limited mousepad space and you physically can't use a slower sensitivity.
+The values used here are quite lenient, so if you're using 3 cm and you're surprised that 15 is listed "TOO FAST TO USE!!!", there's definitely a problem, and you should change your sens. There's no benefit to using an unreasonably fast or slow sensitivity, the only use case for a sensitivity as fast as 10 cm is if you have extremely limited mousepad space and you physically can't use a slower sensitivity.
 
 For Garry's Mod in particular, `25-50 cm` makes the most sense for the aiming situations seen in game. If you use something within this range, it's not likely to hold you back in any major way.
 
