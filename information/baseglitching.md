@@ -41,6 +41,8 @@ Works only with simphys tanks (I think)
   3. Shoot into the other side of the wall
 
 # Emplacement glitching
+https://github.com/user-attachments/assets/d5b4e2c3-f90d-4168-93ad-f790145282db
+
 [From this addon](https://steamcommunity.com/sharedfiles/filedetails/?id=213515639) <br/>
 Lets you shoot something like a rail cannon through the other side of a wall
 1. Spawn emplacement
@@ -48,10 +50,6 @@ Lets you shoot something like a rail cannon through the other side of a wall
 3. Left click on the turret (not the stand)
 4. Physgun the turret through a wall so that you can interact with it, but its barrel is sticking out
 5. Shoot into the other side of the wall
-
-
-https://github.com/user-attachments/assets/d5b4e2c3-f90d-4168-93ad-f790145282db
-
 
 # Precision tool settings
 Set precision tool to these settings:
