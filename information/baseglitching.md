@@ -51,6 +51,9 @@ Lets you shoot something like a rail cannon through the other side of a wall
 4. Physgun the turret through a wall so that you can interact with it, but its barrel is sticking out
 5. Shoot into the other side of the wall
 
+# M9K C4 Glitching
+- Add info later
+
 # Precision tool settings
 Set precision tool to these settings:
    - User level: Experimental (set this setting FIRST!)
