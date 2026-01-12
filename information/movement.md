@@ -466,4 +466,5 @@ https://github.com/user-attachments/assets/79d7753b-0d57-4096-a6ac-ab16b8540bb2
 # Grenade boosting
 
 https://github.com/user-attachments/assets/38a18d76-9f12-4fb2-91ed-5a5fed0e18a1
-
+- When thrown, the frag grenade ticks 6 times, blowing up on the 7th tick.
+  - If picked up by the gravity gun or using E, it ticks 5 times, blowing up on the 6th.
