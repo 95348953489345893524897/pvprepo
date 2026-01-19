@@ -211,15 +211,10 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
   
 # Sidehopping  
   - Sidehopping is one of the most common ways to get around in vanilla sandbox servers. I've been able to reach around 6000-7000 velocity before, I'm not sure what the limit is.<br/>
-  - Sandbox sidehopping seems to come from an attempt to patch HL2 style accelerated sidehopping out of the game.
-    - Sidehopping tutorial - https://www.youtube.com/watch?v=ArMJ5qALBXY<br/>
-      - Crouching left sidehop (0:02 - 1:47)<br/>
-      - Crouching right sidehop (1:51 - 3:06)<br/>
-      - Demonstration (3:13 - 6:50)<br/>
-    - Video is ridiculously slowed down which I will fix later probably<br/>
+  - Sandbox sidehopping seems to come from an attempt to patch HL2 style accelerated sidehopping out of the game. <br/>
     
    ## How to Sidehop:
-   
+   - Sidehopping tutorial - https://www.youtube.com/watch?v=i5VV_2WMwTA <br/>
    - [this script](../GarrysMod/lua/sidehop.lua) will help a lot with visualizing where to turn your camera when sidehopping
 
 <img width="848" height="479" alt="image" src="https://github.com/user-attachments/assets/9d439d10-41c1-4535-8a32-6b976b0ae5c0" />
