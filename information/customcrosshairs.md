@@ -5,7 +5,7 @@
 You may want a custom crosshair because ```crosshair_setup``` (console command for customizing base crosshair) does not have the crosshair shape you want, or weapon packs like M9K snipers remove your crosshair. <br/>
 
 The texture's path is:
-```hl2_textures.vpk\materials\vgui\hud\xbox_reticle.vtf``` 
+```hl2_textures.vpk\materials\vgui\hud\xbox_reticle.vtf``` <br/> 
 For the purpose of the guide you can ignore the hl2_textures.vpk path. <br>
 
 # To make a custom crosshair:
