@@ -53,7 +53,7 @@ All of these pointless variables are taken away by simply following the standard
 ```ConVar name (the slider): m_customaccel_exponent``` <br/>
 Mouse acceleration in the Source Engine is frame-rate dependent ([1](https://github.com/ValveSoftware/Source-1-Games/issues/1126), [2](https://www.esreality.com/index.php?a=post&id=1903728))<sup>[But not Quake engine? Odd.]</sup>.<br/>
 <br/>
-If you really want mouse acceleration still, look into driver-level alternatives like [RawAccel](https://github.com/RawAccelOfficial/rawaccel) <br/>
+You should set this to 0. If you really want mouse acceleration still, look into driver-level alternatives like [RawAccel](https://github.com/RawAccelOfficial/rawaccel) <br/>
 
 # "Reverse Mouse"
 ```ConVar name: m_pitch```
