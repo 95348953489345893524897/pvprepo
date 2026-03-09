@@ -206,7 +206,7 @@ I'm not exactly sure how to do this, and I can't reproduce it consistently, so I
   - EU PROPKILL 51.254.7.253:27015<br/>
   - chicago propkill server thing 69.39.225.6:27015<br/>
   - propkill.net (on the sandbox gamemode) 143.198.159.117:27015<br/>
-  - Zbox (don't propkill here, most people will get annoyed, but propfly is OK with most people and easy to do here) 193.243.190.18:27064 <br/>
+  - Zbox 193.243.190.18:27064 <br/>
   - T9C Sandbox (Anarchy sandbox server, propkill/propfly all you want here) 78.108.218.110:26000 <br/>
   
 # Sidehopping  
