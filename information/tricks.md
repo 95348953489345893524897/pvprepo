@@ -16,7 +16,13 @@ https://github.com/95348953489345893524897/configs/blob/c0ee0b1b6f92773cb424c19f
   - Add example video later
 
 # Picked up weapon trails
-  - Trails placed on weapons using the trail tool will still persist even when the weapon is picked up.<br/>
-  - This lets you have trails on yourself without using wire/e2/starfall<br/>
-  - add example video later
+
+https://github.com/user-attachments/assets/08846de6-173f-449e-bcb8-03e01a498a24
+
+  - Trails placed on weapons using the Trail tool will still persist even when the weapon is picked up.<br/>
+  - This lets you have trails on yourself without using Wire/E2/Starfall. <br/>
+
+
+
+
 
