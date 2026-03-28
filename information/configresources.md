@@ -300,3 +300,11 @@ bind "w" "+forward; pseudorandom_playermodel_tick"
 bind "space" "pseudorandom_playermodel"
 ```
 This cycles through the increment of the playermodel list when "w" is pressed, and then will "select" the playermodel indexed when "Space" is pressed.
+
+# Extra useful scripts
+```
+alias +hold_zoom "toggle_zoom
+alias -hold_zoom "toggle_zoom
+bind h "+hold_zoom"
+```
+Lets you shoot while holding down zoom
